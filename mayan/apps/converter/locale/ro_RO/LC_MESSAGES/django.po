@@ -1,0 +1,794 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Badea Gabriel <gcbadea@gmail.com>, 2023
+# Roberto Rosario, 2023
+# Stefaniu Criste <gupi@hangar.ro>, 2023
+# Harald Ersch, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Harald Ersch, 2023\n"
+"Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: apps.py:35 events.py:6 permissions.py:6 queues.py:7 settings.py:21
+msgid "Converter"
+msgstr "Convertizor"
+
+#: apps.py:82 forms.py:41
+msgid "Transformation"
+msgstr "Transformare"
+
+#: backends/python.py:106
+#, python-format
+msgid "Exception determining page count using Pillow; %s"
+msgstr "Excepție de determinare a numărului de pagini PDF; %s"
+
+#: backends/python.py:194 backends/python.py:211
+#, python-format
+msgid "Exception determining PDF page count; %s"
+msgstr "Excepție determinând numărul de pagini PDF; %s"
+
+#: classes.py:173
+msgid "LibreOffice not installed or not found."
+msgstr "LibreOffice nu este instalat sau nu a fost găsit."
+
+#: classes.py:279
+msgid "Not an office file format."
+msgstr "Nu este un format de fișier Office."
+
+#: classes.py:415
+msgid ""
+"Transformations allow changing the visual appearance of documents without "
+"making permanent changes to the document file themselves."
+msgstr ""
+"Transformările permit modificarea aspectului vizual al documentelor, fără a "
+"face modificări permanente ale fișierului documentului în sine."
+
+#: dependencies.py:14
+msgid "Utility from the poppler-utils package used to inspect PDF files."
+msgstr ""
+"Utilitar din pachetul poppler-utils folosit pentru inspectarea fișierelor "
+"PDF."
+
+#: dependencies.py:19
+msgid ""
+"Utility from the popper-utils package used to extract pages from PDF files "
+"into PPM format images."
+msgstr ""
+"Utilitar din pachetul popper-utils folosit pentru extragerea paginilor din "
+"fișiere PDF în imagini în format PPM."
+
+#: events.py:10
+msgid "Asset created"
+msgstr "Element creat"
+
+#: events.py:13
+msgid "Asset edited"
+msgstr "Element modificat"
+
+#: forms.py:17
+msgid "Asset preview image"
+msgstr "Imagine de previzualizare a materialelor"
+
+#: forms.py:17
+msgid "Preview"
+msgstr "Previzualizare"
+
+#: forms.py:40
+msgid "Available transformations for this layer."
+msgstr "Transformări disponibile pentru acest strat."
+
+#: forms.py:88 workflow_actions.py:74
+#, python-format
+msgid "\"%s\" not a valid entry."
+msgstr "\"%s\" nu este o intrare validă."
+
+#: layers.py:12
+msgid ""
+"Decorations are visual elements that add contextual information to images."
+msgstr ""
+"Decorațiunile sunt elemente vizuale care adaugă informații contextuale "
+"imaginilor."
+
+#: layers.py:14
+msgid "Decorations"
+msgstr "Decorațiuni"
+
+#: layers.py:26
+msgid "Saved transformations"
+msgstr "Transformări salvate"
+
+#: links.py:35 views/asset_views.py:36
+msgid "Create asset"
+msgstr "Creați un element"
+
+#: links.py:38 links.py:44 links.py:67
+msgid "Delete"
+msgstr "Șterge"
+
+#: links.py:48 links.py:71
+msgid "Edit"
+msgstr "Editați"
+
+#: links.py:52 links.py:59 models.py:54 storages.py:21
+#: views/asset_views.py:144
+msgid "Assets"
+msgstr "Elemente"
+
+#: links.py:76 workflow_actions.py:91
+msgid "Transformations"
+msgstr "Transformări"
+
+#: links.py:81
+msgid "Select new transformation"
+msgstr "Selectați o nouă transformare"
+
+#: model_mixins.py:124 models.py:167
+msgid "Arguments"
+msgstr "Argumente"
+
+#: models.py:37
+msgid "Label"
+msgstr "Conținut etichetă"
+
+#: models.py:41
+msgid ""
+"This value will be used when referencing this asset. Can only contain "
+"letters, numbers, and underscores."
+msgstr ""
+"Această valoare va fi utilizată atunci când faceți referire la acest "
+"element. Poate conține doar litere, cifre și caractere de subliniere."
+
+#: models.py:44
+msgid "Internal name"
+msgstr "Nume intern"
+
+#: models.py:48
+msgid "File"
+msgstr "Fișier"
+
+#: models.py:53 transformation_mixins.py:306
+msgid "Asset"
+msgstr "Element"
+
+#: models.py:90 models.py:161 serializers.py:10
+msgid "Name"
+msgstr "Nume"
+
+#: models.py:93 models.py:158
+msgid "Order"
+msgstr "Ordine"
+
+#: models.py:98 models.py:124
+msgid "Stored layer"
+msgstr "Stratul depozitat"
+
+#: models.py:99
+msgid "Stored layers"
+msgstr "Straturi stocate"
+
+#: models.py:111
+msgid "Content type"
+msgstr "Tipul de conținut"
+
+#: models.py:114
+msgid "Object ID"
+msgstr "ID obiect"
+
+#: models.py:120 models.py:170
+msgid "Enabled"
+msgstr "Activat"
+
+#: models.py:132 models.py:152
+msgid "Object layer"
+msgstr "Strat obiect"
+
+#: models.py:133
+msgid "Object layers"
+msgstr "Straturi de obiecte"
+
+#: models.py:156
+msgid ""
+"Order in which the transformations will be executed. If left unchanged, an "
+"automatic order value will be assigned."
+msgstr ""
+"Ordinea în care vor fi executate transformările. Dacă este lăsat neschimbat,"
+" va fi alocată o ordine automată."
+
+#: models.py:165 workflow_actions.py:57
+msgid ""
+"Enter the arguments for the transformation as a YAML dictionary. ie: "
+"{\"degrees\": 180}"
+msgstr ""
+"Introduceți argumentele pentru transformare ca dicționar YAML. adică: "
+"{\"grade\": 180}"
+
+#: models.py:178
+msgid "Layer transformation"
+msgstr "Transformarea stratului"
+
+#: models.py:179
+msgid "Layer transformations"
+msgstr "Transformările stratului"
+
+#: models.py:187
+msgid "Unknown transformation class"
+msgstr "Clasă de transformare necunoscută"
+
+#: permissions.py:10
+msgid "Create new assets"
+msgstr "Creați elemente noi"
+
+#: permissions.py:13
+msgid "Delete assets"
+msgstr "Ștergeți elemente"
+
+#: permissions.py:16
+msgid "Edit assets"
+msgstr "Editați elemente"
+
+#: permissions.py:19
+msgid "View existing assets"
+msgstr "Vedeți elementele existente"
+
+#: permissions.py:23
+msgid "Create new transformations"
+msgstr "Creați noi transformări"
+
+#: permissions.py:26
+msgid "Delete transformations"
+msgstr "Ștergeți transformări"
+
+#: permissions.py:29
+msgid "Edit transformations"
+msgstr "Editați transformări"
+
+#: permissions.py:32
+msgid "View existing transformations"
+msgstr "Vizualizați transformările existente"
+
+#: queues.py:12
+msgid "Generate a image of an object."
+msgstr "Generați o imagine a unui obiect."
+
+#: serializers.py:13
+msgid "Image path"
+msgstr "Calea imaginii"
+
+#: serializers.py:16 serializers.py:32
+msgid "Image URL"
+msgstr "URL-ul imaginii"
+
+#: serializers.py:21
+msgid "Template name"
+msgstr "Nume șablon"
+
+#: serializers.py:24 serializers.py:39
+msgid "URL"
+msgstr "URL"
+
+#: settings.py:30
+msgid ""
+"The threshold at which the CONVERTER_ASSET_CACHE_STORAGE_BACKEND will start "
+"deleting the oldest asset cache files. Specify the size in bytes."
+msgstr ""
+"Pragul la care CONVERTER_ASSET_CACHE_STORAGE_BACKEND va începe să șteargă "
+"cele mai vechi fișiere cache de active. Specificați dimensiunea în octeți."
+
+#: settings.py:38
+msgid ""
+"Path to the Storage subclass to use when storing the cached asset files."
+msgstr ""
+"Calea către subclasa Stocare pe care să o utilizați la stocarea fișierelor "
+"de active din cache."
+
+#: settings.py:46
+msgid "Arguments to pass to the CONVERTER_ASSET_CACHE_STORAGE_BACKEND."
+msgstr "Argumente de transmis către CONVERTER_ASSET_CACHE_STORAGE_BACKEND."
+
+#: settings.py:52
+msgid "Path to the Storage subclass to use when storing assets."
+msgstr "Calea către subclasa de stocare de utilizat la stocarea elementelor."
+
+#: settings.py:58
+msgid "Arguments to pass to the CONVERTER_ASSET_STORAGE_BACKEND."
+msgstr "Argumente de transmis la CONVERTER_ASSET_STORAGE_BACKEND."
+
+#: settings.py:64
+msgid "Graphics conversion backend to use."
+msgstr "Back-end de conversie grafică."
+
+#: settings.py:70
+msgid "Configuration options for the graphics conversion backend."
+msgstr "Opțiuni de configurare pentru backend-ul de conversie grafică."
+
+#: settings.py:77
+msgid "Time in seconds that the browser should cache the supplied image. "
+msgstr ""
+"Timpul în secunde în care browserul ar trebui să memoreze în cache imaginea "
+"furnizată."
+
+#: settings.py:84
+msgid ""
+"Maximum number of retries before giving up. A value of None means the task "
+"will retry forever."
+msgstr ""
+"Numărul maxim de încercări înainte de a renunța. O valoare None înseamnă că "
+"sarcina va reîncerca pentru totdeauna."
+
+#: settings.py:92
+msgid ""
+"Time in seconds after which the image generation task will stop running and "
+"raise an error."
+msgstr ""
+"Timp în secunde după care sarcina de generare a imaginii se va opri și va "
+"genera o eroare."
+
+#: storages.py:15
+msgid ""
+"Unable to initialize the converter asset storage. Check the settings {} and "
+"{} for formatting errors."
+msgstr ""
+"Imposibil de inițializat stocarea elementelor convertizorului. Verificați "
+"setările {} și {} pentru erori de formatare."
+
+#: storages.py:28
+msgid ""
+"Unable to initialize the converter asset cachestorage. Check the settings {}"
+" and {} for formatting errors."
+msgstr ""
+"Nu se poate inițializa stocarea în cache a activelor convertorului. "
+"Verificați setările {} și {} pentru erori de formatare."
+
+#: storages.py:34
+msgid "Assets cache"
+msgstr "Cache de active"
+
+#: transformation_mixins.py:20 transformations.py:617
+msgid ""
+"Number of degrees to rotate the image counter clockwise around its center."
+msgstr ""
+"Numărul de grade pentru a roti imaginea în sens invers acelor de ceasornic "
+"în jurul centrului acesteia."
+
+#: transformation_mixins.py:22
+msgid "Rotation"
+msgstr "Rotație"
+
+#: transformation_mixins.py:25
+msgid "Opacity level of the image in percent"
+msgstr "Nivelul de opacitate al imaginii în procente"
+
+#: transformation_mixins.py:26
+msgid "Transparency"
+msgstr "Transparenţă"
+
+#: transformation_mixins.py:29 transformations.py:722
+msgid "Zoom level in percent."
+msgstr "Nivel de zoom în procente."
+
+#: transformation_mixins.py:29 transformations.py:717
+msgid "Zoom"
+msgstr "Zoom"
+
+#: transformation_mixins.py:113
+msgid "Paste an image"
+msgstr "Lipiți o imagine"
+
+#: transformation_mixins.py:118
+msgid "Horizontal position in pixels from the left."
+msgstr "Poziție orizontală în pixeli din stânga."
+
+#: transformation_mixins.py:119 transformation_mixins.py:163
+#: transformation_mixins.py:227 transformations.py:226 transformations.py:325
+#: transformations.py:424
+msgid "Left"
+msgstr "Stânga"
+
+#: transformation_mixins.py:122
+msgid "Vertical position in pixels from the top."
+msgstr "Poziție verticală în pixeli din partea de sus."
+
+#: transformation_mixins.py:123 transformation_mixins.py:167
+#: transformation_mixins.py:235 transformations.py:230 transformations.py:329
+#: transformations.py:428
+msgid "Top"
+msgstr "Partea de sus"
+
+#: transformation_mixins.py:157
+msgid "Paste an image (percents coordinates)"
+msgstr "Lipiți o imagine (coordonate procente)"
+
+#: transformation_mixins.py:162
+msgid "Horizontal position in percent from the left."
+msgstr "Poziție orizontală în procente din stânga."
+
+#: transformation_mixins.py:166
+msgid "Vertical position in percent from the top."
+msgstr "Poziție verticală în procente din partea de sus."
+
+#: transformation_mixins.py:220 transformations.py:214
+msgid "Paste an asset as watermark"
+msgstr "Inserați un element ca filigran"
+
+#: transformation_mixins.py:226
+msgid "Horizontal start position in pixels from the left."
+msgstr "Poziția de pornire orizontală în pixeli din stânga."
+
+#: transformation_mixins.py:230
+msgid "Horizontal end position in pixels from the right."
+msgstr "Poziția finală orizontală în pixeli din dreapta."
+
+#: transformation_mixins.py:231 transformations.py:234 transformations.py:333
+#: transformations.py:432
+msgid "Right"
+msgstr "Dreapta"
+
+#: transformation_mixins.py:234
+msgid "Vertical start position in pixels from the top."
+msgstr "Poziția de pornire verticală în pixeli din partea de sus."
+
+#: transformation_mixins.py:238
+msgid "Vertical end position in pixels from the top."
+msgstr "Poziția finală verticală în pixeli din partea de sus."
+
+#: transformation_mixins.py:239 transformations.py:238 transformations.py:338
+#: transformations.py:436
+msgid "Bottom"
+msgstr "Partea de jos"
+
+#: transformation_mixins.py:242
+msgid "Horizontal position increments in pixels."
+msgstr "Incremente poziție orizontală în pixeli."
+
+#: transformation_mixins.py:243
+msgid "Horizontal increment"
+msgstr "Incrementare orizontală"
+
+#: transformation_mixins.py:246
+msgid "Vertical position increments in pixels."
+msgstr "Incremente poziție verticală în pixeli."
+
+#: transformation_mixins.py:247
+msgid "Vertical increment"
+msgstr "Incrementare verticală"
+
+#: transformation_mixins.py:306
+msgid "Asset name"
+msgstr "Numele activului"
+
+#: transformation_mixins.py:349
+msgid "Color used to fill the rectangle."
+msgstr "Culoarea folosită pentru a umple dreptunghiul."
+
+#: transformation_mixins.py:350 transformations.py:624
+msgid "Fill color"
+msgstr "Culoare de umplere"
+
+#: transformation_mixins.py:353
+msgid "Opacity level of the fill color in percent"
+msgstr "Nivelul de opacitate al culorii de umplere în procente"
+
+#: transformation_mixins.py:354
+msgid "Fill transparency"
+msgstr "Transparența umplerii"
+
+#: transformation_mixins.py:357
+msgid "Color used for the outline of the rectangle."
+msgstr "Culoarea folosită pentru conturul dreptunghiului."
+
+#: transformation_mixins.py:358
+msgid "Outline color"
+msgstr "Culoarea conturului"
+
+#: transformation_mixins.py:361
+msgid "Width in pixels of the rectangle outline."
+msgstr "Lățimea în pixeli a conturului dreptunghiului."
+
+#: transformation_mixins.py:362
+msgid "Outline width"
+msgstr "Lățimea conturului"
+
+#: transformations.py:198
+msgid "Paste an asset (absolute coordinates)"
+msgstr "Inserați un activ (coordonate absolute)"
+
+#: transformations.py:206
+msgid "Paste an asset (percent coordinates)"
+msgstr ""
+
+#: transformations.py:220
+msgid "Crop"
+msgstr "Decupare"
+
+#: transformations.py:225
+msgid "Number of pixels to remove from the left."
+msgstr "Numărul de pixeli de eliminat din stânga."
+
+#: transformations.py:229
+msgid "Number of pixels to remove from the top."
+msgstr "Numărul de pixeli de eliminat din partea de sus."
+
+#: transformations.py:233
+msgid "Number of pixels to remove from the right."
+msgstr "Numărul de pixeli de eliminat din dreapta."
+
+#: transformations.py:237
+msgid "Number of pixels to remove from the bottom."
+msgstr "Numărul de pixeli de eliminat din partea de jos."
+
+#: transformations.py:320
+msgid "Draw rectangle"
+msgstr "Desenați dreptunghiul"
+
+#: transformations.py:325
+msgid "Left side location in pixels."
+msgstr "Poziția din partea stângă în pixeli."
+
+#: transformations.py:329
+msgid "Top side location in pixels."
+msgstr "Poziția din partea de sus în pixeli."
+
+#: transformations.py:333
+msgid "Right side location in pixels."
+msgstr "Poziția din partea dreaptă în pixeli."
+
+#: transformations.py:337
+msgid "Bottom side location in pixels."
+msgstr "Poziția din partea de jos în pixeli."
+
+#: transformations.py:418
+msgid "Draw rectangle (percent coordinates)"
+msgstr ""
+
+#: transformations.py:423
+msgid "Left side location in percent."
+msgstr "Poziția din partea stângă în procente."
+
+#: transformations.py:427
+msgid "Top side location in percent."
+msgstr "Poziția din partea superioară în procente."
+
+#: transformations.py:431
+msgid "Right side location in percent."
+msgstr "Poziția din partea dreaptă în procente."
+
+#: transformations.py:435
+msgid "Bottom side location in percent."
+msgstr "Poziția din partea de jos în procente."
+
+#: transformations.py:514
+msgid "Flip"
+msgstr "Basculare"
+
+#: transformations.py:525
+msgid "Gaussian blur"
+msgstr "Încețoșare Gaussiană"
+
+#: transformations.py:530 transformations.py:692
+msgid "Radius"
+msgstr "Rază"
+
+#: transformations.py:542
+msgid "Line art"
+msgstr "Linie de arta"
+
+#: transformations.py:556
+msgid "Mirror"
+msgstr "Oglindire"
+
+#: transformations.py:567
+msgid "Resize"
+msgstr "Redimensionare"
+
+#: transformations.py:573
+msgid "New width in pixels."
+msgstr "Lățime nouă în pixeli."
+
+#: transformations.py:574
+msgid "Width"
+msgstr "Lăţime"
+
+#: transformations.py:578
+msgid "New height in pixels."
+msgstr "Înălțime nouă în pixeli."
+
+#: transformations.py:579
+msgid "Height"
+msgstr "Înălţime"
+
+#: transformations.py:611
+msgid "Rotate"
+msgstr "Rotire"
+
+#: transformations.py:619
+msgid "Degrees"
+msgstr "Grade"
+
+#: transformations.py:623
+msgid "Color to be used for area outside of the rotated image."
+msgstr ""
+"Culoarea care trebuie utilizată pentru zona din afara imaginii rotite."
+
+#: transformations.py:654
+msgid "Rotate 90 degrees"
+msgstr "Rotiți 90 de grade"
+
+#: transformations.py:665
+msgid "Rotate 180 degrees"
+msgstr "Rotiți 180 de grade"
+
+#: transformations.py:676
+msgid "Rotate 270 degrees"
+msgstr "Rotiți 270 de grade"
+
+#: transformations.py:686
+msgid "Unsharp masking"
+msgstr "Unsharp masking"
+
+#: transformations.py:691
+msgid "The blur radius in pixels."
+msgstr "Raza de estompare în pixeli."
+
+#: transformations.py:695
+msgid "Unsharp strength in percent."
+msgstr "Intensitate accentuare în procente."
+
+#: transformations.py:696 transformations.py:723
+msgid "Percent"
+msgstr "Procent"
+
+#: transformations.py:700
+msgid "Minimum brightness change that will be sharpened."
+msgstr "Nivelul minim al luminozității care va fi accentuat."
+
+#: transformations.py:701
+msgid "Tthreshold"
+msgstr "Prag"
+
+#: views/asset_views.py:50
+#, python-format
+msgid "Delete request performed on %(count)d asset"
+msgstr "Solicitare de ștergere efectuată pe %(count)d element "
+
+#: views/asset_views.py:52
+#, python-format
+msgid "Delete request performed on %(count)d assets"
+msgstr "Solicitare de ștergere efectuată asupra %(count)d elemente"
+
+#: views/asset_views.py:60
+msgid "Delete the selected asset?"
+msgid_plural "Delete the selected assets?"
+msgstr[0] "Ștergeți materialul selectat?"
+msgstr[1] "Ștergeți elementele selectate?"
+msgstr[2] "Ștergeți activele selectate?"
+
+#: views/asset_views.py:70
+#, python-format
+msgid "Delete asset: %s?"
+msgstr "Ștergeți elementul: %s?"
+
+#: views/asset_views.py:81
+#, python-format
+msgid "Asset \"%s\" deleted successfully."
+msgstr "Elementul „%s” a fost șters."
+
+#: views/asset_views.py:86
+#, python-format
+msgid "Error deleting asset \"%(asset)s\": %(error)s"
+msgstr "Eroare la ștergerea elementului„%(asset)s”: %(error)s"
+
+#: views/asset_views.py:102
+#, python-format
+msgid "Details asset: %s"
+msgstr "Detalii activ: %s"
+
+#: views/asset_views.py:117
+#, python-format
+msgid "Edit asset: %s"
+msgstr "Editați elementul: %s"
+
+#: views/asset_views.py:140
+msgid ""
+"Assets are files that can be used in conjuction with certain "
+"transformations."
+msgstr ""
+"Elementele sunt fișiere care pot fi utilizate împreună cu anumite "
+"transformări."
+
+#: views/asset_views.py:143
+msgid "No assets available"
+msgstr "Nu există elemente disponibile"
+
+#: views/transformation_views.py:52
+#, python-format
+msgid "Error creating transformation: %s."
+msgstr "Eroare la crearea transformării: %s."
+
+#: views/transformation_views.py:69
+#, python-format
+msgid ""
+"Create layer \"%(layer)s\" transformation \"%(transformation)s\" for: "
+"%(object)s"
+msgstr ""
+"Creați stratul \"%(layer)s\" transformare \"%(transformation)s\" pentru: "
+"%(object)s"
+
+#: views/transformation_views.py:128
+#, python-format
+msgid "Delete transformation \"%(transformation)s\" for: %(content_object)s?"
+msgstr "Ștergeți transformarea \"%(transformation)s\" pentru: %(content_object)s?"
+
+#: views/transformation_views.py:184
+#, python-format
+msgid "Edit transformation \"%(transformation)s\" for: %(content_object)s"
+msgstr "Editați transformarea \"%(transformation)s\" pentru: %(content_object)s"
+
+#: views/transformation_views.py:248
+#, python-format
+msgid "There are no entries for layer \"%(layer_name)s\""
+msgstr "Nu există înregistrări pentru stratul \"%(layer_name)s\""
+
+#: views/transformation_views.py:251
+#, python-format
+msgid "Layer \"%(layer)s\" transformations for: %(object)s"
+msgstr "Transformări la stratul \"%(layer)s\" pentru: %(object)s"
+
+#: views/transformation_views.py:297
+msgid "Transformation created successfully."
+msgstr "Transformare creată cu succes."
+
+#: views/transformation_views.py:321
+msgid "Select"
+msgstr "Selecta"
+
+#: views/transformation_views.py:323
+#, python-format
+msgid "Select new layer \"%(layer)s\" transformation for: %(object)s"
+msgstr "Selectați noul strat de transformare \"%(layer)s\" pentru: %(object)s"
+
+#: workflow_actions.py:34
+msgid "Pages"
+msgstr "Pagini"
+
+#: workflow_actions.py:37
+msgid ""
+"Pages to which the new transformations will be added. Separate by commas "
+"and/or use a dashes for a ranges. Leave blank to select all pages."
+msgstr ""
+"Pagini la care se vor adăuga noile transformări. Separați prin virgule și / "
+"sau utilizați liniuțe pentru intervale. Lăsați necompletat pentru a selecta "
+"toate paginile."
+
+#: workflow_actions.py:44
+msgid "Transformation class"
+msgstr "Clasa de transformare"
+
+#: workflow_actions.py:49
+msgid "Type of transformation to add."
+msgstr "Tipul de transformare de adăugat."
+
+#: workflow_actions.py:54
+msgid "Transformation arguments"
+msgstr "Parametri de transformare"
+
+#: workflow_actions.py:63
+msgid "Add transformation"
+msgstr "Adăugați transformare"
+
+#: workflow_actions.py:86
+msgid "Objects"
+msgstr "Obiecte"

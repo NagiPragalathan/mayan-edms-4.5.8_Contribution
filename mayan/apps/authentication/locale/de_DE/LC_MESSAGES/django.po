@@ -1,0 +1,239 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# 847f3f05406324d125c568a4b098bddb, 2023
+# Dennis M. Pöpperl <free-software@dm-poepperl.de>, 2023
+# Jesaja Everling <jeverling@gmail.com>, 2023
+# Marvin Haschker <marvin@haschker.me>, 2023
+# Berny <berny@bernhard-marx.de>, 2023
+# Roberto Rosario, 2023
+# Mathias Behrle <mathiasb@m9s.biz>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Mathias Behrle <mathiasb@m9s.biz>, 2023\n"
+"Language-Team: German (Germany) (https://app.transifex.com/rosarior/teams/13584/de_DE/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_DE\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:36 events.py:6 permissions.py:6 settings.py:11
+msgid "Authentication"
+msgstr "Authentifizierung"
+
+#: events.py:10
+msgid "User impersonation ended"
+msgstr "Der Identitätswechsel wurde beendet"
+
+#: events.py:13
+msgid "User impersonation started"
+msgstr "Der Identitätswechsel wurde gestartet"
+
+#: events.py:16
+msgid "User logged in"
+msgstr "Benutzer ist angemeldet"
+
+#: events.py:19
+msgid "User logged out"
+msgstr "Benutzer ist abgemeldet"
+
+#: forms.py:31
+msgid "Remember me"
+msgstr "Angemeldet bleiben"
+
+#: forms.py:77
+msgid "Permanent"
+msgstr "Permanent"
+
+#: forms.py:78
+msgid "If selected, disables ending impersonation."
+msgstr ""
+"Wenn diese Option ausgewählt ist, wird das Beenden des Identitätswechsels "
+"deaktiviert."
+
+#: forms.py:89
+msgid "User"
+msgstr "Benutzer"
+
+#: links.py:35
+msgid "Logout"
+msgstr "Abmelden"
+
+#: links.py:40
+msgid "Change password"
+msgstr "Passwort ändern"
+
+#: links.py:45 views/impersonation_views.py:52
+msgid "Impersonate user"
+msgstr "Benutzeridentität annehmen"
+
+#: links.py:50
+msgid "Impersonate"
+msgstr "Identität annehmen"
+
+#: links.py:55 links.py:60
+msgid "Set password"
+msgstr "Passwort festlegen"
+
+#: permissions.py:10
+msgid "Impersonate users"
+msgstr "Benutzer imitieren"
+
+#: settings.py:17
+msgid ""
+"Remove the \"Forgot your password?\" link on the login form used to trigger "
+"the password reset."
+msgstr "Entfernt den \"Passwort vergessen?\"-Link auf dem Anmeldeformular."
+
+#: settings.py:25
+msgid "Dotted path to the backend used to process user authentication."
+msgstr "Punktierter Pfad zum Backend für die Benutzerauthentifizierung."
+
+#: settings.py:31
+msgid "Arguments for the AUTHENTICATION_BACKEND."
+msgstr "Argumente für das AUTHENTICATION_BACKEND."
+
+#: templates/authentication/app/viewport.html:13
+#, python-format
+msgid ""
+"\n"
+"                Impersonating user \"%(user)s\".\n"
+"            "
+msgstr ""
+"\n"
+"Identität des Benutzers \"%(user)s\" angenommen.\n"
+"   "
+
+#: templates/authentication/app/viewport.html:16
+msgid "Click here when finished"
+msgstr "Klicken Sie hier, wenn Sie fertig sind"
+
+#: templates/authentication/login.html:10
+msgid "Login"
+msgstr "Login"
+
+#: templates/authentication/login.html:21
+msgid "Sign in"
+msgstr "Anmelden"
+
+#: templates/authentication/login.html:62
+#: templates/authentication/login.html:72
+#: templates/authentication/login.html:86
+msgid "Save"
+msgstr "Speichern"
+
+#: templates/authentication/login.html:62
+#: templates/authentication/login.html:72
+#: templates/authentication/login.html:86
+#: templates/authentication/password_reset_confirm.html:29
+#: templates/authentication/password_reset_form.html:29
+msgid "Submit"
+msgstr "Absenden"
+
+#: templates/authentication/login.html:76
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: templates/authentication/login.html:98
+msgid "Forgot your password?"
+msgstr "Passwort vergessen?"
+
+#: templates/authentication/password_reset_complete.html:8
+#: templates/authentication/password_reset_confirm.html:8
+#: templates/authentication/password_reset_confirm.html:20
+#: templates/authentication/password_reset_done.html:8
+#: templates/authentication/password_reset_form.html:8
+#: templates/authentication/password_reset_form.html:20
+msgid "Password reset"
+msgstr "Passwort zurücksetzen"
+
+#: templates/authentication/password_reset_complete.html:15
+msgid "Password reset complete! Click the link below to login."
+msgstr ""
+"Passwortrücksetzung erfolgreich! Klicken Sie auf den Link um sich "
+"anzumelden."
+
+#: templates/authentication/password_reset_complete.html:17
+msgid "Login page"
+msgstr "Anmeldungsseite"
+
+#: templates/authentication/password_reset_done.html:15
+msgid "Password reset email sent!"
+msgstr "Mail für Passwortrücksetzung gesendet!"
+
+#: views/authentication_views.py:161
+msgid "Next"
+msgstr "Nächste Seite"
+
+#: views/authentication_views.py:167
+#, python-format
+msgid "Step %(step)d of %(total_steps)d: %(step_label)s"
+msgstr "Schritt %(step)d von %(total_steps)d: %(step_label)s"
+
+#: views/authentication_views.py:237
+msgid "Your password has been successfully changed."
+msgstr "Das Passwort wurde erfolgreich geändert."
+
+#: views/authentication_views.py:247
+msgid "Current user password change"
+msgstr "Passwortänderung für aktuellen Benutzer"
+
+#: views/authentication_views.py:259
+msgid "Changing the password is not allowed for this account."
+msgstr "Ein Passwortwechsel ist für diesen Account nicht erlaubt."
+
+#: views/authentication_views.py:331
+#, python-format
+msgid "Password change request performed on %(count)d user"
+msgstr "Passwortwechsel für %(count)d Benutzer durchgeführt"
+
+#: views/authentication_views.py:334
+#, python-format
+msgid "Password change request performed on %(count)d users"
+msgstr "Passwortwechsel für %(count)d Benutzer durchgeführt"
+
+#: views/authentication_views.py:351
+msgid ""
+"Changing the password of staff or super user accounts via the user interface"
+" is not allowed. Use administration tools to perform this operation."
+msgstr ""
+"Es ist nicht erlaubt das Passwort von Mitarbeitern oder Administratoren über"
+" die Benutzeroberfläche zu ändern. Benutzen Sie stattdessen "
+"Administrationswerkzeuge."
+
+#: views/authentication_views.py:365
+msgid "Change user password"
+msgid_plural "Change users passwords"
+msgstr[0] "Ändern Sie das Benutzerpasswort"
+msgstr[1] "Benutzerpasswörter ändern"
+
+#: views/authentication_views.py:376
+#, python-format
+msgid "Change password for user: %s"
+msgstr "Passwort ändern für Benutzer: %s"
+
+#: views/authentication_views.py:400
+#, python-format
+msgid "Successful password reset for user: %s."
+msgstr "Passwort für Benutzer %s erfolgreich zurückgesetzt."
+
+#: views/authentication_views.py:406
+#, python-format
+msgid "Error reseting password for user \"%(user)s\": %(error)s"
+msgstr ""
+"Fehler beim Zurücksetzen des Passworts für den Benutzer  \"%(user)s\": "
+"%(error)s"
+
+#: views/impersonation_views.py:81
+#, python-format
+msgid "Impersonate user: %s"
+msgstr "Benutzeridentität annehmen: %s"

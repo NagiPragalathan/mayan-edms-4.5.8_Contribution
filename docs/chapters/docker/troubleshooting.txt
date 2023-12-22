@@ -1,0 +1,15 @@
+===============
+Troubleshooting
+===============
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Troubleshooting:
+
+    - RabbitMQ is not persisting messages despite using Docker volumes
+    - `MAYAN_APT_INSTALLS` does not work for Archlinux with kernels > 4.14
+    - Error “unable to execute ‘x86_64-linux-gnu-gcc’: No such file or directory

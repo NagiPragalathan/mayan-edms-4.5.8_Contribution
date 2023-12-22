@@ -1,0 +1,31 @@
+Dependencies
+^^^^^^^^^^^^
+
+PyPDF2 is replaced with the original pypdf.
+
+
+Documents
+^^^^^^^^^
+
+The queue named `uploads` has been split into multiple new queues. Ensure
+
+Removal the unused signal ``signal_post_document_created``. Use the
+``signal_post_document_file_upload`` instead of Django's default
+``post_save`` signal for the ``Document`` sender.
+
+
+Sources
+^^^^^^^
+
+Removal of the email metadata attachment support. Removal of the email
+message attribute to metadata support. These are replaced with the new
+source metadata feature.
+
+
+Task manager
+^^^^^^^^^^^^
+
+Tools" queue was removed Each app is now responsible of defining
+its own queue for slow tasks.
+
+Removal of unused `sources_fast` queue.

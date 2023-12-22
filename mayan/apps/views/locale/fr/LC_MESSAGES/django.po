@@ -1,0 +1,283 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Benoît GROUSSET <benoit@grousset.xyz>, 2023
+# Christophe CHAUVET <christophe.chauvet@gmail.com>, 2023
+# Guillaume Trottier <gui.trottier@gmail.com>, 2023
+# Baptiste GAILLET <baptiste.gaillet@cstb.fr>, 2023
+# Frédéric Sheedy <sheedf@gmail.com>, 2023
+# Thierry Schott <DarkDare@users.noreply.github.com>, 2023
+# Yves Dubois <ydubois@gmail.com>, 2023
+# Roberto Rosario, 2023
+# 0041b687dd284925c1885ba94464aacd_fde037b <fc746b00d74cefecce9698255909a24f_28512>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:22+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: 0041b687dd284925c1885ba94464aacd_fde037b <fc746b00d74cefecce9698255909a24f_28512>, 2023\n"
+"Language-Team: French (https://app.transifex.com/rosarior/teams/13584/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: apps.py:20 settings.py:11
+msgid "Views"
+msgstr "Vues"
+
+#: forms.py:35
+msgid "Search"
+msgstr "Chercher"
+
+#: forms.py:53
+msgid "Selection"
+msgstr "Sélection"
+
+#: forms.py:233
+msgid "Label"
+msgstr "Libellé"
+
+#: forms.py:239
+msgid "Relationship"
+msgstr "Relation"
+
+#: generics.py:164
+msgid ""
+"Select entries to be removed. Hold Control to select multiple entries. Once "
+"the selection is complete, click the button below or double click the list "
+"to activate the action."
+msgstr ""
+"Sélectionnez les entrées à supprimer. Maintenez la commande enfoncée pour "
+"sélectionner plusieurs entrées. Une fois la sélection terminée, cliquez sur "
+"le bouton ci-dessous ou double-cliquez sur la liste pour activer l'action."
+
+#: generics.py:169
+msgid ""
+"Select entries to be added. Hold Control to select multiple entries. Once "
+"the selection is complete, click the button below or double click the list "
+"to activate the action."
+msgstr ""
+"Sélectionnez les entrées à ajouter. Maintenez la commande enfoncée pour "
+"sélectionner plusieurs entrées. Une fois la sélection terminée, cliquez sur "
+"le bouton ci-dessous ou double-cliquez sur la liste pour activer l'action."
+
+#: generics.py:323
+msgid "Add all"
+msgstr "Ajouter tout"
+
+#: generics.py:330
+msgid "Add"
+msgstr "Ajouter"
+
+#: generics.py:341
+msgid "Remove all"
+msgstr "Tout retirer"
+
+#: generics.py:348
+msgid "Remove"
+msgstr "Retirer"
+
+#: generics.py:579
+#, python-format
+msgid "Error updating relationship; %s"
+msgstr "Erreur de mise à jour de la relation ; %s"
+
+#: generics.py:586
+msgid "Relationships updated successfully"
+msgstr "Relations mises à jour avec succès"
+
+#: generics.py:649
+#, python-format
+msgid "Duplicate data error: %(error)s"
+msgstr "Erreur de données en double: %(error)s"
+
+#: generics.py:668
+#, python-format
+msgid "%(object)s not created, error: %(error)s"
+msgstr "%(object)s n'a pas été créé, erreur : %(error)s"
+
+#: generics.py:679
+#, python-format
+msgid "%(object)s created successfully."
+msgstr "%(object)s créé avec succès."
+
+#: generics.py:724
+#, python-format
+msgid "%(object)s not deleted, error: %(error)s."
+msgstr "%(object)s n'a pas été supprimé, erreur : %(error)s."
+
+#: generics.py:734
+#, python-format
+msgid "%(object)s deleted successfully."
+msgstr "%(object)s supprimé avec succès."
+
+#: generics.py:797
+#, python-format
+msgid "Error retrieving %(object)s; %(error)s"
+msgstr "Erreur pour accéder à %(object)s; %(error)s"
+
+#: generics.py:909
+#, python-format
+msgid "%(object)s not updated, error: %(error)s."
+msgstr "%(object)s n'a pas été mis à jour, erreur : %(error)s."
+
+#: generics.py:919
+#, python-format
+msgid "%(object)s updated successfully."
+msgstr "%(object)s mis à jour avec succès."
+
+#: generics.py:986
+#, python-format
+msgid "%(count)d objects deleted successfully."
+msgstr "Objets %(count)d objets supprimés avec succès."
+
+#: generics.py:987
+#, python-format
+msgid "\"%(object)s\" deleted successfully."
+msgstr "\"%(object)s\" supprimé avec succès."
+
+#: generics.py:988
+#, python-format
+msgid "%(count)d object deleted successfully."
+msgstr " %(count)d objet supprimé avec succès."
+
+#: generics.py:989
+#, python-format
+msgid "Delete %(count)d objects."
+msgstr "Supprimer %(count)d objets ."
+
+#: generics.py:990
+#, python-format
+msgid "Delete \"%(object)s\"."
+msgstr "Supprimez \"%(object)s\"."
+
+#: generics.py:991
+#, python-format
+msgid "Delete %(count)d object."
+msgstr "Supprimez l'objet %(count)d."
+
+#: settings.py:17
+msgid "The number objects that will be displayed per page."
+msgstr "Le nombre d'objets qui seront affichés par page."
+
+#: settings.py:23
+msgid "A string specifying the name to use for the paging parameter."
+msgstr ""
+"Une chaîne spécifiant le nom à utiliser pour le paramètre de pagination."
+
+#: settings.py:29
+msgid ""
+"Display a submit button and wait for the submit button to be pressed before "
+"processing up the upload."
+msgstr ""
+
+#: templates/views/app/foot.html:45
+msgid "Cancel upload"
+msgstr "Annuler le téléversement"
+
+#: templates/views/app/foot.html:46
+msgid "Are you sure you want to cancel this upload?"
+msgstr "Êtes-vous sûr que vous voulez annuler ce téléversement?"
+
+#: templates/views/app/foot.html:47
+msgid "Drop files or click here to upload files"
+msgstr "Déposez vos fichiers ou cliquez pour téléverser des fichiers."
+
+#: templates/views/app/foot.html:48
+msgid "Your browser does not support drag and drop file uploads."
+msgstr ""
+"Votre navigateur ne prend pas en charge le téléversement de fichiers par "
+"glisser-déposer."
+
+#: templates/views/app/foot.html:49
+msgid "Please use the fallback form below to upload your files."
+msgstr ""
+"Veuillez utiliser le formulaire alternatif ci-dessous pour téléverser vos "
+"fichiers."
+
+#: templates/views/app/foot.html:50
+msgid "Clear"
+msgstr "Effacer"
+
+#: templates/views/app/foot.html:51
+msgid "Server responded with {{statusCode}} code."
+msgstr "Le serveur a répondu avec le code {{statusCode}}."
+
+#: templatetags/views_tags.py:30
+msgid "Confirm delete"
+msgstr "Confirmer la suppression"
+
+#: templatetags/views_tags.py:35
+#, python-format
+msgid "Edit %s"
+msgstr "Modifié %s"
+
+#: templatetags/views_tags.py:38
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: templatetags/views_tags.py:42
+#, python-format
+msgid "Details for: %s"
+msgstr "Détails pour : %s"
+
+#: templatetags/views_tags.py:46
+#, python-format
+msgid "Edit: %s"
+msgstr "Modifier : %s"
+
+#: templatetags/views_tags.py:50
+msgid "Create"
+msgstr "Créer"
+
+#: view_mixins.py:426
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "Aucun %(verbose_name)s trouvé correspondant à la requête"
+
+#: view_mixins.py:452
+#, python-format
+msgid "Unable to perform operation on object %(instance)s; %(exception)s."
+msgstr ""
+"Impossible d'exécuter l'opération pour l'objet %(instance)s; %(exception)s."
+
+#: view_mixins.py:455
+#, python-format
+msgid "Operation performed on %(count)d objects."
+msgstr "Opération effectuée pour %(count)d objets ."
+
+#: view_mixins.py:456
+#, python-format
+msgid "Operation performed on %(object)s."
+msgstr "Opération effectuée pour %(object)s."
+
+#: view_mixins.py:457
+#, python-format
+msgid "Operation performed on %(count)d object."
+msgstr "Opération effectuée pour %(count)d objet."
+
+#: view_mixins.py:458
+#, python-format
+msgid "Perform operation on %(count)d objects."
+msgstr "Effectuez l'opération sur %(count)d objets."
+
+#: view_mixins.py:459
+#, python-format
+msgid "Perform operation on %(object)s."
+msgstr "Exécutez l'opération sur %(object)s."
+
+#: view_mixins.py:460
+#, python-format
+msgid "Perform operation on %(count)d object."
+msgstr "Effectuez l'opération sur un %(count)d objet."
+
+#: view_mixins.py:544
+msgid "Object"
+msgstr "Objet"

@@ -1,0 +1,551 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Roberto Rosario, 2023
+# molnars <szabolcs.molnar@gmail.com>, 2023
+# Dezső József <dejo60@gmail.com>, 2023
+# Csaba Tarjányi, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:22+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Csaba Tarjányi, 2023\n"
+"Language-Team: Hungarian (https://app.transifex.com/rosarior/teams/13584/hu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:56 events.py:6 links.py:152 links.py:159 menus.py:6 models.py:62
+#: queues.py:9 settings.py:13 views/source_views.py:285
+msgid "Sources"
+msgstr "Források"
+
+#: apps.py:104
+msgid "Create a document source"
+msgstr "Egy dokumentum forrás létrehozása"
+
+#: apps.py:106
+msgid ""
+"Document sources are the way in which new documents are feed to Mayan EDMS, "
+"create at least a web form source to be able to upload documents from a "
+"browser."
+msgstr ""
+"A dokumentumforrások az a mód, ahogyan az új dokumentumokat a Mayan EDMS-be "
+"táplálják, hozzon létre legalább egy webes űrlapforrást, hogy a "
+"dokumentumokat böngészőből lehessen feltölteni."
+
+#: apps.py:130
+msgid ""
+"Return the value of a specific source metadata for the document's latest "
+"file."
+msgstr ""
+"Egy adott forrás-metaadat értékét adja vissza a dokumentum legutóbbi "
+"fájljához."
+
+#: apps.py:132 apps.py:139
+msgid "Source metadata value of"
+msgstr "Forrás metaadat értéke"
+
+#: apps.py:138
+msgid "Return the value of a specific source metadata."
+msgstr "Egy adott forrás metaadat értékét adja vissza."
+
+#: apps.py:157
+msgid "Type"
+msgstr "Típus"
+
+#: events.py:10
+msgid "Source created"
+msgstr "Forrás létrehozva"
+
+#: events.py:13
+msgid "Source edited"
+msgstr "Forrás szerkesztve"
+
+#: forms.py:25
+msgid "An optional comment to explain the upload."
+msgstr "Opcionális megjegyzés a feltöltés magyarázatához."
+
+#: forms.py:26
+msgid "Comment"
+msgstr "Hozzászólás"
+
+#: forms.py:32
+msgid "Action"
+msgstr "Művelet"
+
+#: forms.py:33
+msgid ""
+"The action to take in regards to the pages of the new file being uploaded."
+msgstr "A feltöltendő új fájl oldalaival kapcsolatos teendők."
+
+#: forms.py:54
+msgid "The backend used to create the new source."
+msgstr "Az új forrás létrehozásához használt háttérrendszer."
+
+#: forms.py:55
+msgid "Backend"
+msgstr "Háttérrendszer"
+
+#: forms.py:71
+msgid "File"
+msgstr "Fájl"
+
+#: links.py:116
+msgid "New document"
+msgstr "Új dokumentum"
+
+#: links.py:122
+msgid "Upload new file"
+msgstr "Új fájl feltöltése"
+
+#: links.py:130
+msgid "Source metadata"
+msgstr "Forrás metaadatok"
+
+#: links.py:139
+msgid "Create source"
+msgstr "Forrás létrehozása"
+
+#: links.py:144
+msgid "Delete"
+msgstr "Törlés"
+
+#: links.py:148
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: links.py:165
+msgid "Test"
+msgstr "Tesztelés"
+
+#: models.py:19 models.py:61
+msgid "Source"
+msgstr "Forrás"
+
+#: models.py:23
+msgid "Document file"
+msgstr "Dokumentumfájl"
+
+#: models.py:26
+msgid "Name of the source metadata entry."
+msgstr "A forrás metaadat-bejegyzés neve."
+
+#: models.py:27
+msgid "Key"
+msgstr "Kulcs"
+
+#: models.py:31
+msgid "The actual value stored in the source metadata for the document."
+msgstr "A dokumentum forrás metaadataiban tárolt tényleges érték."
+
+#: models.py:33
+msgid "Value"
+msgstr "Érték"
+
+#: models.py:39 models.py:40
+msgid "Document file source metadata"
+msgstr "Dokumentumfájl forrás metaadatai"
+
+#: models.py:50
+msgid "A short text to describe this source."
+msgstr "Egy rövid szöveg a forrás leírására."
+
+#: models.py:51
+msgid "Label"
+msgstr "Cimke"
+
+#: models.py:54
+msgid "Enabled"
+msgstr "Engedélyezett"
+
+#: permissions.py:6
+msgid "Sources setup"
+msgstr "Források beállítása"
+
+#: permissions.py:12
+msgid "View document source metadata"
+msgstr "Dokumentumforrás metaadatainak megtekintése"
+
+#: permissions.py:18
+msgid "Create new document sources"
+msgstr "Új dokumentum források létrehozása"
+
+#: permissions.py:21
+msgid "Delete document sources"
+msgstr "Dokumentum források törlése"
+
+#: permissions.py:24
+msgid "Edit document sources"
+msgstr "Dokumentum források szerkesztése"
+
+#: permissions.py:27
+msgid "View existing document sources"
+msgstr "Létező dokumentum források megtekintése"
+
+#: queues.py:12
+msgid "Sources periodic"
+msgstr "Időszakos források"
+
+#: queues.py:17
+msgid "Handle source backend action background task"
+msgstr "Forrás-háttérművelet háttérrendszer kezelése"
+
+#: queues.py:21
+msgid "Check interval source"
+msgstr "Időszakos forrás ellenőrzése"
+
+#: serializers.py:13
+msgid "Default"
+msgstr "Alapéretelmezett"
+
+#: serializers.py:16
+msgid "Has default?"
+msgstr "Van alapértelmezése?"
+
+#: serializers.py:19
+msgid "Help text"
+msgstr "Súgó szöveg"
+
+#: serializers.py:22 serializers.py:41
+msgid "Name"
+msgstr "Név"
+
+#: serializers.py:25
+msgid "Required"
+msgstr "Kívánt"
+
+#: serializers.py:37 serializers.py:52
+msgid "Arguments"
+msgstr "Argumentumok"
+
+#: serializers.py:47
+msgid "Accept files"
+msgstr "Fájlok elfogadása"
+
+#: serializers.py:51
+msgid "Optional arguments for the action. Must be JSON formatted."
+msgstr "Választható argumentumok a művelethez. JSON formátumúnak kell lennie."
+
+#: serializers.py:56
+msgid "Confirmation"
+msgstr "Megerősítés"
+
+#: serializers.py:59
+msgid "Execute URL"
+msgstr "URL végrehajtás"
+
+#: serializers.py:62
+msgid "Interfaces"
+msgstr "Interfészek"
+
+#: serializers.py:66
+msgid "name"
+msgstr "név"
+
+#: serializers.py:69
+msgid "Permission"
+msgstr "Engedély"
+
+#: serializers.py:74
+msgid "URL"
+msgstr "URL"
+
+#: serializers.py:85
+msgid "Binary content for the new file."
+msgstr "Bináris tartalom az új fájlhoz."
+
+#: serializers.py:121
+msgid "Actions URL"
+msgstr "Műveletek URL-je"
+
+#: settings.py:20
+msgid "Arguments to use when creating source backends."
+msgstr "A forrás háttérrendszer létrehozásakor használandó argumentumok."
+
+#: settings.py:26
+msgid "Path to the Storage subclass used to store cached source image files."
+msgstr ""
+"A gyorsítótárazott forrás képfájlok tárolására használt Storage alosztály "
+"elérési útja."
+
+#: settings.py:34
+msgid "Arguments to pass to the SOURCES_SOURCE_CACHE_STORAGE_BACKEND."
+msgstr "Argumentumok a következőhöz: SOURCES_SOURCE_CACHE_STORAGE_BACKEND."
+
+#: source_backend_actions/interfaces.py:161
+msgid "Forms containing the upload data generated by the upload views."
+msgstr ""
+"A feltöltési nézetek által generált feltöltési adatokat tartalmazó űrlapok."
+
+#: source_backend_actions/mixins/arguments.py:13
+msgid "Document to which a new file will be uploaded to."
+msgstr "Dokumentum, amelybe új fájl kerül feltöltésre."
+
+#: source_backend_actions/mixins/arguments.py:19
+msgid ""
+"When enabled, a document stub is created immediately and returned. The "
+"document file is processed asynchronously. When disabled, the entire process"
+" happens asynchronously with no returned data. Enabling immediate mode, "
+"disables compressed file processing."
+msgstr ""
+"Ha engedélyezve van, a dokumentumcsonk azonnal létrejön és visszaküldésre "
+"kerül. A dokumentumfájl feldolgozása aszinkron módon történik. Ha ki van "
+"kapcsolva, az egész folyamat aszinkron történik, és nem kapunk vissza "
+"adatokat. Az azonnali üzemmód engedélyezése letiltja a tömörített fájl "
+"feldolgozását."
+
+#: source_backend_actions/mixins/arguments.py:41
+msgid "ID of the document to which a new file will be uploaded to."
+msgstr ""
+"Annak a dokumentumnak az azonosítója, amelybe új fájl kerül feltöltésre."
+
+#: source_backend_actions/mixins/arguments.py:62
+msgid "ID of the document type."
+msgstr "A dokumentumtípus azonosítója."
+
+#: source_backend_actions/mixins/arguments.py:75
+msgid "User that will feature as the actor in the events."
+msgstr "Felhasználó, aki az eseményekben szereplőként fog szerepelni."
+
+#: source_backend_actions/mixins/arguments.py:80
+msgid "ID of the user that will feature as the actor in the events."
+msgstr "Az események szereplőjeként fellépő felhasználó azonosítója."
+
+#: source_backends/base.py:101
+msgid "General"
+msgstr "Általános"
+
+#: source_backends/base.py:134
+msgid "Null backend"
+msgstr "Null háttérrendszer"
+
+#: source_backends/mixins.py:27
+msgid "Regular expression used to select which files to upload."
+msgstr "A feltöltendő fájlok kiválasztásához használt reguláris kifejezés."
+
+#: source_backends/mixins.py:30
+msgid "Include regular expression"
+msgstr "Befoglaló reguláris kifejezés"
+
+#: source_backends/mixins.py:37
+msgid "Regular expression used to exclude which files to upload."
+msgstr "A feltöltendő fájlok kizárására használt reguláris kifejezés."
+
+#: source_backends/mixins.py:40
+msgid "Exclude regular expression"
+msgstr "Kizáró reguláris kifejezés"
+
+#: source_backends/mixins.py:54
+msgid "Content selection"
+msgstr "Tartalom kiválasztása"
+
+#: storages.py:14
+msgid ""
+"Unable to initialize the staging folder file image storage. Check the "
+"settings {} and {} for formatting errors."
+msgstr ""
+"Nem lehet inicializálni az átmeneti mappa fájl képtárát. Ellenőrizze a "
+"beállításokat {} és {} formázási hibákért."
+
+#: storages.py:21
+msgid "Staging folder files"
+msgstr "Átmeneti mappa fájlok"
+
+#: tests/arguments.py:6
+msgid "Python file like object."
+msgstr "Python fájl-szerű objektum."
+
+#: tests/arguments.py:10
+msgid "ID of the shared uploaded file to be processed."
+msgstr "A feldolgozandó megosztott feltöltött fájl azonosítója."
+
+#: views/base.py:33
+msgid ""
+"There are no enabled sources that support this operation. Create a new one "
+"or enable and existing one."
+msgstr ""
+"Nincsenek olyan engedélyezett források, amelyek támogatják ezt a műveletet. "
+"Hozzon létre egy újat, vagy engedélyezze és egy meglévőt."
+
+#: views/document_file_views.py:43
+msgid ""
+"This means that the sources system did not record any information about the "
+"creation of the document file."
+msgstr ""
+"Ez azt jelenti, hogy a forrásrendszer nem rögzített semmilyen információt a "
+"dokumentumfájl létrehozásáról."
+
+#: views/document_file_views.py:47
+msgid "No source metadata available for this document file."
+msgstr "Ehhez a dokumentumfájlhoz nem állnak rendelkezésre forrás-metaadatok."
+
+#: views/document_file_views.py:51
+#, python-format
+msgid "Source metadata for: %(document_file)s"
+msgstr "Forrás metaadatai a következőhöz: %(document_file)s"
+
+#: views/document_file_views.py:96
+#, python-format
+msgid "Unable to upload new files for document \"%(document)s\". %(exception)s"
+msgstr ""
+"Nem lehet új fájlokat feltölteni a \"%(document)s\". %(exception)s "
+"dokumentumhoz"
+
+#: views/document_file_views.py:141
+#, python-format
+msgid "Error executing document file upload task; %(exception)s"
+msgstr ""
+"Hiba a dokumentumfájl feltöltési feladat végrehajtása során; %(exception)s"
+
+#: views/document_file_views.py:162
+msgid "New document file queued for upload and will be available shortly."
+msgstr ""
+"Új dokumentumfájl várakozik a feltöltésre, és hamarosan elérhető lesz."
+
+#: views/document_file_views.py:187
+#, python-format
+msgid "Upload a new file for document \"%(document)s\" from source: %(source)s"
+msgstr ""
+"Új fájl feltöltése a \"%(document)s\" dokumentumhoz a %(source)s forrásból"
+
+#: views/document_file_views.py:193
+msgid "Submit"
+msgstr "Beküldés"
+
+#: views/document_views.py:53
+#, python-format
+msgid "Error processing source document upload; %(exception)s"
+msgstr "Hiba a forrásdokumentum feltöltése feldolgozása során; %(exception)s"
+
+#: views/document_views.py:74
+msgid "New document queued for upload and will be available shortly."
+msgstr "Az új dokumentum feltöltésre vár, és hamarosan elérhető lesz."
+
+#: views/document_views.py:94
+#, python-format
+msgid "Upload a document of type \"%(document_type)s\" from source: %(source)s"
+msgstr ""
+"Töltsön fel egy \"%(document_type)s\" típusú dokumentumot a %(source)s "
+"forrásból"
+
+#: views/source_views.py:76
+#, python-format
+msgid "Unable to execute action; %s."
+msgstr "Nem lehet végrehajtani a műveletet; %s ."
+
+#: views/source_views.py:155
+#, python-format
+msgid "Error processing source action; %(exception)s"
+msgstr "Hiba a forrásművelet feldolgozása során; %(exception)s"
+
+#: views/source_views.py:170
+msgid "Source action executed successfully."
+msgstr "A forrásművelet sikeresen végrehajtva."
+
+#: views/source_views.py:179
+msgid "New source backend selection"
+msgstr "Új forrás háttérrendszer kiválasztás"
+
+#: views/source_views.py:207
+#, python-format
+msgid "Create a \"%s\" source"
+msgstr "\"%s\" forrás létrehozása"
+
+#: views/source_views.py:235
+#, python-format
+msgid "Delete the source: %s?"
+msgstr "Törölje a forrást: %s ?"
+
+#: views/source_views.py:251
+#, python-format
+msgid "Edit source: %s"
+msgstr "Forrás szerkesztése: %s"
+
+#: views/source_views.py:279
+msgid ""
+"Sources provide the means to upload documents. Some sources are interactive "
+"and require user input to operate. Others are automatic and run in the "
+"background without user intervention."
+msgstr ""
+"A források biztosítják a dokumentumok feltöltésének lehetőségét. Egyes "
+"források interaktívak, és működésükhöz felhasználói bevitel szükséges. Mások"
+" automatikusak, és a háttérben futnak felhasználói beavatkozás nélkül."
+
+#: views/source_views.py:284
+msgid "No sources available"
+msgstr "Nincs elérhető forrás"
+
+#: views/source_views.py:309
+#, python-format
+msgid ""
+"The selected action \"%s\" does not require confirmation and cannot be "
+"tested."
+msgstr ""
+"A \"%s\" kiválasztott művelet nem igényel megerősítést, és nem tesztelhető."
+
+#: views/source_views.py:331
+msgid ""
+"This will execute the source code even if the source is not enabled. Sources"
+" that delete content after downloading will not do so while being tested. "
+"Check the source's error log for information during testing. A successful "
+"test will clear the error log."
+msgstr ""
+"Ez akkor is végrehajtja a forráskódot, ha a forrás nincs engedélyezve. Azok "
+"a források, amelyek a letöltés után törölnek tartalmat, nem teszik ezt meg a"
+" tesztelés alatt. A tesztelés során ellenőrizze a forrás hibanaplóját. A "
+"sikeres teszt törli a hibanaplót."
+
+#: views/source_views.py:337
+#, python-format
+msgid "Trigger check for source \"%s\"?"
+msgstr "Eseményindító ellenőrzés a \"%s\" forráshoz?"
+
+#: views/source_views.py:353
+msgid ""
+"Source test queued. Check for newly created documents or for error log "
+"entries."
+msgstr ""
+"A forrásteszt sorban áll. Keressen újonnan létrehozott dokumentumokat vagy "
+"hibanaplóbejegyzéseket."
+
+#: wizard_steps.py:11
+msgid "Select document type"
+msgstr "Dokumentumtípus választás"
+
+#: wizards.py:68
+msgid ""
+"No interactive document sources have been defined or none have been enabled,"
+" create one before proceeding."
+msgstr ""
+"Nincs interaktív dokumentumforrás definiálva, vagy egyik sincs engedélyezve,"
+" hozzon létre egyet a folytatás előtt."
+
+#: wizards.py:85
+#, python-format
+msgid "Step %(step)d of %(total_steps)d: %(step_label)s"
+msgstr "%(total_steps)d lépés a%(step)d-ből: %(step_label)s"
+
+#: wizards.py:91
+msgid "Document upload wizard"
+msgstr "Dokumentumfeltöltés varázsló"
+
+#: wizards.py:100
+msgid "First"
+msgstr "Első"
+
+#: wizards.py:106
+msgid "Previous"
+msgstr "Előző"
+
+#: wizards.py:113
+msgid "Next"
+msgstr "Következő"

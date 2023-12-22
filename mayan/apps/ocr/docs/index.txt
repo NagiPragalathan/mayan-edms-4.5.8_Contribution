@@ -1,0 +1,38 @@
+.. _apps-ocr:
+
+
+===
+OCR
+===
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Articles:
+
+    - What is OCR?
+    - Per document type OCR setup
+    - OCR backends
+    - OCR backend arguments
+
+    Tutorials:
+
+    - Detecting and tagging documents that contain social security numbers in the OCR
+
+    Troubleshooting:
+
+    - The OCR does not support my language
+
+
+- :doc:`backends`
+- :doc:`troubleshooting`
+
+
+.. toctree::
+    :hidden:
+
+    backends
+    troubleshooting

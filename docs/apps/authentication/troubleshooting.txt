@@ -1,0 +1,16 @@
+===============
+Troubleshooting
+===============
+
+.. _troubleshooting-admin-password:
+
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Troubleshooting:
+
+    - Admin password reset

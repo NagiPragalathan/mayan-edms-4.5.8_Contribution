@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Giovanni Tricarico <gtricarico92@gmail.com>, 2023
+# Roberto Rosario, 2023
+# Marco Camplese <marco.camplese.mc@gmail.com>, 2023
+# Pierpaolo Baldan <pierpaolo.baldan@gmail.com>, 2023
+# Daniele Bortoluzzi <daniele@elkos.it>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Daniele Bortoluzzi <daniele@elkos.it>, 2023\n"
+"Language-Team: Italian (https://app.transifex.com/rosarior/teams/13584/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: apps.py:37 events.py:6 links.py:37 links.py:46 models.py:43
+#: permissions.py:6 templates/announcements/announcements.html:8 views.py:126
+msgid "Announcements"
+msgstr "Avvisi"
+
+#: apps.py:79 apps.py:83
+msgid "None"
+msgstr "Nessuno"
+
+#: events.py:10
+msgid "Announcement created"
+msgstr "Avviso creato"
+
+#: events.py:13
+msgid "Announcement edited"
+msgstr "Avviso modificato"
+
+#: links.py:18 views.py:34
+msgid "Create announcement"
+msgstr "Crea avviso"
+
+#: links.py:22 links.py:28
+msgid "Delete"
+msgstr "Cancella"
+
+#: links.py:33
+msgid "Edit"
+msgstr "Modifica"
+
+#: models.py:19
+msgid "Short description of this announcement."
+msgstr "Breve descrizione di questo avviso."
+
+#: models.py:20
+msgid "Label"
+msgstr "Etichetta"
+
+#: models.py:23
+msgid "The actual text to be displayed."
+msgstr "Il testo che verrà visualizzato."
+
+#: models.py:24
+msgid "Text"
+msgstr "Testo"
+
+#: models.py:26
+msgid "Enabled"
+msgstr "Abilitato"
+
+#: models.py:29
+msgid "Date and time after which this announcement will be displayed."
+msgstr "Data e ora a partire dalla quale verrà visualizzato l'avviso."
+
+#: models.py:30
+msgid "Start date time"
+msgstr "Data e ora inizio"
+
+#: models.py:34
+msgid "Date and time until when this announcement is to be displayed."
+msgstr "Data e ora di fine visualizzazione dell'avviso."
+
+#: models.py:35
+msgid "End date time"
+msgstr "Data e ora fine"
+
+#: models.py:42
+msgid "Announcement"
+msgstr "Avviso"
+
+#: permissions.py:10
+msgid "Create announcements"
+msgstr "Crea avvisi"
+
+#: permissions.py:13
+msgid "Delete announcements"
+msgstr "Elimina avvisi"
+
+#: permissions.py:16
+msgid "Edit announcements"
+msgstr "Modifica avvisi"
+
+#: permissions.py:19
+msgid "View announcements"
+msgstr "Vedi avvisi"
+
+#: serializers.py:12
+msgid "URL"
+msgstr "URL"
+
+#: views.py:45
+#, python-format
+msgid "Error deleting announcement \"%(instance)s\"; %(exception)s"
+msgstr "Errore nella cancellazione dell'avviso \"%(instance)s\"; %(exception)s"
+
+#: views.py:54
+#, python-format
+msgid "%(count)d announcements deleted successfully."
+msgstr "%(count)d avvisi cancellati correttamente."
+
+#: views.py:57
+#, python-format
+msgid "Announcement \"%(object)s\" deleted successfully."
+msgstr "Avviso \"%(object)s\" cancellato correttamente."
+
+#: views.py:60
+#, python-format
+msgid "%(count)d announcement deleted successfully."
+msgstr "%(count)d avviso cancellato correttamente."
+
+#: views.py:62
+#, python-format
+msgid "Delete the %(count)d selected announcements."
+msgstr "Elimina %(count)d avvisi selezionati."
+
+#: views.py:63
+#, python-format
+msgid "Delete announcement: %(object)s."
+msgstr "Cancella avviso: %(object)s."
+
+#: views.py:64
+#, python-format
+msgid "Delete the %(count)d selected announcement."
+msgstr "Elimina %(count)d avviso selezionato."
+
+#: views.py:98
+#, python-format
+msgid "Edit announcement: %s"
+msgstr "Modifica avviso: %s"
+
+#: views.py:121
+msgid ""
+"Announcements are displayed in the login view. You can use announcements to "
+"convery information about your organzation, announcements or usage "
+"guidelines for your users."
+msgstr ""
+"Gli avvisi sono visualizzati nella schermata di login. Puoi usare gli avvisi"
+" per comunicare informazioni sulla tua azienda, annunci vari o linee guida "
+"di utilizzo per gli utenti."
+
+#: views.py:125
+msgid "No announcements available"
+msgstr "Nessun avviso disponibile"

@@ -1,0 +1,354 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Nurgül Özkan <nurgulozkan@hotmail.com>, 2023
+# Caner Başaran <basaran.caner@gmail.com>, 2023
+# emreunal <bywant@gmail.com>, 2023
+# Bedreddin Şahbaz, 2023
+# serhatcan77 <serhat_can@yahoo.com>, 2023
+# Emine Öztürk <oemine075@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Emine Öztürk <oemine075@gmail.com>, 2023\n"
+"Language-Team: Turkish (Turkey) (https://app.transifex.com/rosarior/teams/13584/tr_TR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr_TR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: apps.py:27
+msgid "Dynamic search"
+msgstr "Dinamik arama"
+
+#: forms.py:19
+msgid "Match all"
+msgstr "Tümü eşleşsin"
+
+#: forms.py:20
+msgid "Return only results that match all fields."
+msgstr "Yalnızca tüm alanlarla eşleşen sonuçları döndürür."
+
+#: forms.py:52
+msgid "Search logic"
+msgstr ""
+
+#: forms.py:72 templates/dynamic_search/search_box.html:43
+#: templates/dynamic_search/search_box_toolbar.html:25
+msgid "Search terms"
+msgstr "Arama terimleri"
+
+#: links.py:20
+msgid "Basic search"
+msgstr "Temel arama"
+
+#: links.py:24 templates/dynamic_search/search_box.html:49
+#: templates/dynamic_search/search_box_toolbar.html:33
+msgid "Advanced search"
+msgstr "Gelişmiş Arama"
+
+#: links.py:28
+msgid "Search again"
+msgstr "Tekrar arama"
+
+#: links.py:33 views.py:62
+msgid "Reindex search backend"
+msgstr "Yeniden dizin arama backend"
+
+#: literals.py:21
+msgid "Yes"
+msgstr "Evet"
+
+#: literals.py:22
+msgid "No"
+msgstr "Hayır"
+
+#: permissions.py:6 queues.py:7 settings.py:14
+#: templates/dynamic_search/search_box.html:47
+#: templates/dynamic_search/search_box_toolbar.html:30 views.py:108
+msgid "Search"
+msgstr "Arama"
+
+#: permissions.py:10
+msgid "Execute search tools"
+msgstr "Arama araçlarını yürütme"
+
+#: queues.py:10
+msgid "Search slow"
+msgstr "Yavaş arama"
+
+#: queues.py:15
+msgid "Remove a model instance from the search engine."
+msgstr "Bir model örneğini arama motorundan kaldırın."
+
+#: queues.py:20
+msgid "Index a model instance to the search engine."
+msgstr "Bir model örneğini arama motoruna dizinleyin."
+
+#: queues.py:25
+msgid "Index all instances of a search model to the search engine."
+msgstr "Bir arama modelinin tüm örneklerini arama motoruna dizinleyin."
+
+#: queues.py:31
+msgid ""
+"Index all related instances of a search model after a many to many event."
+msgstr ""
+"Bir arama modelinin ilgili tüm örneklerini çok çok olaydan sonra dizine "
+"ekleyin."
+
+#: queues.py:39
+msgid "Reset the search backend indices and index all instances again."
+msgstr ""
+"Arama backend dizinlerini sıfırlayın ve tüm örnekleri yeniden dizinleyin."
+
+#: scoped_queries.py:352
+msgid ""
+"Search results exceed limit setting. Results might not be reliable if "
+"multiple scopes are used. Narrow down the search criteria or increase the "
+"value of the results limit setting."
+msgstr ""
+"Arama sonuçları limit ayarını aşıyor. Birden çok kapsam kullanılıyorsa "
+"sonuçlar güvenilir olmayabilir. Arama ölçütlerini daraltın veya sonuç sınırı"
+" ayarının değerini artırın."
+
+#: scoped_queries.py:368
+#, python-format
+msgid ""
+"Search backend error. Verify that the search service is available and that "
+"the search syntax is valid for the active search backend; %s"
+msgstr ""
+"Backend arama  hatası. Arama hizmetinin kullanılabilir olduğunu ve etkin "
+"backend arama için arama sözdiziminin geçerli olduğunu doğrulayın; %s"
+
+#: search_fields.py:311
+msgid "Any"
+msgstr "Hiç"
+
+#: search_models.py:44
+#, python-format
+msgid "Unknown search model `%s`."
+msgstr "Bilinmeyen arama modeli `%s`."
+
+#: search_models.py:114
+msgid "All content"
+msgstr "Bütün içerik"
+
+#: search_query_types.py:167
+msgid "Exact"
+msgstr "Tam"
+
+#: search_query_types.py:173
+msgid "Fuzzy"
+msgstr "Bulanık"
+
+#: search_query_types.py:179
+msgid "Greater than"
+msgstr "Daha büyük"
+
+#: search_query_types.py:185
+msgid "Greater than or equal"
+msgstr "Eşit veya daha büyük"
+
+#: search_query_types.py:191
+msgid "Less than"
+msgstr "Daha az"
+
+#: search_query_types.py:197
+msgid "Less than or equal"
+msgstr "Eşit veya daha az"
+
+#: search_query_types.py:203
+msgid "Partial"
+msgstr "Parçalı"
+
+#: search_query_types.py:209
+msgid "Range"
+msgstr "Aralık"
+
+#: search_query_types.py:244
+msgid "Range exclusive"
+msgstr "Özel aralık"
+
+#: search_query_types.py:250
+msgid "Regular expression"
+msgstr "Düzenli ifade"
+
+#: serializers.py:14
+msgid "Field name"
+msgstr "Alan adı"
+
+#: serializers.py:17
+msgid "Label"
+msgstr "Etiket"
+
+#: serializers.py:23
+msgid "App label"
+msgstr "Uygulama etiketi"
+
+#: serializers.py:26
+msgid "Model name"
+msgstr "Model adı"
+
+#: serializers.py:29
+msgid "Primary key"
+msgstr "Birincil anahtar"
+
+#: serializers.py:32
+msgid "Search fields"
+msgstr "Arama alanları"
+
+#: settings.py:20
+msgid "Full path to the backend to be used to handle the search."
+msgstr "Aramayı işlemek için kullanılacak arka uca giden tam yol."
+
+#: settings.py:27
+msgid ""
+"Arguments to pass to the search backend. For example values to change the "
+"behavior, host names, or authentication arguments."
+msgstr ""
+"Arama arka ucuna iletilecek argümanlar. Örneğin davranışı, ana bilgisayar "
+"adlarını veya kimlik doğrulama bağımsız değişkenlerini değiştirmek için "
+"kullanılan değerler."
+
+#: settings.py:36
+msgid "The search operator to use when none is specified."
+msgstr "Hiçbiri belirtilmediğinde kullanılacak arama operatörü."
+
+#: settings.py:43
+msgid ""
+"Disables the single term bar search leaving only the advanced search button."
+msgstr ""
+"Tek bir terim ile arama barını devre dışı bırakarak geriye sadece gelişmiş "
+"arama butonunu bırakır."
+
+#: settings.py:51
+msgid "Amount of objects to process when performing bulk indexing."
+msgstr "Toplu dizin oluşturma gerçekleştirilirken işlenecek nesne miktarı."
+
+#: settings.py:57
+msgid "Sets the default state of the \"Match all\" checkbox."
+msgstr "\"Tümünü eşleştir\" onay kutusunun varsayılan durumunu ayarlar."
+
+#: settings.py:63
+msgid ""
+"Maximum number of search results to fetch and display per search query unit."
+msgstr ""
+"Arama sorgusu birimi başına getirilecek ve görüntülenecek maksimum arama "
+"sonucu sayısı."
+
+#: settings.py:69
+msgid "Maximum number of search results to fetch and display."
+msgstr "Getirilecek ve görüntülenecek maksimum arama sonucu sayısı."
+
+#: templates/dynamic_search/app/list_toolbar.html:18
+msgid "Filter terms"
+msgstr "Terimleri filtrele"
+
+#: templates/dynamic_search/search_box.html:49
+#: templates/dynamic_search/search_box_toolbar.html:33
+msgid "Advanced"
+msgstr "İleri düzey"
+
+#: value_transformations.py:37
+msgid "Replace accents"
+msgstr "Aksanları değiştir"
+
+#: value_transformations.py:49
+msgid "@ sign replace"
+msgstr "@ işareti değiştir"
+
+#: value_transformations.py:59
+msgid "Case fold"
+msgstr "Kasa katlama"
+
+#: value_transformations.py:69 value_transformations.py:79
+msgid "Hyphen replace"
+msgstr "Tire değiştirme"
+
+#: value_transformations.py:89
+msgid "To boolean"
+msgstr "Boolean"
+
+#: value_transformations.py:102
+msgid "To date time"
+msgstr "Tarih saate"
+
+#: value_transformations.py:124
+msgid "Date time ISO format"
+msgstr "Tarih saat ISO formatı"
+
+#: value_transformations.py:134
+msgid "Date time simple format"
+msgstr "Tarih saat basit biçim"
+
+#: value_transformations.py:144
+msgid "Date time timestamp format"
+msgstr "Tarih saat zaman damgası biçimi"
+
+#: value_transformations.py:158
+msgid "To integer"
+msgstr "Tamsayıya"
+
+#: value_transformations.py:168
+msgid "To string"
+msgstr "Dize için"
+
+#: views.py:59
+msgid "This tool erases and populates the search backend's internal index."
+msgstr "Bu araç, arama arka uçları iç dizinini siler ve doldurur."
+
+#: views.py:69
+msgid ""
+"This tool is required only for some search backends. Search results will be "
+"affected while the backend is being reindexed."
+msgstr ""
+"Bu araç yalnızca bazı arama backendleri için gereklidir. Backend yeniden "
+"dizine eklenirken arama sonuçları etkilenecektir."
+
+#: views.py:75
+msgid ""
+"The currently selected search backend does not support or requires "
+"reindexing."
+msgstr ""
+"Seçili olan arama backend'i, yeniden dizine eklemeyi desteklemez veya "
+"gerektirmez."
+
+#: views.py:88
+msgid "Search backend reindexing queued."
+msgstr "Backend arama yeniden dizine alındı."
+
+#: views.py:110
+#, python-format
+msgid "Search for: %s"
+msgstr "Şunun için ara: %s"
+
+#: views.py:139
+#, python-format
+msgid "Advanced search for: %s"
+msgstr "İçin gelişmiş arama: %s"
+
+#: views.py:174
+msgid "Try again using different terms. "
+msgstr "Başka terimler kullanarak tekrar dene."
+
+#: views.py:176
+msgid "No search results"
+msgstr "Arama sonucu bulunamadı"
+
+#: views.py:179
+#, python-format
+msgid "Search query: %s"
+msgstr "Arama sorgusu: %s"
+
+#: views.py:181
+#, python-format
+msgid "Search results for: %s"
+msgstr "%s Için arama sonuçları: "

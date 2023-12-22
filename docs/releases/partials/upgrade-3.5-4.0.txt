@@ -1,0 +1,5 @@
+Docker Compose
+^^^^^^^^^^^^^^
+
+Check the :doc:`Docker upgrading</chapters/docker/upgrading>` chapter for
+the complete upgrade process.

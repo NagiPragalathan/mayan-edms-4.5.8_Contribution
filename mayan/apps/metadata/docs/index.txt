@@ -1,0 +1,27 @@
+.. _apps-metadata:
+
+
+========
+Metadata
+========
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Articles:
+
+    - What is document metadata?
+
+    Tutorials:
+
+    - Using document metadata in templates
+    - Using web links for prescription active ingredient lookups
+    - Custom date metadata validator
+
+    Troubleshooting:
+
+    - At upload, users can access tags, cabinets, and metadata they for which they don’t have permissions
+    - Workflow condition doesn’t work with math comparisons

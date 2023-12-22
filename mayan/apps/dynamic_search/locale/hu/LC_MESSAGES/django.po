@@ -1,0 +1,356 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Roberto Rosario, 2023
+# molnars <szabolcs.molnar@gmail.com>, 2023
+# Csaba Tarjányi, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Csaba Tarjányi, 2023\n"
+"Language-Team: Hungarian (https://app.transifex.com/rosarior/teams/13584/hu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:27
+msgid "Dynamic search"
+msgstr "Dinamikus keresés"
+
+#: forms.py:19
+msgid "Match all"
+msgstr "Mind összeegyeztetése"
+
+#: forms.py:20
+msgid "Return only results that match all fields."
+msgstr ""
+"Csak azokat az eredményeket adja vissza, amelyek megfelelnek az összes "
+"mezőnek."
+
+#: forms.py:52
+msgid "Search logic"
+msgstr "Keresési logika"
+
+#: forms.py:72 templates/dynamic_search/search_box.html:43
+#: templates/dynamic_search/search_box_toolbar.html:25
+msgid "Search terms"
+msgstr "keresési feltételek"
+
+#: links.py:20
+msgid "Basic search"
+msgstr "Egyszerű keresés"
+
+#: links.py:24 templates/dynamic_search/search_box.html:49
+#: templates/dynamic_search/search_box_toolbar.html:33
+msgid "Advanced search"
+msgstr "Részletes keresés"
+
+#: links.py:28
+msgid "Search again"
+msgstr "Újra keresés"
+
+#: links.py:33 views.py:62
+msgid "Reindex search backend"
+msgstr "Reindex keresési háttérrendszer"
+
+#: literals.py:21
+msgid "Yes"
+msgstr "Igen"
+
+#: literals.py:22
+msgid "No"
+msgstr "Nem"
+
+#: permissions.py:6 queues.py:7 settings.py:14
+#: templates/dynamic_search/search_box.html:47
+#: templates/dynamic_search/search_box_toolbar.html:30 views.py:108
+msgid "Search"
+msgstr "Keresés"
+
+#: permissions.py:10
+msgid "Execute search tools"
+msgstr "Hajtsa végre a keresőeszközöket"
+
+#: queues.py:10
+msgid "Search slow"
+msgstr "Lassú keresés"
+
+#: queues.py:15
+msgid "Remove a model instance from the search engine."
+msgstr "Távolítson el egy modellpéldányt a keresőmotorból."
+
+#: queues.py:20
+msgid "Index a model instance to the search engine."
+msgstr "Indexeljen egy modellpéldányt a keresőmotorba."
+
+#: queues.py:25
+msgid "Index all instances of a search model to the search engine."
+msgstr "Indexelje a keresőmodell összes példányát a keresőmotorba."
+
+#: queues.py:31
+msgid ""
+"Index all related instances of a search model after a many to many event."
+msgstr ""
+"Indexelje a keresési modell összes kapcsolódó példányát a túl sok esemény "
+"után."
+
+#: queues.py:39
+msgid "Reset the search backend indices and index all instances again."
+msgstr ""
+"Állítsa vissza a keresési háttértár indexeit, és indexelje újra az összes "
+"példányt."
+
+#: scoped_queries.py:352
+msgid ""
+"Search results exceed limit setting. Results might not be reliable if "
+"multiple scopes are used. Narrow down the search criteria or increase the "
+"value of the results limit setting."
+msgstr ""
+"A keresési eredmények túllépik a korlát beállítását. Előfordulhat, hogy az "
+"eredmények nem megbízhatóak, ha több hatókört használnak. Szűkítse a "
+"keresési feltételeket, vagy növelje a találati korlát beállításának értékét."
+
+#: scoped_queries.py:368
+#, python-format
+msgid ""
+"Search backend error. Verify that the search service is available and that "
+"the search syntax is valid for the active search backend; %s"
+msgstr ""
+"Keresési háttérrendszer hiba. Ellenőrizze, hogy a keresési szolgáltatás "
+"elérhető-e, és hogy a keresési szintaxis megfelelő-e az aktív keresési "
+"háttérprogramhoz; %s"
+
+#: search_fields.py:311
+msgid "Any"
+msgstr "Bármely"
+
+#: search_models.py:44
+#, python-format
+msgid "Unknown search model `%s`."
+msgstr "Ismeretlen keresési modell ` %s `."
+
+#: search_models.py:114
+msgid "All content"
+msgstr "Minden tartalom"
+
+#: search_query_types.py:167
+msgid "Exact"
+msgstr "Pontos"
+
+#: search_query_types.py:173
+msgid "Fuzzy"
+msgstr "Laza"
+
+#: search_query_types.py:179
+msgid "Greater than"
+msgstr "Nagyobb, mint"
+
+#: search_query_types.py:185
+msgid "Greater than or equal"
+msgstr "Nagyobb vagy egyenlő"
+
+#: search_query_types.py:191
+msgid "Less than"
+msgstr "Kevesebb, mint"
+
+#: search_query_types.py:197
+msgid "Less than or equal"
+msgstr "Kisebb vagy egyenlő"
+
+#: search_query_types.py:203
+msgid "Partial"
+msgstr "Részleges"
+
+#: search_query_types.py:209
+msgid "Range"
+msgstr "Tartomány"
+
+#: search_query_types.py:244
+msgid "Range exclusive"
+msgstr "Exkluzív tartomány"
+
+#: search_query_types.py:250
+msgid "Regular expression"
+msgstr "Reguláris kifejezés"
+
+#: serializers.py:14
+msgid "Field name"
+msgstr "Mezőnév"
+
+#: serializers.py:17
+msgid "Label"
+msgstr "Cimke"
+
+#: serializers.py:23
+msgid "App label"
+msgstr "Alkalmazáscímke"
+
+#: serializers.py:26
+msgid "Model name"
+msgstr "Modell név"
+
+#: serializers.py:29
+msgid "Primary key"
+msgstr "Elsődleges kulcs"
+
+#: serializers.py:32
+msgid "Search fields"
+msgstr "Keresőmezők"
+
+#: settings.py:20
+msgid "Full path to the backend to be used to handle the search."
+msgstr "A kereséshez használt háttérrendszer teljes elérési útja."
+
+#: settings.py:27
+msgid ""
+"Arguments to pass to the search backend. For example values to change the "
+"behavior, host names, or authentication arguments."
+msgstr ""
+"A keresési háttérrendszernek átadandó argumentumok. Például értékek, amelyek"
+" megváltoztatják a viselkedést, a gazdagépneveket vagy a hitelesítési "
+"argumentumokat."
+
+#: settings.py:36
+msgid "The search operator to use when none is specified."
+msgstr "Ha nincs megadva, akkor használandó keresési operátor."
+
+#: settings.py:43
+msgid ""
+"Disables the single term bar search leaving only the advanced search button."
+msgstr ""
+"Letiltja az egyszavas keresést, csak a speciális keresés gombot hagyja meg."
+
+#: settings.py:51
+msgid "Amount of objects to process when performing bulk indexing."
+msgstr "A tömeges indexelés végrehajtásakor feldolgozandó objektumok száma."
+
+#: settings.py:57
+msgid "Sets the default state of the \"Match all\" checkbox."
+msgstr ""
+"Beállítja az „Összes egyezés” jelölőnégyzet alapértelmezett állapotát."
+
+#: settings.py:63
+msgid ""
+"Maximum number of search results to fetch and display per search query unit."
+msgstr ""
+"A lekérhető és megjeleníthető keresési eredmények maximális száma keresési "
+"lekérdezési egységenként."
+
+#: settings.py:69
+msgid "Maximum number of search results to fetch and display."
+msgstr "A lekérhető és megjeleníthető keresési eredmények maximális száma."
+
+#: templates/dynamic_search/app/list_toolbar.html:18
+msgid "Filter terms"
+msgstr "Szűrési kifejezések"
+
+#: templates/dynamic_search/search_box.html:49
+#: templates/dynamic_search/search_box_toolbar.html:33
+msgid "Advanced"
+msgstr "Haladó"
+
+#: value_transformations.py:37
+msgid "Replace accents"
+msgstr "Cserélje ki az ékezeteket"
+
+#: value_transformations.py:49
+msgid "@ sign replace"
+msgstr "@ jel csere"
+
+#: value_transformations.py:59
+msgid "Case fold"
+msgstr "Kisbetűssé alakítás"
+
+#: value_transformations.py:69 value_transformations.py:79
+msgid "Hyphen replace"
+msgstr "Kötőjel csere"
+
+#: value_transformations.py:89
+msgid "To boolean"
+msgstr "Logikai érték"
+
+#: value_transformations.py:102
+msgid "To date time"
+msgstr "Dátum és idő"
+
+#: value_transformations.py:124
+msgid "Date time ISO format"
+msgstr "Dátum és idő ISO formátum"
+
+#: value_transformations.py:134
+msgid "Date time simple format"
+msgstr "Dátum és idő egyszerű formátum"
+
+#: value_transformations.py:144
+msgid "Date time timestamp format"
+msgstr "Dátum, idő, időbélyeg formátuma"
+
+#: value_transformations.py:158
+msgid "To integer"
+msgstr "Egész szám"
+
+#: value_transformations.py:168
+msgid "To string"
+msgstr "Karakterlánc"
+
+#: views.py:59
+msgid "This tool erases and populates the search backend's internal index."
+msgstr ""
+"Ez az eszköz törli és feltölti a keresési háttérrendszer belső indexét."
+
+#: views.py:69
+msgid ""
+"This tool is required only for some search backends. Search results will be "
+"affected while the backend is being reindexed."
+msgstr ""
+"Ez az eszköz csak bizonyos keresési háttérrendszerekhez szükséges. A "
+"háttérrendszer újraindexelése hatással lesz a keresési eredményekre."
+
+#: views.py:75
+msgid ""
+"The currently selected search backend does not support or requires "
+"reindexing."
+msgstr ""
+"A jelenleg kiválasztott keresési háttérrendszer nem támogatott, vagy "
+"újraindexelést igényel."
+
+#: views.py:88
+msgid "Search backend reindexing queued."
+msgstr "A keresési háttérrendszer újraindexelése sorban áll."
+
+#: views.py:110
+#, python-format
+msgid "Search for: %s"
+msgstr "Keresés: %s"
+
+#: views.py:139
+#, python-format
+msgid "Advanced search for: %s"
+msgstr "Részletes keresés a következőre: %s"
+
+#: views.py:174
+msgid "Try again using different terms. "
+msgstr "Próbálkozzon újra más kifejezésekkel."
+
+#: views.py:176
+msgid "No search results"
+msgstr "Nincs találat"
+
+#: views.py:179
+#, python-format
+msgid "Search query: %s"
+msgstr "Keresési lekérdezés: %s"
+
+#: views.py:181
+#, python-format
+msgid "Search results for: %s"
+msgstr "Keresési eredmények a következőre: %s"

@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Marvin Haschker <marvin@haschker.me>, 2023
+# Berny <berny@bernhard-marx.de>, 2023
+# Felix <felix.com@gmx.com>, 2023
+# Mathias Behrle <mathiasb@m9s.biz>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Mathias Behrle <mathiasb@m9s.biz>, 2023\n"
+"Language-Team: German (Austria) (https://app.transifex.com/rosarior/teams/13584/de_AT/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_AT\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:16
+msgid "Databases"
+msgstr "Datenbanken"
+
+#: classes.py:80
+msgid "Model fields"
+msgstr "Modellfelder"
+
+#: classes.py:128
+msgid "Model related fields"
+msgstr "Verknüpfte Felder des Modells"
+
+#: classes.py:133
+msgid "Model properties"
+msgstr "Modelleigenschaften"
+
+#: classes.py:138
+msgid "Model reverse fields"
+msgstr "Modellfelder für Rückverweis"
+
+#: literals.py:10
+msgid ""
+"Your database backend is set to use SQLite. SQLite should only be used for "
+"development and testing, not for production."
+msgstr ""
+"Sie benutzen SQLite als Datenbank-Backend. SQLite sollte nur für "
+"Entwicklungs- und Testzwecke verwendet werden, jedoch nicht in "
+"Produktivumgebungen."
+
+#: model_mixins.py:26
+msgid ""
+"The condition that will determine if this object is executed or not. "
+"Conditions that do not return any value, that return the Python logical "
+"None, or an empty string ('') are considered to be logical false, any other "
+"value is considered to be the logical true."
+msgstr ""
+"Die Bedingung, die entscheidet, ob dieses Objekt ausgeführt wird. "
+"Bedingungen, die keinen Wert oder den logischen Pythonwert None oder eine "
+"leere Zeichenkette ('') zurückliefern, werden als logisch Falsch (false) "
+"behandelt, jeder andere Wert wird als logisch Wahr (true) angesehen."
+
+#: model_mixins.py:31
+msgid "Condition"
+msgstr "Bedingung"
+
+#: model_mixins.py:52
+msgid "The object will be executed, depending on the condition return value."
+msgstr "Das Objekt wird ausgeführt, abhängig vom Rückgabewert der Bedingung."
+
+#: model_mixins.py:55
+msgid "Has a condition?"
+msgstr "Hat eine Bedingung?"
+
+#: templates/databases/app/viewport.html:11
+msgid "Warning"
+msgstr "Warnung"

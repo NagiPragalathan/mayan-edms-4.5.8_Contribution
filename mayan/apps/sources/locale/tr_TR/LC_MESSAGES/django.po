@@ -1,0 +1,536 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Caner Başaran <basaran.caner@gmail.com>, 2023
+# abc Def <hdogan1974@gmail.com>, 2023
+# Nurgül Özkan <nurgulozkan@hotmail.com>, 2023
+# serhatcan77 <serhat_can@yahoo.com>, 2023
+# Bedreddin Şahbaz, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:22+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Bedreddin Şahbaz, 2023\n"
+"Language-Team: Turkish (Turkey) (https://app.transifex.com/rosarior/teams/13584/tr_TR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr_TR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: apps.py:56 events.py:6 links.py:152 links.py:159 menus.py:6 models.py:62
+#: queues.py:9 settings.py:13 views/source_views.py:285
+msgid "Sources"
+msgstr "Kaynaklar"
+
+#: apps.py:104
+msgid "Create a document source"
+msgstr "Belge kaynağı oluştur"
+
+#: apps.py:106
+msgid ""
+"Document sources are the way in which new documents are feed to Mayan EDMS, "
+"create at least a web form source to be able to upload documents from a "
+"browser."
+msgstr ""
+"Belge kaynakları, yeni belgelerin JBM EDMS'e gönderilme şeklidir, bir "
+"tarayıcıdan belge yükleyebilmek için en az bir web formu kaynağı "
+"oluşturmalısınız."
+
+#: apps.py:130
+msgid ""
+"Return the value of a specific source metadata for the document's latest "
+"file."
+msgstr ""
+
+#: apps.py:132 apps.py:139
+msgid "Source metadata value of"
+msgstr ""
+
+#: apps.py:138
+msgid "Return the value of a specific source metadata."
+msgstr ""
+
+#: apps.py:157
+msgid "Type"
+msgstr "Tür"
+
+#: events.py:10
+msgid "Source created"
+msgstr "Kaynak oluşturuldu"
+
+#: events.py:13
+msgid "Source edited"
+msgstr "Kaynak düzenlendi"
+
+#: forms.py:25
+msgid "An optional comment to explain the upload."
+msgstr "Yüklemeyi açıklamak için isteğe bağlı bir yorum."
+
+#: forms.py:26
+msgid "Comment"
+msgstr "Yorum"
+
+#: forms.py:32
+msgid "Action"
+msgstr "Eylem"
+
+#: forms.py:33
+msgid ""
+"The action to take in regards to the pages of the new file being uploaded."
+msgstr "Yüklenen yeni dosyanın sayfalarıyla ilgili olarak yapılacak işlem."
+
+#: forms.py:54
+msgid "The backend used to create the new source."
+msgstr "Yeni kaynağı oluşturmak için kullanılan backend."
+
+#: forms.py:55
+msgid "Backend"
+msgstr "Backend"
+
+#: forms.py:71
+msgid "File"
+msgstr "Dosya"
+
+#: links.py:116
+msgid "New document"
+msgstr "Yeni belge"
+
+#: links.py:122
+msgid "Upload new file"
+msgstr "Yeni dosya yükle"
+
+#: links.py:130
+msgid "Source metadata"
+msgstr ""
+
+#: links.py:139
+msgid "Create source"
+msgstr "Kaynak oluştur"
+
+#: links.py:144
+msgid "Delete"
+msgstr "Sil"
+
+#: links.py:148
+msgid "Edit"
+msgstr "Düzenle"
+
+#: links.py:165
+msgid "Test"
+msgstr "Test"
+
+#: models.py:19 models.py:61
+msgid "Source"
+msgstr "Kaynak"
+
+#: models.py:23
+msgid "Document file"
+msgstr "Belge dosyası"
+
+#: models.py:26
+msgid "Name of the source metadata entry."
+msgstr ""
+
+#: models.py:27
+msgid "Key"
+msgstr "Anahtar"
+
+#: models.py:31
+msgid "The actual value stored in the source metadata for the document."
+msgstr ""
+
+#: models.py:33
+msgid "Value"
+msgstr "Değer"
+
+#: models.py:39 models.py:40
+msgid "Document file source metadata"
+msgstr ""
+
+#: models.py:50
+msgid "A short text to describe this source."
+msgstr "Bu kaynağı açıklayan kısa bir metin."
+
+#: models.py:51
+msgid "Label"
+msgstr "Etiket"
+
+#: models.py:54
+msgid "Enabled"
+msgstr "Etkin"
+
+#: permissions.py:6
+msgid "Sources setup"
+msgstr "Kaynaklar kurulumu"
+
+#: permissions.py:12
+msgid "View document source metadata"
+msgstr ""
+
+#: permissions.py:18
+msgid "Create new document sources"
+msgstr "Yeni belge kaynakları oluşturma"
+
+#: permissions.py:21
+msgid "Delete document sources"
+msgstr "Belge kaynaklarını sil"
+
+#: permissions.py:24
+msgid "Edit document sources"
+msgstr "Belge kaynaklarını düzenle"
+
+#: permissions.py:27
+msgid "View existing document sources"
+msgstr "Varolan belge kaynaklarını görüntüleme"
+
+#: queues.py:12
+msgid "Sources periodic"
+msgstr "Periyodik Kaynaklar "
+
+#: queues.py:17
+msgid "Handle source backend action background task"
+msgstr ""
+
+#: queues.py:21
+msgid "Check interval source"
+msgstr "Kaynak aralığını kontrol edin"
+
+#: serializers.py:13
+msgid "Default"
+msgstr "Varsayılan"
+
+#: serializers.py:16
+msgid "Has default?"
+msgstr ""
+
+#: serializers.py:19
+msgid "Help text"
+msgstr ""
+
+#: serializers.py:22 serializers.py:41
+msgid "Name"
+msgstr "İsim"
+
+#: serializers.py:25
+msgid "Required"
+msgstr "Gereklidir"
+
+#: serializers.py:37 serializers.py:52
+msgid "Arguments"
+msgstr "Argümanlar"
+
+#: serializers.py:47
+msgid "Accept files"
+msgstr ""
+
+#: serializers.py:51
+msgid "Optional arguments for the action. Must be JSON formatted."
+msgstr ""
+"Eylem için isteğe bağlı bağımsız değişkenler. JSON formatlı olmalıdır."
+
+#: serializers.py:56
+msgid "Confirmation"
+msgstr ""
+
+#: serializers.py:59
+msgid "Execute URL"
+msgstr ""
+
+#: serializers.py:62
+msgid "Interfaces"
+msgstr ""
+
+#: serializers.py:66
+msgid "name"
+msgstr ""
+
+#: serializers.py:69
+msgid "Permission"
+msgstr "İzinler"
+
+#: serializers.py:74
+msgid "URL"
+msgstr "URL"
+
+#: serializers.py:85
+msgid "Binary content for the new file."
+msgstr "Yeni dosya için binary içerik."
+
+#: serializers.py:121
+msgid "Actions URL"
+msgstr ""
+
+#: settings.py:20
+msgid "Arguments to use when creating source backends."
+msgstr "Kaynak backendleri oluştururken kullanılacak bağımsız değişkenler."
+
+#: settings.py:26
+msgid "Path to the Storage subclass used to store cached source image files."
+msgstr ""
+"Önbelleğe alınmış kaynak görüntü dosyalarını depolamak için kullanılan "
+"Depolama alt sınıfının yolu."
+
+#: settings.py:34
+msgid "Arguments to pass to the SOURCES_SOURCE_CACHE_STORAGE_BACKEND."
+msgstr "SOURCES_SOURCE_CACHE_STORAGE_BACKEND'e aktarılacak argümanlar."
+
+#: source_backend_actions/interfaces.py:161
+msgid "Forms containing the upload data generated by the upload views."
+msgstr ""
+
+#: source_backend_actions/mixins/arguments.py:13
+msgid "Document to which a new file will be uploaded to."
+msgstr ""
+
+#: source_backend_actions/mixins/arguments.py:19
+msgid ""
+"When enabled, a document stub is created immediately and returned. The "
+"document file is processed asynchronously. When disabled, the entire process"
+" happens asynchronously with no returned data. Enabling immediate mode, "
+"disables compressed file processing."
+msgstr ""
+
+#: source_backend_actions/mixins/arguments.py:41
+msgid "ID of the document to which a new file will be uploaded to."
+msgstr ""
+
+#: source_backend_actions/mixins/arguments.py:62
+msgid "ID of the document type."
+msgstr ""
+
+#: source_backend_actions/mixins/arguments.py:75
+msgid "User that will feature as the actor in the events."
+msgstr ""
+
+#: source_backend_actions/mixins/arguments.py:80
+msgid "ID of the user that will feature as the actor in the events."
+msgstr ""
+
+#: source_backends/base.py:101
+msgid "General"
+msgstr ""
+
+#: source_backends/base.py:134
+msgid "Null backend"
+msgstr "Boş backend"
+
+#: source_backends/mixins.py:27
+msgid "Regular expression used to select which files to upload."
+msgstr "Hangi dosyaların yükleneceğini seçmek için kullanılan düzenli ifade."
+
+#: source_backends/mixins.py:30
+msgid "Include regular expression"
+msgstr "Düzenli ifadeyi dahil et"
+
+#: source_backends/mixins.py:37
+msgid "Regular expression used to exclude which files to upload."
+msgstr ""
+"Hangi dosyaların yükleneceğini hariç tutmak için kullanılan düzenli ifade."
+
+#: source_backends/mixins.py:40
+msgid "Exclude regular expression"
+msgstr "Düzenli ifadeyi hariç tut"
+
+#: source_backends/mixins.py:54
+msgid "Content selection"
+msgstr ""
+
+#: storages.py:14
+msgid ""
+"Unable to initialize the staging folder file image storage. Check the "
+"settings {} and {} for formatting errors."
+msgstr ""
+"Hazırlama klasörü dosya görüntü depolaması başlatılamıyor. Biçimlendirme "
+"hataları için {} ve {} ayarlarını kontrol edin."
+
+#: storages.py:21
+msgid "Staging folder files"
+msgstr "Klasör dosyalarını hazırlama"
+
+#: tests/arguments.py:6
+msgid "Python file like object."
+msgstr ""
+
+#: tests/arguments.py:10
+msgid "ID of the shared uploaded file to be processed."
+msgstr ""
+
+#: views/base.py:33
+msgid ""
+"There are no enabled sources that support this operation. Create a new one "
+"or enable and existing one."
+msgstr ""
+
+#: views/document_file_views.py:43
+msgid ""
+"This means that the sources system did not record any information about the "
+"creation of the document file."
+msgstr ""
+
+#: views/document_file_views.py:47
+msgid "No source metadata available for this document file."
+msgstr ""
+
+#: views/document_file_views.py:51
+#, python-format
+msgid "Source metadata for: %(document_file)s"
+msgstr ""
+
+#: views/document_file_views.py:96
+#, python-format
+msgid "Unable to upload new files for document \"%(document)s\". %(exception)s"
+msgstr "\"%(document)s\" belgesi için yeni dosyalar yüklenemiyor. %(exception)s"
+
+#: views/document_file_views.py:141
+#, python-format
+msgid "Error executing document file upload task; %(exception)s"
+msgstr "Belge dosyası yükleme görevi yürütülürken hata oluştu; %(exception)s"
+
+#: views/document_file_views.py:162
+msgid "New document file queued for upload and will be available shortly."
+msgstr ""
+"Yeni belge dosyası yükleme için kuyruğa alındı ve kısa süre içinde kullanıma"
+" sunulacak."
+
+#: views/document_file_views.py:187
+#, python-format
+msgid "Upload a new file for document \"%(document)s\" from source: %(source)s"
+msgstr ""
+"Kaynaktan \"%(document)s\" belgesi için yeni bir dosya yükleyin: %(source)s"
+
+#: views/document_file_views.py:193
+msgid "Submit"
+msgstr "Gönder"
+
+#: views/document_views.py:53
+#, python-format
+msgid "Error processing source document upload; %(exception)s"
+msgstr "Kaynak belge yüklemesi işlenirken hata oluştu; %(exception)s"
+
+#: views/document_views.py:74
+msgid "New document queued for upload and will be available shortly."
+msgstr ""
+"Yeni belge yüklenmek üzere sıraya alındı ve kısa süre içinde kullanıma "
+"sunulacak."
+
+#: views/document_views.py:94
+#, python-format
+msgid "Upload a document of type \"%(document_type)s\" from source: %(source)s"
+msgstr "Kaynaktan \"%(document_type)s\" türünde bir belge yükleyin: %(source)s"
+
+#: views/source_views.py:76
+#, python-format
+msgid "Unable to execute action; %s."
+msgstr ""
+
+#: views/source_views.py:155
+#, python-format
+msgid "Error processing source action; %(exception)s"
+msgstr ""
+
+#: views/source_views.py:170
+msgid "Source action executed successfully."
+msgstr ""
+
+#: views/source_views.py:179
+msgid "New source backend selection"
+msgstr "Yeni kaynak backend seçimi"
+
+#: views/source_views.py:207
+#, python-format
+msgid "Create a \"%s\" source"
+msgstr "Bir \"%s\" kaynağı oluşturun"
+
+#: views/source_views.py:235
+#, python-format
+msgid "Delete the source: %s?"
+msgstr "Kaynağı sil: %s?"
+
+#: views/source_views.py:251
+#, python-format
+msgid "Edit source: %s"
+msgstr "Kaynağı düzenle: %s"
+
+#: views/source_views.py:279
+msgid ""
+"Sources provide the means to upload documents. Some sources are interactive "
+"and require user input to operate. Others are automatic and run in the "
+"background without user intervention."
+msgstr ""
+"Kaynaklar, belgeleri yüklemek için araçlar sağlar. Bazı kaynaklar "
+"etkileşimlidir ve çalışması için kullanıcı girdisi gerektirir. Diğerleri "
+"otomatiktir ve kullanıcı müdahalesi olmadan arka planda çalışır."
+
+#: views/source_views.py:284
+msgid "No sources available"
+msgstr "Uygun kaynak yok"
+
+#: views/source_views.py:309
+#, python-format
+msgid ""
+"The selected action \"%s\" does not require confirmation and cannot be "
+"tested."
+msgstr ""
+
+#: views/source_views.py:331
+msgid ""
+"This will execute the source code even if the source is not enabled. Sources"
+" that delete content after downloading will not do so while being tested. "
+"Check the source's error log for information during testing. A successful "
+"test will clear the error log."
+msgstr ""
+"Bu, kaynak etkinleştirilmemiş olsa bile kaynak kodunu yürütecektir. "
+"İndirdikten sonra içeriği silen kaynaklar test edilirken bunu yapmaz. Test "
+"sırasında bilgi için kaynağın hata günlüğünü kontrol edin. Başarılı bir "
+"test, hata günlüğünü temizleyecektir."
+
+#: views/source_views.py:337
+#, python-format
+msgid "Trigger check for source \"%s\"?"
+msgstr "\"%s\" kaynağı için tetikleme kontrolü?"
+
+#: views/source_views.py:353
+msgid ""
+"Source test queued. Check for newly created documents or for error log "
+"entries."
+msgstr ""
+
+#: wizard_steps.py:11
+msgid "Select document type"
+msgstr "Belge türünü seçin"
+
+#: wizards.py:68
+msgid ""
+"No interactive document sources have been defined or none have been enabled,"
+" create one before proceeding."
+msgstr ""
+"Etkileşimli belge kaynakları tanımlanmamış veya hiçbiri etkinleştirilmemiş, "
+"devam etmeden önce bir tane oluşturun."
+
+#: wizards.py:85
+#, python-format
+msgid "Step %(step)d of %(total_steps)d: %(step_label)s"
+msgstr "%(total_steps)d'ın %(step)d adımı: %(step_label)s"
+
+#: wizards.py:91
+msgid "Document upload wizard"
+msgstr "Belge yükleme sihirbazı"
+
+#: wizards.py:100
+msgid "First"
+msgstr "İlk"
+
+#: wizards.py:106
+msgid "Previous"
+msgstr "Geri"
+
+#: wizards.py:113
+msgid "Next"
+msgstr "İleri"

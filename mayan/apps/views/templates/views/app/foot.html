@@ -1,0 +1,145 @@
+{% load i18n %}
+{% load static %}
+
+{% load smart_settings_tags %}
+
+{% smart_setting "VIEWS_SHOW_DROPZONE_SUBMIT_BUTTON" as setting_views_show_dropzone_submit_button %}
+
+<script src="{% static 'views/node_modules/dropzone/dist/dropzone.js' %}" type="text/javascript"></script>
+
+<script type="text/x-template" id="previewTemplate">
+    <div class="dz-preview dz-file-preview">
+        <i class="far fa-file fa-10x"></i>
+        <div class="dz-details">
+            <div class="dz-filename"><span data-dz-name></span></div>
+            <div class="dz-size" data-dz-size></div>
+            <img data-dz-thumbnail />
+        </div>
+
+        <div class="dz-progress">
+            <span class="dz-upload" data-dz-uploadprogress>
+                <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width: 100%">
+                </div>
+            </span>
+        </div>
+
+        <div class="dz-success-mark">
+            <span>
+                <i class="text-success fa fa-4x fa-check-circle"></i>
+            </span>
+        </div>
+        <div class="dz-error-mark">
+            <span>
+                <i class="text-danger fa fa-4x fa-times-circle"></i>
+            </span>
+        </div>
+        <div class="dz-error-message">
+            <span data-dz-errormessage>
+            </span>
+        </div>
+    </div>
+</script>
+<script>
+    'use strict';
+
+    const messageCancelUpload = "{% trans 'Cancel upload' %}";
+    const messageCancelUploadConfirmation = "{% trans 'Are you sure you want to cancel this upload?' %}";
+    const messageDefaultMessage = "{% trans 'Drop files or click here to upload files' %}";
+    const messageFallbackMessage = "{% trans 'Your browser does not support drag and drop file uploads.' %}";
+    const messageFallbackText = "{% trans 'Please use the fallback form below to upload your files.' %}";
+    const messageRemoveFile = "{% trans 'Clear' %}";
+    const messageResponseError = "{% trans 'Server responded with {{statusCode}} code.' %}";
+    const paramName = 'source-file'
+    const previewTemplate = document.querySelector('#previewTemplate').innerHTML;
+
+    Dropzone.autoDiscover = false;
+
+    $('#ajax-content').on('change', function (event) {
+        const $dropzone = $('.dropzone');
+        const $dropzoneForm = $dropzone.parents('form')[0];
+        const $fileField = $('#id_' + paramName);
+
+        if ($dropzoneForm) {
+            // Hide the forms file field and its div parent.
+            $fileField.addClass('hidden');
+            $fileField.parent().addClass('hidden');
+
+            $dropzone.not('.dz-clickable').dropzone({
+                addRemoveLinks: true,
+                createImageThumbnails: false,
+                dictCancelUpload: messageCancelUpload,
+                dictCancelUploadConfirmation: messageCancelUploadConfirmation,
+                dictDefaultMessage: '<i class="fa fa-cloud-upload-alt"></i> ' + messageDefaultMessage,
+                dictFallbackMessage: messageFallbackMessage,
+                dictFallbackText: messageFallbackText,
+                dictRemoveFile: messageRemoveFile,
+                dictResponseError: messageResponseError,
+                init: function() {
+                    const dropzoneInstance = this;
+
+                    dropzoneInstance.on('sending', function(file, xhr, formData) {
+                        const $dropzone = $(this.element);
+                        const $dropzoneForm = $(
+                            $dropzone.parents('form')[0]
+                        );
+
+                        $dropzoneForm.serializeArray().forEach(
+                            function(element) {
+                                formData.append(
+                                    element.name, element.value
+                                )
+                            }
+                        )
+                    });
+
+                    {% if setting_views_show_dropzone_submit_button %}
+                        dropzoneInstance.options.autoProcessQueue=false;
+                        dropzoneInstance.element.closest('form').querySelector('button[type=submit').addEventListener('click', function(event) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                            dropzoneInstance.processQueue();
+                        });
+                    {% endif %}
+                },
+                maxFilesize: null,
+                paramName: paramName,
+                previewTemplate: previewTemplate,
+                timeout: 1200000,
+                url: $dropzoneForm.action
+            });
+        }
+    });
+
+    $(document).ready(function() {
+        $('body').on('keyup', '.views-select-search', function (event) {
+            const $this = $(this);
+            const searchValue = $this.val().toLowerCase().trim();
+            const $siblingSelect = $this.parents('form').find('select');
+
+            // Hide options that do not match the search.
+            $siblingSelect.find('option').each(function () {
+                const $option = $(this);
+                const optionText = $option.text().toLowerCase();
+
+                if (optionText.indexOf(searchValue) !== -1) {
+                    $option.show();
+                    $option.removeAttr('disabled');
+                } else {
+                    $option.hide();
+                    $option.attr('disabled','disabled')
+                }
+            });
+
+            // Hide all empty option groups.
+            $siblingSelect.find('optgroup').each(function () {
+                const $optionGroup = $(this);
+
+                if ($optionGroup.children(':enabled').length == 0) {
+                    $optionGroup.hide();
+                } else {
+                    $optionGroup.show();
+                }
+            });
+        });
+    });
+</script>

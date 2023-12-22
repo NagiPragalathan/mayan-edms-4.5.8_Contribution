@@ -1,0 +1,40 @@
+.. _apps-file_caching:
+
+
+============
+File caching
+============
+
+The File caching app improves the performance of the system by caching
+commonly accessed files.
+
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Articles:
+
+    - File caching
+
+
+    Tutorials:
+
+    - How to increase the quality of the previews
+    - Setting up and migrating to object storage
+
+    Troubleshooting:
+
+    - Error: "...CachePartitionFile.DoesNotExist: CachePartitionFile matching query does not exist." after upgrade to version 4.0
+
+
+- :doc:`troubleshooting`
+
+
+.. toctree::
+    :hidden:
+
+    troubleshooting
+

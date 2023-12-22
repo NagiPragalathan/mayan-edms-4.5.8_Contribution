@@ -1,0 +1,373 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Roberto Rosario, 2023
+# Alex Chigrin <chalex84@mail.ru>, 2023
+# lilo.panic, 2023
+# Ilya Pavlov <spirkaa@gmail.com>, 2023
+# Sergey Glita <gsv70@mail.ru>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Sergey Glita <gsv70@mail.ru>, 2023\n"
+"Language-Team: Russian (https://app.transifex.com/rosarior/teams/13584/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: apps.py:32 events.py:11 links.py:52 links.py:93 permissions.py:6
+#: settings.py:7 views/event_views.py:29
+msgid "Events"
+msgstr "События"
+
+#: apps.py:82 apps.py:117
+msgid "Date and time"
+msgstr "Дата и время"
+
+#: apps.py:86 apps.py:120 serializers.py:72
+msgid "Actor"
+msgstr "Субъект"
+
+#: apps.py:90 apps.py:125
+msgid "Event"
+msgstr "Событие"
+
+#: apps.py:94 apps.py:130 serializers.py:78
+msgid "Target"
+msgstr "Объект"
+
+#: apps.py:98 apps.py:134
+msgid "Action object"
+msgstr "Объект действия"
+
+#: apps.py:105 forms.py:10 forms.py:67
+msgid "Namespace"
+msgstr "Пространство имен"
+
+#: apps.py:110 forms.py:14 forms.py:71 serializers.py:21 serializers.py:46
+msgid "Label"
+msgstr "Заголовок"
+
+#: apps.py:139
+msgid "Seen"
+msgstr "Просмотрено"
+
+#: apps.py:146
+msgid "Object"
+msgstr "Объект"
+
+#: apps.py:151 models.py:46 models.py:105
+msgid "Event type"
+msgstr "Тип события"
+
+#: classes.py:90
+msgid "Event list export to CSV"
+msgstr "Экспорт списка событий в CSV"
+
+#: classes.py:118
+msgid "Events exported."
+msgstr "События экспортированы."
+
+#: classes.py:120
+#, python-format
+msgid ""
+"The event list has been exported and is available for download using the "
+"link: %(download_url)s or from the downloads area (%(download_list_url)s)."
+msgstr ""
+"Список событий экспортирован и доступен для скачивания по ссылке: "
+"%(download_url)s или из области загрузок (%(download_list_url)s)."
+
+#: events.py:15
+msgid "Events cleared"
+msgstr ""
+
+#: events.py:18
+msgid "Events exported"
+msgstr "События экспортированы"
+
+#: forms.py:18 forms.py:75
+msgid "Subscription"
+msgstr "Подписка"
+
+#: forms.py:20 forms.py:77
+msgid "No"
+msgstr "Нет"
+
+#: forms.py:21 forms.py:78
+msgid "Subscribed"
+msgstr "Подписан"
+
+#: html_widgets.py:23
+msgid "System"
+msgstr "Система"
+
+#: links.py:55 links.py:100 views/clear_views.py:63
+msgid "Clear events"
+msgstr ""
+
+#: links.py:59 links.py:107 views/export_views.py:60
+msgid "Export events"
+msgstr "Экспорт событий"
+
+#: links.py:65 models.py:53 views/subscription_views.py:54
+msgid "Event subscriptions"
+msgstr "Подписки на события"
+
+#: links.py:71 models.py:113 views/subscription_views.py:169
+msgid "Object event subscriptions"
+msgstr "Подписки на события объекта"
+
+#: links.py:83
+msgid "Mark as seen"
+msgstr "Отметить как просмотренное"
+
+#: links.py:87
+msgid "Mark all as seen"
+msgstr "Отметить все как просмотренные"
+
+#: links.py:114
+msgid "Subscriptions"
+msgstr "Подписки"
+
+#: literals.py:14
+#, python-format
+msgid "Unknown or obsolete event type: %s"
+msgstr "Неизвестный или устаревший тип события: %s"
+
+#: models.py:23 serializers.py:24 serializers.py:49
+msgid "Name"
+msgstr "Имя"
+
+#: models.py:27
+msgid "Stored event type"
+msgstr "Тип сохраненного события"
+
+#: models.py:28
+msgid "Stored event types"
+msgstr "Типы сохраненных событий"
+
+#: models.py:42 models.py:68 models.py:101 serializers.py:103
+msgid "User"
+msgstr "Пользователь"
+
+#: models.py:52
+msgid "Event subscription"
+msgstr "Подписка на событие"
+
+#: models.py:72 serializers.py:100
+msgid "Action"
+msgstr "Действие"
+
+#: models.py:75
+msgid "Read"
+msgstr "Прочитано"
+
+#: models.py:82
+msgid "Notification"
+msgstr "Уведомление"
+
+#: models.py:83 views/notification_views.py:33
+msgid "Notifications"
+msgstr "Уведомления"
+
+#: models.py:112
+msgid "Object event subscription"
+msgstr "Подписка на событие объекта"
+
+#: permissions.py:10
+msgid "Clear the events of an object"
+msgstr ""
+
+#: permissions.py:13
+msgid "Export the events of an object"
+msgstr "Экспортировать события объекта"
+
+#: permissions.py:16
+msgid "View the events of an object"
+msgstr ""
+
+#: queues.py:7
+msgid "Events fast"
+msgstr ""
+
+#: queues.py:10
+msgid "Events slow"
+msgstr ""
+
+#: queues.py:16
+msgid "Commit an event"
+msgstr ""
+
+#: queues.py:21
+msgid "Clear event querysets"
+msgstr ""
+
+#: queues.py:25
+msgid "Export event querysets"
+msgstr "Запросы для экспорта событий"
+
+#: serializers.py:27
+msgid "URL"
+msgstr "URL"
+
+#: serializers.py:40
+msgid "Event type namespace URL"
+msgstr ""
+
+#: serializers.py:43
+msgid "ID"
+msgstr "ID"
+
+#: serializers.py:75
+msgid "Actor content type"
+msgstr ""
+
+#: serializers.py:81
+msgid "Target content type"
+msgstr ""
+
+#: serializers.py:84
+msgid "Verb"
+msgstr "Глагол"
+
+#: settings.py:13
+msgid ""
+"Disables asynchronous events mode. All events will be committed in the same "
+"process that triggers them. This was the behavior prior to version 4.5."
+msgstr ""
+
+#: views/clear_views.py:27
+msgid ""
+"This action is not reversible. The process will be performed in the "
+"background. "
+msgstr ""
+
+#: views/clear_views.py:51
+msgid "Event list clear task queued successfully."
+msgstr ""
+
+#: views/clear_views.py:84
+#, python-format
+msgid "Clear events of: %s"
+msgstr ""
+
+#: views/clear_views.py:109
+#, python-format
+msgid "Clear events of type: %s"
+msgstr ""
+
+#: views/event_views.py:25
+msgid "Events track actions that have been performed on, to, or with objects."
+msgstr "События отслеживают действия, выполняемые с объектами."
+
+#: views/event_views.py:28
+msgid "There are no events"
+msgstr "Нет событий"
+
+#: views/event_views.py:49
+msgid "There are no events for this object"
+msgstr "Для этого объекта нет событий"
+
+#: views/event_views.py:51
+#, python-format
+msgid "Events for: %s"
+msgstr "События для: %s"
+
+#: views/event_views.py:67
+msgid "There are no events of this type"
+msgstr "Нет событий этого типа"
+
+#: views/event_views.py:69
+#, python-format
+msgid "Events of type: %s"
+msgstr "События с типом: %s"
+
+#: views/export_views.py:27
+msgid ""
+"The process will be performed in the background. The exported events will be"
+" available in the downloads area."
+msgstr ""
+"Процесс будет выполняться в фоновом режиме. Экспортированные события будут "
+"доступны в области загрузок."
+
+#: views/export_views.py:47
+msgid "Event list export task queued successfully."
+msgstr "Задача экспорта списка событий поставлена в очередь."
+
+#: views/export_views.py:81
+#, python-format
+msgid "Export events of: %s"
+msgstr ""
+
+#: views/export_views.py:100
+#, python-format
+msgid "Export events of type: %s"
+msgstr ""
+
+#: views/notification_views.py:29
+msgid "Subscribe to global or object events to receive notifications."
+msgstr ""
+"Подпишитесь на глобальные события или события объектов, чтобы получать "
+"уведомления."
+
+#: views/notification_views.py:32
+msgid "There are no notifications"
+msgstr "Нет уведомлений"
+
+#: views/notification_views.py:45
+msgid "Mark the selected notification as read?"
+msgstr "Отметить выбранное уведомление как прочитанное?"
+
+#: views/notification_views.py:60
+msgid "Notification marked as read."
+msgstr "Уведомление отмечено как прочитанное."
+
+#: views/notification_views.py:72
+msgid "Mark all notification as read?"
+msgstr "Отметить все уведомления как прочитанные?"
+
+#: views/notification_views.py:79
+msgid "All notifications marked as read."
+msgstr "Все уведомления отмечены как прочитанные."
+
+#: views/subscription_views.py:38
+#, python-format
+msgid "Error updating event subscription; %s"
+msgstr "Ошибка обновления подписки на событие; %s"
+
+#: views/subscription_views.py:43
+msgid "Event subscriptions updated successfully"
+msgstr "Подписки на события обновлены"
+
+#: views/subscription_views.py:117
+#, python-format
+msgid "Error updating object event subscription; %s"
+msgstr "Ошибка обновления подписки на событие объекта; %s"
+
+#: views/subscription_views.py:123
+msgid "Object event subscriptions updated successfully"
+msgstr "Подписки на события объекта обновлены"
+
+#: views/subscription_views.py:134
+#, python-format
+msgid "Event subscriptions for: %s"
+msgstr "Подписки на события для: %s"
+
+#: views/subscription_views.py:164
+msgid ""
+"Subscribe to the events of an object to received notifications when those "
+"events occur."
+msgstr ""
+
+#: views/subscription_views.py:167
+msgid "There are no object event subscriptions"
+msgstr ""

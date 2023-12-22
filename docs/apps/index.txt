@@ -1,0 +1,63 @@
+Apps
+====
+
+- :doc:`acls/index`
+- :doc:`appearance/index`
+- :doc:`authentication/index`
+- :doc:`autoadmin/index`
+- :doc:`cabinets/index`
+- :doc:`checkouts/index`
+- :doc:`converter/index`
+- :doc:`databases/index`
+- :doc:`dependencies/index`
+- :doc:`document_indexing/index`
+- :doc:`document_signatures/index`
+- :doc:`document_states/index`
+- :doc:`documents/index`
+- :doc:`dynamic_search/index`
+- :doc:`file_caching/index`
+- :doc:`linking/index`
+- :doc:`locales/index`
+- :doc:`mailer/index`
+- :doc:`metadata/index`
+- :doc:`mirroring/index`
+- :doc:`ocr/index`
+- :doc:`permissions/index`
+- :doc:`platform/index`
+- :doc:`rest_api/index`
+- :doc:`smart_settings/index`
+- :doc:`sources/index`
+- :doc:`storage/index`
+- :doc:`tags/index`
+
+.. toctree::
+    :hidden:
+
+    acls/index
+    appearance/index
+    authentication/index
+    autoadmin/index
+    cabinets/index
+    checkouts/index
+    converter/index
+    databases/index
+    dependencies/index
+    document_indexing/index
+    document_signatures/index
+    document_states/index
+    documents/index
+    dynamic_search/index
+    file_caching/index
+    linking/index
+    locales/index
+    mailer/index
+    metadata/index
+    mirroring/index
+    ocr/index
+    permissions/index
+    platform/index
+    rest_api/index
+    smart_settings/index
+    sources/index
+    storage/index
+    tags/index

@@ -1,0 +1,429 @@
+[main]
+host     = https://www.transifex.com
+lang_map = zh-Hans: zh_Hans
+
+[o:rosarior:p:mayan-edms:r:acls-4-5]
+file_filter = mayan/apps/acls/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/acls/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:announcements-4-5]
+file_filter = mayan/apps/announcements/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/announcements/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:appearance-4-5]
+file_filter = mayan/apps/appearance/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/appearance/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:authentication-4-5]
+file_filter = mayan/apps/authentication/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/authentication/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:authentication_oidc-4-5]
+file_filter = mayan/apps/authentication_oidc/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/authentication_oidc/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:authentication_otp-4-5]
+file_filter = mayan/apps/authentication_otp/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/authentication_otp/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:autoadmin-4-5]
+file_filter = mayan/apps/autoadmin/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/autoadmin/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:backends-4-5]
+file_filter = mayan/apps/backends/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/backends/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:cabinets-4-5]
+file_filter = mayan/apps/cabinets/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/cabinets/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:checkouts-4-5]
+file_filter = mayan/apps/checkouts/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/checkouts/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:common-4-5]
+file_filter = mayan/apps/common/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/common/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:converter-4-5]
+file_filter = mayan/apps/converter/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/converter/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:credentials-4-5]
+file_filter = mayan/apps/credentials/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/credentials/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:dashboards-4-5]
+file_filter = mayan/apps/dashboards/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/dashboards/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:databases-4-5]
+file_filter = mayan/apps/databases/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/databases/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:dependencies-4-5]
+file_filter = mayan/apps/dependencies/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/dependencies/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:django_gpg-4-5]
+file_filter = mayan/apps/django_gpg/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/django_gpg/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:document_comments-4-5]
+file_filter = mayan/apps/document_comments/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/document_comments/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:document_downloads-4-5]
+file_filter = mayan/apps/document_downloads/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/document_downloads/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:document_exports-4-5]
+file_filter = mayan/apps/document_exports/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/document_exports/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:document_indexing-4-5]
+file_filter = mayan/apps/document_indexing/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/document_indexing/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:document_parsing-4-5]
+file_filter = mayan/apps/document_parsing/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/document_parsing/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:document_signatures-4-5]
+file_filter = mayan/apps/document_signatures/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/document_signatures/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:document_states-4-5]
+file_filter = mayan/apps/document_states/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/document_states/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:documents-4-5]
+file_filter = mayan/apps/documents/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/documents/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:duplicates-4-5]
+file_filter = mayan/apps/duplicates/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/duplicates/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:dynamic_search-4-5]
+file_filter = mayan/apps/dynamic_search/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/dynamic_search/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:events-4-5]
+file_filter = mayan/apps/events/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/events/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:file_caching-4-5]
+file_filter = mayan/apps/file_caching/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/file_caching/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:file_metadata-4-5]
+file_filter = mayan/apps/file_metadata/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/file_metadata/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:linking-4-5]
+file_filter = mayan/apps/linking/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/linking/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:locales-4-5]
+file_filter = mayan/apps/locales/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/locales/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:lock_manager-4-5]
+file_filter = mayan/apps/lock_manager/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/lock_manager/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:logging-4-5]
+file_filter = mayan/apps/logging/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/logging/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:mailer-4-5]
+file_filter = mayan/apps/mailer/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/mailer/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:mayan_statistics-4-5]
+file_filter = mayan/apps/mayan_statistics/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/mayan_statistics/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:messaging-4-5]
+file_filter = mayan/apps/messaging/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/messaging/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:metadata-4-5]
+file_filter = mayan/apps/metadata/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/metadata/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:mime_types-4-5]
+file_filter = mayan/apps/mime_types/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/mime_types/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:mirroring-4-5]
+file_filter = mayan/apps/mirroring/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/mirroring/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:navigation-4-5]
+file_filter = mayan/apps/navigation/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/navigation/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:ocr-4-5]
+file_filter = mayan/apps/ocr/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/ocr/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:organizations-4-5]
+file_filter = mayan/apps/organizations/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/organizations/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:permissions-4-5]
+file_filter = mayan/apps/permissions/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/permissions/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:platform-4-5]
+file_filter = mayan/apps/platform/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/platform/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:quotas-4-5]
+file_filter = mayan/apps/quotas/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/quotas/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:redactions-4-5]
+file_filter = mayan/apps/redactions/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/redactions/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:rest_api-4-5]
+file_filter = mayan/apps/rest_api/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/rest_api/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:signature_captures-4-5]
+file_filter = mayan/apps/signature_captures/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/signature_captures/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:smart_settings-4-5]
+file_filter = mayan/apps/smart_settings/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/smart_settings/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:source_compressed-4-5]
+file_filter = mayan/apps/source_compressed/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/source_compressed/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:source_emails-4-5]
+file_filter = mayan/apps/source_emails/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/source_emails/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:source_generated_files-4-5]
+file_filter = mayan/apps/source_generated_files/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/source_generated_files/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:source_interactive-4-5]
+file_filter = mayan/apps/source_interactive/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/source_interactive/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:source_periodic-4-5]
+file_filter = mayan/apps/source_periodic/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/source_periodic/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:source_sane_scanners-4-5]
+file_filter = mayan/apps/source_sane_scanners/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/source_sane_scanners/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:source_staging_folders-4-5]
+file_filter = mayan/apps/source_staging_folders/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/source_staging_folders/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:source_staging_storages-4-5]
+file_filter = mayan/apps/source_staging_storages/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/source_staging_storages/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:source_stored_files-4-5]
+file_filter = mayan/apps/source_stored_files/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/source_stored_files/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:source_watch_folders-4-5]
+file_filter = mayan/apps/source_watch_folders/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/source_watch_folders/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:source_watch_storages-4-5]
+file_filter = mayan/apps/source_watch_storages/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/source_watch_storages/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:source_web_forms-4-5]
+file_filter = mayan/apps/source_web_forms/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/source_web_forms/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:sources-4-5]
+file_filter = mayan/apps/sources/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/sources/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:storage-4-5]
+file_filter = mayan/apps/storage/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/storage/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:tags-4-5]
+file_filter = mayan/apps/tags/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/tags/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:task_manager-4-5]
+file_filter = mayan/apps/task_manager/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/task_manager/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:templating-4-5]
+file_filter = mayan/apps/templating/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/templating/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:testing-4-5]
+file_filter = mayan/apps/testing/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/testing/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:user_management-4-5]
+file_filter = mayan/apps/user_management/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/user_management/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:views-4-5]
+file_filter = mayan/apps/views/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/views/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO
+
+[o:rosarior:p:mayan-edms:r:web_links-4-5]
+file_filter = mayan/apps/web_links/locale/<lang>/LC_MESSAGES/django.po
+source_file = mayan/apps/web_links/locale/en/LC_MESSAGES/django.po
+source_lang = en
+type        = PO

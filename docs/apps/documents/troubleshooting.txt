@@ -1,0 +1,16 @@
+.. _apps-documents-troubleshooting:
+
+
+===============
+Troubleshooting
+===============
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Troubleshooting:
+
+    - Error “FileNotFoundError: [Errno 2] No such file or directory: ‘/var/lib/mayan/document_file_storage/…” after upgrade to version 4.0

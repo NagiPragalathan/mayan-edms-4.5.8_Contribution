@@ -1,0 +1,353 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Badea Gabriel <gcbadea@gmail.com>, 2023
+# Roberto Rosario, 2023
+# Stefaniu Criste <gupi@hangar.ro>, 2023
+# Harald Ersch, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:22+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Harald Ersch, 2023\n"
+"Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: apps.py:46 apps.py:133 apps.py:137 apps.py:141 apps.py:146 apps.py:150
+#: events.py:6 forms.py:27 links.py:28 menus.py:14 models.py:35
+#: permissions.py:6 views.py:180 workflow_actions.py:40 workflow_actions.py:54
+msgid "Tags"
+msgstr "Etichete"
+
+#: apps.py:171 models.py:29
+msgid "Documents"
+msgstr "Documente"
+
+#: events.py:10
+msgid "Tag attached to document"
+msgstr "Eticheta atașată la document"
+
+#: events.py:13
+msgid "Tag created"
+msgstr "Eticheta a fost creată"
+
+#: events.py:16
+msgid "Tag edited"
+msgstr "Eticheta a fost editată"
+
+#: events.py:19
+msgid "Tag removed from document"
+msgstr "Eticheta a fost eliminată din document"
+
+#: links.py:19 links.py:38
+msgid "Attach tags"
+msgstr "Atașați etichete"
+
+#: links.py:23 workflow_actions.py:76
+msgid "Remove tag"
+msgstr "Elimină eticheta"
+
+#: links.py:33
+msgid "Remove tags"
+msgstr "Elimină etichete"
+
+#: links.py:44
+msgid "Create new tag"
+msgstr "Creați o etichetă nouă"
+
+#: links.py:49 links.py:52
+msgid "Delete"
+msgstr "Șterge"
+
+#: links.py:57
+msgid "Edit"
+msgstr "Editați"
+
+#: links.py:65
+msgid "All"
+msgstr "Toate"
+
+#: methods.py:19
+msgid "Return the tags attached to the document."
+msgstr "Returnează etichetele atașate documentului."
+
+#: methods.py:21
+msgid "get_tags()"
+msgstr "get_tags ()"
+
+#: model_mixins.py:63
+msgid "Preview"
+msgstr "Previzualizare"
+
+#: models.py:21
+msgid "A short text used as the tag name."
+msgstr "Un text scurt folosit ca nume de etichetă."
+
+#: models.py:22
+msgid "Label"
+msgstr "Conținut etichetă"
+
+#: models.py:25
+msgid "The RGB color values for the tag."
+msgstr "Valorile de culoare RGB pentru etichetă."
+
+#: models.py:26
+msgid "Color"
+msgstr "Culoare"
+
+#: models.py:34
+msgid "Tag"
+msgstr "Etichetă"
+
+#: models.py:63
+msgid "Document tag"
+msgstr "Etichetă pentru documente"
+
+#: models.py:64
+msgid "Document tags"
+msgstr "Etichete pentru documente"
+
+#: permissions.py:10
+msgid "Attach tags to documents"
+msgstr "Atașați etichete la documente"
+
+#: permissions.py:13
+msgid "Create new tags"
+msgstr "Crează etichetă nouă"
+
+#: permissions.py:16
+msgid "Delete tags"
+msgstr "Ștergeți etichetele"
+
+#: permissions.py:19
+msgid "View tags"
+msgstr "Vezi etichetele"
+
+#: permissions.py:22
+msgid "Edit tags"
+msgstr "Editați etichetele"
+
+#: permissions.py:25
+msgid "Remove tags from documents"
+msgstr "Îndepărtați etichetele de pe documente"
+
+#: search.py:11
+msgid "Tag label"
+msgstr "Descrierea etichetei"
+
+#: search.py:14
+msgid "Tag color"
+msgstr "Culoarea etichetei"
+
+#: search.py:28
+msgid "Document type"
+msgstr "Tipul documentului"
+
+#: search.py:31
+msgid "Document label"
+msgstr "Etichetele documentului"
+
+#: search.py:34
+msgid "Document description"
+msgstr "Descrierea documentului"
+
+#: search.py:37
+msgid "Document UUID"
+msgstr "UUID al documentului"
+
+#: search.py:41
+msgid "Document file checksum"
+msgstr "Suma de control a fișierului documentului"
+
+#: search.py:44
+msgid "Document file MIME type"
+msgstr "Tipul MIME al fișierului document"
+
+#: serializers.py:12
+msgid "Documents URL"
+msgstr "Adresa URL a documentelor"
+
+#: serializers.py:19
+msgid "URL"
+msgstr "URL"
+
+#: serializers.py:33
+msgid "Primary key of the tag to add to the document."
+msgstr "Cheia primară a etichetei de adăugat la document."
+
+#: serializers.py:34 serializers.py:43
+msgid "Tag ID"
+msgstr "ID-ul etichetei"
+
+#: serializers.py:42
+msgid "Primary key of the tag to remove from the document."
+msgstr "Cheia primară a etichetei de eliminat din document."
+
+#: views.py:43
+#, python-format
+msgid "Tags attached to %(count)d documents successfully."
+msgstr "Etichetele atașate la %(count)d documente cu succes."
+
+#: views.py:46
+#, python-format
+msgid "Tags attached to document \"%(object)s\" successfully."
+msgstr "Etichetele documentului „%(object)s” atașate cu succes."
+
+#: views.py:49
+#, python-format
+msgid "Tags attached to %(count)d document successfully."
+msgstr "Etichetele atașate la %(count)d document cu succes."
+
+#: views.py:51
+#, python-format
+msgid "Attach tags to %(count)d documents."
+msgstr "Atașați etichete la %(count)d documente."
+
+#: views.py:52
+#, python-format
+msgid "Attach tags to document: %(object)s"
+msgstr "Atașați etichete la document: %(object)s"
+
+#: views.py:53
+#, python-format
+msgid "Attach tags to %(count)d document."
+msgstr "Atașați etichete la documentul %(count)d."
+
+#: views.py:70 wizard_steps.py:80
+msgid "Tags to be attached."
+msgstr "Etichetele trebuie atașate."
+
+#: views.py:108
+msgid "Create tag"
+msgstr "Creați etichetă"
+
+#: views.py:121
+#, python-format
+msgid "Error deleting tag \"%(instance)s\"; %(exception)s"
+msgstr "Eroare la ștergerea etichetei „%(instance)s”; %(exception)s"
+
+#: views.py:126
+#, python-format
+msgid "%(count)d tags deleted successfully."
+msgstr "Etichetele %(count)d au fost șterse cu succes."
+
+#: views.py:127
+#, python-format
+msgid "Tag \"%(object)s\" deleted successfully."
+msgstr "Eticheta „%(object)s” a fost ștearsă cu succes."
+
+#: views.py:128
+#, python-format
+msgid "%(count)d tag deleted successfully."
+msgstr "Eticheta %(count)d a fost ștearsă cu succes."
+
+#: views.py:129
+#, python-format
+msgid "Delete the %(count)d selected tags"
+msgstr "Ștergeți %(count)d etichete selectate"
+
+#: views.py:130
+#, python-format
+msgid "Delete tag: %(object)s"
+msgstr "Șterge eticheta: %(object)s"
+
+#: views.py:131
+#, python-format
+msgid "Delete the %(count)d selected tag"
+msgstr "Ștergeți %(count)d etichetă selectată"
+
+#: views.py:137
+msgid "Will be removed from all documents."
+msgstr "Va fi eliminată din toate documentele."
+
+#: views.py:153
+#, python-format
+msgid "Edit tag: %s"
+msgstr "Modifică eticheta: %s"
+
+#: views.py:176
+msgid ""
+"Tags are color coded properties that can be attached or removed from "
+"documents."
+msgstr ""
+"Etichetele sunt proprietăți codate în culori care pot fi atașate sau "
+"eliminate din documente."
+
+#: views.py:179
+msgid "No tags available"
+msgstr "Nu sunt disponibile etichete"
+
+#: views.py:210
+#, python-format
+msgid "Documents with the tag: %s"
+msgstr "Documente cu eticheta: %s"
+
+#: views.py:237
+msgid "Document has no tags attached"
+msgstr "Documentul nu este atașat nicio  etichetă"
+
+#: views.py:240
+#, python-format
+msgid "Tags for document: %s"
+msgstr "Etichetele documentului: %s"
+
+#: views.py:258
+#, python-format
+msgid "Tags removed from %(count)d documents successfully."
+msgstr ""
+"Etichetele au fost eliminate cu succes din %(count)d documente selectate."
+
+#: views.py:261
+#, python-format
+msgid "Tags removed from document \"%(object)s\" successfully."
+msgstr "Etichetele au fost eliminate din documentul „%(object)s” cu succes."
+
+#: views.py:264
+#, python-format
+msgid "Tags removed from %(count)d document successfully."
+msgstr "Etichetele au fost eliminate cu succes din documentul %(count)d."
+
+#: views.py:266
+#, python-format
+msgid "Remove tags from %(count)d documents."
+msgstr "Eliminați etichetele din documentele %(count)d."
+
+#: views.py:267
+#, python-format
+msgid "Remove tags from document: %(object)s"
+msgstr "Eliminați etichetele din document: %(object)s"
+
+#: views.py:268
+#, python-format
+msgid "Remove tags from %(count)d document."
+msgstr "Eliminați etichetele din documentul %(count)d."
+
+#: views.py:285
+msgid "Tags to be removed."
+msgstr "Etichete ce trebuie eliminate."
+
+#: wizard_steps.py:19
+msgid "Select tags"
+msgstr "Selectați etichete"
+
+#: workflow_actions.py:19
+msgid "Attach tag"
+msgstr "Atașează etichetă"
+
+#: workflow_actions.py:34
+msgid "Tags to attach to the document."
+msgstr "Etichete de atașat la document."
+
+#: workflow_actions.py:83
+msgid "Tags to remove from the document."
+msgstr "Etichete de eliminat din document."

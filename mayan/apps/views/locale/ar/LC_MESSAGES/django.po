@@ -1,0 +1,274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Mohammed ALDOUB <voulnet@gmail.com>, 2023
+# John Kawas <john@clinicalclouds.com>, 2023
+# Yaman Sanobar <yman.snober@gmail.com>, 2023
+# WM Shinkada <shinkadawasim@gmail.com>, 2023
+# Roberto Rosario, 2023
+# Marwan Rahhal <Marwanr@sssit.net>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:22+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Marwan Rahhal <Marwanr@sssit.net>, 2023\n"
+"Language-Team: Arabic (https://app.transifex.com/rosarior/teams/13584/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: apps.py:20 settings.py:11
+msgid "Views"
+msgstr "إستعراض"
+
+#: forms.py:35
+msgid "Search"
+msgstr "البحث"
+
+#: forms.py:53
+msgid "Selection"
+msgstr "الاختيار"
+
+#: forms.py:233
+msgid "Label"
+msgstr "العنوان"
+
+#: forms.py:239
+msgid "Relationship"
+msgstr "صلة"
+
+#: generics.py:164
+msgid ""
+"Select entries to be removed. Hold Control to select multiple entries. Once "
+"the selection is complete, click the button below or double click the list "
+"to activate the action."
+msgstr ""
+"حدد الإدخالات المراد حذفها ،  اضغط مع الاستمرار على التحكم لتحديد عدة "
+"إدخالات. بمجرد اكتمال التحديد ، انقر فوق الزر أدناه أو انقر نقرًا مزدوجًا "
+"فوق القائمة لتنشيط الإجراء"
+
+#: generics.py:169
+msgid ""
+"Select entries to be added. Hold Control to select multiple entries. Once "
+"the selection is complete, click the button below or double click the list "
+"to activate the action."
+msgstr ""
+"حدد الإدخالات لتتم إضافتها ، اضغط مع الاستمرار على التحكم لتحديد عدة إدخالات"
+" ، بمجرد اكتمال التحديد ، انقر فوق الزر أدناه أو انقر نقرًا مزدوجًا فوق "
+"القائمة لتنشيط الإجراء"
+
+#: generics.py:323
+msgid "Add all"
+msgstr "إضافة الكل"
+
+#: generics.py:330
+msgid "Add"
+msgstr "إضافة"
+
+#: generics.py:341
+msgid "Remove all"
+msgstr "حذف الكل"
+
+#: generics.py:348
+msgid "Remove"
+msgstr "حذف"
+
+#: generics.py:579
+#, python-format
+msgid "Error updating relationship; %s"
+msgstr "خطأ في تحديث العلاقة ؛ %s"
+
+#: generics.py:586
+msgid "Relationships updated successfully"
+msgstr "تم تحديث العلاقات بنجاح"
+
+#: generics.py:649
+#, python-format
+msgid "Duplicate data error: %(error)s"
+msgstr "تكرار خطأ في المعلومات : %(error)s"
+
+#: generics.py:668
+#, python-format
+msgid "%(object)s not created, error: %(error)s"
+msgstr "%(object)s لم ينشأ , الخطأ : %(error)s"
+
+#: generics.py:679
+#, python-format
+msgid "%(object)s created successfully."
+msgstr "%(object)s الإنشاء الناجح."
+
+#: generics.py:724
+#, python-format
+msgid "%(object)s not deleted, error: %(error)s."
+msgstr "%(object)s لم تحذف , الخطأ : %(error)s."
+
+#: generics.py:734
+#, python-format
+msgid "%(object)s deleted successfully."
+msgstr "%(object)s احذف الناجح."
+
+#: generics.py:797
+#, python-format
+msgid "Error retrieving %(object)s; %(error)s"
+msgstr ""
+
+#: generics.py:909
+#, python-format
+msgid "%(object)s not updated, error: %(error)s."
+msgstr "%(object)s لم يتم التعديل, الخطأ: %(error)s."
+
+#: generics.py:919
+#, python-format
+msgid "%(object)s updated successfully."
+msgstr "%(object)s التعديل الناجح."
+
+#: generics.py:986
+#, python-format
+msgid "%(count)d objects deleted successfully."
+msgstr ""
+
+#: generics.py:987
+#, python-format
+msgid "\"%(object)s\" deleted successfully."
+msgstr ""
+
+#: generics.py:988
+#, python-format
+msgid "%(count)d object deleted successfully."
+msgstr ""
+
+#: generics.py:989
+#, python-format
+msgid "Delete %(count)d objects."
+msgstr ""
+
+#: generics.py:990
+#, python-format
+msgid "Delete \"%(object)s\"."
+msgstr ""
+
+#: generics.py:991
+#, python-format
+msgid "Delete %(count)d object."
+msgstr ""
+
+#: settings.py:17
+msgid "The number objects that will be displayed per page."
+msgstr "عدد العناصر الظاهرة في الصفحة"
+
+#: settings.py:23
+msgid "A string specifying the name to use for the paging parameter."
+msgstr ""
+
+#: settings.py:29
+msgid ""
+"Display a submit button and wait for the submit button to be pressed before "
+"processing up the upload."
+msgstr ""
+
+#: templates/views/app/foot.html:45
+msgid "Cancel upload"
+msgstr "إلغاء الرفع"
+
+#: templates/views/app/foot.html:46
+msgid "Are you sure you want to cancel this upload?"
+msgstr "هل أنت متأكد أنك تريد إلغاء هذا التحميل؟"
+
+#: templates/views/app/foot.html:47
+msgid "Drop files or click here to upload files"
+msgstr "قم بإسقاط الملفات أو انقر هنا لتحميل الملفات"
+
+#: templates/views/app/foot.html:48
+msgid "Your browser does not support drag and drop file uploads."
+msgstr "السحب والإفلات لا يدعمه متصفحك"
+
+#: templates/views/app/foot.html:49
+msgid "Please use the fallback form below to upload your files."
+msgstr "الرجاء استخدام النموذج أدناه لتحميل الملفات الخاصة بك"
+
+#: templates/views/app/foot.html:50
+msgid "Clear"
+msgstr "مسح "
+
+#: templates/views/app/foot.html:51
+msgid "Server responded with {{statusCode}} code."
+msgstr "استجاب الخادم برمز {{statusCode}}."
+
+#: templatetags/views_tags.py:30
+msgid "Confirm delete"
+msgstr "تأكيد حذف"
+
+#: templatetags/views_tags.py:35
+#, python-format
+msgid "Edit %s"
+msgstr "التعديل %s"
+
+#: templatetags/views_tags.py:38
+msgid "Confirm"
+msgstr "تأكيد"
+
+#: templatetags/views_tags.py:42
+#, python-format
+msgid "Details for: %s"
+msgstr "التفاصيل : %s"
+
+#: templatetags/views_tags.py:46
+#, python-format
+msgid "Edit: %s"
+msgstr "تعديل : %s"
+
+#: templatetags/views_tags.py:50
+msgid "Create"
+msgstr "انشاء"
+
+#: view_mixins.py:426
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "لا %(verbose_name)s ايجاد المتشابه"
+
+#: view_mixins.py:452
+#, python-format
+msgid "Unable to perform operation on object %(instance)s; %(exception)s."
+msgstr "تعذر إجراء العملية على الكائن %(instance)s ؛ %(exception)s."
+
+#: view_mixins.py:455
+#, python-format
+msgid "Operation performed on %(count)d objects."
+msgstr ""
+
+#: view_mixins.py:456
+#, python-format
+msgid "Operation performed on %(object)s."
+msgstr "تم تنفيذ العملية على %(object)s."
+
+#: view_mixins.py:457
+#, python-format
+msgid "Operation performed on %(count)d object."
+msgstr ""
+
+#: view_mixins.py:458
+#, python-format
+msgid "Perform operation on %(count)d objects."
+msgstr ""
+
+#: view_mixins.py:459
+#, python-format
+msgid "Perform operation on %(object)s."
+msgstr ""
+
+#: view_mixins.py:460
+#, python-format
+msgid "Perform operation on %(count)d object."
+msgstr ""
+
+#: view_mixins.py:544
+msgid "Object"
+msgstr "عنصر"

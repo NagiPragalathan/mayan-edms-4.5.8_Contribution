@@ -1,0 +1,29 @@
+.. _apps-appearance:
+
+
+==========
+Appearance
+==========
+
+The appearance app handles the user interface definition. Every table, form
+and button in Mayan EDMS is defined in the this app.
+
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Troubleshooting:
+
+    - Mayan EDMS installed correctly and works, but static files are not served
+    - Error “Missing staticfiles manifest entry for …”
+
+
+- :doc:`troubleshooting`
+
+.. toctree::
+  :hidden:
+
+  troubleshooting

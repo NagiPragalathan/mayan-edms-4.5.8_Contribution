@@ -1,0 +1,371 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Dezső József <dejo60@gmail.com>, 2023
+# molnars <szabolcs.molnar@gmail.com>, 2023
+# Csaba Tarjányi, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Csaba Tarjányi, 2023\n"
+"Language-Team: Hungarian (https://app.transifex.com/rosarior/teams/13584/hu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:54 apps.py:164 apps.py:168 apps.py:172 apps.py:176 apps.py:180
+#: events.py:6 forms.py:14 links.py:30 menus.py:14 models.py:51 models.py:158
+#: permissions.py:6 search.py:48 views.py:169 workflow_actions.py:39
+#: workflow_actions.py:53
+msgid "Cabinets"
+msgstr "Irattartók"
+
+#: events.py:11
+msgid "Cabinet created"
+msgstr "Irattartó létrehozva"
+
+#: events.py:14
+msgid "Cabinet deleted"
+msgstr "Irattartó törölve"
+
+#: events.py:17
+msgid "Cabinet edited"
+msgstr "Irattartó szerkesztve"
+
+#: events.py:20
+msgid "Document added to cabinet"
+msgstr "A dokumentum hozzáadva az irattartóhoz"
+
+#: events.py:23
+msgid "Document removed from cabinet"
+msgstr "A dokumentumot eltávolították az irattartóból"
+
+#: links.py:36 links.py:48 workflow_actions.py:75
+msgid "Remove from cabinets"
+msgstr "Eltávolítás az irattartókból"
+
+#: links.py:41 links.py:44 workflow_actions.py:21
+msgid "Add to cabinets"
+msgstr "Hozzáadás az irattartókhoz"
+
+#: links.py:59
+msgid "Add new level"
+msgstr "Új szint hozzáadása"
+
+#: links.py:64 views.py:47
+msgid "Create cabinet"
+msgstr "Irattartó létrehozása"
+
+#: links.py:69
+msgid "Delete"
+msgstr "Törlés"
+
+#: links.py:73
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: links.py:81
+msgid "All"
+msgstr "Mind"
+
+#: links.py:85
+msgid "Details"
+msgstr "Részletek"
+
+#: methods.py:21
+msgid "Return a list of cabinets containing the document."
+msgstr "Adja vissza a dokumentumot tartalmazó irattartók listáját."
+
+#: methods.py:23
+msgid "get_cabinets()"
+msgstr "get_cabinets()"
+
+#: model_mixins.py:50
+msgid "The path to the cabinet including all ancestors."
+msgstr "Az irattartó elérési útja, beleértve az összes őst."
+
+#: model_mixins.py:52 serializers.py:32
+msgid "Full path"
+msgstr "Teljes elérési út"
+
+#: models.py:32 serializers.py:41
+msgid "Parent"
+msgstr "Fölérendelt"
+
+#: models.py:35
+msgid "A short text used to identify the cabinet."
+msgstr "Az irattartó azonosítására szolgáló rövid szöveg."
+
+#: models.py:36
+msgid "Label"
+msgstr "Cimke"
+
+#: models.py:40
+msgid "Documents"
+msgstr "Dokumentumok"
+
+#: models.py:50 models.py:132 models.py:157
+msgid "Cabinet"
+msgstr "Irattartó"
+
+#: models.py:133
+msgid "Parent and Label"
+msgstr "Fölérendelt és címke"
+
+#: models.py:140
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr "%(model_name)s a %(field_labels)s-al már létezik."
+
+#: models.py:169
+msgid "Document cabinet"
+msgstr "Dokumentum irattartó"
+
+#: models.py:170
+msgid "Document cabinets"
+msgstr "Dokumentum irattartók"
+
+#: permissions.py:12
+msgid "Add documents to cabinets"
+msgstr "Dokumentumok hozzáadása az irattartókhoz"
+
+#: permissions.py:15
+msgid "Create cabinets"
+msgstr "Irattartók létrehozása"
+
+#: permissions.py:18
+msgid "Delete cabinets"
+msgstr "Irattartók törlése"
+
+#: permissions.py:21
+msgid "Edit cabinets"
+msgstr "Irattartók szerkesztése"
+
+#: permissions.py:24
+msgid "Remove documents from cabinets"
+msgstr "Távolítsa el a dokumentumokat az irattartókból"
+
+#: permissions.py:27
+msgid "View cabinets"
+msgstr "Irattartók megtekintése"
+
+#: search.py:24
+msgid "Document type"
+msgstr "Dokumentum típus"
+
+#: search.py:27
+msgid "Document label"
+msgstr "Dokumentumcímke"
+
+#: search.py:30
+msgid "Document description"
+msgstr "Dokumentum leírása"
+
+#: search.py:33
+msgid "Document UUID"
+msgstr "Dokumentum UUID"
+
+#: search.py:39
+msgid "Document file checksum"
+msgstr "Dokumentumfájl ellenőrző összeg"
+
+#: search.py:42
+msgid "Document file MIME type"
+msgstr "Dokumentumfájl MIME típusa"
+
+#: serializers.py:18
+msgid "List of children cabinets."
+msgstr "Alárendelt irattartók listája."
+
+#: serializers.py:18
+msgid "Children"
+msgstr "Alárendeltek"
+
+#: serializers.py:23
+msgid ""
+"URL of the API endpoint showing the list documents inside this cabinet."
+msgstr ""
+"Az API-végpont URL-címe, amely az irattartón belüli dokumentumok listáját "
+"mutatja."
+
+#: serializers.py:25
+msgid "Documents URL"
+msgstr "Dokumentumok URL"
+
+#: serializers.py:30
+msgid "The name of this cabinet level appended to the names of its ancestors."
+msgstr "Ennek a irattartó szintnek a neve az ősei nevéhez fűződik."
+
+#: serializers.py:35
+msgid "Parents URL"
+msgstr "Fölérendelt URL"
+
+#: serializers.py:51
+msgid "URL"
+msgstr "URL"
+
+#: serializers.py:84
+msgid "Primary key of the document to add to the cabinet."
+msgstr "Az irattartóhoz hozzáadandó dokumentum elsődleges kulcsa."
+
+#: serializers.py:85 serializers.py:94
+msgid "Document ID"
+msgstr "Dokumentumazonosító"
+
+#: serializers.py:93
+msgid "Primary key of the document to remove from the cabinet."
+msgstr "Az irattartóból eltávolítandó dokumentum elsődleges kulcsa."
+
+#: templates/cabinets/cabinet_details.html:17
+msgid "Navigation:"
+msgstr "Navigáció:"
+
+#: views.py:64
+#, python-format
+msgid "Add new level to: %s"
+msgstr "Új szint hozzáadása ehhez: %s"
+
+#: views.py:89
+#, python-format
+msgid "Delete the cabinet: %s?"
+msgstr "Törölje az irattartót: %s ?"
+
+#: views.py:128
+msgid ""
+"Cabinet levels can contain documents or other cabinet sub levels. To add "
+"documents to a cabinet, select the cabinet view of a document view."
+msgstr ""
+"Az irattartó szintek dokumentumokat vagy más irattartó szinteket "
+"tartalmazhatnak. Ha dokumentumokat szeretne hozzáadni egy irattartóhoz, "
+"válassza ki a dokumentumnézet irattartó nézetét."
+
+#: views.py:132
+msgid "This cabinet level is empty"
+msgstr "Ez az irattartó szint üres"
+
+#: views.py:135
+#, python-format
+msgid "Details of cabinet: %s"
+msgstr "Az irattartó adatai: %s"
+
+#: views.py:154
+#, python-format
+msgid "Edit cabinet: %s"
+msgstr "Irattartó szerkesztése: %s"
+
+#: views.py:175
+msgid ""
+"Cabinets are a multi-level method to organize documents. Each cabinet can "
+"contain documents as well as other sub level cabinets."
+msgstr ""
+"Az irattartók egy többszintű módszer a dokumentumok rendszerezésére. "
+"Mindegyik irattartó tartalmazhat dokumentumokat, valamint más alsóbb szintű "
+"irattartókat."
+
+#: views.py:179
+msgid "No cabinets available"
+msgstr "Nem állnak rendelkezésre irattartók"
+
+#: views.py:192
+#, python-format
+msgid "Document \"%(object)s\" added to cabinets successfully."
+msgstr "A \"%(object)s\" dokumentum sikeresen hozzáadva az irattartókhoz."
+
+#: views.py:195
+#, python-format
+msgid "%(count)d document added to cabinets successfully."
+msgstr "%(count)d dokumentum sikeresen hozzáadva az irattartókhoz."
+
+#: views.py:198
+#, python-format
+msgid "%(count)d documents added to cabinets successfully."
+msgstr "%(count)d dokumentumok sikeresen hozzáadva az irattartókhoz."
+
+#: views.py:200
+#, python-format
+msgid "Add %(count)d documents to cabinets."
+msgstr "%(count)d dokumentum hozzáadása az irattartókhoz."
+
+#: views.py:201
+#, python-format
+msgid "Add document \"%(object)s\" to cabinets."
+msgstr "A \"%(object)s\" dokumentum hozzáadása az irattartókhoz."
+
+#: views.py:202
+#, python-format
+msgid "Add %(count)d document to cabinets."
+msgstr "A %(count)d dokumentum hozzáadása az irattartókhoz."
+
+#: views.py:220
+msgid "Cabinets to which the selected documents will be added."
+msgstr ""
+"Irattartók, amelyekhez a kiválasztott dokumentumok hozzáadásra kerülnek."
+
+#: views.py:266
+msgid "Documents can be added to many cabinets."
+msgstr "Számos irattartóhoz lehet a dokumentumokat hozzáadni."
+
+#: views.py:269
+msgid "This document is not in any cabinet"
+msgstr "Ez a dokumentum egyetlen irattartóban sem található"
+
+#: views.py:273
+#, python-format
+msgid "Cabinets containing document: %s"
+msgstr "Dokumentumot tartalmazó irattartók: %s"
+
+#: views.py:289
+#, python-format
+msgid "Document \"%(object)s\" removed from cabinets successfully."
+msgstr "A \"%(object)s\" dokumentum sikeresen eltávolítva az irattartókból."
+
+#: views.py:292
+#, python-format
+msgid "%(count)d document removed from cabinets successfully."
+msgstr "%(count)d dokumentum sikeresen eltávolítva az irattartókból."
+
+#: views.py:295
+#, python-format
+msgid "%(count)d documents removed from cabinets successfully."
+msgstr "%(count)d dokumentum sikeresen eltávolítva az irattartókból."
+
+#: views.py:297
+#, python-format
+msgid "Remove %(count)d documents from cabinets."
+msgstr "%(count)d dokumentum eltávolítása az irattartókból.."
+
+#: views.py:298
+#, python-format
+msgid "Remove document \"%(object)s\" from cabinets."
+msgstr "Távolítsa el a \"%(object)s\" dokumentumot az irattartókból."
+
+#: views.py:299
+#, python-format
+msgid "Remove %(count)d document from cabinets."
+msgstr "%(count)d dokumentum eltávolítása az irattartókból."
+
+#: views.py:317
+msgid "Cabinets from which the selected documents will be removed."
+msgstr ""
+"Irattartók, amelyekből a kiválasztott dokumentumok eltávolításra kerülnek."
+
+#: wizard_steps.py:18
+msgid "Select cabinets"
+msgstr "Irattartók kiválasztása"
+
+#: wizard_steps.py:77 workflow_actions.py:33
+msgid "Cabinets to which the document will be added."
+msgstr "Irattartók, amelyekhez a dokumentum hozzáadásra kerül."
+
+#: workflow_actions.py:83
+msgid "Cabinets from which the document will be removed"
+msgstr "Irattartók, amelyekből a dokumentum eltávolításra kerül"

@@ -1,0 +1,11 @@
+from django.utils.translation import ugettext_lazy as _
+
+from mayan.apps.common.apps import MayanAppConfig
+
+
+class SourceWatchStorageApp(MayanAppConfig):
+    app_namespace = 'source_watch_storages'
+    app_url = 'source_watch_storages'
+    has_tests = True
+    name = 'mayan.apps.source_watch_storages'
+    verbose_name = _('Watch storages')

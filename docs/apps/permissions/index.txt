@@ -1,0 +1,36 @@
+.. _apps-permissions:
+
+
+===========
+Permissions
+===========
+
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Articles:
+
+    - The permissions system
+
+    Troubleshooting:
+
+    - Error message: “Unknown or obsolete permission namespace…”
+    - Error message: “Unknown or obsolete permission…”
+    - At upload, users can access tags, cabinets, and metadata they for which they don’t have permissions
+
+
+
+- :doc:`roles`
+- :doc:`troubleshooting`
+
+
+.. toctree::
+    :hidden:
+
+    roles
+    troubleshooting
+

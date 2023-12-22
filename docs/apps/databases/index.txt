@@ -1,0 +1,20 @@
+.. _apps-databases:
+
+
+=========
+Databases
+=========
+
+The databases app provides features that enhance Django's database
+abstraction layer. This app provides reusable model components.
+
+
+- :doc:`troubleshooting`
+
+.. toctree::
+  :hidden:
+
+  troubleshooting
+
+
+

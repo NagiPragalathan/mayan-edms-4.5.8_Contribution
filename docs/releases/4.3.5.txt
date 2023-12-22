@@ -1,0 +1,43 @@
+Version 4.3.5
+=============
+
+Released: January 10, 2023
+
+Status: Stable
+
+Changes
+-------
+
+This version backports a change from version 4.4 beta 1 that fixes deleting
+users from the user interface.
+
+
+Removals
+--------
+
+- None
+
+
+Upgrade process
+---------------
+
+.. include:: partials/upgrade-3.5-4.0.txt
+
+
+Backward incompatible changes
+-----------------------------
+
+- None
+
+Deprecations
+------------
+
+- None
+
+
+Issues closed
+-------------
+
+- :gitlab-issue:`1125` Error deleting user
+
+.. _PyPI: https://pypi.python.org/pypi/mayan-edms/

@@ -1,0 +1,503 @@
+{% load platform_tags %}
+
+.job_docker_push_variables:
+  &job_docker_push_variables
+    PYTHON_BIN: /usr/bin/python3
+    VERSION_SCRIPT_BIN: mayan/apps/dependencies/versions.py
+
+stages:
+  - stage_build_python
+  - stage_test_python
+  - stage_build_container
+  - stage_test_container
+  - stage_build_documentation
+  - stage_push
+  - stage_deploy
+
+# Docker
+
+job_docker_build:
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+{% platform_gitlab_ci_cache_before_script apk=True indent=4 %}
+    - docker login --username "${CI_REGISTRY_USER}" --password "${CI_REGISTRY_PASSWORD}" ${CI_REGISTRY}
+    - apk update
+    - apk add --cache-dir ${APK_CACHE_DIR} cairo gcc libffi-dev libjpeg-turbo-dev libmagic make musl-dev python3 python3-dev zlib-dev
+    - python3 -m venv venv
+    - . venv/bin/activate
+    - pip install pip==${PYTHON_PIP_VERSION}
+    - pip install wheel==${PYTHON_WHEEL_VERSION}
+    - pip install --requirement requirements/common.txt
+    - cat requirements/base.txt | grep -v 'django-auth-ldap'| pip install -r /dev/stdin
+  cache:
+{% platform_gitlab_ci_cache_paths apk=True indent=4 pip=True %}
+  image: {{ DOCKER_DIND_IMAGE_VERSION }}
+  only:
+    - {{ GITLAB_CI_BRANCH_BUILDS_DOCKER }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_NIGHTLY }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_STAGING }}
+    - {{ GITLAB_CI_BRANCH_TESTS_ALL }}
+    - {{ GITLAB_CI_BRANCH_TESTS_DOCKER }}
+  script:
+    - DOCKER_VERSION=`cat docker/rootfs/version`
+    - make docker-build DOCKER_IMAGE_MAYAN_NAME=${CI_REGISTRY_IMAGE} IMAGE_VERSION=${DOCKER_VERSION} DOCKER_IMAGE_LABELS_EXTRA='--label com.gitlab.ci.job.id=${CI_JOB_ID} --label com.gitlab.ci.pipeline.id=${CI_PIPELINE_ID} --label org.opencontainers.image.revision=${CI_COMMIT_SHA}'
+    - docker push "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}"
+  services:
+    - {{ DOCKER_DIND_IMAGE_VERSION }}
+  stage: stage_build_container
+  variables:
+    DOCKER_DRIVER: overlay2
+{% platform_gitlab_ci_cache_variables indent=4 apk=True pip=True %}
+
+job_docker_test:
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+    - docker login --username "${CI_REGISTRY_USER}" --password "${CI_REGISTRY_PASSWORD}" ${CI_REGISTRY}
+  image: {{ DOCKER_DIND_IMAGE_VERSION }}
+  needs:
+    - job_docker_build
+  only:
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MINOR }}
+    - {{ GITLAB_CI_BRANCH_TESTS_ALL }}
+    - {{ GITLAB_CI_BRANCH_TESTS_DOCKER }}
+  script:
+    - DOCKER_VERSION=`cat docker/rootfs/version`
+    - SERVICE_POSTGRES_IP=$(cat /etc/hosts | awk '{if ($2 == "postgres") print $1;}')
+    - docker run --rm --add-host="postgres:${SERVICE_POSTGRES_IP}" -e MAYAN_DATABASES="{'default':{'ENGINE':'django.db.backends.postgresql_psycopg2','NAME':'{{ DEFAULT_DATABASE_NAME }}','USER':'{{ DEFAULT_DATABASE_USER }}','PASSWORD':'{{ DEFAULT_DATABASE_PASSWORD }}','HOST':'postgres'}}" "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}" run_tests
+  services:
+    - {{ DOCKER_DIND_IMAGE_VERSION }}
+    - {{ DOCKER_POSTGRES_IMAGE_VERSION }}
+  stage: stage_test_container
+  tags:
+    - postgres
+  variables:
+    DOCKER_DRIVER: overlay2
+    POSTGRES_DB: "{{ DEFAULT_DATABASE_NAME }}"
+    POSTGRES_PASSWORD: "{{ DEFAULT_DATABASE_PASSWORD }}"
+    POSTGRES_USER: "{{ DEFAULT_DATABASE_USER }}"
+
+job_docker_push_major:
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+{% platform_gitlab_ci_cache_before_script apk=True indent=4 %}
+    - apk add --cache-dir ${APK_CACHE_DIR} python3 py3-packaging
+    - docker login --username "${CI_REGISTRY_USER}" --password "${CI_REGISTRY_PASSWORD}" ${CI_REGISTRY}
+  cache:
+{% platform_gitlab_ci_cache_paths apk=True indent=4 %}
+  image: {{ DOCKER_DIND_IMAGE_VERSION }}
+  needs:
+    - job_docker_test
+  only:
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MAJOR }}
+  script:
+    - DOCKER_VERSION=`cat docker/rootfs/version`
+    - docker pull "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}"
+    - docker tag "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}" registry-1.docker.io/mayanedms/mayanedms:v"${DOCKER_VERSION}"
+    - docker tag "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}" registry-1.docker.io/mayanedms/mayanedms:latest
+    - MAJOR_VERSION=$(${PYTHON_BIN} ${VERSION_SCRIPT_BIN} ${DOCKER_VERSION} major);
+    - docker tag "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}" registry-1.docker.io/mayanedms/mayanedms:s"${MAJOR_VERSION}"
+    - MINOR_VERSION=$(${PYTHON_BIN} ${VERSION_SCRIPT_BIN} ${DOCKER_VERSION} minor);
+    - docker tag "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}" registry-1.docker.io/mayanedms/mayanedms:s"${MINOR_VERSION}"
+    - docker login --username "${DOCKER_HUB_USERNAME}" --password "${DOCKER_HUB_PASSWORD}" https://registry-1.docker.io
+    - docker push registry-1.docker.io/mayanedms/mayanedms:v"${DOCKER_VERSION}"
+    - docker push registry-1.docker.io/mayanedms/mayanedms:latest
+    - docker push registry-1.docker.io/mayanedms/mayanedms:s"${MAJOR_VERSION}"
+    - docker push registry-1.docker.io/mayanedms/mayanedms:s"${MINOR_VERSION}"
+  services:
+    - {{ DOCKER_DIND_IMAGE_VERSION }}
+  stage: stage_push
+  variables:
+    DOCKER_DRIVER: overlay2
+{% platform_gitlab_ci_cache_variables indent=4 apk=True %}
+    << : *job_docker_push_variables
+
+job_docker_push_minor:
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+{% platform_gitlab_ci_cache_before_script apk=True indent=4 %}
+    - apk add --cache-dir ${APK_CACHE_DIR} python3 py3-packaging
+    - docker login --username "${CI_REGISTRY_USER}" --password "${CI_REGISTRY_PASSWORD}" ${CI_REGISTRY}
+  cache:
+{% platform_gitlab_ci_cache_paths apk=True indent=4 %}
+  image: {{ DOCKER_DIND_IMAGE_VERSION }}
+  needs:
+    - job_docker_test
+  only:
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MINOR }}
+  script:
+    - DOCKER_VERSION=`cat docker/rootfs/version`
+    - docker pull "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}"
+    - docker tag "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}" registry-1.docker.io/mayanedms/mayanedms:v"${DOCKER_VERSION}"
+    - MINOR_VERSION=$(${PYTHON_BIN} ${VERSION_SCRIPT_BIN} ${DOCKER_VERSION} minor);
+    - docker tag "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}" registry-1.docker.io/mayanedms/mayanedms:s"${MINOR_VERSION}"
+    - docker login --username "${DOCKER_HUB_USERNAME}" --password "${DOCKER_HUB_PASSWORD}" https://registry-1.docker.io
+    - docker push registry-1.docker.io/mayanedms/mayanedms:v"${DOCKER_VERSION}"
+    - docker push registry-1.docker.io/mayanedms/mayanedms:s"${MINOR_VERSION}"
+  services:
+    - {{ DOCKER_DIND_IMAGE_VERSION }}
+  stage: stage_push
+  variables:
+    DOCKER_DRIVER: overlay2
+{% platform_gitlab_ci_cache_variables indent=4 apk=True %}
+    << : *job_docker_push_variables
+
+job_docker_nightly:
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+    - docker login --username "${CI_REGISTRY_USER}" --password "${CI_REGISTRY_PASSWORD}" ${CI_REGISTRY}
+  image: {{ DOCKER_DIND_IMAGE_VERSION }}
+  needs:
+    - job_docker_build
+  only:
+    - {{ GITLAB_CI_BRANCH_RELEASES_NIGHTLY }}
+  script:
+    - DOCKER_VERSION=`cat docker/rootfs/version`
+    - docker pull "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}"
+    - docker login --username "${DOCKER_HUB_USERNAME}" --password "${DOCKER_HUB_PASSWORD}" https://registry-1.docker.io
+    - docker tag "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}" "registry-1.docker.io/mayanedms/mayanedms:${CI_COMMIT_REF_SLUG}"
+    - docker push "registry-1.docker.io/mayanedms/mayanedms:${CI_COMMIT_REF_SLUG}"
+  services:
+    - {{ DOCKER_DIND_IMAGE_VERSION }}
+  stage: stage_push
+  variables:
+    DOCKER_DRIVER: overlay2
+
+job_docker_testing:
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+    - docker login --username "${CI_REGISTRY_USER}" --password "${CI_REGISTRY_PASSWORD}" ${CI_REGISTRY}
+  image: {{ DOCKER_DIND_IMAGE_VERSION }}
+  needs:
+    - job_docker_test
+  only:
+    - {{ GITLAB_CI_BRANCH_RELEASES_TESTING }}
+  script:
+    - DOCKER_VERSION=`cat docker/rootfs/version`
+    - docker pull "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}"
+    - docker login --username "${DOCKER_HUB_USERNAME}" --password "${DOCKER_HUB_PASSWORD}" https://registry-1.docker.io
+    - docker tag "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}" "registry-1.docker.io/mayanedms/mayanedms:t${DOCKER_VERSION}"
+    - docker push "registry-1.docker.io/mayanedms/mayanedms:t${DOCKER_VERSION}"
+  services:
+    - {{ DOCKER_DIND_IMAGE_VERSION }}
+  stage: stage_push
+  variables:
+    DOCKER_DRIVER: overlay2
+
+# Documentation
+
+job_documentation_build:
+  artifacts:
+    expire_in: 4 hr
+    paths:
+    - docs
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+{% platform_gitlab_ci_cache_before_script apt=True indent=4 %}
+    - apt-get install --yes --no-install-recommends enchant-2 gcc make libcairo2-dev libffi-dev libjpeg-dev libldap2-dev libpng-dev libsasl2-dev python3-venv python3-dev zlib1g-dev
+    - python3 -m venv venv
+    - . venv/bin/activate
+    - pip install pip==${PYTHON_PIP_VERSION}
+    - pip install wheel==${PYTHON_WHEEL_VERSION}
+  cache:
+{% platform_gitlab_ci_cache_paths apt=True indent=4 pip=True %}
+  image: {{ DOCKER_LINUX_IMAGE_VERSION }}
+  only:
+    - {{ GITLAB_CI_BRANCH_BUILDS_DOCUMENTATION }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCUMENTATION }}
+    - {{ GITLAB_CI_BRANCH_TESTS_ALL }}
+  script:
+    - pip install --requirement requirements/common.txt
+    - pip install --requirement requirements/base.txt
+    - pip install --requirement requirements/documentation.txt
+    - pip install --requirement requirements/documentation_override.txt
+    - cd docs
+    - make html
+  stage: stage_build_documentation
+  variables:
+{% platform_gitlab_ci_cache_variables apt=True indent=4 pip=True %}
+
+job_documentation_push:
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+{% platform_gitlab_ci_cache_before_script apt=True indent=4 %}
+    - mkdir --parents ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "${DOCUMENTATION_SSH_KNOWN_HOSTS}" > ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+    - 'which ssh-agent || ( apt-get update --yes && apt-get install --yes --no-install-recommends openssh-client rsync )'
+    - eval $(ssh-agent -s)
+    - echo "${DOCUMENTATION_SSH_PRIVATE_KEY}" | tr -d '\r' | ssh-add - > /dev/null
+  cache:
+{% platform_gitlab_ci_cache_paths apt=True indent=4 pip=True %}
+  image: {{ DOCKER_LINUX_IMAGE_VERSION }}
+  only:
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCUMENTATION }}
+  script:
+    - ssh ${DOCUMENTATION_SSH_USERNAME}@${DOCUMENTATION_HOSTNAME} "rm -Rf ${DOCUMENTATION_SERVER_PATH}/*"
+    - rsync -avzP --progress -e ssh docs/_build/html/* ${DOCUMENTATION_SSH_USERNAME}@${DOCUMENTATION_HOSTNAME}:${DOCUMENTATION_SERVER_PATH}
+  stage: stage_push
+  variables:
+{% platform_gitlab_ci_cache_variables apt=True indent=4 pip=True %}
+
+# Python
+
+job_python_build:
+  artifacts:
+    expire_in: 4 hr
+    paths:
+    - dist
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+{% platform_gitlab_ci_cache_before_script apt=True indent=4 %}
+    - apt-get update
+    - apt-get install --yes --no-install-recommends make python3-venv python3-dev
+    - python3 -m venv venv
+    - . venv/bin/activate
+    - pip install pip==${PYTHON_PIP_VERSION}
+  cache:
+{% platform_gitlab_ci_cache_paths apt=True indent=4 pip=True %}
+  image: {{ DOCKER_LINUX_IMAGE_VERSION }}
+  only:
+    - {{ GITLAB_CI_BRANCH_BUILDS_PYTHON }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_PYTHON_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_PYTHON_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_TESTING }}
+    - {{ GITLAB_CI_BRANCH_TESTS_ALL }}
+    - {{ GITLAB_CI_BRANCH_TESTS_PYTHON_ALL }}
+    - {{ GITLAB_CI_BRANCH_TESTS_PYTHON_UPGRADE }}
+  script:
+    - pip install --requirement requirements/build.txt
+    - make python-wheel
+  stage: stage_build_python
+  variables:
+{% platform_gitlab_ci_cache_variables apt=True indent=4 pip=True %}
+
+job_python_push_pypi:
+  cache:
+    paths:
+      - .apt
+      - .cache/pip
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+{% platform_gitlab_ci_cache_before_script apt=True indent=4 %}
+    - apt-get update
+    - apt-get install --yes --no-install-recommends make python3-venv python3-dev
+    - python3 -m venv venv
+    - . venv/bin/activate
+    - pip install pip==${PYTHON_PIP_VERSION}
+  cache:
+{% platform_gitlab_ci_cache_paths apt=True indent=4 pip=True %}
+  image: {{ DOCKER_LINUX_IMAGE_VERSION }}
+  only:
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_PYTHON_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_PYTHON_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_TESTING }}
+  script:
+    - pip install --requirement requirements/build.txt
+    - echo "${PYPIRC}" > ~/.pypirc
+    - twine upload --verbose dist/* -r pypi
+  stage: stage_push
+  variables:
+{% platform_gitlab_ci_cache_variables apt=True indent=4 pip=True %}
+
+# Test upgrade from the latest public version to the local version
+
+.job_base_upgrade_test:
+  &job_base_upgrade_test
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+{% platform_gitlab_ci_cache_before_script apt=True indent=4 %}
+    - apt-get install --yes --no-install-recommends curl exiftool file gcc ghostscript gnupg1 libldap2-dev libjpeg-dev libmagic1 libpng-dev libsasl2-dev libtiff-dev make poppler-utils python3-venv python3-dev tesseract-ocr
+    - python3 -m venv venv
+    - . venv/bin/activate
+    - pip install pip==${PYTHON_PIP_VERSION}
+    - DOCKER_VERSION=`cat docker/rootfs/version`
+    - pip install "mayan-edms<${DOCKER_VERSION}"
+    - pip install importlib-metadata==4.13.0
+  cache:
+{% platform_gitlab_ci_cache_paths apt=True indent=4 pip=True %}
+  dependencies:
+    - job_python_build
+  image: {{ DOCKER_LINUX_IMAGE_VERSION }}
+  needs:
+    - job_python_build
+  only:
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_PYTHON_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_PYTHON_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_STAGING }}
+    - {{ GITLAB_CI_BRANCH_TESTS_ALL }}
+    - {{ GITLAB_CI_BRANCH_TESTS_PYTHON_ALL }}
+    - {{ GITLAB_CI_BRANCH_TESTS_PYTHON_UPGRADE }}
+  stage: stage_test_python
+  variables:
+{% platform_gitlab_ci_cache_variables apt=True indent=4 pip=True %}
+
+job_postgres_upgrade_test:
+  << : *job_base_upgrade_test
+  script:
+    - apt-get install --yes --no-install-recommends libpq-dev
+    - pip install psycopg2==${PYTHON_PSYCOPG2_VERSION_PREVIOUS}
+    - export MAYAN_DATABASES="{'default':{'ENGINE':'django.db.backends.postgresql','NAME':'{{ DEFAULT_DATABASE_NAME }}','PASSWORD':'{{ DEFAULT_DATABASE_PASSWORD }}','USER':'{{ DEFAULT_DATABASE_USER }}','HOST':'postgres'}}"
+    - mayan-edms.py common_initial_setup --no-dependencies
+    - echo "from mayan.apps.documents.models.document_type_models import DocumentType;from mayan.apps.documents.tests.literals import TEST_FILE_SMALL_PATH;DocumentType.objects.first().documents_upload(file_object=open(file=TEST_FILE_SMALL_PATH, mode='rb'))" | mayan-edms.py shell
+    - pip install --requirement requirements/build.txt --requirement requirements/testing-base.txt
+    - pip install psycopg2==${PYTHON_PSYCOPG2_VERSION}
+    - pip install dist/mayan_edms-*.whl
+    - mayan-edms.py common_perform_upgrade --no-dependencies
+  services:
+    - {{ DOCKER_POSTGRES_IMAGE_VERSION }}
+  tags:
+    - postgres
+  variables:
+    POSTGRES_DB: "{{ DEFAULT_DATABASE_NAME }}"
+    POSTGRES_PASSWORD: "{{ DEFAULT_DATABASE_PASSWORD }}"
+    POSTGRES_USER: "{{ DEFAULT_DATABASE_USER }}"
+
+job_sqlite_upgrade_test:
+  << : *job_base_upgrade_test
+  script:
+    - mayan-edms.py common_initial_setup --no-dependencies
+    - echo "from mayan.apps.documents.models.document_type_models import DocumentType;from mayan.apps.documents.tests.literals import TEST_FILE_SMALL_PATH;DocumentType.objects.first().documents_upload(file_object=open(file=TEST_FILE_SMALL_PATH, mode='rb'))" | mayan-edms.py shell
+    - pip install --requirement requirements/build.txt --requirement requirements/testing-base.txt
+    - pip install dist/mayan_edms-*.whl
+    - mayan-edms.py common_perform_upgrade --no-dependencies
+
+# Run the test suit
+
+.job_base_test:
+  &job_base_test
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+{% platform_gitlab_ci_cache_before_script apt=True indent=4 %}
+    - apt-get install --yes --no-install-recommends curl exiftool file gcc ghostscript gnupg1 graphviz libfuse2 libldap2-dev libjpeg-dev libmagic1 libpng-dev libreoffice-calc-nogui libreoffice-draw-nogui libreoffice-impress-nogui libreoffice-math-nogui libreoffice-writer-nogui libsasl2-dev libtiff-dev make poppler-utils python3-venv python3-dev sane-utils tesseract-ocr tesseract-ocr-deu
+    - python3 -m venv venv
+    - . venv/bin/activate
+    - pip install pip==${PYTHON_PIP_VERSION}
+    - pip install --requirement requirements.txt --requirement requirements/testing-base.txt --requirement requirements/build.txt
+  cache:
+{% platform_gitlab_ci_cache_paths apt=True indent=4 pip=True %}
+  image: {{ DOCKER_LINUX_IMAGE_VERSION }}
+  only:
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_PYTHON_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_PYTHON_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_STAGING }}
+    - {{ GITLAB_CI_BRANCH_TESTS_ALL }}
+    - {{ GITLAB_CI_BRANCH_TESTS_PYTHON_ALL }}
+    - {{ GITLAB_CI_BRANCH_TESTS_PYTHON_BASE }}
+  stage: stage_test_python
+  variables:
+{% platform_gitlab_ci_cache_variables apt=True indent=4 pip=True %}
+
+job_postgres_test:
+  << : *job_base_test
+  script:
+    - apt-get install --yes --no-install-recommends libpq-dev
+    - . venv/bin/activate
+    - pip install psycopg2==${PYTHON_PSYCOPG2_VERSION}
+    - export MAYAN_DATABASES="{'default':{'ENGINE':'django.db.backends.postgresql','NAME':'{{ DEFAULT_DATABASE_NAME }}','PASSWORD':'{{ DEFAULT_DATABASE_PASSWORD }}','USER':'{{ DEFAULT_DATABASE_USER }}','HOST':'postgres'}}"
+    - make test-all SETTINGS=mayan.settings.testing.gitlab-ci
+    - make test-migrations-all SETTINGS=mayan.settings.testing.gitlab-ci
+  services:
+    - {{ DOCKER_POSTGRES_IMAGE_VERSION }}
+  tags:
+    - postgres
+  variables:
+    POSTGRES_DB: "{{ DEFAULT_DATABASE_NAME }}"
+    POSTGRES_PASSWORD: "{{ DEFAULT_DATABASE_PASSWORD }}"
+    POSTGRES_USER: "{{ DEFAULT_DATABASE_USER }}"
+
+job_sqlite_test:
+  << : *job_base_test
+  script:
+    - . venv/bin/activate
+    - make test-all SETTINGS=mayan.settings.testing.gitlab-ci
+    - make test-migrations-all SETTINGS=mayan.settings.testing.gitlab-ci
+
+# Deploy
+
+job_demo_deploy:
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+{% platform_gitlab_ci_cache_before_script apt=True indent=4 %}
+{% platform_gitlab_ci_ssh_before_script hostname='${DEMO_SSH_KNOWN_HOST}' indent=4 private_key='${DEMO_PRIVATE_KEY}' %}
+  cache:
+{% platform_gitlab_ci_cache_paths apt=True indent=4 %}
+  environment:
+    name: demo
+  image: {{ DOCKER_LINUX_IMAGE_VERSION }}
+  only:
+    - {{ GITLAB_CI_BRANCH_BUILDS_DOCKER }}
+    - {{ GITLAB_CI_BRANCH_DEPLOYMENTS_DEMO }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_NIGHTLY }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_STAGING }}
+  script:
+    - ssh ${DEMO_USERNAME}@${DEMO_IP_ADDRESS} "docker compose down --remove-orphans --volumes || true"
+    - ssh ${DEMO_USERNAME}@${DEMO_IP_ADDRESS} "curl --remote-name https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/docker-compose.yml --show-error --silent"
+    - ssh ${DEMO_USERNAME}@${DEMO_IP_ADDRESS} "curl --remote-name https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/.env --show-error --silent"
+    - ssh ${DEMO_USERNAME}@${DEMO_IP_ADDRESS} "docker compose pull"
+    - ssh ${DEMO_USERNAME}@${DEMO_IP_ADDRESS} "docker compose up --detach"
+  stage: stage_deploy
+  when: manual
+  variables:
+{% platform_gitlab_ci_cache_variables apt=True indent=4 %}
+
+job_staging_deploy:
+  before_script:
+{% platform_gitlab_ci_config_env_before_script indent=4 %}
+{% platform_gitlab_ci_cache_before_script apt=True indent=4 %}
+{% platform_gitlab_ci_ssh_before_script hostname='${STAGING_SSH_KNOWN_HOST}' indent=4 private_key='${STAGING_PRIVATE_KEY}' %}
+  cache:
+{% platform_gitlab_ci_cache_paths apt=True indent=4 %}
+  environment:
+    name: staging
+  image: {{ DOCKER_LINUX_IMAGE_VERSION }}
+  only:
+    - {{ GITLAB_CI_BRANCH_BUILDS_DOCKER }}
+    - {{ GITLAB_CI_BRANCH_DEPLOYMENTS_STAGING }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_ALL_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MAJOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_DOCKER_MINOR }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_NIGHTLY }}
+    - {{ GITLAB_CI_BRANCH_RELEASES_STAGING }}
+  script:
+    - ssh ${STAGING_SSH_USERNAME}@${STAGING_HOSTNAME} "docker compose down --remove-orphans --volumes || true"
+    - scp docker/docker-compose.yml ${STAGING_SSH_USERNAME}@${STAGING_HOSTNAME}:~
+    - scp docker/.env ${STAGING_SSH_USERNAME}@${STAGING_HOSTNAME}:~
+    - DOCKER_VERSION=`cat docker/rootfs/version`;
+    - ssh ${STAGING_SSH_USERNAME}@${STAGING_HOSTNAME} "echo \"MAYAN_DOCKER_IMAGE_NAME=${CI_REGISTRY_IMAGE}\" >> .env"
+    - ssh ${STAGING_SSH_USERNAME}@${STAGING_HOSTNAME} "echo \"MAYAN_DOCKER_IMAGE_TAG=${DOCKER_VERSION}\" >> .env"
+    - ssh ${STAGING_SSH_USERNAME}@${STAGING_HOSTNAME} "docker login --username '${CI_REGISTRY_USER}' --password '${CI_REGISTRY_PASSWORD}' '${CI_REGISTRY}'"
+    - ssh ${STAGING_SSH_USERNAME}@${STAGING_HOSTNAME} "docker compose pull"
+    - ssh ${STAGING_SSH_USERNAME}@${STAGING_HOSTNAME} "docker compose up --detach"
+  stage: stage_deploy
+  when: manual
+  variables:
+{% platform_gitlab_ci_cache_variables apt=True indent=4 %}

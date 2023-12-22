@@ -1,0 +1,12 @@
+=====================
+Customizing the image
+=====================
+
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Articles:
+
+      - Installing additional software into the Docker container

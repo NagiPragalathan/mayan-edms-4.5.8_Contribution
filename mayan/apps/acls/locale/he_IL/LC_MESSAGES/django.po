@@ -1,0 +1,270 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Roberto Rosario, 2023
+# Haim Shaposhnik <haim.shaposhnik@gmail.com>, 2023
+# Ovadia Ovadia, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Ovadia Ovadia, 2023\n"
+"Language-Team: Hebrew (Israel) (https://app.transifex.com/rosarior/teams/13584/he_IL/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: he_IL\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;\n"
+
+#: apps.py:26 classes.py:204 links.py:27
+msgid "ACLs"
+msgstr "רשימות בקרת גישה (ACL)"
+
+#: apps.py:62
+msgid ""
+"Object for which the access is granted. When sorting objects, only the type "
+"is used and not the actual label of the object."
+msgstr ""
+"רכיב שעבורו מותרת הגישה. למיון רכיבים משתמשים ב\"סוג הרכיב\" ולא בתווית של "
+"הרכיב."
+
+#: apps.py:65 workflow_actions.py:128
+msgid "Object"
+msgstr "רכיב"
+
+#: events.py:6 permissions.py:6
+msgid "Access control lists"
+msgstr "רשימות בקרת גישה"
+
+#: events.py:10
+msgid "ACL created"
+msgstr "רשימת בקרת גישה (ACL) נוצרה"
+
+#: events.py:13
+msgid "ACL deleted"
+msgstr "רשימת בקרת גישה (ACL) נמחקה"
+
+#: events.py:16
+msgid "ACL edited"
+msgstr "רשימת בקרת גישה (ACL) נערכה"
+
+#: forms.py:13 models.py:56 serializers.py:79 views.py:73
+msgid "Role"
+msgstr "תפקיד"
+
+#: links.py:16
+msgid "New ACL"
+msgstr "רשימת בקרת גישה (ACL) חדשה"
+
+#: links.py:21
+msgid "Delete"
+msgstr "מחיקה"
+
+#: links.py:32 models.py:50 workflow_actions.py:67 workflow_actions.py:203
+msgid "Permissions"
+msgstr "הרשאות"
+
+#: links.py:35
+msgid "Global ACLs"
+msgstr "רשימות בקרת גישה (ACL) כלליות"
+
+#: managers.py:274
+#, python-format
+msgid "Object \"%s\" is not a model and cannot be checked for access."
+msgstr "רכיב  \"%s\" אינו מודל ואי אפשר לסמן אותו לגישה."
+
+#: managers.py:294
+#, python-format
+msgid "Insufficient access for: %s"
+msgstr "גישה לא מספיקה עבור: %s"
+
+#: model_mixins.py:23
+msgid "Permission count"
+msgstr "ספירת הרשאה"
+
+#: models.py:40 serializers.py:16
+msgid "Content type"
+msgstr "סוג תוכן"
+
+#: models.py:43 workflow_actions.py:53
+msgid "Object ID"
+msgstr "מזהה רכיב"
+
+#: models.py:54
+msgid "Role to which the access is granted for the specified object."
+msgstr "התפקיד שמקבל הרשאה לרכיב שצויין"
+
+#: models.py:64
+msgid "Access entry"
+msgstr "כניסת גישה"
+
+#: models.py:65
+msgid "Access entries"
+msgstr "כניסות גישה"
+
+#: models.py:69
+#, python-format
+msgid "Role \"%(role)s\" permission's for \"%(object)s\""
+msgstr "הרשאות תפקיד %(role)s ל- %(object)s"
+
+#: permissions.py:10
+msgid "Edit ACLs"
+msgstr "עריכת רשימות בקרת גישה (ACL) "
+
+#: permissions.py:13
+msgid "View ACLs"
+msgstr "צפייה ברשימות בקרת גישה (ACL) "
+
+#: serializers.py:19
+msgid "Permissions add URL"
+msgstr "כתובת אתר (URL) להוספת הרשאות"
+
+#: serializers.py:39
+msgid "Permissions remove URL"
+msgstr "כתובת אתר (URL) להסרת הרשאות"
+
+#: serializers.py:59
+msgid "Permissions URL"
+msgstr "כתובת אתר (URL) להרשאות"
+
+#: serializers.py:82
+msgid "Role ID"
+msgstr "מזהה תפקיד"
+
+#: serializers.py:85
+msgid "URL"
+msgstr "כתובת אתר (URL)"
+
+#: serializers.py:118
+msgid "Primary key of the permission to add to the ACL."
+msgstr "מפתח ראשי של ההרשאה להוספה לרשימת בקרה גישה (ACL)."
+
+#: serializers.py:119 serializers.py:126
+msgid "Permission ID"
+msgstr "מזהה הרשאה"
+
+#: serializers.py:125
+msgid "Primary key of the permission to remove from the ACL."
+msgstr "מפתח ראשי של ההרשאה להסרה מרשימת בקרה גישה (ACL)."
+
+#: views.py:44
+#, python-format
+msgid ""
+"An ACL for \"%(object)s\" using role \"%(role)s\" already exists. Edit that "
+"ACL entry instead."
+msgstr ""
+"רשימת בקרת גישה (ACL) עבור %(object)s לתפקיד %(role)s קיימת כבר.  אפשר לערוך"
+" אותה. "
+
+#: views.py:59
+#, python-format
+msgid "New access control lists for: %s"
+msgstr "רשימות בקרת גישה (ACL) חדשות עבור %s"
+
+#: views.py:103
+#, python-format
+msgid "Delete ACL: %s"
+msgstr "מחיקת רשימת בקרת גישה (ACL) %s"
+
+#: views.py:149
+msgid "There are no ACLs for this object"
+msgstr "אין רשימות בקרת גישה (ACL) לרכיב זה"
+
+#: views.py:152 views.py:272
+msgid ""
+"ACL stands for Access Control List and is a precise method to control user "
+"access to objects in the system. ACLs allow granting a permission to a role "
+"but only for a specific object or set of objects."
+msgstr ""
+"רשימת בקרת גישה (ACL) היא שיטה מדוייקת לשלוט בגישת משתמש לרכיבים במערכת. "
+"רשימת בקרת גישה מאפשרת נתינת הרשאה לתפקיד אך ורק עבור רכיב מסויים או קבוצת "
+"רכיבים מסויימת."
+
+#: views.py:159
+#, python-format
+msgid "Access control lists for: %s"
+msgstr "רשימת בקרת גישה (ACL) עבור %s"
+
+#: views.py:168
+msgid "Granted permissions"
+msgstr "הרשאות ניתנו"
+
+#: views.py:169
+msgid "Available permissions"
+msgstr "הרשאות זמינות "
+
+#: views.py:219
+#, python-format
+msgid "Role \"%(role)s\" permission's for \"%(object)s\"."
+msgstr "הרשאות תפקיד %(role)s לרכיב %(object)s "
+
+#: views.py:228
+msgid ""
+"Disabled permissions are inherited from a parent object or directly granted "
+"to the role and can't be removed from this view. Inherited permissions need "
+"to be removed from the parent object's ACL or from them role via the Setup "
+"menu."
+msgstr ""
+"מגבלות הרשאות מתקבלות בירושה מרכיב אב או ניתנות ישירות לתפקיד, ואי אפשר "
+"להסיר אותן מתצוגה זו. הרשאות בירושה ניתנות להסרה מרשימת בקרת הגישה של הרכיב "
+"או מהתפקיד בעזרת תפריט \"הגדרות\"."
+
+#: views.py:269
+msgid "There are no ACLs"
+msgstr "אין רשימות בקרת גישה (ACL)"
+
+#: views.py:278
+msgid "Global access control lists"
+msgstr "רשימות בקרת גישה (ACL) כלליות"
+
+#: workflow_actions.py:44
+msgid "Object type"
+msgstr "סוג רכיב"
+
+#: workflow_actions.py:47
+msgid "Type of the object for which the access will be modified."
+msgstr "סוג הרכיב שעבורו הגישה תתעדכן."
+
+#: workflow_actions.py:56
+msgid ""
+"Numeric identifier of the object for which the access will be modified."
+msgstr "מזהה מספרי של הרכיב שעבורו הגישה תתעדכן."
+
+#: workflow_actions.py:61 workflow_actions.py:197
+msgid "Roles"
+msgstr "תפקידים"
+
+#: workflow_actions.py:63 workflow_actions.py:199
+msgid "Roles whose access will be modified."
+msgstr "תפקידים שעבורם הגישה תעודכן."
+
+#: workflow_actions.py:70 workflow_actions.py:206
+msgid ""
+"Permissions to grant/revoke to/from the role for the object selected above."
+msgstr "הרשאות שניתן לתת ל-/להסיר מ- התפקיד עבור הרכיב שנבחר לעיל. "
+
+#: workflow_actions.py:77
+msgid "Grant object access"
+msgstr "נתינת גישה לרכיב"
+
+#: workflow_actions.py:132 workflow_actions.py:231
+msgid "Access"
+msgstr ""
+
+#: workflow_actions.py:170
+msgid "Revoke object access"
+msgstr "הסרת גישה לרכיב"
+
+#: workflow_actions.py:213
+msgid "Grant document access"
+msgstr "נתינת גישה למסמך"
+
+#: workflow_actions.py:259
+msgid "Revoke document access"
+msgstr "הסרת גישה למסמך"

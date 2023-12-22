@@ -1,0 +1,25 @@
+.. _apps-tags:
+
+
+====
+Tags
+====
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Articles:
+
+    - Document tagging
+
+    Tutorial:
+
+    - Detecting and tagging documents that contain social security numbers in the OCR
+    - Optimized condition template to detect the presence of a document tag
+
+    Troubleshooting:
+
+    - At upload, users can access tags, cabinets, and metadata they for which they don’t have permissions

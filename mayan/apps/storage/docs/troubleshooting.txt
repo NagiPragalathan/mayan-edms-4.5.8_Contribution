@@ -1,0 +1,26 @@
+===============
+Troubleshooting
+===============
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Articles:
+
+    - Overview:
+
+      - How storage works
+      - Filename normalization
+      - Filename generator (normalization) backends
+      - Storage backends (drivers)
+      - Indirect access network storage
+      - Direct access network storage
+
+    Tutorials:
+
+    - Setting up and migrating to object storage
+
+    Troubleshooting:
+
+    - Error message “IOError: [Errno 37] No locks available” when using a NFS volume

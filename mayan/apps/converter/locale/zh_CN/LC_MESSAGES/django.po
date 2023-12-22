@@ -1,0 +1,754 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Roberto Rosario, 2023
+# Ford Guo <agile.guo@gmail.com>, 2023
+# Leon Chu, 2023
+# yan songwei <yansw@vip.163.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: yan songwei <yansw@vip.163.com>, 2023\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/rosarior/teams/13584/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: apps.py:35 events.py:6 permissions.py:6 queues.py:7 settings.py:21
+msgid "Converter"
+msgstr "转换器"
+
+#: apps.py:82 forms.py:41
+msgid "Transformation"
+msgstr "转换"
+
+#: backends/python.py:106
+#, python-format
+msgid "Exception determining page count using Pillow; %s"
+msgstr "使用Pillow确定页数时异常; %s"
+
+#: backends/python.py:194 backends/python.py:211
+#, python-format
+msgid "Exception determining PDF page count; %s"
+msgstr "确定PDF页数时异常; %s"
+
+#: classes.py:173
+msgid "LibreOffice not installed or not found."
+msgstr "未安装或未找到LibreOffice。"
+
+#: classes.py:279
+msgid "Not an office file format."
+msgstr "不是办公文件格式。"
+
+#: classes.py:415
+msgid ""
+"Transformations allow changing the visual appearance of documents without "
+"making permanent changes to the document file themselves."
+msgstr "转换允许更改文档的可视外观，而无需对文档文件本身进行永久更改。"
+
+#: dependencies.py:14
+msgid "Utility from the poppler-utils package used to inspect PDF files."
+msgstr "来自poppler-utils软件包的实用程序，用于检查PDF文件。"
+
+#: dependencies.py:19
+msgid ""
+"Utility from the popper-utils package used to extract pages from PDF files "
+"into PPM format images."
+msgstr "popper-utils软件包中的实用程序，用于将PDF文件中的页面提取为PPM格式的图像。"
+
+#: events.py:10
+msgid "Asset created"
+msgstr "資源項目已建立"
+
+#: events.py:13
+msgid "Asset edited"
+msgstr "已編輯項目"
+
+#: forms.py:17
+msgid "Asset preview image"
+msgstr ""
+
+#: forms.py:17
+msgid "Preview"
+msgstr "预览"
+
+#: forms.py:40
+msgid "Available transformations for this layer."
+msgstr "此層級可使用之轉變格式"
+
+#: forms.py:88 workflow_actions.py:74
+#, python-format
+msgid "\"%s\" not a valid entry."
+msgstr "“%s”不是有效的许可。"
+
+#: layers.py:12
+msgid ""
+"Decorations are visual elements that add contextual information to images."
+msgstr "裝飾 為可視之內容訊息元素至圖案"
+
+#: layers.py:14
+msgid "Decorations"
+msgstr "裝飾"
+
+#: layers.py:26
+msgid "Saved transformations"
+msgstr "转换已保存"
+
+#: links.py:35 views/asset_views.py:36
+msgid "Create asset"
+msgstr "建立資源項目"
+
+#: links.py:38 links.py:44 links.py:67
+msgid "Delete"
+msgstr "删除"
+
+#: links.py:48 links.py:71
+msgid "Edit"
+msgstr "编辑"
+
+#: links.py:52 links.py:59 models.py:54 storages.py:21
+#: views/asset_views.py:144
+msgid "Assets"
+msgstr "資源項目"
+
+#: links.py:76 workflow_actions.py:91
+msgid "Transformations"
+msgstr "转换"
+
+#: links.py:81
+msgid "Select new transformation"
+msgstr "选择新的转换"
+
+#: model_mixins.py:124 models.py:167
+msgid "Arguments"
+msgstr "参数"
+
+#: models.py:37
+msgid "Label"
+msgstr "标签"
+
+#: models.py:41
+msgid ""
+"This value will be used when referencing this asset. Can only contain "
+"letters, numbers, and underscores."
+msgstr ""
+
+#: models.py:44
+msgid "Internal name"
+msgstr "内部名称"
+
+#: models.py:48
+msgid "File"
+msgstr "文件"
+
+#: models.py:53 transformation_mixins.py:306
+msgid "Asset"
+msgstr "資源項目"
+
+#: models.py:90 models.py:161 serializers.py:10
+msgid "Name"
+msgstr "名称"
+
+#: models.py:93 models.py:158
+msgid "Order"
+msgstr "顺序"
+
+#: models.py:98 models.py:124
+msgid "Stored layer"
+msgstr "储存图层"
+
+#: models.py:99
+msgid "Stored layers"
+msgstr "储存图层"
+
+#: models.py:111
+msgid "Content type"
+msgstr ""
+
+#: models.py:114
+msgid "Object ID"
+msgstr "对象ID"
+
+#: models.py:120 models.py:170
+msgid "Enabled"
+msgstr "啟用"
+
+#: models.py:132 models.py:152
+msgid "Object layer"
+msgstr "对象图层"
+
+#: models.py:133
+msgid "Object layers"
+msgstr "对象图层"
+
+#: models.py:156
+msgid ""
+"Order in which the transformations will be executed. If left unchanged, an "
+"automatic order value will be assigned."
+msgstr "将执行转换的顺序。如果保持不变，将分配自动顺序值。"
+
+#: models.py:165 workflow_actions.py:57
+msgid ""
+"Enter the arguments for the transformation as a YAML dictionary. ie: "
+"{\"degrees\": 180}"
+msgstr "输入转换的参数作为YAML字典。例如：{“度”：180}"
+
+#: models.py:178
+msgid "Layer transformation"
+msgstr "图层转换"
+
+#: models.py:179
+msgid "Layer transformations"
+msgstr "图层转换"
+
+#: models.py:187
+msgid "Unknown transformation class"
+msgstr "未知的轉變格式型別"
+
+#: permissions.py:10
+msgid "Create new assets"
+msgstr "建立新的資源項目"
+
+#: permissions.py:13
+msgid "Delete assets"
+msgstr "刪除資源項目"
+
+#: permissions.py:16
+msgid "Edit assets"
+msgstr "編輯資源項目"
+
+#: permissions.py:19
+msgid "View existing assets"
+msgstr "瀏覽已存在資源項目"
+
+#: permissions.py:23
+msgid "Create new transformations"
+msgstr "创建新转换"
+
+#: permissions.py:26
+msgid "Delete transformations"
+msgstr "删除转换"
+
+#: permissions.py:29
+msgid "Edit transformations"
+msgstr "编辑转换"
+
+#: permissions.py:32
+msgid "View existing transformations"
+msgstr "查看现有转换"
+
+#: queues.py:12
+msgid "Generate a image of an object."
+msgstr ""
+
+#: serializers.py:13
+msgid "Image path"
+msgstr ""
+
+#: serializers.py:16 serializers.py:32
+msgid "Image URL"
+msgstr ""
+
+#: serializers.py:21
+msgid "Template name"
+msgstr ""
+
+#: serializers.py:24 serializers.py:39
+msgid "URL"
+msgstr "网址"
+
+#: settings.py:30
+msgid ""
+"The threshold at which the CONVERTER_ASSET_CACHE_STORAGE_BACKEND will start "
+"deleting the oldest asset cache files. Specify the size in bytes."
+msgstr ""
+
+#: settings.py:38
+msgid ""
+"Path to the Storage subclass to use when storing the cached asset files."
+msgstr ""
+
+#: settings.py:46
+msgid "Arguments to pass to the CONVERTER_ASSET_CACHE_STORAGE_BACKEND."
+msgstr ""
+
+#: settings.py:52
+msgid "Path to the Storage subclass to use when storing assets."
+msgstr ""
+
+#: settings.py:58
+msgid "Arguments to pass to the CONVERTER_ASSET_STORAGE_BACKEND."
+msgstr "輸入至以下的變數 CONVERTER_ASSET_STORAGE_BACKEND"
+
+#: settings.py:64
+msgid "Graphics conversion backend to use."
+msgstr "将使用图形转换后端。"
+
+#: settings.py:70
+msgid "Configuration options for the graphics conversion backend."
+msgstr "图形转换后端的配置选项。"
+
+#: settings.py:77
+msgid "Time in seconds that the browser should cache the supplied image. "
+msgstr ""
+
+#: settings.py:84
+msgid ""
+"Maximum number of retries before giving up. A value of None means the task "
+"will retry forever."
+msgstr ""
+
+#: settings.py:92
+msgid ""
+"Time in seconds after which the image generation task will stop running and "
+"raise an error."
+msgstr ""
+
+#: storages.py:15
+msgid ""
+"Unable to initialize the converter asset storage. Check the settings {} and "
+"{} for formatting errors."
+msgstr ""
+
+#: storages.py:28
+msgid ""
+"Unable to initialize the converter asset cachestorage. Check the settings {}"
+" and {} for formatting errors."
+msgstr ""
+
+#: storages.py:34
+msgid "Assets cache"
+msgstr "項目快取"
+
+#: transformation_mixins.py:20 transformations.py:617
+msgid ""
+"Number of degrees to rotate the image counter clockwise around its center."
+msgstr ""
+
+#: transformation_mixins.py:22
+msgid "Rotation"
+msgstr ""
+
+#: transformation_mixins.py:25
+msgid "Opacity level of the image in percent"
+msgstr ""
+
+#: transformation_mixins.py:26
+msgid "Transparency"
+msgstr ""
+
+#: transformation_mixins.py:29 transformations.py:722
+msgid "Zoom level in percent."
+msgstr ""
+
+#: transformation_mixins.py:29 transformations.py:717
+msgid "Zoom"
+msgstr "缩放"
+
+#: transformation_mixins.py:113
+msgid "Paste an image"
+msgstr ""
+
+#: transformation_mixins.py:118
+msgid "Horizontal position in pixels from the left."
+msgstr ""
+
+#: transformation_mixins.py:119 transformation_mixins.py:163
+#: transformation_mixins.py:227 transformations.py:226 transformations.py:325
+#: transformations.py:424
+msgid "Left"
+msgstr ""
+
+#: transformation_mixins.py:122
+msgid "Vertical position in pixels from the top."
+msgstr ""
+
+#: transformation_mixins.py:123 transformation_mixins.py:167
+#: transformation_mixins.py:235 transformations.py:230 transformations.py:329
+#: transformations.py:428
+msgid "Top"
+msgstr ""
+
+#: transformation_mixins.py:157
+msgid "Paste an image (percents coordinates)"
+msgstr ""
+
+#: transformation_mixins.py:162
+msgid "Horizontal position in percent from the left."
+msgstr ""
+
+#: transformation_mixins.py:166
+msgid "Vertical position in percent from the top."
+msgstr ""
+
+#: transformation_mixins.py:220 transformations.py:214
+msgid "Paste an asset as watermark"
+msgstr "將資源項目作為浮水印貼入"
+
+#: transformation_mixins.py:226
+msgid "Horizontal start position in pixels from the left."
+msgstr ""
+
+#: transformation_mixins.py:230
+msgid "Horizontal end position in pixels from the right."
+msgstr ""
+
+#: transformation_mixins.py:231 transformations.py:234 transformations.py:333
+#: transformations.py:432
+msgid "Right"
+msgstr ""
+
+#: transformation_mixins.py:234
+msgid "Vertical start position in pixels from the top."
+msgstr ""
+
+#: transformation_mixins.py:238
+msgid "Vertical end position in pixels from the top."
+msgstr ""
+
+#: transformation_mixins.py:239 transformations.py:238 transformations.py:338
+#: transformations.py:436
+msgid "Bottom"
+msgstr ""
+
+#: transformation_mixins.py:242
+msgid "Horizontal position increments in pixels."
+msgstr ""
+
+#: transformation_mixins.py:243
+msgid "Horizontal increment"
+msgstr ""
+
+#: transformation_mixins.py:246
+msgid "Vertical position increments in pixels."
+msgstr ""
+
+#: transformation_mixins.py:247
+msgid "Vertical increment"
+msgstr ""
+
+#: transformation_mixins.py:306
+msgid "Asset name"
+msgstr ""
+
+#: transformation_mixins.py:349
+msgid "Color used to fill the rectangle."
+msgstr ""
+
+#: transformation_mixins.py:350 transformations.py:624
+msgid "Fill color"
+msgstr ""
+
+#: transformation_mixins.py:353
+msgid "Opacity level of the fill color in percent"
+msgstr ""
+
+#: transformation_mixins.py:354
+msgid "Fill transparency"
+msgstr ""
+
+#: transformation_mixins.py:357
+msgid "Color used for the outline of the rectangle."
+msgstr ""
+
+#: transformation_mixins.py:358
+msgid "Outline color"
+msgstr ""
+
+#: transformation_mixins.py:361
+msgid "Width in pixels of the rectangle outline."
+msgstr ""
+
+#: transformation_mixins.py:362
+msgid "Outline width"
+msgstr ""
+
+#: transformations.py:198
+msgid "Paste an asset (absolute coordinates)"
+msgstr ""
+
+#: transformations.py:206
+msgid "Paste an asset (percent coordinates)"
+msgstr ""
+
+#: transformations.py:220
+msgid "Crop"
+msgstr "裁剪"
+
+#: transformations.py:225
+msgid "Number of pixels to remove from the left."
+msgstr ""
+
+#: transformations.py:229
+msgid "Number of pixels to remove from the top."
+msgstr ""
+
+#: transformations.py:233
+msgid "Number of pixels to remove from the right."
+msgstr ""
+
+#: transformations.py:237
+msgid "Number of pixels to remove from the bottom."
+msgstr ""
+
+#: transformations.py:320
+msgid "Draw rectangle"
+msgstr "繪製長方形"
+
+#: transformations.py:325
+msgid "Left side location in pixels."
+msgstr ""
+
+#: transformations.py:329
+msgid "Top side location in pixels."
+msgstr ""
+
+#: transformations.py:333
+msgid "Right side location in pixels."
+msgstr ""
+
+#: transformations.py:337
+msgid "Bottom side location in pixels."
+msgstr ""
+
+#: transformations.py:418
+msgid "Draw rectangle (percent coordinates)"
+msgstr ""
+
+#: transformations.py:423
+msgid "Left side location in percent."
+msgstr ""
+
+#: transformations.py:427
+msgid "Top side location in percent."
+msgstr ""
+
+#: transformations.py:431
+msgid "Right side location in percent."
+msgstr ""
+
+#: transformations.py:435
+msgid "Bottom side location in percent."
+msgstr ""
+
+#: transformations.py:514
+msgid "Flip"
+msgstr "翻动"
+
+#: transformations.py:525
+msgid "Gaussian blur"
+msgstr "高斯模糊"
+
+#: transformations.py:530 transformations.py:692
+msgid "Radius"
+msgstr ""
+
+#: transformations.py:542
+msgid "Line art"
+msgstr "线条艺术"
+
+#: transformations.py:556
+msgid "Mirror"
+msgstr "镜像"
+
+#: transformations.py:567
+msgid "Resize"
+msgstr "调整大小"
+
+#: transformations.py:573
+msgid "New width in pixels."
+msgstr ""
+
+#: transformations.py:574
+msgid "Width"
+msgstr ""
+
+#: transformations.py:578
+msgid "New height in pixels."
+msgstr ""
+
+#: transformations.py:579
+msgid "Height"
+msgstr ""
+
+#: transformations.py:611
+msgid "Rotate"
+msgstr "旋转"
+
+#: transformations.py:619
+msgid "Degrees"
+msgstr ""
+
+#: transformations.py:623
+msgid "Color to be used for area outside of the rotated image."
+msgstr ""
+
+#: transformations.py:654
+msgid "Rotate 90 degrees"
+msgstr "旋转90度"
+
+#: transformations.py:665
+msgid "Rotate 180 degrees"
+msgstr "旋转180度"
+
+#: transformations.py:676
+msgid "Rotate 270 degrees"
+msgstr "旋转270度"
+
+#: transformations.py:686
+msgid "Unsharp masking"
+msgstr "钝化掩模"
+
+#: transformations.py:691
+msgid "The blur radius in pixels."
+msgstr ""
+
+#: transformations.py:695
+msgid "Unsharp strength in percent."
+msgstr ""
+
+#: transformations.py:696 transformations.py:723
+msgid "Percent"
+msgstr ""
+
+#: transformations.py:700
+msgid "Minimum brightness change that will be sharpened."
+msgstr ""
+
+#: transformations.py:701
+msgid "Tthreshold"
+msgstr ""
+
+#: views/asset_views.py:50
+#, python-format
+msgid "Delete request performed on %(count)d asset"
+msgstr "刪除執行要求於%(count)d項目"
+
+#: views/asset_views.py:52
+#, python-format
+msgid "Delete request performed on %(count)d assets"
+msgstr "刪除執行中要求的%(count)d資源項目"
+
+#: views/asset_views.py:60
+msgid "Delete the selected asset?"
+msgid_plural "Delete the selected assets?"
+msgstr[0] "刪除所選之所有資源項目?"
+
+#: views/asset_views.py:70
+#, python-format
+msgid "Delete asset: %s?"
+msgstr "刪除資源項目 : %s?"
+
+#: views/asset_views.py:81
+#, python-format
+msgid "Asset \"%s\" deleted successfully."
+msgstr "資源項目%s成功刪除"
+
+#: views/asset_views.py:86
+#, python-format
+msgid "Error deleting asset \"%(asset)s\": %(error)s"
+msgstr "刪除資源項目\"%(asset)s\"失敗 : %(error)s"
+
+#: views/asset_views.py:102
+#, python-format
+msgid "Details asset: %s"
+msgstr "顯示資源項目詳細資訊:%s"
+
+#: views/asset_views.py:117
+#, python-format
+msgid "Edit asset: %s"
+msgstr "編輯資源項目 : %s"
+
+#: views/asset_views.py:140
+msgid ""
+"Assets are files that can be used in conjuction with certain "
+"transformations."
+msgstr "資源項目是依些可以用來連接特定轉變"
+
+#: views/asset_views.py:143
+msgid "No assets available"
+msgstr "沒有資源項目可用"
+
+#: views/transformation_views.py:52
+#, python-format
+msgid "Error creating transformation: %s."
+msgstr "建立轉變格式錯誤 : %s"
+
+#: views/transformation_views.py:69
+#, python-format
+msgid ""
+"Create layer \"%(layer)s\" transformation \"%(transformation)s\" for: "
+"%(object)s"
+msgstr "建立層級\"%(layer)s\"轉變格式 %(transformation)s\"給 : %(object)s"
+
+#: views/transformation_views.py:128
+#, python-format
+msgid "Delete transformation \"%(transformation)s\" for: %(content_object)s?"
+msgstr "对%(content_object)s删除转换“%(transformation)s”？"
+
+#: views/transformation_views.py:184
+#, python-format
+msgid "Edit transformation \"%(transformation)s\" for: %(content_object)s"
+msgstr "对%(content_object)s编辑转换“%(transformation)s”"
+
+#: views/transformation_views.py:248
+#, python-format
+msgid "There are no entries for layer \"%(layer_name)s\""
+msgstr "沒有任何條目於˙此層級\"%(layer_name)s\""
+
+#: views/transformation_views.py:251
+#, python-format
+msgid "Layer \"%(layer)s\" transformations for: %(object)s"
+msgstr "層級\"%(layer)s\"轉變格式於:%(object)s"
+
+#: views/transformation_views.py:297
+msgid "Transformation created successfully."
+msgstr "转换创建成功。"
+
+#: views/transformation_views.py:321
+msgid "Select"
+msgstr "选择"
+
+#: views/transformation_views.py:323
+#, python-format
+msgid "Select new layer \"%(layer)s\" transformation for: %(object)s"
+msgstr ""
+
+#: workflow_actions.py:34
+msgid "Pages"
+msgstr "页面"
+
+#: workflow_actions.py:37
+msgid ""
+"Pages to which the new transformations will be added. Separate by commas "
+"and/or use a dashes for a ranges. Leave blank to select all pages."
+msgstr ""
+
+#: workflow_actions.py:44
+msgid "Transformation class"
+msgstr "轉變格式型別"
+
+#: workflow_actions.py:49
+msgid "Type of transformation to add."
+msgstr "新增轉變格式的種類"
+
+#: workflow_actions.py:54
+msgid "Transformation arguments"
+msgstr "轉變參數"
+
+#: workflow_actions.py:63
+msgid "Add transformation"
+msgstr "新增轉變格式"
+
+#: workflow_actions.py:86
+msgid "Objects"
+msgstr ""

@@ -1,0 +1,488 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Bedreddin Şahbaz, 2023
+# Nurgül Özkan <nurgulozkan@hotmail.com>, 2023
+# Emine Öztürk <oemine075@gmail.com>, 2023
+# Caner Başaran <basaran.caner@gmail.com>, 2023
+# serhatcan77 <serhat_can@yahoo.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: serhatcan77 <serhat_can@yahoo.com>, 2023\n"
+"Language-Team: Turkish (Turkey) (https://app.transifex.com/rosarior/teams/13584/tr_TR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr_TR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: apps.py:57 events.py:6 permissions.py:6 settings.py:12
+msgid "Appearance"
+msgstr "Görünüm"
+
+#: dependencies.py:8
+msgid "Lato font"
+msgstr "Lato yazı tipi"
+
+#: dependencies.py:12
+msgid "Bootstrap"
+msgstr "Bootstrap"
+
+#: dependencies.py:16
+msgid "Bootswatch"
+msgstr "Bootswatch"
+
+#: dependencies.py:30
+msgid "Fancybox"
+msgstr "Fancybox"
+
+#: dependencies.py:34
+msgid "FontAwesome"
+msgstr "FontAwesome"
+
+#: dependencies.py:38
+msgid "jQuery"
+msgstr "jQuery"
+
+#: dependencies.py:42
+msgid "JQuery Form"
+msgstr "JQuery Formu"
+
+#: dependencies.py:46
+msgid "jQuery Lazy Load"
+msgstr "jQuery Lazy Load"
+
+#: dependencies.py:50
+msgid "JQuery Match Height"
+msgstr "JQuery Match Height"
+
+#: dependencies.py:54
+msgid "Select 2"
+msgstr "2'yi seçin"
+
+#: dependencies.py:58
+msgid "Toastr"
+msgstr "Toastr"
+
+#: dependencies.py:62
+msgid "URI.js"
+msgstr "URI.js"
+
+#: events.py:10
+msgid "Theme created"
+msgstr "Tema oluşturuldu"
+
+#: events.py:13
+msgid "Theme edited"
+msgstr "Tema düzenlendi"
+
+#: events.py:16
+msgid "User theme edited"
+msgstr "Kullanıcı teması düzenlendi"
+
+#: links.py:20
+msgid "Theme settings"
+msgstr "Tema ayarları"
+
+#: links.py:27
+msgid "Edit theme settings"
+msgstr "Tema ayarlarını düzenle"
+
+#: links.py:33 views.py:31
+msgid "Create new theme"
+msgstr "Yeni tema oluştur"
+
+#: links.py:38
+msgid "Delete"
+msgstr "Sil"
+
+#: links.py:42
+msgid "Edit"
+msgstr "Düzenle"
+
+#: links.py:46 links.py:54 models.py:32 views.py:99
+msgid "Themes"
+msgstr "Temalar"
+
+#: models.py:19
+msgid "A short text describing the theme."
+msgstr "Temayı anlatan kısa bir metin."
+
+#: models.py:20
+msgid "Label"
+msgstr "Etiket"
+
+#: models.py:24
+msgid ""
+"The CSS stylesheet to change the appearance of the different user interface "
+"elements."
+msgstr ""
+"Farklı kullanıcı arabirimi öğelerinin görünümünü değiştirmek için CSS stil "
+"sayfası."
+
+#: models.py:26
+msgid "Stylesheet"
+msgstr "Stil sayfası"
+
+#: models.py:31 models.py:69
+msgid "Theme"
+msgstr "Tema"
+
+#: models.py:65
+msgid "User"
+msgstr "Kullanıcı"
+
+#: models.py:73
+msgid "User theme setting"
+msgstr "Kullanıcı teması ayarı"
+
+#: models.py:74
+msgid "User theme settings"
+msgstr "Kullanıcı teması ayarları"
+
+#: permissions.py:10
+msgid "Create new themes"
+msgstr "Yeni temalar oluşturun"
+
+#: permissions.py:13
+msgid "Delete themes"
+msgstr "Temaları sil"
+
+#: permissions.py:16
+msgid "Edit themes"
+msgstr "Temaları düzenle"
+
+#: permissions.py:19
+msgid "View existing themes"
+msgstr "Mevcut temaları görüntüle"
+
+#: settings.py:18
+msgid "Custom HTTP response code for AJAX redirections."
+msgstr "AJAX yönlendirmeleri için özel HTTP yanıt kodu."
+
+#: settings.py:24
+msgid "Maximum number of characters that will be displayed as the view title."
+msgstr "Görünüm başlığı olarak görüntülenecek maksimum karakter sayısı."
+
+#: settings.py:34
+msgid "Position where the system messages will be displayed."
+msgstr "Sistem mesajlarının görüntüleneceği konumu belirleyin."
+
+#: settings.py:40
+msgid ""
+"Delay in milliseconds after which the menus will be checked for updates."
+msgstr ""
+"Menülerin güncellemeler için kontrol edileceği milisaniye cinsinden gecikme."
+
+#: settings.py:47
+msgid ""
+"Maximum number of requests that can be made before throttling is enabled."
+msgstr "Daraltma etkinleştirilmeden önce yapılabilecek en fazla istek sayısı."
+
+#: settings.py:54
+msgid ""
+"Time in milliseconds after which a throttled request will clear allowing an "
+"additional request to be performed."
+msgstr ""
+"Daraltılmış bir isteğin temizleneceği milisaniye cinsinden süre, ek bir "
+"isteğin gerçekleştirilmesine izin verir."
+
+#: templates/403.html:5 templates/403.html:30
+msgid "Insufficient permission"
+msgstr "Yetersiz izin"
+
+#: templates/403.html:32
+msgid "You don't have enough permissions for this operation."
+msgstr "Bu işlem için gerekli yetkiniz yok."
+
+#: templates/404.html:5 templates/404.html:30
+msgid "Page not found"
+msgstr "Sayfa bulunamadı"
+
+#: templates/404.html:32
+msgid "The requested page could not be found."
+msgstr "İstenilen sayfa bulunamadı."
+
+#: templates/404.html:40
+msgid "Possible reasons"
+msgstr "Olası nedenler"
+
+#: templates/404.html:44
+msgid "The location of the item is incorrect."
+msgstr "Öğenin konumu yanlış."
+
+#: templates/404.html:45
+msgid "The location is correct, but the item no longer exists."
+msgstr "Konum doğru, ancak öğe artık mevcut değil."
+
+#: templates/404.html:46
+msgid ""
+"The location is be correct, but your account does not have the required "
+"permission to access it."
+msgstr ""
+"Konum doğru olabilir, ancak hesabınıza erişmek için gerekli izne sahip "
+"değilsiniz."
+
+#: templates/500.html:5 templates/500.html:30
+#: templates/appearance/root.html:46
+msgid "Server error"
+msgstr "Server hatası"
+
+#: templates/500.html:32
+msgid "There's been an unexpected error."
+msgstr "Beklenmeyen bir hata oluştu."
+
+#: templates/500.html:40
+msgid "What to do next?"
+msgstr "Sonra ne yapacağız?"
+
+#: templates/500.html:44
+msgid "Refresh the page."
+msgstr "Sayfayı yenile."
+
+#: templates/500.html:45
+msgid "Wait a bit. The system might be overloaded."
+msgstr "Biraz bekleyin. Sistem aşırı yüklenmiş olabilir."
+
+#: templates/500.html:46
+msgid "Contact your system administrator."
+msgstr "Sistem yöneticinize başvurun."
+
+#: templates/500.html:47
+msgid "Check the logs for messages with the tags \"ERROR\", \"CRITICAL\" or \"FATAL\"."
+msgstr ""
+"\"ERROR\", \"CRITICAL\" veya \"FATAL\" etiketli mesajlar için logları "
+"kontrol edin."
+
+#: templates/500.html:48
+#, python-format
+msgid "Open a ticket using the <a href=\"%(issue_url)s\">issue tracker</a>."
+msgstr ""
+
+#: templates/appearance/about.html:9
+msgid "About"
+msgstr "Hakkında"
+
+#: templates/appearance/about.html:67
+msgid "Version"
+msgstr "Versiyon"
+
+#: templates/appearance/about.html:69
+#, python-format
+msgid "Build number: %(build_number)s"
+msgstr ""
+
+#: templates/appearance/about.html:82
+msgid "Released under the license:"
+msgstr "Şu lisans altında yayınlandı:"
+
+#: templates/appearance/about.html:88
+#, python-format
+msgid ""
+"\n"
+"                The complete list of changes is available via the <a class=\"new_window\" href=\"https://docs.mayan-edms.com/releases/index.html\">Release notes %(icon_documentation)s</a> or the short version <a class=\"new_window\" href=\"https://gitlab.com/mayan-edms/mayan-edms/blob/master/HISTORY.rst\">Changelog %(icon_documentation)s</a>.\n"
+"            "
+msgstr ""
+
+#: templates/appearance/about.html:94
+#, python-format
+msgid ""
+"\n"
+"                For questions check the <a class=\"new_window\" href=\"https://docs.mayan-edms.com\">Documentation %(icon_documentation)s</a>.\n"
+"            "
+msgstr ""
+
+#: templates/appearance/about.html:100
+#, python-format
+msgid ""
+"\n"
+"                If you found a bug or have a feature idea, visit the <a class=\"new_window\" href=\"https://forum.mayan-edms.com\">Forum %(icon_forum)s</a> or open a ticket in the <a class=\"new_window\" href=\"https://gitlab.com/mayan-edms/mayan-edms\">Source code repository %(icon_source_code)s</a>.\n"
+"            "
+msgstr ""
+
+#: templates/appearance/app/foot.html:70
+msgid ""
+"Too many pending requests. Additional requests will be blocked until a "
+"pending one is completed or after the cooling off period ends."
+msgstr ""
+"Çok fazla bekleyen istek var. Bekleyen bir istek tamamlanana kadar veya "
+"soğuma süresi sona erdikten sonra ek istekler engellenir."
+
+#: templates/appearance/base.html:73
+msgid "Object"
+msgstr "Nesne"
+
+#: templates/appearance/generic_confirm.html:13
+msgid "Are you sure?"
+msgstr "Emin misiniz?"
+
+#: templates/appearance/generic_confirm.html:37
+msgid "Yes"
+msgstr "Evet"
+
+#: templates/appearance/generic_confirm.html:47
+msgid "No"
+msgstr "Hayır"
+
+#: templates/appearance/generic_form_subtemplate.html:50
+#: templates/appearance/generic_multiform_subtemplate.html:37
+#: templates/appearance/partials/form_field.html:10
+#: templates/appearance/partials/form_field.html:16
+msgid "required"
+msgstr "gerekli"
+
+#: templates/appearance/generic_form_subtemplate.html:85
+#: templates/appearance/generic_form_subtemplate.html:95
+#: templates/appearance/generic_form_subtemplate.html:109
+#: templates/appearance/generic_multiform_subtemplate.html:62
+msgid "Save"
+msgstr "Kaydet"
+
+#: templates/appearance/generic_form_subtemplate.html:85
+#: templates/appearance/generic_form_subtemplate.html:95
+#: templates/appearance/generic_form_subtemplate.html:109
+#: templates/appearance/generic_multiform_subtemplate.html:62
+msgid "Submit"
+msgstr "Gönder"
+
+#: templates/appearance/generic_form_subtemplate.html:99
+#: templates/appearance/generic_multiform_subtemplate.html:66
+msgid "Cancel"
+msgstr "İptal"
+
+#: templates/appearance/generic_list_subtemplate.html:35
+msgid "Identifier"
+msgstr "Tanımlayıcı"
+
+#: templates/appearance/generic_list_subtemplate.html:85
+#: templates/appearance/partials/list_object_facet_links_column.html:8
+#: templates/appearance/partials/list_object_facet_links_column.html:39
+msgid "Views"
+msgstr "Görünümler"
+
+#: templates/appearance/generic_list_subtemplate.html:91
+msgid "Actions"
+msgstr "Eylemler"
+
+#: templates/appearance/home.html:27
+msgid "Getting started"
+msgstr "Başlarken"
+
+#: templates/appearance/home.html:30
+msgid "Before you can fully use Mayan EDMS you need the following:"
+msgstr ""
+"Maya EDMS'yi tam olarak kullanabilmeniz için aşağıdakilere ihtiyacınız "
+"vardır:"
+
+#: templates/appearance/menus/menu_topbar.html:11
+msgid "Toggle navigation"
+msgstr "Gezinmeyi aç/kapat"
+
+#: templates/appearance/partials/form_title.html:10
+msgid "Open main menu"
+msgstr "Ana menüyü aç"
+
+#: templates/appearance/partials/list_header.html:11
+#, python-format
+msgid ""
+"Total (%(start)s - %(end)s out of %(total)s) (Page %(page_number)s of "
+"%(total_pages)s)"
+msgstr ""
+
+#: templates/appearance/partials/list_header.html:13
+#: templates/appearance/partials/list_header.html:16
+#, python-format
+msgid "Total: %(total)s"
+msgstr "Toplam: %(total)s"
+
+#: templates/appearance/partials/list_toolbar.html:14
+msgid "Select/Deselect all"
+msgstr "Tümünü Seç/Seçme"
+
+#: templates/appearance/partials/list_toolbar.html:18
+msgid "Toggle list display mode"
+msgstr "Liste görüntüleme modunu değiştir"
+
+#: templates/appearance/partials/list_toolbar.html:31
+msgid ""
+"Select items to activate bulk actions. Use Shift + click to select many."
+msgstr ""
+"Toplu işlemler için işlem yapmak istediğiniz öğeleri seçin. Çoklu seçim "
+"yapmak için Shift + fare sol tuşunu kullanın."
+
+#: templates/appearance/partials/list_toolbar.html:36
+msgid "Bulk actions"
+msgstr "Toplu eylemler"
+
+#: templates/appearance/partials/list_toolbar.html:38
+msgid "Toggle Dropdown"
+msgstr "Açılır Menüyü Aç/Kapat"
+
+#: templates/appearance/partials/no_results.html:18
+msgid "No results"
+msgstr "Sonuç yok"
+
+#: templates/appearance/partials/pagination.html:12
+#: templates/appearance/partials/pagination.html:14
+msgid "Previous page"
+msgstr "Önceki sayfa"
+
+#: templates/appearance/partials/pagination.html:30
+#: templates/appearance/partials/pagination.html:32
+msgid "Next page"
+msgstr "Sonraki Sayfa"
+
+#: templates/appearance/root.html:51
+msgid "Close"
+msgstr "Kapat"
+
+#: templates/appearance/root.html:59
+msgid "Server communication error"
+msgstr "Sunucu iletişim hatası"
+
+#: templates/appearance/root.html:61
+msgid "Check you network connection and try again in a few moments."
+msgstr "Ağ bağlantınızı kontrol edin ve birkaç dakika sonra tekrar deneyin."
+
+#: templatetags/appearance_tags.py:77
+msgid "None"
+msgstr "Yok"
+
+#: views.py:55
+#, python-format
+msgid "Delete theme: %s"
+msgstr "Şu temayı sil: %s"
+
+#: views.py:72
+#, python-format
+msgid "Edit theme: %s"
+msgstr "Şu temayı düzenle: %s"
+
+#: views.py:93
+msgid ""
+"Themes allow changing the visual appearance without requiring code changes."
+msgstr ""
+"Temalar, kod değişikliği gerektirmeden görsel görünümü değiştirmeye izin "
+"verir."
+
+#: views.py:97
+msgid "There are no themes"
+msgstr "Tema yok"
+
+#: views.py:122
+#, python-format
+msgid "Theme settings for user: %s"
+msgstr ""
+
+#: views.py:144
+#, python-format
+msgid "Edit theme settings for user: %s"
+msgstr ""

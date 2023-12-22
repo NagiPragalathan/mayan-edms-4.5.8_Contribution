@@ -1,0 +1,485 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Jiří Podhorecký, 2023
+# Jiri Fait <fait@orkasolutions.cz>, 2023
+# Michal Švábík <snadno@lehce.cz>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Michal Švábík <snadno@lehce.cz>, 2023\n"
+"Language-Team: Czech (https://app.transifex.com/rosarior/teams/13584/cs/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: cs\n"
+"Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+
+#: apps.py:57 events.py:6 permissions.py:6 settings.py:12
+msgid "Appearance"
+msgstr "Vzhled"
+
+#: dependencies.py:8
+msgid "Lato font"
+msgstr "Lato písmo"
+
+#: dependencies.py:12
+msgid "Bootstrap"
+msgstr "Bootstrap"
+
+#: dependencies.py:16
+msgid "Bootswatch"
+msgstr "Bootswatch"
+
+#: dependencies.py:30
+msgid "Fancybox"
+msgstr "Fancybox"
+
+#: dependencies.py:34
+msgid "FontAwesome"
+msgstr "FontAwesome"
+
+#: dependencies.py:38
+msgid "jQuery"
+msgstr "jQuery"
+
+#: dependencies.py:42
+msgid "JQuery Form"
+msgstr "Formulář JQuery"
+
+#: dependencies.py:46
+msgid "jQuery Lazy Load"
+msgstr "jQuery spožděné načítání"
+
+#: dependencies.py:50
+msgid "JQuery Match Height"
+msgstr "JQuery Match Height"
+
+#: dependencies.py:54
+msgid "Select 2"
+msgstr "Select 2"
+
+#: dependencies.py:58
+msgid "Toastr"
+msgstr "Toastr"
+
+#: dependencies.py:62
+msgid "URI.js"
+msgstr "URI.js"
+
+#: events.py:10
+msgid "Theme created"
+msgstr "Motiv vytvořen"
+
+#: events.py:13
+msgid "Theme edited"
+msgstr "Motiv upraven"
+
+#: events.py:16
+msgid "User theme edited"
+msgstr "Uživatelský motiv upraven"
+
+#: links.py:20
+msgid "Theme settings"
+msgstr "Nastavení motivu"
+
+#: links.py:27
+msgid "Edit theme settings"
+msgstr "Upravit nastavení motivu"
+
+#: links.py:33 views.py:31
+msgid "Create new theme"
+msgstr "Vytvořit nový motiv"
+
+#: links.py:38
+msgid "Delete"
+msgstr "Odstranit"
+
+#: links.py:42
+msgid "Edit"
+msgstr "Upravit"
+
+#: links.py:46 links.py:54 models.py:32 views.py:99
+msgid "Themes"
+msgstr "Motivy"
+
+#: models.py:19
+msgid "A short text describing the theme."
+msgstr "Krátký text popisující motiv."
+
+#: models.py:20
+msgid "Label"
+msgstr "Jmenovka"
+
+#: models.py:24
+msgid ""
+"The CSS stylesheet to change the appearance of the different user interface "
+"elements."
+msgstr ""
+"Šablona stylů CSS pro změnu vzhledu různých prvků uživatelského rozhraní."
+
+#: models.py:26
+msgid "Stylesheet"
+msgstr "Stylesheet"
+
+#: models.py:31 models.py:69
+msgid "Theme"
+msgstr "Motiv"
+
+#: models.py:65
+msgid "User"
+msgstr "Uživatel"
+
+#: models.py:73
+msgid "User theme setting"
+msgstr "Nastavení uživatelského motivu"
+
+#: models.py:74
+msgid "User theme settings"
+msgstr "Nastavení uživatelského motivu"
+
+#: permissions.py:10
+msgid "Create new themes"
+msgstr "Vytvořit nové motivy"
+
+#: permissions.py:13
+msgid "Delete themes"
+msgstr "Odstranit motivy"
+
+#: permissions.py:16
+msgid "Edit themes"
+msgstr "Upravit motivy"
+
+#: permissions.py:19
+msgid "View existing themes"
+msgstr "Zobrazit stávající motivy"
+
+#: settings.py:18
+msgid "Custom HTTP response code for AJAX redirections."
+msgstr ""
+
+#: settings.py:24
+msgid "Maximum number of characters that will be displayed as the view title."
+msgstr "Maximální počet znaků, které se zobrazí jako název pohledu."
+
+#: settings.py:34
+msgid "Position where the system messages will be displayed."
+msgstr ""
+
+#: settings.py:40
+msgid ""
+"Delay in milliseconds after which the menus will be checked for updates."
+msgstr ""
+"Prodleva v milisekundách, po které budou zkontrolovány aktualizace nabídek."
+
+#: settings.py:47
+msgid ""
+"Maximum number of requests that can be made before throttling is enabled."
+msgstr ""
+
+#: settings.py:54
+msgid ""
+"Time in milliseconds after which a throttled request will clear allowing an "
+"additional request to be performed."
+msgstr ""
+
+#: templates/403.html:5 templates/403.html:30
+msgid "Insufficient permission"
+msgstr "Nedostatečné povolení"
+
+#: templates/403.html:32
+msgid "You don't have enough permissions for this operation."
+msgstr "Pro tuto operaci nemáte dostatečná oprávnění."
+
+#: templates/404.html:5 templates/404.html:30
+msgid "Page not found"
+msgstr "Stránka nenalezena"
+
+#: templates/404.html:32
+msgid "The requested page could not be found."
+msgstr "Požadovaná stránka nenalezena."
+
+#: templates/404.html:40
+msgid "Possible reasons"
+msgstr "Možné důvody"
+
+#: templates/404.html:44
+msgid "The location of the item is incorrect."
+msgstr "Umístění položky je nesprávné."
+
+#: templates/404.html:45
+msgid "The location is correct, but the item no longer exists."
+msgstr "Umístění je správné, ale položka již neexistuje."
+
+#: templates/404.html:46
+msgid ""
+"The location is be correct, but your account does not have the required "
+"permission to access it."
+msgstr "Poloha je správná, ale váš účet nemá k přístupu potřebná oprávnění."
+
+#: templates/500.html:5 templates/500.html:30
+#: templates/appearance/root.html:46
+msgid "Server error"
+msgstr "Chyba serveru"
+
+#: templates/500.html:32
+msgid "There's been an unexpected error."
+msgstr "Došlo k neočekávané chybě."
+
+#: templates/500.html:40
+msgid "What to do next?"
+msgstr "Co dělat dál?"
+
+#: templates/500.html:44
+msgid "Refresh the page."
+msgstr "Obnovte stránku."
+
+#: templates/500.html:45
+msgid "Wait a bit. The system might be overloaded."
+msgstr "Počkej chvíli. Systém může být přetížen."
+
+#: templates/500.html:46
+msgid "Contact your system administrator."
+msgstr "Obraťte se na správce systému."
+
+#: templates/500.html:47
+msgid "Check the logs for messages with the tags \"ERROR\", \"CRITICAL\" or \"FATAL\"."
+msgstr ""
+"V protokolech zkontrolujte zprávy se značkami „CHYBA“, „KRITICKÁ“ nebo "
+"„FATÁLNÍ“."
+
+#: templates/500.html:48
+#, python-format
+msgid "Open a ticket using the <a href=\"%(issue_url)s\">issue tracker</a>."
+msgstr ""
+"Otevřete problém pomocí nástroje pro <a href=\"%(issue_url)s\">sledování "
+"problémů</a> ."
+
+#: templates/appearance/about.html:9
+msgid "About"
+msgstr "O nás"
+
+#: templates/appearance/about.html:67
+msgid "Version"
+msgstr "Verze"
+
+#: templates/appearance/about.html:69
+#, python-format
+msgid "Build number: %(build_number)s"
+msgstr "Číslo sestavy: %(build_number)s"
+
+#: templates/appearance/about.html:82
+msgid "Released under the license:"
+msgstr "Vydáno na základě licence:"
+
+#: templates/appearance/about.html:88
+#, python-format
+msgid ""
+"\n"
+"                The complete list of changes is available via the <a class=\"new_window\" href=\"https://docs.mayan-edms.com/releases/index.html\">Release notes %(icon_documentation)s</a> or the short version <a class=\"new_window\" href=\"https://gitlab.com/mayan-edms/mayan-edms/blob/master/HISTORY.rst\">Changelog %(icon_documentation)s</a>.\n"
+"            "
+msgstr ""
+"\n"
+"Úplný seznam změn je k dispozici v <a class=\"new_window\" href=\"https://docs.mayan-edms.com/releases/index.html\">poznámkách</a> k <a class=\"new_window\" href=\"https://docs.mayan-edms.com/releases/index.html\">vydání %(icon_documentation)s</a> nebo v krátké verzi <a class=\"new_window\" href=\"https://gitlab.com/mayan-edms/mayan-edms/blob/master/HISTORY.rst\">Changelog %(icon_documentation)s</a> ."
+
+#: templates/appearance/about.html:94
+#, python-format
+msgid ""
+"\n"
+"                For questions check the <a class=\"new_window\" href=\"https://docs.mayan-edms.com\">Documentation %(icon_documentation)s</a>.\n"
+"            "
+msgstr ""
+"\n"
+"Dotazy najdete v <a class=\"new_window\" href=\"https://docs.mayan-edms.com\">dokumentaci %(icon_documentation)s</a> ."
+
+#: templates/appearance/about.html:100
+#, python-format
+msgid ""
+"\n"
+"                If you found a bug or have a feature idea, visit the <a class=\"new_window\" href=\"https://forum.mayan-edms.com\">Forum %(icon_forum)s</a> or open a ticket in the <a class=\"new_window\" href=\"https://gitlab.com/mayan-edms/mayan-edms\">Source code repository %(icon_source_code)s</a>.\n"
+"            "
+msgstr ""
+"\n"
+"Pokud jste našli chybu nebo máte nějaký nápad, navštivte <a class=\"new_window\" href=\"https://forum.mayan-edms.com\">fórum %(icon_forum)s</a> nebo otevřete lístek v <a class=\"new_window\" href=\"https://gitlab.com/mayan-edms/mayan-edms\">úložišti zdrojových kódů %(icon_source_code)s</a> ."
+
+#: templates/appearance/app/foot.html:70
+msgid ""
+"Too many pending requests. Additional requests will be blocked until a "
+"pending one is completed or after the cooling off period ends."
+msgstr ""
+
+#: templates/appearance/base.html:73
+msgid "Object"
+msgstr "Objekt"
+
+#: templates/appearance/generic_confirm.html:13
+msgid "Are you sure?"
+msgstr "Jsi si jistí?"
+
+#: templates/appearance/generic_confirm.html:37
+msgid "Yes"
+msgstr "Ano"
+
+#: templates/appearance/generic_confirm.html:47
+msgid "No"
+msgstr "Ne"
+
+#: templates/appearance/generic_form_subtemplate.html:50
+#: templates/appearance/generic_multiform_subtemplate.html:37
+#: templates/appearance/partials/form_field.html:10
+#: templates/appearance/partials/form_field.html:16
+msgid "required"
+msgstr "Požadované"
+
+#: templates/appearance/generic_form_subtemplate.html:85
+#: templates/appearance/generic_form_subtemplate.html:95
+#: templates/appearance/generic_form_subtemplate.html:109
+#: templates/appearance/generic_multiform_subtemplate.html:62
+msgid "Save"
+msgstr "Uložit"
+
+#: templates/appearance/generic_form_subtemplate.html:85
+#: templates/appearance/generic_form_subtemplate.html:95
+#: templates/appearance/generic_form_subtemplate.html:109
+#: templates/appearance/generic_multiform_subtemplate.html:62
+msgid "Submit"
+msgstr "Odeslat"
+
+#: templates/appearance/generic_form_subtemplate.html:99
+#: templates/appearance/generic_multiform_subtemplate.html:66
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: templates/appearance/generic_list_subtemplate.html:35
+msgid "Identifier"
+msgstr "Identifikátor"
+
+#: templates/appearance/generic_list_subtemplate.html:85
+#: templates/appearance/partials/list_object_facet_links_column.html:8
+#: templates/appearance/partials/list_object_facet_links_column.html:39
+msgid "Views"
+msgstr "Náhledy"
+
+#: templates/appearance/generic_list_subtemplate.html:91
+msgid "Actions"
+msgstr "Akce"
+
+#: templates/appearance/home.html:27
+msgid "Getting started"
+msgstr "Začínáme"
+
+#: templates/appearance/home.html:30
+msgid "Before you can fully use Mayan EDMS you need the following:"
+msgstr "Než začnete plně používat Mayan EDMS, potřebujete následující:"
+
+#: templates/appearance/menus/menu_topbar.html:11
+msgid "Toggle navigation"
+msgstr "Přepnout navigaci"
+
+#: templates/appearance/partials/form_title.html:10
+msgid "Open main menu"
+msgstr "Otevřete hlavní menu"
+
+#: templates/appearance/partials/list_header.html:11
+#, python-format
+msgid ""
+"Total (%(start)s - %(end)s out of %(total)s) (Page %(page_number)s of "
+"%(total_pages)s)"
+msgstr ""
+"Celkem (%(start)s - %(end)s z %(total)s) (stránka %(page_number)s z "
+"%(total_pages)s)"
+
+#: templates/appearance/partials/list_header.html:13
+#: templates/appearance/partials/list_header.html:16
+#, python-format
+msgid "Total: %(total)s"
+msgstr "Celkem: %(total)s"
+
+#: templates/appearance/partials/list_toolbar.html:14
+msgid "Select/Deselect all"
+msgstr "Vyberte / Zrušte výběr všech"
+
+#: templates/appearance/partials/list_toolbar.html:18
+msgid "Toggle list display mode"
+msgstr "Přepnout režim zobrazení seznamu"
+
+#: templates/appearance/partials/list_toolbar.html:31
+msgid ""
+"Select items to activate bulk actions. Use Shift + click to select many."
+msgstr ""
+"Vyberte položky pro aktivaci hromadných akcí. Použijte Shift + click pro "
+"výběr více položek."
+
+#: templates/appearance/partials/list_toolbar.html:36
+msgid "Bulk actions"
+msgstr "Hromadné akce"
+
+#: templates/appearance/partials/list_toolbar.html:38
+msgid "Toggle Dropdown"
+msgstr "Přepnout rozevírací seznam"
+
+#: templates/appearance/partials/no_results.html:18
+msgid "No results"
+msgstr "Žádné výsledky"
+
+#: templates/appearance/partials/pagination.html:12
+#: templates/appearance/partials/pagination.html:14
+msgid "Previous page"
+msgstr "Předchozí strana"
+
+#: templates/appearance/partials/pagination.html:30
+#: templates/appearance/partials/pagination.html:32
+msgid "Next page"
+msgstr "Další strana"
+
+#: templates/appearance/root.html:51
+msgid "Close"
+msgstr "Zavřít"
+
+#: templates/appearance/root.html:59
+msgid "Server communication error"
+msgstr "Chyba komunikace se serverem"
+
+#: templates/appearance/root.html:61
+msgid "Check you network connection and try again in a few moments."
+msgstr "Zkontrolujte připojení k síti a zkuste to znovu za chvíli."
+
+#: templatetags/appearance_tags.py:77
+msgid "None"
+msgstr "Žádný"
+
+#: views.py:55
+#, python-format
+msgid "Delete theme: %s"
+msgstr "Odstranit motiv: %s"
+
+#: views.py:72
+#, python-format
+msgid "Edit theme: %s"
+msgstr "Upravit motiv: %s"
+
+#: views.py:93
+msgid ""
+"Themes allow changing the visual appearance without requiring code changes."
+msgstr "Motivy umožňují změnu vizuálního vzhledu bez nutnosti změn kódu."
+
+#: views.py:97
+msgid "There are no themes"
+msgstr "Neexistují žádné motivy"
+
+#: views.py:122
+#, python-format
+msgid "Theme settings for user: %s"
+msgstr ""
+
+#: views.py:144
+#, python-format
+msgid "Edit theme settings for user: %s"
+msgstr ""

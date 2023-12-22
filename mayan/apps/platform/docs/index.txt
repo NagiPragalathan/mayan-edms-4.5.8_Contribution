@@ -1,0 +1,20 @@
+.. _apps-platform:
+
+
+Platform
+========
+
+
+The platform app handles the interfacing of Mayan EDMS code and the
+underlying platform, whether it is an operating system or a container
+technology like Docker.
+
+
+- :doc:`backups`
+- :doc:`troubleshooting`
+
+.. toctree::
+    :hidden:
+
+    backups
+    troubleshooting

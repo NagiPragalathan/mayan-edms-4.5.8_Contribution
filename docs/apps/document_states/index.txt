@@ -1,0 +1,33 @@
+.. _apps-document_states:
+
+===========================
+Document states (Workflows)
+===========================
+
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Articles:
+
+    - Overview:
+
+      - Workflow implementation
+      - Automation
+      - States
+      - Transitions
+      - State actions
+      - Escalations
+      - Sub workflows
+      - External systems interactions
+
+    Tutorials:
+
+    - Detect social security numbers in OCR and tag documents
+
+    Troubleshooting:
+
+    - Creating conditions with metadata numeric comparisons
+
+

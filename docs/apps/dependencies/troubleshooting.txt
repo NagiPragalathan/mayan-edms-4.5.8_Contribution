@@ -1,0 +1,14 @@
+===============
+Troubleshooting
+===============
+
+.. include::  ../../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Troubleshooting:
+
+    - The system fails to start or some features are not working
+

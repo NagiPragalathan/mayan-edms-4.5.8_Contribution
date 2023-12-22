@@ -1,0 +1,45 @@
+.. index:: Docker
+
+
+.. _chapters-docker:
+
+
+======
+Docker
+======
+
+Docker is a container technology. Containers are a standard unit of software
+that packages up code and all its dependencies.
+
+Mayan EDMS uses Docker as its main distribution method.
+
+By default, the entire software stack is deployed as a single container. This
+provides an easy way to get started and will be sufficient for several
+thousand documents.
+
+
+- Installation: :doc:`docker_compose` | :doc:`start_stop`
+- Setup: :doc:`environment_variables` | :doc:`customizing` | :doc:`user_scripts`
+- Integration: :doc:`accessing_data`
+- Development: :doc:`building` | :doc:`nightly`
+- Administration: :doc:`backups` | :doc:`upgrading` | :doc:`commands`
+- Troubleshooting: :doc:`troubleshooting`
+
+
+.. toctree::
+    :hidden:
+
+    install_docker_compose
+    start_stop
+    environment_variables
+    commands
+    user_scripts
+    accessing_data
+    backups
+    upgrading
+    building
+    customizing
+    docker_compose
+    nightly
+    troubleshooting
+

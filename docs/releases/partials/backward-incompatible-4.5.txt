@@ -1,0 +1,123 @@
+Docker
+^^^^^^
+
+Renamed all environment variables containing ``POSTGRES`` to use the full
+name ``POSTGRESQL``. These are: ``MAYAN_DOCKER_KEYCLOAK_POSTGRES_TAG``,
+``MAYAN_KEYCLOAK_POSTGRES_VOLUME``, ``MAYAN_DOCKER_POSTGRES_IMAGE``,
+``MAYAN_POSTGRES_VOLUME``.
+
+Rename any usage of these variables in your ``.env`` file.
+
+Documents
+^^^^^^^^^
+
+Removal of the setting ``DOCUMENTS_STUB_EXPIRATION_INTERVAL``. Document
+stub expiration interval is now configure on a per document type basis via
+the user interface or API.
+
+Removal of the unused signal ``signal_post_document_created``. Use Django's
+default ``post_save`` signal for documents or
+``signal_post_document_file_upload`` to handle new file uploads.
+
+Search fields removed:
+
+- Cabinet membership of document removed from:
+
+  - Document file
+  - Document file page
+  - Document version
+  - Document version page
+
+- Document comments removed from:
+
+  - Document file
+  - Document file page
+  - Document version
+  - Document version page
+
+- Worfklow transition comments removed from:
+
+  - Document file
+  - Document file page
+  - Document version
+  - Document version page
+
+- Document description removed from:
+
+  - Document file page
+  - Document version page
+
+- Document file MIME type removed from:
+
+  - Document file page
+
+- Document version comment removed from:
+
+  - Document version page
+
+- Metadata removed from:
+
+  - Document file
+  - Document file page
+  - Document version
+  - Document version page
+
+- Tags removed from:
+
+  - Document file
+  - Document file page
+  - Document version
+  - Document version page
+
+Deleting a document file is now a background task and not an immediate
+operation. The document file view and API view are updated to reflect this.
+The result code of the document file deletion API view has changed from
+204 (No content) to 202 (Accepted).
+
+
+Document file actions now use a short name instead of a non descriptive
+number. The new action names are as follow:
+
+1 is now 'replace'
+2 is now 'append'
+3 is now 'keep'
+
+Likewise the API field has changed from 'action' to 'action_name'.
+
+The queue named `uploads` has been split into multiple new queues. Ensure
+that the `uploads` queue is empty (there are no pending uploads or uploads
+in progress) before performing the upgrade. Failure to do so will
+cause pending uploads to be ignored and then deleted at the next
+garbage collection cycle.
+
+
+Sources
+^^^^^^^
+
+Removal of YAML metadata attachments in email sources.
+
+Removal of sender, subject, and message ID metadata collection.
+
+Staging folder and watch folder now only work with real files and ignore
+symlinks.
+
+
+Task manager
+^^^^^^^^^^^^
+
+Removal of the "Tools" queue. Each app must now define its own queue for
+slow, long lived operations.
+
+
+Workflows
+^^^^^^^^^
+
+The ``WorkflowTemplateStateActionSerializer`` field ``action_path`` is
+now called ``backend_path``, and the field ``action_data`` is now called
+``backend_data``.
+
+The workflow template state action template no longer has direct access to
+the document to which the workflow is attached via the variable
+``{{ document }}``. To access the document, do so indirectly via the
+``{{ workflow_instance }}`` variable with
+``{{ workflow_instance.document }}``.

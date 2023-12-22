@@ -1,0 +1,176 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Felix <felix.com@gmx.com>, 2023
+# tetjarediske <tetja.rediske@googlemail.com>, 2023
+# Roberto Rosario, 2023
+# Dennis M. Pöpperl <free-software@dm-poepperl.de>, 2023
+# Tobias Paepke <tobias.paepke@paepke.net>, 2023
+# Bjoern Kowarsch <bjoern.kowarsch@gmail.com>, 2023
+# Mathias Behrle <mathiasb@m9s.biz>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Mathias Behrle <mathiasb@m9s.biz>, 2023\n"
+"Language-Team: German (Austria) (https://app.transifex.com/rosarior/teams/13584/de_AT/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_AT\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:23 events.py:6 permissions.py:6 settings.py:12
+msgid "Logging"
+msgstr "Protokollierung"
+
+#: events.py:10
+msgid "Error log deleted"
+msgstr "Fehlerlog gelöscht"
+
+#: links.py:15 views.py:36
+msgid "Global error log"
+msgstr "Globaler Fehlerlog"
+
+#: links.py:26
+msgid "Delete"
+msgstr "Löschen"
+
+#: links.py:31
+msgid "Errors"
+msgstr "Fehler"
+
+#: links.py:37
+msgid "Clear errors"
+msgstr "Fehler löschen"
+
+#: model_mixins.py:10
+msgid "Object"
+msgstr "Objekt"
+
+#: model_mixins.py:18
+msgid "App label"
+msgstr "App-Label"
+
+#: models.py:19 models.py:37
+msgid "Internal name"
+msgstr "Interner Name"
+
+#: models.py:24 models.py:34
+msgid "Error log"
+msgstr "Fehlerprotokoll"
+
+#: models.py:25
+msgid "Error logs"
+msgstr "Fehlerprotokolle"
+
+#: models.py:51 models.py:63
+msgid "Error log partition"
+msgstr "Fehlerlogpartition"
+
+#: models.py:52
+msgid "Error log partitions"
+msgstr "Fehlerlogpartitionen"
+
+#: models.py:66
+msgid "Date and time"
+msgstr "Datum und Uhrzeit"
+
+#: models.py:68
+msgid "Text"
+msgstr "Text"
+
+#: models.py:75
+msgid "Error log partition entry"
+msgstr "Fehlerlogpartitionseintrag"
+
+#: models.py:76
+msgid "Error log partition entries"
+msgstr "Fehlerlogpartitionseinträge"
+
+#: permissions.py:10
+msgid "Delete error log"
+msgstr "Fehlerlog löschen"
+
+#: permissions.py:13
+msgid "View error log"
+msgstr "Fehlerprotokoll anzeigen"
+
+#: serializers.py:12
+msgid "Content type"
+msgstr "Inhaltstyp"
+
+#: serializers.py:16
+msgid "Object ID"
+msgstr "Objekt-ID"
+
+#: serializers.py:19
+msgid "URL"
+msgstr "URL"
+
+#: settings.py:18
+msgid "Disable logging message ANSI color codes."
+msgstr "ANSI Farbcodes für Logeinträge deaktivieren"
+
+#: settings.py:24
+msgid "Automatically enable logging to all apps."
+msgstr "Protokollierung für alle Apps automatisch einschalten."
+
+#: settings.py:30
+msgid "List of handlers to which logging messages will be sent."
+msgstr "Liste der Handler zu denen Loggingnachrichten gesendet werden"
+
+#: settings.py:35
+msgid "Level for the logging system."
+msgstr "Level des Loggingsystems."
+
+#: settings.py:41
+msgid "Path to the logfile that will track errors during production."
+msgstr ""
+"Der Pfad zur Protokolldatei, in der Fehler im Produktivbetrieb aufgezeichnet"
+" werden."
+
+#: views.py:30
+msgid ""
+"This view displays the error log of different objects. An empty list is a "
+"good thing."
+msgstr ""
+"Diese Ansicht stellt die Fehlerlogs von verschiedenen Objekten dar. Eine "
+"leere Liste ist von Vorteil..."
+
+#: views.py:34 views.py:101
+msgid "There are no error log entries"
+msgstr "Keine Fehlerprotkolleinträge vorhanden"
+
+#: views.py:50
+#, python-format
+msgid "Clear error log entries for: %s"
+msgstr "Alle Fehlerlogeinträge für: %s löschen"
+
+#: views.py:57
+msgid "Object error log cleared successfully"
+msgstr "Objektfehlerlog erfolgreich gelöscht"
+
+#: views.py:74
+#, python-format
+msgid "Delete error log entry: %s"
+msgstr "Fehlerlogeintrag %s löschen"
+
+#: views.py:97
+msgid ""
+"This view displays the error log of an object. An empty list is a good "
+"thing."
+msgstr ""
+"Diese Ansicht stellt den Fehlerlog eines Objektes dar. Eine leere Liste ist "
+"von Vorteil..."
+
+#: views.py:104
+#, python-format
+msgid "Error log entries for: %s"
+msgstr "Fehlerlogeinträge für: %s"

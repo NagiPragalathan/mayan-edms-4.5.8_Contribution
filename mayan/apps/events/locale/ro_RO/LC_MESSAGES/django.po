@@ -1,0 +1,379 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Roberto Rosario, 2023
+# Badea Gabriel <gcbadea@gmail.com>, 2023
+# Harald Ersch, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Harald Ersch, 2023\n"
+"Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: apps.py:32 events.py:11 links.py:52 links.py:93 permissions.py:6
+#: settings.py:7 views/event_views.py:29
+msgid "Events"
+msgstr "Evenimente"
+
+#: apps.py:82 apps.py:117
+msgid "Date and time"
+msgstr "Data și ora"
+
+#: apps.py:86 apps.py:120 serializers.py:72
+msgid "Actor"
+msgstr "Actor"
+
+#: apps.py:90 apps.py:125
+msgid "Event"
+msgstr "Eveniment"
+
+#: apps.py:94 apps.py:130 serializers.py:78
+msgid "Target"
+msgstr "Ţintă"
+
+#: apps.py:98 apps.py:134
+msgid "Action object"
+msgstr "Obiect de acțiune"
+
+#: apps.py:105 forms.py:10 forms.py:67
+msgid "Namespace"
+msgstr "Spațiu de nume"
+
+#: apps.py:110 forms.py:14 forms.py:71 serializers.py:21 serializers.py:46
+msgid "Label"
+msgstr "Conținut etichetă"
+
+#: apps.py:139
+msgid "Seen"
+msgstr "Văzut"
+
+#: apps.py:146
+msgid "Object"
+msgstr "Obiect"
+
+#: apps.py:151 models.py:46 models.py:105
+msgid "Event type"
+msgstr "Tip eveniment"
+
+#: classes.py:90
+msgid "Event list export to CSV"
+msgstr "Exportați lista de evenimente în CSV"
+
+#: classes.py:118
+msgid "Events exported."
+msgstr "Evenimente exportate."
+
+#: classes.py:120
+#, python-format
+msgid ""
+"The event list has been exported and is available for download using the "
+"link: %(download_url)s or from the downloads area (%(download_list_url)s)."
+msgstr ""
+"Lista de evenimente a fost exportată și este disponibilă pentru descărcare "
+"folosind link-ul: %(download_url)s sau din zona de descărcări "
+"(%(download_list_url)s)."
+
+#: events.py:15
+msgid "Events cleared"
+msgstr "Evenimente șterse"
+
+#: events.py:18
+msgid "Events exported"
+msgstr "Evenimente exportate"
+
+#: forms.py:18 forms.py:75
+msgid "Subscription"
+msgstr "Abonament"
+
+#: forms.py:20 forms.py:77
+msgid "No"
+msgstr "Nu"
+
+#: forms.py:21 forms.py:78
+msgid "Subscribed"
+msgstr "Sunteți abonat"
+
+#: html_widgets.py:23
+msgid "System"
+msgstr "Sistem"
+
+#: links.py:55 links.py:100 views/clear_views.py:63
+msgid "Clear events"
+msgstr "Ștergere evenimente"
+
+#: links.py:59 links.py:107 views/export_views.py:60
+msgid "Export events"
+msgstr "Exportați evenimente"
+
+#: links.py:65 models.py:53 views/subscription_views.py:54
+msgid "Event subscriptions"
+msgstr "Abonări la eveniment"
+
+#: links.py:71 models.py:113 views/subscription_views.py:169
+msgid "Object event subscriptions"
+msgstr "Abonări la eveniment de obiect"
+
+#: links.py:83
+msgid "Mark as seen"
+msgstr "Marcați drept văzute"
+
+#: links.py:87
+msgid "Mark all as seen"
+msgstr "Marcați toate drept văzute"
+
+#: links.py:114
+msgid "Subscriptions"
+msgstr "Abonamente"
+
+#: literals.py:14
+#, python-format
+msgid "Unknown or obsolete event type: %s"
+msgstr "Tipul evenimentului necunoscut sau învechit: %s"
+
+#: models.py:23 serializers.py:24 serializers.py:49
+msgid "Name"
+msgstr "Nume"
+
+#: models.py:27
+msgid "Stored event type"
+msgstr "Tip eveniment stocat"
+
+#: models.py:28
+msgid "Stored event types"
+msgstr "Tipuri de evenimente stocate"
+
+#: models.py:42 models.py:68 models.py:101 serializers.py:103
+msgid "User"
+msgstr "Utilizator"
+
+#: models.py:52
+msgid "Event subscription"
+msgstr "Abonare la eveniment"
+
+#: models.py:72 serializers.py:100
+msgid "Action"
+msgstr "Acțiune"
+
+#: models.py:75
+msgid "Read"
+msgstr "Citit"
+
+#: models.py:82
+msgid "Notification"
+msgstr "Notificare"
+
+#: models.py:83 views/notification_views.py:33
+msgid "Notifications"
+msgstr "Notificări"
+
+#: models.py:112
+msgid "Object event subscription"
+msgstr "Abonare la eveniment de obiect"
+
+#: permissions.py:10
+msgid "Clear the events of an object"
+msgstr "Ștergeți evenimentele unui obiect"
+
+#: permissions.py:13
+msgid "Export the events of an object"
+msgstr "Exportați evenimentele unui obiect"
+
+#: permissions.py:16
+msgid "View the events of an object"
+msgstr "Vizualizați evenimentele unui obiect"
+
+#: queues.py:7
+msgid "Events fast"
+msgstr "Evenimente rapid"
+
+#: queues.py:10
+msgid "Events slow"
+msgstr "Evenimente lent"
+
+#: queues.py:16
+msgid "Commit an event"
+msgstr "Angajați un eveniment"
+
+#: queues.py:21
+msgid "Clear event querysets"
+msgstr "Ștergeți seturile de interogări de evenimente"
+
+#: queues.py:25
+msgid "Export event querysets"
+msgstr "Exportați seturi de interogări de evenimente"
+
+#: serializers.py:27
+msgid "URL"
+msgstr "URL"
+
+#: serializers.py:40
+msgid "Event type namespace URL"
+msgstr "Adresa URL a spațiului de nume tip eveniment"
+
+#: serializers.py:43
+msgid "ID"
+msgstr "ID-ul"
+
+#: serializers.py:75
+msgid "Actor content type"
+msgstr "Tip de conținut actor"
+
+#: serializers.py:81
+msgid "Target content type"
+msgstr "Tipul de conținut țintă"
+
+#: serializers.py:84
+msgid "Verb"
+msgstr "Verb"
+
+#: settings.py:13
+msgid ""
+"Disables asynchronous events mode. All events will be committed in the same "
+"process that triggers them. This was the behavior prior to version 4.5."
+msgstr ""
+
+#: views/clear_views.py:27
+msgid ""
+"This action is not reversible. The process will be performed in the "
+"background. "
+msgstr ""
+"Această acțiune nu este reversibilă. Procesul va fi efectuat în fundal."
+
+#: views/clear_views.py:51
+msgid "Event list clear task queued successfully."
+msgstr ""
+"Sarcina de ștergere a listei de evenimente a fost pusă în coadă cu succes."
+
+#: views/clear_views.py:84
+#, python-format
+msgid "Clear events of: %s"
+msgstr "Ștergeți evenimentele: %s"
+
+#: views/clear_views.py:109
+#, python-format
+msgid "Clear events of type: %s"
+msgstr "Ștergeți evenimentele de tip: %s"
+
+#: views/event_views.py:25
+msgid "Events track actions that have been performed on, to, or with objects."
+msgstr ""
+"Evenimentele urmăresc acțiunile care au fost efectuate pe, către sau cu "
+"obiecte."
+
+#: views/event_views.py:28
+msgid "There are no events"
+msgstr "Nu există evenimente"
+
+#: views/event_views.py:49
+msgid "There are no events for this object"
+msgstr "Nu există evenimente pentru acest obiect"
+
+#: views/event_views.py:51
+#, python-format
+msgid "Events for: %s"
+msgstr "Evenimente pentru: %s"
+
+#: views/event_views.py:67
+msgid "There are no events of this type"
+msgstr "Nu există evenimente de acest tip"
+
+#: views/event_views.py:69
+#, python-format
+msgid "Events of type: %s"
+msgstr "Evenimente de tip: %s"
+
+#: views/export_views.py:27
+msgid ""
+"The process will be performed in the background. The exported events will be"
+" available in the downloads area."
+msgstr ""
+"Procesul va fi efectuat în fundal. Evenimentele exportate vor fi disponibile"
+" în zona de descărcări."
+
+#: views/export_views.py:47
+msgid "Event list export task queued successfully."
+msgstr ""
+"Sarcina de export a listei de evenimente a fost pusă în coadă cu succes."
+
+#: views/export_views.py:81
+#, python-format
+msgid "Export events of: %s"
+msgstr "Exportați evenimente pentru: %s"
+
+#: views/export_views.py:100
+#, python-format
+msgid "Export events of type: %s"
+msgstr "Exportați evenimente de tip: %s"
+
+#: views/notification_views.py:29
+msgid "Subscribe to global or object events to receive notifications."
+msgstr ""
+"Abonați-vă la evenimente globale sau obiect pentru a primi notificări."
+
+#: views/notification_views.py:32
+msgid "There are no notifications"
+msgstr "Nu există nicio notificare"
+
+#: views/notification_views.py:45
+msgid "Mark the selected notification as read?"
+msgstr "Marcați notificarea selectată ca fiind citită?"
+
+#: views/notification_views.py:60
+msgid "Notification marked as read."
+msgstr "Notificare marcată ca fiind citită."
+
+#: views/notification_views.py:72
+msgid "Mark all notification as read?"
+msgstr "Marcați toate notificările ca fiind citite?"
+
+#: views/notification_views.py:79
+msgid "All notifications marked as read."
+msgstr "Toate notificările au fost marcate ca fiind citite."
+
+#: views/subscription_views.py:38
+#, python-format
+msgid "Error updating event subscription; %s"
+msgstr "Eroare la actualizarea abonamentului la eveniment; %s"
+
+#: views/subscription_views.py:43
+msgid "Event subscriptions updated successfully"
+msgstr "Abonamentele pentru evenimente au fost actualizate cu succes"
+
+#: views/subscription_views.py:117
+#, python-format
+msgid "Error updating object event subscription; %s"
+msgstr "Eroare la actualizarea abonamentului eveniment obiect; %s"
+
+#: views/subscription_views.py:123
+msgid "Object event subscriptions updated successfully"
+msgstr ""
+"Obținerea abonamentelor evenimentului obiect a fost actualizată cu succes"
+
+#: views/subscription_views.py:134
+#, python-format
+msgid "Event subscriptions for: %s"
+msgstr "Abonamente la eveniment pentru: %s"
+
+#: views/subscription_views.py:164
+msgid ""
+"Subscribe to the events of an object to received notifications when those "
+"events occur."
+msgstr ""
+"Abonați-vă la evenimentele unui obiect pentru a primi notificări atunci când"
+" au loc acele evenimente."
+
+#: views/subscription_views.py:167
+msgid "There are no object event subscriptions"
+msgstr "Nu există abonamente la evenimente obiect"

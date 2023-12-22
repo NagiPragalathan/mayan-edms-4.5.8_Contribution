@@ -1,0 +1,302 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Roberto Rosario, 2023
+# bwakkie <bwakkie@gmail.com>, 2023
+# j jacobs <j.jacobs@rijnlandslyceum-rls.nl>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: j jacobs <j.jacobs@rijnlandslyceum-rls.nl>, 2023\n"
+"Language-Team: Dutch (https://app.transifex.com/rosarior/teams/13584/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:132 permissions.py:6 settings.py:16
+msgid "Common"
+msgstr "Gemeenschappelijk"
+
+#: dependencies.py:186
+msgid "Used to allow offline translation of the code text strings."
+msgstr "Gebruikt om offline vertaling van de codetekststrings toe te staan."
+
+#: dependencies.py:195
+msgid "Provides style checking."
+msgstr "Biedt stijlcontrole."
+
+#: dependencies.py:200
+msgid "Command line environment with autocompletion."
+msgstr "Opdrachtregelomgeving met automatisch aanvullen."
+
+#: dependencies.py:209
+msgid "Checks proper formatting of the README file."
+msgstr "Controleert de juiste opmaak van het README-bestand."
+
+#: links.py:34
+msgid "About this"
+msgstr "Over Mayan EDMS"
+
+#: links.py:37
+msgid "Get the book"
+msgstr "Koop het boek"
+
+#: links.py:42
+msgid "Documentation"
+msgstr "Documentatie"
+
+#: links.py:45
+msgid "Forum"
+msgstr "Forum"
+
+#: links.py:50
+msgid "Knowledge base"
+msgstr ""
+
+#: links.py:53 views.py:53
+msgid "License"
+msgstr "Licentie"
+
+#: links.py:58
+msgid "Copy"
+msgstr "Kopiëren"
+
+#: links.py:62
+msgid "Setup"
+msgstr "Setup"
+
+#: links.py:65
+msgid "Source code"
+msgstr "Broncode"
+
+#: links.py:69
+msgid "Online store"
+msgstr "Online opslag"
+
+#: links.py:73
+msgid "Get support"
+msgstr "Ondersteuning"
+
+#: links.py:77 views.py:134
+msgid "Tools"
+msgstr "Gereedschappen"
+
+#: literals.py:27
+msgid ""
+"This feature has been deprecated and will be removed in a future version."
+msgstr ""
+"Deze functie is achterhaald en zal worden verwijderd in een toekomstige "
+"versie."
+
+#: literals.py:36
+msgid "Days"
+msgstr "Dagen"
+
+#: literals.py:37
+msgid "Hours"
+msgstr "Uren"
+
+#: literals.py:38
+msgid "Minutes"
+msgstr "Minuten"
+
+#: menus.py:8
+msgid "System"
+msgstr "Systeem"
+
+#: menus.py:10 menus.py:11
+msgid "Facet"
+msgstr "Facet"
+
+#: menus.py:14
+msgid "Actions"
+msgstr "Acties"
+
+#: menus.py:15
+msgid "Related"
+msgstr "Verwant"
+
+#: menus.py:16
+msgid "Secondary"
+msgstr "Secundair"
+
+#: menus.py:18
+msgid "Return"
+msgstr "Terug"
+
+#: menus.py:22
+msgid "User"
+msgstr "Gebruiker"
+
+#: permissions.py:10
+msgid "Copy object"
+msgstr "Kopieer object"
+
+#: serializers.py:11
+msgid "URL"
+msgstr "URL"
+
+#: settings.py:24
+msgid ""
+"In list mode, show the \"list facet\" menu options as a dropdown menu "
+"instead of individual buttons."
+msgstr ""
+"Geef in de lijstmodus, de menu-opties \"lijst facet\" weer als een menu "
+"keuze in plaats van afzonderlijke knoppen."
+
+#: settings.py:33
+msgid ""
+"In list mode, show the \"object\" menu options as a dropdown menu instead of"
+" individual buttons."
+msgstr ""
+"Toon in lijstmodus de menu-opties \"object\" als een menu keuze in plaats "
+"van afzonderlijke knoppen."
+
+#: settings.py:41
+msgid ""
+"Disables the use of the local `media` folder. When using this setting, all "
+"apps must be also configured via their respective storage backend settings "
+"to use alternate persistence."
+msgstr ""
+"Schakelt het gebruik van de lokale `media`-map uit. Wanneer u deze "
+"instelling gebruikt, moeten alle apps ook worden geconfigureerd via hun "
+"respectievelijke backend-instellingen voor opslag om alternatieve "
+"persistentie te gebruiken."
+
+#: settings.py:49
+msgid ""
+"A list of strings designating all applications that are to be removed from "
+"the list normally installed by Mayan EDMS. Each string should be a dotted "
+"Python path to: an application configuration class (preferred), or a package"
+" containing an application. Example: ['app_1', 'app_2']"
+msgstr ""
+"Een lijst met tekenreeksen die alle toepassingen aanduiden die moeten worden"
+" verwijderd uit de lijst die normaal door Mayan EDMS wordt geïnstalleerd. "
+"Elke tekenreeks moet een Python-pad met stippellijnen zijn naar: een "
+"toepassingsconfiguratieklasse (bij voorkeur), of een pakket dat een "
+"toepassing bevat. Voorbeeld: ['app_1', 'app_2']"
+
+#: settings.py:59
+msgid ""
+"A list of strings designating all applications that are installed beyond "
+"those normally installed by Mayan EDMS. Each string should be a dotted "
+"Python path to: an application configuration class (preferred), or a package"
+" containing an application. Example: ['app_1', 'app_2']"
+msgstr ""
+"Een lijst met tekenreeksen die alle toepassingen aanduiden die worden "
+"geïnstalleerd buiten de toepassingen die normaal door Mayan EDMS worden "
+"geïnstalleerd. Elke tekenreeks moet een Python-pad met stippellijnen zijn "
+"naar: een toepassingsconfiguratieklasse (bij voorkeur), of een pakket dat "
+"een toepassing bevat. Voorbeeld: ['app_1', 'app_2']"
+
+#: settings.py:70
+msgid ""
+"A list of strings designating all applications that are installed beyond "
+"those normally installed by Mayan EDMS. Each string should be a dotted "
+"Python path to: an application configuration class (preferred), or a package"
+" containing an application. These apps will be installed before the default "
+"apps. Example: ['app_1', 'app_2']"
+msgstr ""
+"Een lijst met tekenreeksen die alle toepassingen aanduiden die worden "
+"geïnstalleerd buiten de toepassingen die normaal door Mayan EDMS worden "
+"geïnstalleerd. Elke tekenreeks moet een Python-pad met stippellijnen zijn "
+"naar: een toepassingsconfiguratieklasse (bij voorkeur), of een pakket dat "
+"een toepassing bevat. Deze apps worden vóór de standaardapps geïnstalleerd. "
+"Voorbeeld:  ['app_1', 'app_2']"
+
+#: settings.py:81
+msgid ""
+"Name of the view attached to the brand anchor in the main menu. This is also"
+" the view to which users will be redirected after log in."
+msgstr ""
+"Naam van de overzicht gekoppeld aan het logo in het hoofdmenu. Dit is ook "
+"het overzicht waarnaar gebruikers worden doorgestuurd nadat ze zich hebben "
+"aangemeld."
+
+#: settings.py:90
+msgid "Name of the dashboard to display in the home view."
+msgstr ""
+"Naam van het dashboard dat in de startweergave moet worden weergegeven."
+
+#: settings.py:95
+msgid "Sets the project's name."
+msgstr "Stelt de naam van het project in."
+
+#: settings.py:99
+msgid "URL of the project's homepage."
+msgstr "URL van de startpagina van het project."
+
+#: templates/common/app/viewport.html:15
+msgid "Click here to fix this."
+msgstr "Klik hier om dit te herstellen."
+
+#: validators.py:41
+msgid "Enter a valid JSON value."
+msgstr "Voer een geldige JSON-waarde in."
+
+#: validators.py:65
+msgid "Enter a valid YAML value."
+msgstr "Voer een geldige YAML-waarde in."
+
+#: validators.py:80
+msgid ""
+"Enter a valid 'internal name' consisting of letters, numbers, and "
+"underscores."
+msgstr ""
+"Voer een geldige 'interne naam' in die bestaat uit letter, cijfers en "
+"underscores."
+
+#: views.py:25
+msgid "About"
+msgstr "Over"
+
+#: views.py:43
+msgid "Home"
+msgstr "Startpagina"
+
+#: views.py:69
+#, python-format
+msgid "Fields to be copied: %s"
+msgstr "Te kopiëren velden: %s"
+
+#: views.py:79
+#, python-format
+msgid "Make a copy of %(object_name)s \"%(object)s\"?"
+msgstr "Een kopie maken van %(object_name)s \"%(object)s\"?"
+
+#: views.py:90
+msgid "Object copied successfully."
+msgstr "Object succesvol gekopieerd."
+
+#: views.py:108
+msgid ""
+"No results here means that don't have the required permissions to perform "
+"administrative task."
+msgstr ""
+"Geen resultaten betekent dat u onvoldoende verplichte toegangsrechten heeft "
+"om de beheertaak uit te voeren."
+
+#: views.py:111
+msgid "No setup options available."
+msgstr "Geen instellingsopties beschikbaar."
+
+#: views.py:116
+msgid "Here you can configure all aspects of the system."
+msgstr "Hier kunt u alle aspecten van het systeem instellen."
+
+#: views.py:118
+msgid "Setup items"
+msgstr "Setup items"
+
+#: views.py:132
+msgid "These modules are used to do system maintenance."
+msgstr "Deze modules worden gebruikt voor systeemonderhoud."

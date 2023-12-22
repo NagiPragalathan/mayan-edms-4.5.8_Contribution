@@ -1,0 +1,359 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Roberto Rosario, 2023
+# Badea Gabriel <gcbadea@gmail.com>, 2023
+# Harald Ersch, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Harald Ersch, 2023\n"
+"Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: apps.py:27
+msgid "Dynamic search"
+msgstr "Căutarea dinamică"
+
+#: forms.py:19
+msgid "Match all"
+msgstr "Se potrivește cu toate"
+
+#: forms.py:20
+msgid "Return only results that match all fields."
+msgstr "Returnați numai rezultatele care se potrivesc cu toate câmpurile."
+
+#: forms.py:52
+msgid "Search logic"
+msgstr "Logica de căutare"
+
+#: forms.py:72 templates/dynamic_search/search_box.html:43
+#: templates/dynamic_search/search_box_toolbar.html:25
+msgid "Search terms"
+msgstr "Caută termeni"
+
+#: links.py:20
+msgid "Basic search"
+msgstr "Căutare simplă"
+
+#: links.py:24 templates/dynamic_search/search_box.html:49
+#: templates/dynamic_search/search_box_toolbar.html:33
+msgid "Advanced search"
+msgstr "Cautare avansată"
+
+#: links.py:28
+msgid "Search again"
+msgstr "Caută din nou"
+
+#: links.py:33 views.py:62
+msgid "Reindex search backend"
+msgstr "Reindexare backend de căutare"
+
+#: literals.py:21
+msgid "Yes"
+msgstr "Da"
+
+#: literals.py:22
+msgid "No"
+msgstr "Nu"
+
+#: permissions.py:6 queues.py:7 settings.py:14
+#: templates/dynamic_search/search_box.html:47
+#: templates/dynamic_search/search_box_toolbar.html:30 views.py:108
+msgid "Search"
+msgstr "Căutare"
+
+#: permissions.py:10
+msgid "Execute search tools"
+msgstr "Executați instrumente de căutare"
+
+#: queues.py:10
+msgid "Search slow"
+msgstr "Caută încet"
+
+#: queues.py:15
+msgid "Remove a model instance from the search engine."
+msgstr "Eliminați o instanță de model din motorul de căutare."
+
+#: queues.py:20
+msgid "Index a model instance to the search engine."
+msgstr "Indexați o instanță model la motorul de căutare."
+
+#: queues.py:25
+msgid "Index all instances of a search model to the search engine."
+msgstr ""
+"Indexați toate instanțele unui model de căutare în motorul de căutare."
+
+#: queues.py:31
+msgid ""
+"Index all related instances of a search model after a many to many event."
+msgstr ""
+"Indexați toate cazurile conexe ale unui model de căutare după un eveniment "
+"de tip de la mai multe la mai multe."
+
+#: queues.py:39
+msgid "Reset the search backend indices and index all instances again."
+msgstr ""
+"Resetați indicii backend de căutare și indexați din nou toate instanțele."
+
+#: scoped_queries.py:352
+msgid ""
+"Search results exceed limit setting. Results might not be reliable if "
+"multiple scopes are used. Narrow down the search criteria or increase the "
+"value of the results limit setting."
+msgstr ""
+"Rezultatele căutării depășesc setarea limită. Rezultatele pot să nu fie de "
+"încredere dacă sunt utilizate mai multe domenii. Restrângeți criteriile de "
+"căutare sau măriți valoarea setării limitei rezultatelor."
+
+#: scoped_queries.py:368
+#, python-format
+msgid ""
+"Search backend error. Verify that the search service is available and that "
+"the search syntax is valid for the active search backend; %s"
+msgstr ""
+"Eroare de backend de căutare. Verificați dacă serviciul de căutare este "
+"disponibil și că sintaxa de căutare este validă pentru backend-ul de căutare"
+" activ; %s"
+
+#: search_fields.py:311
+msgid "Any"
+msgstr "Orice"
+
+#: search_models.py:44
+#, python-format
+msgid "Unknown search model `%s`."
+msgstr "Model de căutare necunoscut `%s`."
+
+#: search_models.py:114
+msgid "All content"
+msgstr "Tot conținutul"
+
+#: search_query_types.py:167
+msgid "Exact"
+msgstr "Exact"
+
+#: search_query_types.py:173
+msgid "Fuzzy"
+msgstr "Aproximativ"
+
+#: search_query_types.py:179
+msgid "Greater than"
+msgstr "Mai mare ca"
+
+#: search_query_types.py:185
+msgid "Greater than or equal"
+msgstr "Mai mare sau egal"
+
+#: search_query_types.py:191
+msgid "Less than"
+msgstr "Mai puțin decât"
+
+#: search_query_types.py:197
+msgid "Less than or equal"
+msgstr "Mai mic sau egal"
+
+#: search_query_types.py:203
+msgid "Partial"
+msgstr "Parțial"
+
+#: search_query_types.py:209
+msgid "Range"
+msgstr "Interval"
+
+#: search_query_types.py:244
+msgid "Range exclusive"
+msgstr "Interval exclusiv"
+
+#: search_query_types.py:250
+msgid "Regular expression"
+msgstr "Expresie regulată"
+
+#: serializers.py:14
+msgid "Field name"
+msgstr "Numele câmpului"
+
+#: serializers.py:17
+msgid "Label"
+msgstr "Conținut etichetă"
+
+#: serializers.py:23
+msgid "App label"
+msgstr "Eticheta aplicației"
+
+#: serializers.py:26
+msgid "Model name"
+msgstr "Numele modelului"
+
+#: serializers.py:29
+msgid "Primary key"
+msgstr "Cheia principală"
+
+#: serializers.py:32
+msgid "Search fields"
+msgstr "Câmpuri de căutare"
+
+#: settings.py:20
+msgid "Full path to the backend to be used to handle the search."
+msgstr ""
+"Calea completă către backend pentru a fi utilizată pentru a gestiona "
+"căutarea."
+
+#: settings.py:27
+msgid ""
+"Arguments to pass to the search backend. For example values to change the "
+"behavior, host names, or authentication arguments."
+msgstr ""
+"Argumente de transmis backend-ului de căutare. De exemplu, valori pentru a "
+"schimba comportamentul, numele gazdei sau argumentele de autentificare."
+
+#: settings.py:36
+msgid "The search operator to use when none is specified."
+msgstr ""
+"Operatorul de căutare de utilizat atunci când nu este specificat niciunul."
+
+#: settings.py:43
+msgid ""
+"Disables the single term bar search leaving only the advanced search button."
+msgstr ""
+"Dezactivează căutarea în bară cu un singur termen lăsând doar butonul de "
+"căutare avansată."
+
+#: settings.py:51
+msgid "Amount of objects to process when performing bulk indexing."
+msgstr ""
+"Cantitatea de obiecte de procesat atunci când se efectuează indexarea în "
+"bloc."
+
+#: settings.py:57
+msgid "Sets the default state of the \"Match all\" checkbox."
+msgstr "Setează starea implicită a casetei de selectare „Potriviți toate”."
+
+#: settings.py:63
+msgid ""
+"Maximum number of search results to fetch and display per search query unit."
+msgstr ""
+"Numărul maxim de rezultate de căutare de preluat și afișat per unitate de "
+"interogare de căutare."
+
+#: settings.py:69
+msgid "Maximum number of search results to fetch and display."
+msgstr "Numărul maxim de rezultate ale căutării de preluat și afișat."
+
+#: templates/dynamic_search/app/list_toolbar.html:18
+msgid "Filter terms"
+msgstr "Termenii de filtrare"
+
+#: templates/dynamic_search/search_box.html:49
+#: templates/dynamic_search/search_box_toolbar.html:33
+msgid "Advanced"
+msgstr "Avansate"
+
+#: value_transformations.py:37
+msgid "Replace accents"
+msgstr "Înlocuiește accente"
+
+#: value_transformations.py:49
+msgid "@ sign replace"
+msgstr "Înlocuiți semnul @"
+
+#: value_transformations.py:59
+msgid "Case fold"
+msgstr "Unificare litere mari/mici"
+
+#: value_transformations.py:69 value_transformations.py:79
+msgid "Hyphen replace"
+msgstr "Înlocuiește cratima"
+
+#: value_transformations.py:89
+msgid "To boolean"
+msgstr "Transformă în boolean"
+
+#: value_transformations.py:102
+msgid "To date time"
+msgstr "Transformă în dată/oră"
+
+#: value_transformations.py:124
+msgid "Date time ISO format"
+msgstr "Dată/oră format ISO"
+
+#: value_transformations.py:134
+msgid "Date time simple format"
+msgstr "Data oră format simplu"
+
+#: value_transformations.py:144
+msgid "Date time timestamp format"
+msgstr "Format  marcaj de timp dată/oră "
+
+#: value_transformations.py:158
+msgid "To integer"
+msgstr "Transformă în întreg"
+
+#: value_transformations.py:168
+msgid "To string"
+msgstr "Transformă în șir de caractere"
+
+#: views.py:59
+msgid "This tool erases and populates the search backend's internal index."
+msgstr ""
+"Acest instrument șterge și completează indexul intern al backend-ului de "
+"căutare."
+
+#: views.py:69
+msgid ""
+"This tool is required only for some search backends. Search results will be "
+"affected while the backend is being reindexed."
+msgstr ""
+"Acest instrument este necesar numai pentru unele backend-uri de căutare. "
+"Rezultatele căutării vor fi afectate în timp ce backend-ul este reindexat."
+
+#: views.py:75
+msgid ""
+"The currently selected search backend does not support or requires "
+"reindexing."
+msgstr ""
+"Backend-ul de căutare selectat în prezent nu acceptă sau necesită "
+"reindexare."
+
+#: views.py:88
+msgid "Search backend reindexing queued."
+msgstr "Reindexarea backend-ului de căutare a fost pusă la coadă."
+
+#: views.py:110
+#, python-format
+msgid "Search for: %s"
+msgstr "Caută după: %s"
+
+#: views.py:139
+#, python-format
+msgid "Advanced search for: %s"
+msgstr "Căutare avansată pentru: %s"
+
+#: views.py:174
+msgid "Try again using different terms. "
+msgstr "Încercați din nou folosind termeni diferiți."
+
+#: views.py:176
+msgid "No search results"
+msgstr "Nu există rezultate"
+
+#: views.py:179
+#, python-format
+msgid "Search query: %s"
+msgstr "Interogare de căutare: %s"
+
+#: views.py:181
+#, python-format
+msgid "Search results for: %s"
+msgstr "Rezultatele căutării pentru: %s"

@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Panasoft, 2023
+# lilo.panic, 2023
+# Sergey Glita <gsv70@mail.ru>, 2023
+# Ilya Pavlov <spirkaa@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Ilya Pavlov <spirkaa@gmail.com>, 2023\n"
+"Language-Team: Russian (https://app.transifex.com/rosarior/teams/13584/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: apps.py:37 events.py:6 links.py:37 links.py:46 models.py:43
+#: permissions.py:6 templates/announcements/announcements.html:8 views.py:126
+msgid "Announcements"
+msgstr "Объявления"
+
+#: apps.py:79 apps.py:83
+msgid "None"
+msgstr "Нет"
+
+#: events.py:10
+msgid "Announcement created"
+msgstr "Объявление создано"
+
+#: events.py:13
+msgid "Announcement edited"
+msgstr "Объявление изменено"
+
+#: links.py:18 views.py:34
+msgid "Create announcement"
+msgstr "Создать объявление"
+
+#: links.py:22 links.py:28
+msgid "Delete"
+msgstr "Удалить"
+
+#: links.py:33
+msgid "Edit"
+msgstr "Редактировать"
+
+#: models.py:19
+msgid "Short description of this announcement."
+msgstr "Краткое описание объявления."
+
+#: models.py:20
+msgid "Label"
+msgstr "Заголовок"
+
+#: models.py:23
+msgid "The actual text to be displayed."
+msgstr "Сообщение, которое будет отображаться."
+
+#: models.py:24
+msgid "Text"
+msgstr "Текст"
+
+#: models.py:26
+msgid "Enabled"
+msgstr "Включено"
+
+#: models.py:29
+msgid "Date and time after which this announcement will be displayed."
+msgstr "Дата и время начала отображения объявления."
+
+#: models.py:30
+msgid "Start date time"
+msgstr "Дата и время начала"
+
+#: models.py:34
+msgid "Date and time until when this announcement is to be displayed."
+msgstr "Дата и время окончания отображения объявления."
+
+#: models.py:35
+msgid "End date time"
+msgstr "Дата и время окончания"
+
+#: models.py:42
+msgid "Announcement"
+msgstr "Объявления"
+
+#: permissions.py:10
+msgid "Create announcements"
+msgstr "Создать объявления"
+
+#: permissions.py:13
+msgid "Delete announcements"
+msgstr "Удалить объявления"
+
+#: permissions.py:16
+msgid "Edit announcements"
+msgstr "Редактировать объявления"
+
+#: permissions.py:19
+msgid "View announcements"
+msgstr "Просмотр объявлений"
+
+#: serializers.py:12
+msgid "URL"
+msgstr "URL"
+
+#: views.py:45
+#, python-format
+msgid "Error deleting announcement \"%(instance)s\"; %(exception)s"
+msgstr "Ошибка при удалении объявления \"%(instance)s\"; %(exception)s"
+
+#: views.py:54
+#, python-format
+msgid "%(count)d announcements deleted successfully."
+msgstr "%(count)d объявлений удалено."
+
+#: views.py:57
+#, python-format
+msgid "Announcement \"%(object)s\" deleted successfully."
+msgstr "Объявление \"%(object)s\" удалено."
+
+#: views.py:60
+#, python-format
+msgid "%(count)d announcement deleted successfully."
+msgstr "%(count)d объявление удалено."
+
+#: views.py:62
+#, python-format
+msgid "Delete the %(count)d selected announcements."
+msgstr "Удалить %(count)d выбранных объявлений."
+
+#: views.py:63
+#, python-format
+msgid "Delete announcement: %(object)s."
+msgstr "Удалить объявление: %(object)s."
+
+#: views.py:64
+#, python-format
+msgid "Delete the %(count)d selected announcement."
+msgstr "Удалить %(count)d выбранное объявление."
+
+#: views.py:98
+#, python-format
+msgid "Edit announcement: %s"
+msgstr "Редактировать объявление: %s"
+
+#: views.py:121
+msgid ""
+"Announcements are displayed in the login view. You can use announcements to "
+"convery information about your organzation, announcements or usage "
+"guidelines for your users."
+msgstr ""
+"Объявления отображаются на странице входа в систему. Вы можете использовать "
+"объявления для передачи информации о вашей организации, объявлений или "
+"руководств по использованию для ваших пользователей."
+
+#: views.py:125
+msgid "No announcements available"
+msgstr "Нет доступных объявлений"

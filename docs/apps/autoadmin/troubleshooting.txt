@@ -1,0 +1,17 @@
+===============
+Troubleshooting
+===============
+
+
+.. _troubleshooting-autoadmin-account:
+
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Troubleshooting:
+
+    - Missing automatic admin account after installatio

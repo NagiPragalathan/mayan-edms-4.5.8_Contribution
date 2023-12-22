@@ -1,0 +1,133 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Yves Dubois <ydubois@gmail.com>, 2023
+# Frédéric Sheedy <sheedf@gmail.com>, 2023
+# 0041b687dd284925c1885ba94464aacd_fde037b <fc746b00d74cefecce9698255909a24f_28512>, 2023
+# Thierry Schott <DarkDare@users.noreply.github.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Thierry Schott <DarkDare@users.noreply.github.com>, 2023\n"
+"Language-Team: French (https://app.transifex.com/rosarior/teams/13584/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: apps.py:32 events.py:6
+msgid "Document comments"
+msgstr "Commentaires associés au document"
+
+#: events.py:10
+msgid "Document comment created"
+msgstr "Commentaire de document créé"
+
+#: events.py:13
+msgid "Document comment deleted"
+msgstr "Commentaire de document supprimé"
+
+#: events.py:16
+msgid "Document comment edited"
+msgstr "Commentaire du document modifié"
+
+#: links.py:16
+msgid "Add comment"
+msgstr "Ajouter un commentaire"
+
+#: links.py:22
+msgid "Delete"
+msgstr "Supprimer"
+
+#: links.py:27
+msgid "Edit"
+msgstr "Modifier"
+
+#: links.py:31 models.py:47 permissions.py:6 search.py:8
+msgid "Comments"
+msgstr "Commentaires"
+
+#: model_mixins.py:10 models.py:33
+msgid "User"
+msgstr "Utilisateur"
+
+#: models.py:29
+msgid "Document"
+msgstr "Document"
+
+#: models.py:36
+msgid "Text"
+msgstr "Texte"
+
+#: models.py:40
+msgid "Date time submitted"
+msgstr "Date et heure de soumission"
+
+#: models.py:46
+msgid "Comment"
+msgstr "Commentaire"
+
+#: permissions.py:10
+msgid "Create new comments"
+msgstr "Ajouter de nouveaux commentaires"
+
+#: permissions.py:13
+msgid "Delete comments"
+msgstr "Supprimer des commentaires"
+
+#: permissions.py:16
+msgid "Edit comments"
+msgstr "Modifier les commentaires"
+
+#: permissions.py:19
+msgid "View comments"
+msgstr "Afficher les commentaires"
+
+#: serializers.py:12
+msgid "URL"
+msgstr "URL"
+
+#: views.py:37
+#, python-format
+msgid "Add comment to document: %s"
+msgstr "Ajouter un commentaire au document : %s"
+
+#: views.py:67
+#, python-format
+msgid "Delete comment: %s?"
+msgstr "Supprimer le commentaire : %s ?"
+
+#: views.py:99
+#, python-format
+msgid "Details for comment: %s?"
+msgstr "Détails pour le commentaire: %s?"
+
+#: views.py:119
+#, python-format
+msgid "Edit comment: %s?"
+msgstr "Modifier le commentaire: %s?"
+
+#: views.py:158
+msgid ""
+"Document comments are timestamped text entries from users. They are great "
+"for collaboration."
+msgstr ""
+"Les commentaires de document sont des entrées de texte horodatées ajouté par"
+" les utilisateurs. Ils sont parfaits pour la collaboration."
+
+#: views.py:161
+msgid "There are no comments"
+msgstr "Il n'y a pas de commentaires"
+
+#: views.py:163
+#, python-format
+msgid "Comments for document: %s"
+msgstr "Commentaires pour le document : %s"

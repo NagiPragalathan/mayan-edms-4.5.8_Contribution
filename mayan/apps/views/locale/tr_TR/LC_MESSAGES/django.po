@@ -1,0 +1,274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Emine Öztürk <oemine075@gmail.com>, 2023
+# serhatcan77 <serhat_can@yahoo.com>, 2023
+# Bedreddin Şahbaz, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:22+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Bedreddin Şahbaz, 2023\n"
+"Language-Team: Turkish (Turkey) (https://app.transifex.com/rosarior/teams/13584/tr_TR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr_TR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: apps.py:20 settings.py:11
+msgid "Views"
+msgstr "Görünümler"
+
+#: forms.py:35
+msgid "Search"
+msgstr "Arama"
+
+#: forms.py:53
+msgid "Selection"
+msgstr "Seçim"
+
+#: forms.py:233
+msgid "Label"
+msgstr "Etiket"
+
+#: forms.py:239
+msgid "Relationship"
+msgstr "İlişki"
+
+#: generics.py:164
+msgid ""
+"Select entries to be removed. Hold Control to select multiple entries. Once "
+"the selection is complete, click the button below or double click the list "
+"to activate the action."
+msgstr ""
+"Kaldırılacakları seçin. Birden çok giriş seçmek için Ctrl tuşunu basılı "
+"tutun. Seçim tamamlandığında, eylemi etkinleştirmek için aşağıdaki düğmeye "
+"tıklayın veya listeye çift tıklayın."
+
+#: generics.py:169
+msgid ""
+"Select entries to be added. Hold Control to select multiple entries. Once "
+"the selection is complete, click the button below or double click the list "
+"to activate the action."
+msgstr ""
+"Eklenecekleri seçin. Birden çok giriş seçmek için Ctrl tuşunu basılı tutun. "
+"Seçim tamamlandığında, eylemi etkinleştirmek için aşağıdaki düğmeye tıklayın"
+" veya listeye çift tıklayın."
+
+#: generics.py:323
+msgid "Add all"
+msgstr "Hepsini ekle"
+
+#: generics.py:330
+msgid "Add"
+msgstr "Ekle"
+
+#: generics.py:341
+msgid "Remove all"
+msgstr "Hepsini kaldır"
+
+#: generics.py:348
+msgid "Remove"
+msgstr "Kaldır"
+
+#: generics.py:579
+#, python-format
+msgid "Error updating relationship; %s"
+msgstr "İlişki güncellenirken hata oluştu; %s"
+
+#: generics.py:586
+msgid "Relationships updated successfully"
+msgstr "İlişkiler başarıyla güncellendi"
+
+#: generics.py:649
+#, python-format
+msgid "Duplicate data error: %(error)s"
+msgstr "Yinelenen veri hatası: %(error)s"
+
+#: generics.py:668
+#, python-format
+msgid "%(object)s not created, error: %(error)s"
+msgstr "%(object)s oluşturulamadı, hata: %(error)s"
+
+#: generics.py:679
+#, python-format
+msgid "%(object)s created successfully."
+msgstr "%(object)s başarıyla oluşturuldu."
+
+#: generics.py:724
+#, python-format
+msgid "%(object)s not deleted, error: %(error)s."
+msgstr "%(object)s silinemedi, hata: %(error)s."
+
+#: generics.py:734
+#, python-format
+msgid "%(object)s deleted successfully."
+msgstr "%(object)s başarıyla silindi."
+
+#: generics.py:797
+#, python-format
+msgid "Error retrieving %(object)s; %(error)s"
+msgstr "%(object)s alınırken hata oluştu; %(error)s"
+
+#: generics.py:909
+#, python-format
+msgid "%(object)s not updated, error: %(error)s."
+msgstr "%(object)s güncellenemedi, hata: %(error)s."
+
+#: generics.py:919
+#, python-format
+msgid "%(object)s updated successfully."
+msgstr "%(object)s başarıyla güncellendi."
+
+#: generics.py:986
+#, python-format
+msgid "%(count)d objects deleted successfully."
+msgstr "%(count)d nesneleri başarıyla silindi."
+
+#: generics.py:987
+#, python-format
+msgid "\"%(object)s\" deleted successfully."
+msgstr "\"%(object)s\" başarıyla silindi."
+
+#: generics.py:988
+#, python-format
+msgid "%(count)d object deleted successfully."
+msgstr "%(count)d nesnesi başarıyla silindi."
+
+#: generics.py:989
+#, python-format
+msgid "Delete %(count)d objects."
+msgstr "%(count)d nesnelerini sil."
+
+#: generics.py:990
+#, python-format
+msgid "Delete \"%(object)s\"."
+msgstr "\"%(object)s\" sil."
+
+#: generics.py:991
+#, python-format
+msgid "Delete %(count)d object."
+msgstr "%(count)d nesnesini sil."
+
+#: settings.py:17
+msgid "The number objects that will be displayed per page."
+msgstr "Sayfa başına görüntülenecek nesnelerin sayısı."
+
+#: settings.py:23
+msgid "A string specifying the name to use for the paging parameter."
+msgstr "Sayfalama parametresi için kullanılacak adı belirten bir dize."
+
+#: settings.py:29
+msgid ""
+"Display a submit button and wait for the submit button to be pressed before "
+"processing up the upload."
+msgstr ""
+"Bir gönder düğmesi görüntüleyin ve yüklemeyi işlemeden önce gönder düğmesine"
+" basılmasını bekleyin."
+
+#: templates/views/app/foot.html:45
+msgid "Cancel upload"
+msgstr "Yüklemeyi iptal et"
+
+#: templates/views/app/foot.html:46
+msgid "Are you sure you want to cancel this upload?"
+msgstr "Bu yüklemeyi iptal etmek istediğinizden emin misiniz?"
+
+#: templates/views/app/foot.html:47
+msgid "Drop files or click here to upload files"
+msgstr "Dosyaları sürükleyip bırakın veya yükleme yapmak için buraya tıklayın"
+
+#: templates/views/app/foot.html:48
+msgid "Your browser does not support drag and drop file uploads."
+msgstr "Tarayıcınız sürükle ve bırak dosya yüklemelerini desteklemiyor."
+
+#: templates/views/app/foot.html:49
+msgid "Please use the fallback form below to upload your files."
+msgstr "Dosyalarınızı yüklemek için lütfen aşağıdaki formu kullanın."
+
+#: templates/views/app/foot.html:50
+msgid "Clear"
+msgstr "Temizle"
+
+#: templates/views/app/foot.html:51
+msgid "Server responded with {{statusCode}} code."
+msgstr "Sunucu {{statusCode}} koduyla yanıt verdi."
+
+#: templatetags/views_tags.py:30
+msgid "Confirm delete"
+msgstr "Silme işlemini onayla"
+
+#: templatetags/views_tags.py:35
+#, python-format
+msgid "Edit %s"
+msgstr "%s'ı düzenle"
+
+#: templatetags/views_tags.py:38
+msgid "Confirm"
+msgstr "Onayla"
+
+#: templatetags/views_tags.py:42
+#, python-format
+msgid "Details for: %s"
+msgstr "Ayrıntılar: %s"
+
+#: templatetags/views_tags.py:46
+#, python-format
+msgid "Edit: %s"
+msgstr "Düzenle: %s"
+
+#: templatetags/views_tags.py:50
+msgid "Create"
+msgstr "Oluştur"
+
+#: view_mixins.py:426
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr "Sorguyla eşleşen %(verbose_name)s bulunamadı"
+
+#: view_mixins.py:452
+#, python-format
+msgid "Unable to perform operation on object %(instance)s; %(exception)s."
+msgstr ""
+"%(instance)s nesnesi üzerinde işlem gerçekleştirilemiyor; %(exception)s."
+
+#: view_mixins.py:455
+#, python-format
+msgid "Operation performed on %(count)d objects."
+msgstr "%(count)d nesneleri üzerinde gerçekleştirilen işlem."
+
+#: view_mixins.py:456
+#, python-format
+msgid "Operation performed on %(object)s."
+msgstr "%(object)s üzerinde gerçekleştirilen işlem."
+
+#: view_mixins.py:457
+#, python-format
+msgid "Operation performed on %(count)d object."
+msgstr "%(count)d nesnesi üzerinde gerçekleştirilen işlem."
+
+#: view_mixins.py:458
+#, python-format
+msgid "Perform operation on %(count)d objects."
+msgstr "%(count)d nesneleri üzerinde işlem gerçekleştirin."
+
+#: view_mixins.py:459
+#, python-format
+msgid "Perform operation on %(object)s."
+msgstr "%(object)s üzerinde işlemi gerçekleştirin."
+
+#: view_mixins.py:460
+#, python-format
+msgid "Perform operation on %(count)d object."
+msgstr "%(count)d nesnesi üzerinde işlem gerçekleştirin."
+
+#: view_mixins.py:544
+msgid "Object"
+msgstr "Nesne"

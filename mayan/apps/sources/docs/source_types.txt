@@ -1,0 +1,26 @@
+============
+Source types
+============
+
+
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Articles:
+
+    - What are document sources?
+    - Sources API “Immediate Mode”
+
+    Tutorial:
+
+    - Using Google Cloud Storage as a staging source for large amount of documents or large document uploads
+
+    Troubleshooting:
+
+    - The watch folder feature is not working
+    - Incomplete files uploaded
+

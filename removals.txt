@@ -1,0 +1,23 @@
+# Packages to be remove during upgrades
+codecov
+cssmin
+django-autoadmin
+django-celery
+django-colorful
+django-compressor
+django-downloadview
+django-environ
+django-filetransfers
+django-pure-pagination
+django-rest-swagger
+django-suit
+django-test-without-migrations
+django-timezone-field
+librabbitmq
+mock
+pathlib2
+pdfminer
+PyPDF2
+pyocr
+pytesseract
+transifex-client

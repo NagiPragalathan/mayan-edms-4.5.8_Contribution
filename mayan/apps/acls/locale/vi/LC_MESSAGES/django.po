@@ -1,0 +1,260 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Trung Phan Minh <navmobile@gmail.com>, 2023
+# Thanh Long Hoàng <hoangthanhlong@gmail.com>, 2023
+# Thuong Lu, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Thuong Lu, 2023\n"
+"Language-Team: Vietnamese (https://app.transifex.com/rosarior/teams/13584/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: apps.py:26 classes.py:204 links.py:27
+msgid "ACLs"
+msgstr "ACLs"
+
+#: apps.py:62
+msgid ""
+"Object for which the access is granted. When sorting objects, only the type "
+"is used and not the actual label of the object."
+msgstr ""
+
+#: apps.py:65 workflow_actions.py:128
+msgid "Object"
+msgstr "Chủ đề"
+
+#: events.py:6 permissions.py:6
+msgid "Access control lists"
+msgstr ""
+
+#: events.py:10
+msgid "ACL created"
+msgstr ""
+
+#: events.py:13
+msgid "ACL deleted"
+msgstr ""
+
+#: events.py:16
+msgid "ACL edited"
+msgstr ""
+
+#: forms.py:13 models.py:56 serializers.py:79 views.py:73
+msgid "Role"
+msgstr ""
+
+#: links.py:16
+msgid "New ACL"
+msgstr ""
+
+#: links.py:21
+msgid "Delete"
+msgstr "Xóa"
+
+#: links.py:32 models.py:50 workflow_actions.py:67 workflow_actions.py:203
+msgid "Permissions"
+msgstr ""
+
+#: links.py:35
+msgid "Global ACLs"
+msgstr ""
+
+#: managers.py:274
+#, python-format
+msgid "Object \"%s\" is not a model and cannot be checked for access."
+msgstr ""
+
+#: managers.py:294
+#, python-format
+msgid "Insufficient access for: %s"
+msgstr ""
+
+#: model_mixins.py:23
+msgid "Permission count"
+msgstr ""
+
+#: models.py:40 serializers.py:16
+msgid "Content type"
+msgstr ""
+
+#: models.py:43 workflow_actions.py:53
+msgid "Object ID"
+msgstr ""
+
+#: models.py:54
+msgid "Role to which the access is granted for the specified object."
+msgstr ""
+
+#: models.py:64
+msgid "Access entry"
+msgstr ""
+
+#: models.py:65
+msgid "Access entries"
+msgstr ""
+
+#: models.py:69
+#, python-format
+msgid "Role \"%(role)s\" permission's for \"%(object)s\""
+msgstr ""
+
+#: permissions.py:10
+msgid "Edit ACLs"
+msgstr ""
+
+#: permissions.py:13
+msgid "View ACLs"
+msgstr ""
+
+#: serializers.py:19
+msgid "Permissions add URL"
+msgstr ""
+
+#: serializers.py:39
+msgid "Permissions remove URL"
+msgstr ""
+
+#: serializers.py:59
+msgid "Permissions URL"
+msgstr ""
+
+#: serializers.py:82
+msgid "Role ID"
+msgstr ""
+
+#: serializers.py:85
+msgid "URL"
+msgstr ""
+
+#: serializers.py:118
+msgid "Primary key of the permission to add to the ACL."
+msgstr ""
+
+#: serializers.py:119 serializers.py:126
+msgid "Permission ID"
+msgstr ""
+
+#: serializers.py:125
+msgid "Primary key of the permission to remove from the ACL."
+msgstr ""
+
+#: views.py:44
+#, python-format
+msgid ""
+"An ACL for \"%(object)s\" using role \"%(role)s\" already exists. Edit that "
+"ACL entry instead."
+msgstr ""
+
+#: views.py:59
+#, python-format
+msgid "New access control lists for: %s"
+msgstr ""
+
+#: views.py:103
+#, python-format
+msgid "Delete ACL: %s"
+msgstr ""
+
+#: views.py:149
+msgid "There are no ACLs for this object"
+msgstr ""
+
+#: views.py:152 views.py:272
+msgid ""
+"ACL stands for Access Control List and is a precise method to control user "
+"access to objects in the system. ACLs allow granting a permission to a role "
+"but only for a specific object or set of objects."
+msgstr ""
+
+#: views.py:159
+#, python-format
+msgid "Access control lists for: %s"
+msgstr ""
+
+#: views.py:168
+msgid "Granted permissions"
+msgstr ""
+
+#: views.py:169
+msgid "Available permissions"
+msgstr ""
+
+#: views.py:219
+#, python-format
+msgid "Role \"%(role)s\" permission's for \"%(object)s\"."
+msgstr ""
+
+#: views.py:228
+msgid ""
+"Disabled permissions are inherited from a parent object or directly granted "
+"to the role and can't be removed from this view. Inherited permissions need "
+"to be removed from the parent object's ACL or from them role via the Setup "
+"menu."
+msgstr ""
+
+#: views.py:269
+msgid "There are no ACLs"
+msgstr ""
+
+#: views.py:278
+msgid "Global access control lists"
+msgstr ""
+
+#: workflow_actions.py:44
+msgid "Object type"
+msgstr ""
+
+#: workflow_actions.py:47
+msgid "Type of the object for which the access will be modified."
+msgstr ""
+
+#: workflow_actions.py:56
+msgid ""
+"Numeric identifier of the object for which the access will be modified."
+msgstr ""
+
+#: workflow_actions.py:61 workflow_actions.py:197
+msgid "Roles"
+msgstr ""
+
+#: workflow_actions.py:63 workflow_actions.py:199
+msgid "Roles whose access will be modified."
+msgstr ""
+
+#: workflow_actions.py:70 workflow_actions.py:206
+msgid ""
+"Permissions to grant/revoke to/from the role for the object selected above."
+msgstr ""
+
+#: workflow_actions.py:77
+msgid "Grant object access"
+msgstr ""
+
+#: workflow_actions.py:132 workflow_actions.py:231
+msgid "Access"
+msgstr ""
+
+#: workflow_actions.py:170
+msgid "Revoke object access"
+msgstr ""
+
+#: workflow_actions.py:213
+msgid "Grant document access"
+msgstr ""
+
+#: workflow_actions.py:259
+msgid "Revoke document access"
+msgstr ""

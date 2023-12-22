@@ -1,0 +1,274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Dezső József <dejo60@gmail.com>, 2023
+# molnars <szabolcs.molnar@gmail.com>, 2023
+# Csaba Tarjányi, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Csaba Tarjányi, 2023\n"
+"Language-Team: Hungarian (https://app.transifex.com/rosarior/teams/13584/hu/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:41 events.py:6 links.py:34 models.py:71 permissions.py:6
+#: settings.py:13
+msgid "Signature captures"
+msgstr "Aláírásrögzítések"
+
+#: events.py:11
+msgid "Signature capture created"
+msgstr "Aláírásrögzítés létrehozva"
+
+#: events.py:15
+msgid "Signature capture deleted"
+msgstr "Aláírásrögzítés törölve"
+
+#: events.py:19
+msgid "Signature capture edited"
+msgstr "Aláírásrögzítés szerkesztve"
+
+#: forms.py:27
+msgid "Asset preview image"
+msgstr "Tartalom előnézeti képe"
+
+#: forms.py:27
+msgid "Preview"
+msgstr "Előnézet"
+
+#: links.py:17
+msgid "Create new signature capture"
+msgstr "Új aláírásrögzítés létrehozása"
+
+#: links.py:23
+msgid "Delete"
+msgstr "Törlés"
+
+#: links.py:28
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: model_mixins.py:89
+msgid "Creation date and time"
+msgstr "Létrehozás dátuma és ideje"
+
+#: models.py:27
+msgid "Document"
+msgstr "Dokumentum"
+
+#: models.py:31
+msgid "Data representing the handwritten signature."
+msgstr "A kézzel írt aláírást reprezentáló adatok."
+
+#: models.py:32
+msgid "Signature capture data"
+msgstr "Aláírásrögzítési adatok"
+
+#: models.py:36
+msgid "Vector representation of the handwritten signature."
+msgstr "A kézzel írott aláírás vektoros ábrázolása."
+
+#: models.py:37
+msgid "SVG signature capture data"
+msgstr "SVG aláírásrögzítési adatok"
+
+#: models.py:40
+msgid "Print version of the captured signature."
+msgstr "A rögzített aláírás nyomtatott változata."
+
+#: models.py:41
+msgid "Text"
+msgstr "Szöveg"
+
+#: models.py:45
+msgid "User"
+msgstr "Felhasználó"
+
+#: models.py:49
+msgid "Date and time created"
+msgstr "Létrehozás dátuma és ideje"
+
+#: models.py:53
+msgid "Date and time edited"
+msgstr "Dátum és idő szerkesztve"
+
+#: models.py:57
+msgid ""
+"This value will be used when referencing this signature capture in "
+"relationship to the document. Can only contain letters, numbers, and "
+"underscores."
+msgstr ""
+"Ezt az értéket használja a rendszer, amikor erre az aláírás rögzítésére "
+"hivatkozik a dokumentummal kapcsolatban. Csak betűket, számokat és "
+"aláhúzásjeleket tartalmazhat."
+
+#: models.py:61 transformations.py:40
+msgid "Internal name"
+msgstr "Belső név"
+
+#: models.py:70
+msgid "Signature capture"
+msgstr "Aláírásrögzítés"
+
+#: permissions.py:10
+msgid "Create signature captures"
+msgstr "Aláírásrögzítések létrehozása"
+
+#: permissions.py:14
+msgid "Delete signature captures"
+msgstr "Aláírásrögzítések törlése"
+
+#: permissions.py:18
+msgid "Edit signature captures"
+msgstr "Aláírás rögzítések szerkesztése"
+
+#: permissions.py:22
+msgid "View signature captures"
+msgstr "Aláírásrögzítések megtekintése"
+
+#: search.py:12
+msgid "Signature capture text"
+msgstr "Aláírásrögzítés szövege"
+
+#: search.py:16
+msgid "Signature capture user first name"
+msgstr "Aláírásrögzítő felhasználó keresztneve"
+
+#: search.py:20
+msgid "Signature capture user last name"
+msgstr "Aláírásrögzítő felhasználó vezetékneve"
+
+#: search.py:24
+msgid "Signature capture user username"
+msgstr "Aláírásrögzítő felhasználó felhasználóneve"
+
+#: search.py:35
+msgid "Document type label"
+msgstr "Dokumentumtípus címke"
+
+#: search.py:38
+msgid "Document label"
+msgstr "Dokumentumcímke"
+
+#: search.py:42
+msgid "User first name"
+msgstr "Felhasználó keresztneve"
+
+#: search.py:45
+msgid "User last name"
+msgstr "Felhasználó vezetékneve"
+
+#: search.py:48
+msgid "User username"
+msgstr "Felhasználói felhasználónév"
+
+#: serializers.py:11
+msgid "Document URL"
+msgstr "Dokumentum URL"
+
+#: serializers.py:15
+msgid "Image URL"
+msgstr "Kép URL"
+
+#: serializers.py:27
+msgid "URL"
+msgstr "URL"
+
+#: settings.py:21
+msgid ""
+"The threshold at which the "
+"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND will start "
+"deleting the oldest signature capture cache files. Specify the size in "
+"bytes."
+msgstr ""
+"Az a küszöbérték, amelynél a "
+"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND elkezdi törölni a"
+" legrégebbi aláírásgyűjtő gyorsítótár-fájlokat. A méret megadása bájtban."
+
+#: settings.py:30
+msgid ""
+"Path to the Storage subclass to use when storing the cached signature "
+"capture files."
+msgstr ""
+"A Tárolás alosztály elérési útja a gyorsítótárazott aláírásrögzítési fájlok "
+"tárolásakor."
+
+#: settings.py:38
+msgid ""
+"Arguments to pass to the "
+"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND."
+msgstr ""
+"Argumentumokt a következőhöz: "
+"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND."
+
+#: storages.py:15
+msgid ""
+"Unable to initialize the converter signature capture cachestorage. Check the"
+" settings {} and {} for formatting errors."
+msgstr ""
+"Nem sikerült inicializálni a konverter aláírásrögzítési gyorsítótárát. "
+"Ellenőrizze a beállításokat {} és {} formázási hibákért."
+
+#: storages.py:21
+msgid "Signature captures cache"
+msgstr "Aláírásrögzítő gyorsítótár"
+
+#: templates/signature_captures/widget_signature_capture.html:64
+msgid "Sign above"
+msgstr "Aláírás fent"
+
+#: transformations.py:18
+msgid "Paste a signature capture (percent coordinates)"
+msgstr "Aláírásrögzítés beillesztése (százalékos koordináták)"
+
+#: transformations.py:39
+msgid "Signature capture internal name"
+msgstr "Az aláírásrögzítés belső neve"
+
+#: views.py:44
+#, python-format
+msgid "Create signature capture for document: %s"
+msgstr "Aláírásrögzítés létrehozása a következő dokumentumhoz: %s"
+
+#: views.py:78
+#, python-format
+msgid "Delete signature capture: %s"
+msgstr "Aláírásrögzítés törlése: %s"
+
+#: views.py:100
+#, python-format
+msgid "Details of: %s"
+msgstr "Részletek: %s"
+
+#: views.py:116
+#, python-format
+msgid "Edit document signature capture: %s"
+msgstr "A dokumentum aláírásrögzítésének szerkesztése: %s"
+
+#: views.py:145
+msgid ""
+"Signature captures are electronic versions of a persons's handwritten "
+"signature."
+msgstr ""
+"Az aláírásrögzítések a személyek kézzel írt aláírásának elektronikus "
+"változatai."
+
+#: views.py:148
+msgid "Document has no signature captures"
+msgstr "A dokumentumnak nincs aláírásrögzítése"
+
+#: views.py:151
+#, python-format
+msgid "Signature captures for document: %s"
+msgstr "Aláírás rögzítése a következő dokumentumhoz: %s"

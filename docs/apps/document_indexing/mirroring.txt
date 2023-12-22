@@ -1,0 +1,23 @@
+=========
+Mirroring
+=========
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Articles:
+
+    - What are document indexes?
+    - What is document index mirroring?
+
+    Tutorial:
+
+    - Using Mayan EDMS as a simple research article repository
+
+    Troubleshooting:
+
+    - Existing indexes are missing after upgrade to version 4.1
+

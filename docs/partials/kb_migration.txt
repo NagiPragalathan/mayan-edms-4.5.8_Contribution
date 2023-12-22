@@ -1,0 +1,15 @@
+.. important::
+
+    Our commitment to providing a top-notch document management system and
+    resources remain stronger than ever.
+
+    As part of this journey, this chapter has been expanded and
+    migrated to the Knowledge base.
+
+    This means that you now have access to an even richer and more
+    comprehensive range of resources to supercharge your document management
+    journey.
+
+    `Upgrade now to access this improved chapter as well as tutorials,
+    troubleshooting guides, and in-dept articles covering all aspects of
+    Mayan EDMS. <https://forum.mayan-edms.com/s/prod_Ogq3lYaoROC02Q>`_

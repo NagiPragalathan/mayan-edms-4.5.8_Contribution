@@ -1,0 +1,25 @@
+.. _apps-document_indexing:
+
+.. index:: Indexes
+
+================
+Document indexes
+================
+
+Document indexes are a multi level structure similar to folder in a
+filesystem, however the hierarchy of the levels is automatically created,
+updated, or deleted based on rules set by the administrator.
+
+- :doc:`indexes`
+- :doc:`examples`
+- :doc:`mirroring`
+- :doc:`troubleshooting`
+
+.. toctree::
+  :hidden:
+
+  indexes
+  mirroring
+  examples
+  troubleshooting
+

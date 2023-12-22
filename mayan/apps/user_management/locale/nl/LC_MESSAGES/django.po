@@ -1,0 +1,418 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# e6bc1d20d3f0031709c3c11db1061ebc_be0a371 <8b4e580508477646e97982ebad39e3af_312311>, 2023
+# Roberto Rosario, 2023
+# j jacobs <j.jacobs@rijnlandslyceum-rls.nl>, 2023
+# bwakkie <bwakkie@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:22+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: bwakkie <bwakkie@gmail.com>, 2023\n"
+"Language-Team: Dutch (https://app.transifex.com/rosarior/teams/13584/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:62 events.py:6 permissions.py:6
+msgid "User management"
+msgstr "Gebruikersbeheer"
+
+#: apps.py:77 search.py:10
+msgid "Group"
+msgstr "Groep"
+
+#: apps.py:78 apps.py:107 links.py:53 links.py:67 links.py:96 search.py:34
+#: views/group_views.py:111
+msgid "Groups"
+msgstr "Groepen"
+
+#: apps.py:79 search.py:16
+msgid "Name"
+msgstr "Naam"
+
+#: apps.py:99 models.py:20 search.py:22
+msgid "User"
+msgstr "Gebruiker"
+
+#: apps.py:100 apps.py:222 links.py:58 links.py:99 links.py:111
+#: views/user_views.py:170
+msgid "Users"
+msgstr "Gebruikers"
+
+#: apps.py:103 search.py:31
+msgid "Email"
+msgstr "Email"
+
+#: apps.py:106 search.py:28
+msgid "First name"
+msgstr "Voornaam"
+
+#: apps.py:110
+msgid "Is active?"
+msgstr "Is actief?"
+
+#: apps.py:113
+msgid "Is super user?"
+msgstr "Is supergebruiker?"
+
+#: apps.py:116 search.py:37
+msgid "Last name"
+msgstr "Achternaam"
+
+#: apps.py:119 serializers.py:72
+msgid "Password"
+msgstr "Wachtwoord"
+
+#: apps.py:122 search.py:40
+msgid "Username"
+msgstr "Gebruikersnaam"
+
+#: apps.py:125
+msgid "Last login"
+msgstr "Laatste aanmelding"
+
+#: apps.py:151
+msgid "Has usable password?"
+msgstr "Heeft bruikbaar wachtwoord?"
+
+#: apps.py:158
+msgid "All the groups."
+msgstr "Alle groepen."
+
+#: apps.py:162
+msgid "All the users."
+msgstr "Alle gebruikers."
+
+#: dashboard_widgets.py:14
+msgid "Total users"
+msgstr "Totaal aantal gebruikers"
+
+#: dashboard_widgets.py:29
+msgid "Total groups"
+msgstr "Totaal aantal groepen"
+
+#: dashboards.py:6
+msgid "User dashboard"
+msgstr "Gebruikersdashboard"
+
+#: events.py:10
+msgid "Group created"
+msgstr "Groep aangemaakt"
+
+#: events.py:13
+msgid "Group edited"
+msgstr "Groep bewerkt"
+
+#: events.py:17
+msgid "User created"
+msgstr "Gebruiker aangemaakt"
+
+#: events.py:20
+msgid "User edited"
+msgstr "Gebruiker bewerkt"
+
+#: events.py:25
+msgid "User logged in"
+msgstr "Gebruiker is aangemeld"
+
+#: events.py:28
+msgid "User logged out"
+msgstr "Gebruiker is afgemeld"
+
+#: links.py:28
+msgid "User details"
+msgstr "Gebruikersprofiel"
+
+#: links.py:36 views/group_views.py:25
+msgid "Create new group"
+msgstr " Maak nieuwe groep aan"
+
+#: links.py:41 links.py:44 links.py:81 links.py:85
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: links.py:49 links.py:90
+msgid "Edit"
+msgstr "Bewerken"
+
+#: links.py:75 views/user_views.py:32
+msgid "Create new user"
+msgstr "Maak nieuwe gebruiker aan"
+
+#: links.py:104
+msgid "User options"
+msgstr "Gebruikersopties"
+
+#: literals.py:8
+msgid "Account"
+msgstr "Account"
+
+#: literals.py:12 literals.py:23
+msgid "Personal"
+msgstr "Persoonlijk"
+
+#: literals.py:16
+msgid "Attributes"
+msgstr "Attributen"
+
+#: models.py:24
+msgid "Forbid this user from changing their password."
+msgstr "Deze gebruiker niet toestaan wachtwoord te wijzigen."
+
+#: models.py:31
+msgid "User settings"
+msgstr "Gebruikersinstellingen"
+
+#: models.py:32
+msgid "Users settings"
+msgstr "Gebruikersinstellingen"
+
+#: permissions.py:10
+msgid "Create new groups"
+msgstr "Maak nieuwe groepen aan"
+
+#: permissions.py:13
+msgid "Delete existing groups"
+msgstr "Verwijder bestaande groepen"
+
+#: permissions.py:16
+msgid "Edit existing groups"
+msgstr "Bewerk bestaande groepen"
+
+#: permissions.py:19
+msgid "View existing groups"
+msgstr "Bekijk bestaande groepen"
+
+#: permissions.py:22
+msgid "Create new users"
+msgstr "Maak nieuwe gebruikers aan"
+
+#: permissions.py:25
+msgid "Delete existing users"
+msgstr "Verwijder bestaande gebruikers"
+
+#: permissions.py:28
+msgid "Edit existing users"
+msgstr "Bewerk bestaande gebruikers"
+
+#: permissions.py:31
+msgid "View existing users"
+msgstr "Bekijk bestaande gebruikers"
+
+#: serializers.py:16
+msgid "URL of the API endpoint showing the list users of this group."
+msgstr "URL van het API-eindpunt met de lijst met gebruikers van deze groep."
+
+#: serializers.py:18
+msgid "Users URL"
+msgstr "Gebruikers-URL"
+
+#: serializers.py:22
+msgid "Users add URL"
+msgstr "Gebruikers voegen URL toe"
+
+#: serializers.py:26
+msgid "Users remove URL"
+msgstr "Gebruikers verwijderen URL"
+
+#: serializers.py:33 serializers.py:80
+msgid "URL"
+msgstr "URL"
+
+#: serializers.py:48
+msgid "Primary key of the user to add to the group."
+msgstr ""
+"Primaire sleutel van de gebruiker die aan de groep moet worden toegevoegd."
+
+#: serializers.py:49 serializers.py:58
+msgid "User ID"
+msgstr "Gebruikers-ID"
+
+#: serializers.py:57
+msgid "Primary key of the user to remove from the group."
+msgstr ""
+"Primaire sleutel van de gebruiker die uit de groep moet worden verwijderd."
+
+#: serializers.py:66
+msgid "URL of the API endpoint showing the list groups this user belongs to."
+msgstr ""
+"URL van het API-eindpunt met de lijstgroepen waartoe deze gebruiker behoort."
+
+#: serializers.py:68
+msgid "Groups URL"
+msgstr "Groeps-URL"
+
+#: utils.py:26
+msgid "Anonymous"
+msgstr "Anoniem"
+
+#: views/group_views.py:40
+#, python-format
+msgid "Error deleting group \"%(instance)s\"; %(exception)s"
+msgstr ""
+"Fout bij verwijderen van groep &quot; %(instance)s &quot;; %(exception)s"
+
+#: views/group_views.py:47
+#, python-format
+msgid "%(count)d groups deleted successfully."
+msgstr "%(count)d groepen zijn succesvol verwijderd."
+
+#: views/group_views.py:48
+#, python-format
+msgid "Group \"%(object)s\" deleted successfully."
+msgstr "Groep &quot; %(object)s &quot; is succesvol verwijderd."
+
+#: views/group_views.py:49
+#, python-format
+msgid "%(count)d group deleted successfully."
+msgstr "%(count)d groep is succesvol verwijderd."
+
+#: views/group_views.py:50
+#, python-format
+msgid "Delete the %(count)d selected groups."
+msgstr "Verwijder de %(count)d geselecteerde groepen."
+
+#: views/group_views.py:51
+#, python-format
+msgid "Delete group: %(object)s."
+msgstr "Groep verwijderen: %(object)s ."
+
+#: views/group_views.py:52
+#, python-format
+msgid "Delete the %(count)d selected group."
+msgstr "Verwijder de geselecteerde groep %(count)d ."
+
+#: views/group_views.py:66
+#, python-format
+msgid "Details of group: %s"
+msgstr "Details van de groep: %s"
+
+#: views/group_views.py:83
+#, python-format
+msgid "Edit group: %s"
+msgstr "Bewerk groep: %s"
+
+#: views/group_views.py:104
+msgid ""
+"User groups are organizational units. They should mirror the organizational "
+"units of your organization. Groups can't be used for access control. Use "
+"roles for permissions and access control, add groups to them."
+msgstr ""
+"Gebruikersgroepen zijn organisatorische eenheden. Ze komen overeen met de "
+"organsisatorische eenheden van uw organisatie. Groepen kunnen niet worden "
+"gebruikt voor toegangsbeheer. Gebruiker rollen voor permissies en "
+"toegangsbeheer door groepen aan rollen toe te voegen."
+
+#: views/group_views.py:110
+msgid "There are no user groups"
+msgstr "Er zijn geen gebruikersgroepen"
+
+#: views/group_views.py:116
+msgid "Available users"
+msgstr "Beschikbare gebruikers"
+
+#: views/group_views.py:117
+msgid "Group users"
+msgstr "Gebruikers groeperen"
+
+#: views/group_views.py:132
+#, python-format
+msgid "Users of group: %s"
+msgstr "Gebruikers van groep %s"
+
+#: views/user_views.py:55
+#, python-format
+msgid "Error deleting user \"%(instance)s\"; %(exception)s"
+msgstr ""
+"Fout bij verwijderen van gebruiker &quot; %(instance)s &quot;; %(exception)s"
+
+#: views/user_views.py:61
+#, python-format
+msgid "%(count)d users deleted successfully."
+msgstr "%(count)d gebruikers zijn succesvol verwijderd."
+
+#: views/user_views.py:62
+#, python-format
+msgid "User \"%(object)s\" deleted successfully."
+msgstr "Gebruiker &quot; %(object)s &quot; is succesvol verwijderd."
+
+#: views/user_views.py:63
+#, python-format
+msgid "%(count)d user deleted successfully."
+msgstr "%(count)d gebruiker is succesvol verwijderd."
+
+#: views/user_views.py:64
+#, python-format
+msgid "Delete the %(count)d selected users."
+msgstr "Verwijder de %(count)d geselecteerde gebruikers."
+
+#: views/user_views.py:65
+#, python-format
+msgid "Delete user: %(object)s."
+msgstr "Gebruiker verwijderen: %(object)s ."
+
+#: views/user_views.py:66
+#, python-format
+msgid "Delete the %(count)d selected user."
+msgstr "Verwijder de %(count)d geselecteerde gebruiker."
+
+#: views/user_views.py:73
+msgid ""
+"Warning! You are about to delete your own user account. You will lose access"
+" to the system. This process is not reversible."
+msgstr ""
+"Waarschuwing! U staat op het punt uw eigen gebruikersaccount te verwijderen."
+" U verliest de toegang tot het systeem. Dit proces is niet omkeerbaar."
+
+#: views/user_views.py:93
+#, python-format
+msgid "Details of user: %s"
+msgstr "Details van gebruiker: %s"
+
+#: views/user_views.py:112
+#, python-format
+msgid "Edit user: %s"
+msgstr "Bewerk gebruiker: %s"
+
+#: views/user_views.py:123
+msgid "Available groups"
+msgstr "Beschikbare groepen"
+
+#. Translators: "User groups" here refer to the list of groups of a
+#. specific user. The user's group membership.
+#: views/user_views.py:126
+msgid "User groups"
+msgstr "Gebruikersgroepen"
+
+#: views/user_views.py:141
+#, python-format
+msgid "Groups of user: %s"
+msgstr "Groepen van gebruiker: %s"
+
+#: views/user_views.py:166
+msgid ""
+"User accounts can be create from this view. After creating a user account "
+"you will prompted to set a password for it. "
+msgstr ""
+"Gebruikersaccount kunnen worden aangemaakt met dit overzicht. Nadat het "
+"gebruikersaccount is aangemaakt wordt u gevraagd een wachtwoord in te "
+"stellen."
+
+#: views/user_views.py:169
+msgid "There are no user accounts"
+msgstr "Er zijn geen gebruikersaccounts"
+
+#: views/user_views.py:189
+#, python-format
+msgid "Edit options for user: %s"
+msgstr "Bewerk opties voor gebruiker: %s"

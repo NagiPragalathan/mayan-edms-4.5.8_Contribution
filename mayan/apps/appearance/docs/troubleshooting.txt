@@ -1,0 +1,15 @@
+===============
+Troubleshooting
+===============
+
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Troubleshooting:
+
+    - Mayan EDMS installed correctly and works, but static files are not served
+    - Error “Missing staticfiles manifest entry for …”

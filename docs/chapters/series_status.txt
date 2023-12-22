@@ -1,0 +1,99 @@
+==============
+Support status
+==============
+
+
+Software support levels determine the level of assistance and activity
+that the software will receive. The support levels vary depending on the
+age of the series. Below are the support levels for major software series,
+starting from the most recent.
+
+
+Support levels
+==============
+
+
+Fully Supported
+---------------
+
+A series that is fully supported means that complete support is available.
+This includes technical assistance, bug fixes, security patches, and updates
+for the latest features.
+
+Technical support will provided to help resolve any issues.
+
+
+Maintenance
+-----------
+
+A series that is in maintenance mode is still supported, but with some
+restrictions. In this support level, only support for severe bugs and
+security issues will be provided. The no major updates or new features will
+be included. The series may not be compatible with the latest technologies.
+
+Technical support for this level will be limited.
+
+The maintenance phase is typically the last phase before the product reaches end-of-life.
+
+
+Extended Support
+----------------
+
+When a series reaches the extended support phase, regular support is not
+longer provided. Only sponsored or commercial support is available to fix
+or backport specific security patches or bug fixes. The series is very likely
+to not be compatible with the latest technologies.
+
+
+End of Life
+-----------
+
+End of life means that all support is discontinued for the series. This
+means that bug fixes or security patches will not be normally provided. Only
+under special conditions new version of this series may be released.
+
+The series is more than likely to not be compatible with the latest
+technologies.
+
+
+Current series status
+=====================
+
+.. list-table::
+   :header-rows: 1
+
+   * - Series
+     - Status
+     - Security patches
+     - Bug fixes
+     - Translations
+   * - 4.5
+     - Fully supported
+     - Yes
+     - Yes
+     - Updated
+   * - 4.4
+     - Maintenance
+     - Yes
+     - Yes
+     - Updated
+   * - 4.3
+     - Extended support
+     - Only sponsored ones
+     - Only sponsored ones
+     - Updated
+   * - 4.2
+     - End of life
+     - No
+     - No
+     - Not available and not updated
+   * - 4.1
+     - End of life
+     - No
+     - No
+     - Not available and not updated
+   * - 4.0
+     - End of life
+     - No
+     - No
+     - Not available and not updated

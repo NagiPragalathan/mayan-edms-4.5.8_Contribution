@@ -1,0 +1,240 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Roberto Rosario, 2023
+# Lyudmil Antonov <lantonov.here@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:22+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Lyudmil Antonov <lantonov.here@gmail.com>, 2023\n"
+"Language-Team: Bulgarian (https://app.transifex.com/rosarior/teams/13584/bg/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: bg\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:32 permissions.py:6
+msgid "Task manager"
+msgstr "Управление на задачите"
+
+#: apps.py:114 apps.py:139 apps.py:177
+msgid "Label"
+msgstr "Етикет"
+
+#: apps.py:118 apps.py:142 apps.py:181
+msgid "Name"
+msgstr "Име"
+
+#: apps.py:123
+msgid "Default queue?"
+msgstr "Опашка по подразбиране?"
+
+#: apps.py:128
+msgid ""
+"Transient queues are not persistent. Tasks in a transient queue are lost if "
+"the broker is restarted. Transient queues use less resources and managed non"
+" critical tasks."
+msgstr ""
+"Временните опашки не са постоянни. Задачите във временна опашка се губят, "
+"ако брокерът се рестартира. Временните опашки използват по-малко ресурси и "
+"управлявани некритични задачи."
+
+#: apps.py:131
+msgid "Is transient?"
+msgstr "Преходен ли е?"
+
+#: apps.py:145
+msgid "Dotted path"
+msgstr "Пунктирана пътека"
+
+#: apps.py:148
+msgid "Schedule"
+msgstr "План"
+
+#: apps.py:152
+msgid "Type"
+msgstr "Тип"
+
+#: apps.py:157
+msgid "Start time"
+msgstr "Начален час"
+
+#: apps.py:161
+msgid "Host"
+msgstr "Хост"
+
+#: apps.py:165
+msgid "Arguments"
+msgstr "Аргументи"
+
+#: apps.py:169
+msgid "Keyword arguments"
+msgstr "Аргументи на ключови думи"
+
+#: apps.py:173
+msgid "Worker process ID"
+msgstr "Идентификационен номер на работния процес"
+
+#: apps.py:185
+msgid ""
+"Maximum amount of resident memory a worker can execute before it's replaced "
+"by a new process."
+msgstr ""
+"Максимален обем резидентна памет, който работник може да изпълни, преди да "
+"бъде заменен от нов процес."
+
+#: apps.py:187
+msgid "Maximum memory per child"
+msgstr "Максимална памет на вторичен процес"
+
+#: apps.py:191
+msgid ""
+"Maximum number of tasks a worker can execute before it's replaced by a new "
+"process."
+msgstr ""
+"Максимален брой задачи, които даден работник може да изпълни, преди да бъде "
+"заменен от нов процес."
+
+#: apps.py:193
+msgid "Maximum tasks per child"
+msgstr "Максимален брой задачи на вторичен процес"
+
+#: apps.py:197
+msgid ""
+"The number of worker processes/threads to launch. Defaults to the number of "
+"CPUs available on the machine."
+msgstr ""
+"Брой работни процеси/нишки за стартиране. По подразбиране е броят процесори,"
+" налични в компютъра."
+
+#: apps.py:199
+msgid "Concurrency"
+msgstr "Паралелност"
+
+#: apps.py:203
+msgid ""
+"The nice value determines the priority of the process. A higher value lowers"
+" the priority. The default value is 0."
+msgstr ""
+"Стойността nice определя приоритета на процеса. По-високата стойност "
+"намалява приоритета. Стойността по подразбиране е 0."
+
+#: apps.py:206
+msgid "Nice level"
+msgstr "Ниво на \"хубост\""
+
+#: classes.py:186
+msgid "Task type count"
+msgstr "Брой типове задачи"
+
+#: classes.py:228
+msgid "Queue count"
+msgstr "Брой на опашката"
+
+#: links.py:14
+msgid "Task type list"
+msgstr "Списък с типове задачи"
+
+#: links.py:19
+msgid "Worker list"
+msgstr "Списък на работниците"
+
+#: links.py:24
+msgid "Queue list"
+msgstr "Списък на опашка"
+
+#: permissions.py:10
+msgid "View tasks"
+msgstr "Преглед на задачите"
+
+#: settings.py:11
+msgid "Celery"
+msgstr "Celery"
+
+#: settings.py:17
+msgid "Default: \"AMQPLAIN\". Set custom amqp login method."
+msgstr ""
+"По подразбиране: &quot;AMQPLAIN&quot;. Задайте потребителски метод за вход в"
+" amqp."
+
+#: settings.py:23
+msgid ""
+"Default: \"amqp://\". Default broker URL. This must be a URL in the form of:"
+" transport://userid:password@hostname:port/virtual_host Only the scheme part"
+" (transport://) is required, the rest is optional, and defaults to the "
+"specific transports default values."
+msgstr ""
+"По подразбиране: &quot;amqp: //&quot;. URL адрес на брокера по подразбиране "
+"Това трябва да бъде URL под формата на: "
+"transport://userid:password@hostname:port/virtual_host Изисква се само "
+"частта от схемата (transport://), останалото е по избор и по подразбиране "
+"към конкретните стойности на транспортиране по подразбиране."
+
+#: settings.py:32
+msgid ""
+"Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
+"settings. The valid values for this option vary by transport."
+msgstr ""
+"По подразбиране: &quot;Неактивно&quot;. Превключва използването на SSL при "
+"връзка с брокера и настройките на SSL. Валидните стойности за тази опция "
+"варират в зависимост от транспорта."
+
+#: settings.py:40
+msgid ""
+"Default: No result backend enabled by default. The backend used to store "
+"task results (tombstones). Refer to "
+"http://docs.celeryproject.org/en/v4.1.0/userguide/configuration.html#result-"
+"backend"
+msgstr ""
+"По подразбиране: По подразбиране не е активиран бекенд. Бекендът, използван "
+"за съхраняване на резултати от задачи (надгробни камъни). Вижте "
+"http://docs.celeryproject.org/en/v4.1.0/userguide/configuration.html#result-"
+"backend"
+
+#: tests/literals.py:11
+msgid "Test queue"
+msgstr "Опашка за тестове"
+
+#: views.py:25
+#, python-format
+msgid "Task types for queue: %s"
+msgstr "Типове задачи за опашка: %s"
+
+#: views.py:35
+#, python-format
+msgid "Queue: %s, not found"
+msgstr "Опашка: %s , не е намерена"
+
+#: views.py:45
+msgid "Background task workers"
+msgstr "Работници на фонови задачи"
+
+#: views.py:62
+#, python-format
+msgid "Queues for worker: %s"
+msgstr "Опашки за работник: %s"
+
+#: views.py:72
+#, python-format
+msgid "Worker: %s, not found"
+msgstr "Работник: %s , не е намерен"
+
+#: workers.py:18
+msgid "Low latency high volume tasks"
+msgstr "Задачи с голям обем с ниска латентност"
+
+#: workers.py:25 workers.py:32
+msgid "Medium latency tasks"
+msgstr "Задачи със средна латентност"
+
+#: workers.py:39 workers.py:46
+msgid "Low latency, long lived tasks"
+msgstr "Дълготрайни задачи с ниска латентност"

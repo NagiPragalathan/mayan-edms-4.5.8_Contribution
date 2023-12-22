@@ -1,0 +1,274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# bwakkie <bwakkie@gmail.com>, 2023
+# e6bc1d20d3f0031709c3c11db1061ebc_be0a371 <8b4e580508477646e97982ebad39e3af_312311>, 2023
+# Roberto Rosario, 2023
+# j jacobs <j.jacobs@rijnlandslyceum-rls.nl>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: j jacobs <j.jacobs@rijnlandslyceum-rls.nl>, 2023\n"
+"Language-Team: Dutch (https://app.transifex.com/rosarior/teams/13584/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: admin.py:13
+msgid "Label"
+msgstr "Label"
+
+#: apps.py:51 events.py:6 links.py:21 permissions.py:6 queues.py:7
+#: settings.py:12
+msgid "File metadata"
+msgstr "Bestandsmetadata"
+
+#: apps.py:103 search.py:11 search.py:22
+msgid "File metadata key"
+msgstr "Bestand metadata sleutel"
+
+#: apps.py:107 search.py:15 search.py:26
+msgid "File metadata value"
+msgstr "Bestand metadata waarde"
+
+#: apps.py:133 apps.py:139
+msgid "Return the value of a specific file metadata."
+msgstr "Retourneer de waarde van specifieke bestandsmetadata."
+
+#: apps.py:134 apps.py:140
+msgid "File metadata value of"
+msgstr "Bestandsmetadata waarde van"
+
+#: dependencies.py:12
+msgid ""
+"Library and program to read and write meta information in multimedia files."
+msgstr ""
+"Bibliotheek en programma om metadata in multimediabestanden te lezen en te "
+"schrijven."
+
+#: drivers/exiftool.py:19
+msgid "EXIF Tool"
+msgstr "EXIF Tool"
+
+#: drivers/extract_msg.py:15
+msgid "Extract msg"
+msgstr ""
+
+#: events.py:10
+msgid "Document file submitted for file metadata processing"
+msgstr ""
+
+#: events.py:14
+msgid "Document file file metadata processing finished"
+msgstr ""
+
+#: links.py:27
+msgid "Attributes"
+msgstr "Attributen"
+
+#: links.py:34 links.py:39
+msgid "Submit for file metadata"
+msgstr "Indienen voor bestandsmetadata"
+
+#: links.py:49
+msgid "Setup file metadata"
+msgstr "Bestandsmetadata instellen"
+
+#: links.py:55
+msgid "File metadata processing per type"
+msgstr "Bestandsmetadata verwerking per type"
+
+#: methods.py:54
+msgid "Return the specified document file file metadata entry."
+msgstr ""
+
+#: model_mixins.py:9
+msgid "Attribute count"
+msgstr "Aantal attributen"
+
+#: models.py:18 models.py:97
+msgid "Driver"
+msgstr "Stuurprogramma"
+
+#: models.py:22
+msgid "Document file"
+msgstr "Document bestand"
+
+#: models.py:28 models.py:64
+msgid "Document file driver entry"
+msgstr ""
+
+#: models.py:29
+msgid "Document file driver entries"
+msgstr ""
+
+#: models.py:41
+msgid "Document type"
+msgstr "Documenttype"
+
+#: models.py:45
+msgid "Automatically queue newly created documents for processing."
+msgstr "Nieuw aangemaakte documenten automatisch in wachtrij voor verwerking."
+
+#: models.py:46
+msgid "Auto process"
+msgstr ""
+
+#: models.py:52
+msgid "Document type settings"
+msgstr "Documenttype instellingen"
+
+#: models.py:53
+msgid "Document types settings"
+msgstr "Documenttypes instellingen"
+
+#: models.py:67
+msgid "Name of the file metadata entry."
+msgstr "Naam van de bestandsmetadata-invoer."
+
+#: models.py:68
+msgid "Key"
+msgstr "Sleutel"
+
+#: models.py:71
+msgid "Value of the file metadata entry."
+msgstr "Waarde van de bestandsmetadata-invoer."
+
+#: models.py:72
+msgid "Value"
+msgstr "Waarde"
+
+#: models.py:77
+msgid "File metadata entry"
+msgstr "Bestandsmetadata-invoer."
+
+#: models.py:78
+msgid "File metadata entries"
+msgstr "Bestandsmetadata-invoer."
+
+#: models.py:88
+msgid "Driver path"
+msgstr "Stuurprogramma pad"
+
+#: models.py:92
+msgid "Internal name"
+msgstr "Interne naam"
+
+#: models.py:98
+msgid "Drivers"
+msgstr "Stuurprogramma's"
+
+#: permissions.py:10
+msgid "Change document type file metadata settings"
+msgstr "Bestandsmetadata-instellingen voor documenttype wijzigen"
+
+#: permissions.py:15
+msgid "Submit document for file metadata processing"
+msgstr "Document indienen voor verwerking bestandsmetadata"
+
+#: permissions.py:19
+msgid "View file metadata"
+msgstr "Bestandsmetadata bekijken"
+
+#: queues.py:11
+msgid "Process document file"
+msgstr ""
+
+#: settings.py:19
+msgid ""
+"Set new document types to perform file metadata processing automatically by "
+"default."
+msgstr ""
+"Nieuwe documenttypes standaard instellen om automatisch de metadata-"
+"verwerking uit te voeren."
+
+#: settings.py:26
+msgid "Arguments to pass to the drivers."
+msgstr "Argumenten om door te geven aan de stuurprogramma's."
+
+#: views.py:52
+msgid ""
+"File metadata are the attributes of the document's file. They can range from"
+" camera information used to take a photo to the author that created a file. "
+"File metadata are set when the document's file was first created. File "
+"metadata attributes reside in the file itself. They are not the same as the "
+"document metadata, which are user defined and reside in the database."
+msgstr ""
+"Bestandsmetadata zijn de kenmerken van het documentbestand. Ze kunnen "
+"variëren van camera-informatie die is gebruikt om een foto te maken, tot de "
+"auteur die een bestand heeft gemaakt. Metagegevens van bestanden worden "
+"ingesteld wanneer het documentbestand voor het eerst werd gemaakt. Kenmerken"
+" van metagegevens van bestanden bevinden zich in het bestand zelf. Ze zijn "
+"niet hetzelfde als de documentmetadata, die door de gebruiker zijn "
+"gedefinieerd en zich in de database bevinden."
+
+#: views.py:60
+msgid "No file metadata available."
+msgstr "Geen bestandsmetadata beschikbaar."
+
+#: views.py:63
+#, python-format
+msgid "File metadata drivers for: %s"
+msgstr "Bestandsmetadata stuurprogramma voor: %s"
+
+#: views.py:90
+msgid ""
+"This could mean that the file metadata detection has not completed or that "
+"the driver does not support any metadata field for the file type of this "
+"document."
+msgstr ""
+"Dit kan betekenen dat de bestands metagegevens detectie nog niet klaar is of"
+" dat de onderliggende driver geen metagegevens voor dit bestandstype "
+"ondersteund. "
+
+#: views.py:95
+msgid "No file metadata available for this driver."
+msgstr ""
+
+#: views.py:99
+#, python-format
+msgid ""
+"File metadata attributes for: %(document_file)s with driver: %(driver)s"
+msgstr ""
+
+#: views.py:121
+#, python-format
+msgid "%(count)d documents files submitted to the file metadata queue."
+msgstr ""
+
+#: views.py:124
+#, python-format
+msgid "%(count)d document file submitted to the file metadata queue."
+msgstr ""
+
+#: views.py:133
+msgid "Submit the selected document file to the file metadata queue?"
+msgid_plural "Submit the selected documents files to the file metadata queue?"
+msgstr[0] ""
+msgstr[1] ""
+
+#: views.py:164
+#, python-format
+msgid "Edit file metadata settings for document type: %s"
+msgstr "Bewerk bestandsmetadata-instellingen voor documenttype: %s"
+
+#: views.py:175
+msgid "Submit all documents of a type for file metadata processing."
+msgstr ""
+"Alle documenten van een type indienen voor verwerking bestandsmetadata."
+
+#: views.py:202
+#, python-format
+msgid "%(count)d documents added to the file metadata processing queue."
+msgstr ""
+"%(count)d documenten toegevoegd aan de wachtrij voor bestandsmetadata "
+"verwerking."

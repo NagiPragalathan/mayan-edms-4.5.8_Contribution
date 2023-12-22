@@ -1,0 +1,22 @@
+.. _apps-authentication:
+
+
+==============
+Authentication
+==============
+
+Authentication is the process of confirming the identity of a person.
+Mayan EDMS uses a modular authentication system that can authenticate users
+using different technologies.
+
+- :doc:`password_reset`
+- :doc:`troubleshooting`
+
+.. toctree::
+  :hidden:
+
+  password_reset
+  troubleshooting
+
+
+

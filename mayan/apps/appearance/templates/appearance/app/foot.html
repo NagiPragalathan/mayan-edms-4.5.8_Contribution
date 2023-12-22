@@ -1,0 +1,304 @@
+{% load i18n %}
+{% load static %}
+
+{% load smart_settings_tags %}
+<link rel="stylesheet" href=" {% static 'css/chat.css' %} ">
+<link rel="stylesheet" href=" {% static 'css/home.css' %} ">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src=" {% static 'scripts/responses.js' %} "></script>
+
+<div class="chat-bar-collapsible">
+    <button id="chat-button" type="button" class="collapsible">🤖Chat with Me!
+        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+    </button>
+
+    <div class="content">
+        <div class="full-chat-block" style="width:100%;">
+            <!-- Message Container -->
+            <div class="outer-container">
+                <div class="chat-container">
+                    <!-- Messages -->
+                    <div id="chatbox">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    </div>
+                    
+                    {% csrf_token %}
+                    <!-- Start voice input button -->
+
+                    <!-- User input box -->
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input id="textInput" class="input-box" type="text" name="msg"
+                                placeholder="Tap 'Enter' to send a message">
+                            <p></p>
+                        </div>
+
+                        <div class="chat-bar-icons">
+
+                            <!-- <button id="startButton" style="    padding: 0px 7px;
+                            border-radius: 14px;"><i id="voiceInputIcon" class="fas fa-microphone"></i></button> -->
+
+                            <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                onclick="sendButton()"></i>
+                        </div>
+                    </div>
+
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+    // Collapsible
+var coll = document.getElementsByClassName("collapsible");
+
+for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+
+        var content = this.nextElementSibling;
+
+        if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+
+    });
+}
+
+function getTime() {
+    let today = new Date();
+    hours = today.getHours();
+    minutes = today.getMinutes();
+
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+
+    let time = hours + ":" + minutes;
+    return time;
+}
+
+// Gets the first message
+function firstBotMessage() {
+    let firstMessage = "How's it going?"
+    document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
+
+    let time = getTime();
+
+    $("#chat-timestamp").append(time);
+    document.getElementById("userInput").scrollIntoView(false);
+}
+
+firstBotMessage();
+
+// Retrieves the response
+function getHardResponse(userText) {
+    let botResponse = getBotResponse(userText);
+    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+}
+
+//Gets the text text from the input box and processes it
+function getResponse() {
+    let userText = $("#textInput").val();
+
+    if (userText == "") {
+        return;
+    }
+
+    let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+
+    $("#textInput").val("");
+    $("#chatbox").append(userHtml);
+    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+
+    setTimeout(() => {
+        getHardResponse(userText);
+    }, 1000)
+
+}
+
+// Handles sending text via button clicks
+function buttonSendText(sampleText) {
+    let userHtml = '<p class="userText"><span>' + sampleText + '</span></p>';
+
+    $("#textInput").val("");
+    $("#chatbox").append(userHtml);
+    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+
+    //Uncomment this if you want the bot to respond to this buttonSendText event
+    // setTimeout(() => {
+    //     getHardResponse(sampleText);
+    // }, 1000)
+}
+
+function sendButton() {
+    getResponse();
+}
+
+// Press enter to send a message
+$("#textInput").keypress(function (e) {
+    if (e.which == 13) {
+        getResponse();
+    }
+});
+</script>
+
+
+<script src="{% static 'appearance/node_modules/jquery/dist/jquery.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/node_modules/bootstrap/dist/js/bootstrap.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/packages/jquery.scrollview.js' %}" type="text/javascript"></script>
+
+<script src="{% static 'appearance/node_modules/jquery-lazyload/jquery.lazyload.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/node_modules/jquery-lazyload/jquery.scrollstop.js' %}" type="text/javascript"></script>
+
+<script src="{% static 'appearance/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/node_modules/select2/dist/js/select2.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/node_modules/toastr/build/toastr.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/node_modules/jquery-match-height/dist/jquery.matchHeight-min.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/node_modules/@fortawesome/fontawesome-free/js/all.min.js' %}" data-auto-replace-svg="nest" type="text/javascript"></script>
+<script src="{% static 'appearance/node_modules/urijs/src/IPv6.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/node_modules/urijs/src/punycode.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/node_modules/urijs/src/SecondLevelDomains.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/node_modules/urijs/src/URI.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/node_modules/urijs/src/URITemplate.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/node_modules/urijs/src/URI.fragmentURI.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/node_modules/jquery-form/dist/jquery.form.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/js/mayan_app.js' %}" type="text/javascript"></script>
+<script src="{% static 'appearance/js/partial_navigation.js' %}" type="text/javascript"></script>
+
+<script>
+    'use strict';
+
+    {# Transfer variable from Django to javascript #}
+    const djangoDEBUG = {% if debug %}true{% else %}false{% endif %};
+
+    {% smart_setting "APPEARANCE_AJAX_REDIRECTION_CODE" as appearance_ajax_redirection_code %}
+    {% smart_setting "APPEARANCE_MENU_POLLING_INTERVAL" as appearance_menu_polling_interval %}
+    {% smart_setting "APPEARANCE_THROTTLING_MAXIMUM_REQUESTS" as appearance_throttling_maximum_requests %}
+    {% smart_setting "APPEARANCE_THROTTLING_TIMEOUT" as appearance_throttling_timeout %}
+    {% smart_setting "COMMON_HOME_VIEW" as common_home_view %}
+
+    const app = new MayanApp({
+        ajaxMenusOptions: [
+            {
+                callback: function (options) {
+                    MayanApp.updateNavbarState();
+                },
+                interval: {% if menu_polling_interval == 'None' %}null{% else %}{{ appearance_menu_polling_interval }}{% endif %},
+                menuSelector: '#menu-main',
+                name: 'menu_main',
+                url: '{% url "rest_api:template-detail" "menu_main" %}'
+            },
+            {
+                interval: {% if menu_polling_interval == 'None' %}null{% else %}{{ appearance_menu_polling_interval }}{% endif %},
+                menuSelector: '#menu-topbar',
+                name: 'menu_topbar',
+                url: '{% url "rest_api:template-detail" "menu_topbar" %}'
+            },
+        ],
+        messagePosition: '{% smart_setting "APPEARANCE_MESSAGE_POSITION" %}',
+    });
+
+    const partialNavigation = new PartialNavigation({
+        initialURL: '{% url common_home_view %}',
+        disabledAnchorClasses: [
+            'btn-multi-item-action', 'disabled', 'pagination-disabled'
+        ],
+        excludeAnchorClasses: ['fancybox', 'new_window', 'non-ajax'],
+        redirectionCode: {{ appearance_ajax_redirection_code }},
+        maximumAjaxRequests: {{ appearance_throttling_maximum_requests }},
+        ajaxRequestTimeout: {{ appearance_throttling_timeout }},
+        ajaxThrottlingMessage: '{% trans "Too many pending requests. Additional requests will be blocked until a pending one is completed or after the cooling off period ends." %}'
+    });
+
+    app.addAfterBaseLoadCallback({func: app.doToastrMessages, self: app});
+    app.addAfterBaseLoadCallback({func: app.resizeFullHeight, self: app});
+    app.addAfterBaseLoadCallback({func: app.setupSelect2, self: app});
+    app.addAfterBaseLoadCallback({func: app.setupScrollView, self: app});
+    app.addAfterBaseLoadCallback({func: app.setupListToolbar, self: app});
+
+    jQuery(document).ready(function() {
+        app.initialize();
+    });
+
+    // Add invisible bootstrap messages to copy the styles to toastr.js.
+    $('body').append('<div id="div-javascript-dynamic-content"></div>');
+    $('#div-javascript-dynamic-content').html('\
+        <div class="hidden alert alert-success">\
+            <p>text</p>\
+        </div>\
+        <div class="hidden alert alert-info">\
+            <p>text</p>\
+        </div>\
+        <div class="hidden alert alert-danger">\
+            <p>text</p>\
+        </div>\
+        <div class="hidden alert alert-warning">\
+            <p>text</p>\
+        </div>\
+    ');
+
+    // Copy the bootstrap style from the sample alerts to toaster.js via
+    // dynamic document style tag.
+    $('head').append('\
+        <style>\
+            .toast-success {\
+                background-color: ' + $('.alert-success').css('background-color') +'\
+            }\
+            .toast-info {\
+                background-color: ' + $('.alert-info').css('background-color') +'\
+            }\
+            .toast-error {\
+                background-color: ' + $('.alert-danger').css('background-color') +'\
+            }\
+            .toast-warning {\
+                background-color: ' + $('.alert-warning').css('background-color') +'\
+            }\
+        </style>\
+    ');
+    $('#div-javascript-dynamic-content').remove();
+
+    jQuery(document).ready(function() {
+        $('body').on('keyup', '.appearance-input-search-clearable input[type="search"]', function (event) {
+            const $this = $(this);
+            const $spanInputSearchClear = $this.next('.appearance-input-search-clear');
+
+            if ($this.val()) {
+                $spanInputSearchClear.show();
+
+            } else {
+                $spanInputSearchClear.hide();
+            }
+        });
+
+        $('body').on('click', '.appearance-input-search-clearable .appearance-input-search-clear', function (event) {
+            const $this = $(this);
+            const $inputSearch = $this.prev('input[type="search"]');
+
+            $inputSearch.val('').trigger('keyup').focus();
+            if ($inputSearch.data('submit-on-clear')) {
+                $(this).parents('form').submit();
+            }
+        });
+    });
+
+    const appearanceSanitizeHTML = function (text) {
+      return $('<div>').text(text).html();
+    }
+</script>

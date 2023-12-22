@@ -1,0 +1,149 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# abc Def <hdogan1974@gmail.com>, 2023
+# Nurgül Özkan <nurgulozkan@hotmail.com>, 2023
+# Bedreddin Şahbaz, 2023
+# serhatcan77 <serhat_can@yahoo.com>, 2023
+# Emine Öztürk <oemine075@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Emine Öztürk <oemine075@gmail.com>, 2023\n"
+"Language-Team: Turkish (Turkey) (https://app.transifex.com/rosarior/teams/13584/tr_TR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr_TR\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: apps.py:23 links.py:17 settings.py:11
+msgid "REST API"
+msgstr "REST API"
+
+#: fields.py:30
+#, python-format
+msgid "Unable to find serializer class for: %s"
+msgstr "%sIçin serileştirme sınıfı bulunamadı: "
+
+#: links.py:21
+msgid "API Documentation (Swagger)"
+msgstr "API Belgeleri (Swagger)"
+
+#: links.py:26
+msgid "API Documentation (ReDoc)"
+msgstr "API Belgeleri (ReDoc)"
+
+#: relations.py:33
+#, python-brace-format
+msgid "Invalid pk \"{pk_value}\" - object does not exist."
+msgstr "Geçersiz pk \"{pk_value}\" - nesne mevcut değil."
+
+#: relations.py:36
+#, python-brace-format
+msgid "Incorrect type. Expected pk value, received {data_type}."
+msgstr "Yanlış tip. Beklenen pk değeri, alınan {data_type}."
+
+#: relations.py:38
+msgid "This field is required."
+msgstr "Bu alan gereklidir."
+
+#: schemas.py:11
+#, python-format
+msgid "%s API"
+msgstr "%s API'si"
+
+#: serializers.py:37
+msgid "Content"
+msgstr "İçerik"
+
+#: serializers.py:40
+msgid "Data"
+msgstr "Veri"
+
+#: serializers.py:43
+msgid "Headers"
+msgstr "Başlıklar"
+
+#: serializers.py:46
+msgid "Name"
+msgstr "İsim"
+
+#: serializers.py:49
+msgid "Status code"
+msgstr "Durum kodu"
+
+#: serializers.py:52
+msgid "Requests"
+msgstr "İstekler"
+
+#: serializers.py:75
+msgid "Label"
+msgstr "Etiket"
+
+#: serializers.py:78
+msgid "URL"
+msgstr "URL"
+
+#: serializers.py:106
+msgid "Author"
+msgstr "Yazar"
+
+#: serializers.py:109
+msgid "Author email"
+msgstr "Yazar eposta"
+
+#: serializers.py:112
+msgid "Build"
+msgstr "Derle"
+
+#: serializers.py:115
+msgid "Build string"
+msgstr "Dize oluştur"
+
+#: serializers.py:118
+msgid "Copyright"
+msgstr "Telif hakkı"
+
+#: serializers.py:121
+msgid "Description"
+msgstr "Açıklama"
+
+#: serializers.py:124
+msgid "Django version"
+msgstr "Django sürümü"
+
+#: serializers.py:127
+msgid "License"
+msgstr "Lisans"
+
+#: serializers.py:130
+msgid "Title"
+msgstr "Başlık"
+
+#: serializers.py:133
+msgid "Version"
+msgstr "Versiyon"
+
+#: serializers.py:136
+msgid "Website"
+msgstr "İnternet sitesi"
+
+#: settings.py:17
+msgid "Disable the REST API links in the tools menu."
+msgstr "Araçlar menüsündeki REST API bağlantılarını devre dışı bırakın."
+
+#: settings.py:23
+msgid "The maximum page size that can be requested."
+msgstr "Talep edilebilecek maksimum sayfa boyutu."
+
+#: settings.py:29
+msgid "The default page size if none is specified."
+msgstr "Hiçbiri belirtilmemişse varsayılan sayfa boyutu."

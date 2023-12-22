@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Language-Team: Albanian (https://app.transifex.com/rosarior/teams/13584/sq/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: sq\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:14 permissions.py:6 settings.py:12
+msgid "Platform"
+msgstr ""
+
+#: classes.py:227
+msgid "Template for entrypoint.sh file inside a Docker image."
+msgstr ""
+
+#: classes.py:242
+msgid "Template that generates a Dockerfile file."
+msgstr ""
+
+#: classes.py:257
+msgid "Template for Supervisord inside a Docker image."
+msgstr ""
+
+#: classes.py:275
+msgid "Template that generates a GitLab CI config file."
+msgstr ""
+
+#: classes.py:419
+msgid "Template for Supervisord."
+msgstr ""
+
+#: classes.py:493
+msgid "Template showing the queues of a worker."
+msgstr ""
+
+#: client_backends.py:34
+msgid "Sentry test error"
+msgstr ""
+
+#: permissions.py:10
+msgid "Trigger tests"
+msgstr ""
+
+#: settings.py:18
+msgid ""
+"List of client backends to launch after startup. Use full dotted path to the"
+" client backend classes."
+msgstr ""
+
+#: settings.py:25
+msgid ""
+"Arguments for the client backends. Use the client backend dotted path as the"
+" dictionary key for the arguments in dictionary format."
+msgstr ""

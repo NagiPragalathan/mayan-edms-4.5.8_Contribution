@@ -1,0 +1,271 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Domagoj Crljenko <domagoj@rii.hr>, 2023
+# Mario Jakovina <mario.jakovina@gmail.com>, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:22+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Mario Jakovina <mario.jakovina@gmail.com>, 2023\n"
+"Language-Team: Croatian (https://app.transifex.com/rosarior/teams/13584/hr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: hr\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#: apps.py:20 settings.py:11
+msgid "Views"
+msgstr "Pogledi"
+
+#: forms.py:35
+msgid "Search"
+msgstr "Pretraga"
+
+#: forms.py:53
+msgid "Selection"
+msgstr "Odabir"
+
+#: forms.py:233
+msgid "Label"
+msgstr "Oznaka"
+
+#: forms.py:239
+msgid "Relationship"
+msgstr "Veza"
+
+#: generics.py:164
+msgid ""
+"Select entries to be removed. Hold Control to select multiple entries. Once "
+"the selection is complete, click the button below or double click the list "
+"to activate the action."
+msgstr ""
+"Odaberite zapise koje želite ukloniti. Držite Control tipku za odabir više "
+"zapisa odjednom. Kad završite s odabirom, pritisnite tipku ispod (ili "
+"pritisnite dvoklik na listu)."
+
+#: generics.py:169
+msgid ""
+"Select entries to be added. Hold Control to select multiple entries. Once "
+"the selection is complete, click the button below or double click the list "
+"to activate the action."
+msgstr ""
+"Odaberite zapise koje želite dodati. Držite Control tipku za odabir više "
+"zapisa odjednom. Kad završite s odabirom, pritisnite tipku ispod (ili "
+"pritisnite dvoklik na listu)."
+
+#: generics.py:323
+msgid "Add all"
+msgstr "Dodaj sve"
+
+#: generics.py:330
+msgid "Add"
+msgstr "Dodaj"
+
+#: generics.py:341
+msgid "Remove all"
+msgstr "Ukloni sve"
+
+#: generics.py:348
+msgid "Remove"
+msgstr "Ukloni"
+
+#: generics.py:579
+#, python-format
+msgid "Error updating relationship; %s"
+msgstr "Greška pri ažuriranju veze; %s"
+
+#: generics.py:586
+msgid "Relationships updated successfully"
+msgstr "Veze uspješno ažurirane"
+
+#: generics.py:649
+#, python-format
+msgid "Duplicate data error: %(error)s"
+msgstr ""
+
+#: generics.py:668
+#, python-format
+msgid "%(object)s not created, error: %(error)s"
+msgstr "%(object)s nije kreiran, greške: %(error)s"
+
+#: generics.py:679
+#, python-format
+msgid "%(object)s created successfully."
+msgstr "%(object)s kreiran uspješno."
+
+#: generics.py:724
+#, python-format
+msgid "%(object)s not deleted, error: %(error)s."
+msgstr "%(object)s nije izbrisan, greška: %(error)s."
+
+#: generics.py:734
+#, python-format
+msgid "%(object)s deleted successfully."
+msgstr "%(object)s uspješno izbrisan."
+
+#: generics.py:797
+#, python-format
+msgid "Error retrieving %(object)s; %(error)s"
+msgstr "Greška pri dohvaćanju %(object)s; %(error)s"
+
+#: generics.py:909
+#, python-format
+msgid "%(object)s not updated, error: %(error)s."
+msgstr "%(object)s nije ažuriran, greška: %(error)s."
+
+#: generics.py:919
+#, python-format
+msgid "%(object)s updated successfully."
+msgstr "%(object)s uspješno ažuriran."
+
+#: generics.py:986
+#, python-format
+msgid "%(count)d objects deleted successfully."
+msgstr "%(count)d objekata uspješno izbrisano."
+
+#: generics.py:987
+#, python-format
+msgid "\"%(object)s\" deleted successfully."
+msgstr "\"%(object)s\" uspješno izbrisano."
+
+#: generics.py:988
+#, python-format
+msgid "%(count)d object deleted successfully."
+msgstr "%(count)d objekat uspješno izbrisan."
+
+#: generics.py:989
+#, python-format
+msgid "Delete %(count)d objects."
+msgstr "Izbriši %(count)d objekat(a)."
+
+#: generics.py:990
+#, python-format
+msgid "Delete \"%(object)s\"."
+msgstr "Izbriši \"%(object)s\"."
+
+#: generics.py:991
+#, python-format
+msgid "Delete %(count)d object."
+msgstr "Izbriši %(count)d objekat."
+
+#: settings.py:17
+msgid "The number objects that will be displayed per page."
+msgstr "Broj prikazanih objekata po stranici."
+
+#: settings.py:23
+msgid "A string specifying the name to use for the paging parameter."
+msgstr ""
+
+#: settings.py:29
+msgid ""
+"Display a submit button and wait for the submit button to be pressed before "
+"processing up the upload."
+msgstr ""
+"Prikaži tipku za slanje i pričekaj da bude prisitnuta prije učitavanja."
+
+#: templates/views/app/foot.html:45
+msgid "Cancel upload"
+msgstr "Poništi preuzimanje (upload)"
+
+#: templates/views/app/foot.html:46
+msgid "Are you sure you want to cancel this upload?"
+msgstr "Jeste li sigurni da želite obustaviti preuzimanje (upload)?"
+
+#: templates/views/app/foot.html:47
+msgid "Drop files or click here to upload files"
+msgstr "Dovuci datoteke ili klikni za preuzimanje"
+
+#: templates/views/app/foot.html:48
+msgid "Your browser does not support drag and drop file uploads."
+msgstr "Vaš preglednik ne podržava povuci/spusti preuzimanja datoteka."
+
+#: templates/views/app/foot.html:49
+msgid "Please use the fallback form below to upload your files."
+msgstr "Molim korisitt fallback ispod ua preuzimanje datoteka."
+
+#: templates/views/app/foot.html:50
+msgid "Clear"
+msgstr "Očisti"
+
+#: templates/views/app/foot.html:51
+msgid "Server responded with {{statusCode}} code."
+msgstr "Server je odgovorio kodom: {{statusCode}}."
+
+#: templatetags/views_tags.py:30
+msgid "Confirm delete"
+msgstr "Potvrdi brisanje"
+
+#: templatetags/views_tags.py:35
+#, python-format
+msgid "Edit %s"
+msgstr "Izmijeni %s"
+
+#: templatetags/views_tags.py:38
+msgid "Confirm"
+msgstr "Potvrdi"
+
+#: templatetags/views_tags.py:42
+#, python-format
+msgid "Details for: %s"
+msgstr "Detalji za: %s"
+
+#: templatetags/views_tags.py:46
+#, python-format
+msgid "Edit: %s"
+msgstr "Izmijeni: %s"
+
+#: templatetags/views_tags.py:50
+msgid "Create"
+msgstr "Izradi"
+
+#: view_mixins.py:426
+#, python-format
+msgid "No %(verbose_name)s found matching the query"
+msgstr ""
+
+#: view_mixins.py:452
+#, python-format
+msgid "Unable to perform operation on object %(instance)s; %(exception)s."
+msgstr "Nije moguće izvesti radnju na objektu %(instance)s; %(exception)s."
+
+#: view_mixins.py:455
+#, python-format
+msgid "Operation performed on %(count)d objects."
+msgstr "Radnja izvršena na %(count)d objekata."
+
+#: view_mixins.py:456
+#, python-format
+msgid "Operation performed on %(object)s."
+msgstr "Radnja izvršena na %(object)s."
+
+#: view_mixins.py:457
+#, python-format
+msgid "Operation performed on %(count)d object."
+msgstr "Radnja izvršena na %(count)d objektu."
+
+#: view_mixins.py:458
+#, python-format
+msgid "Perform operation on %(count)d objects."
+msgstr "Izvrši radnju na %(count)d objakata."
+
+#: view_mixins.py:459
+#, python-format
+msgid "Perform operation on %(object)s."
+msgstr "Izvrši radnju na %(object)s."
+
+#: view_mixins.py:460
+#, python-format
+msgid "Perform operation on %(count)d object."
+msgstr "Izvrši radnju na %(count)d objektu."
+
+#: view_mixins.py:544
+msgid "Object"
+msgstr "Objekat"

@@ -1,0 +1,19 @@
+.. _apps-platform-troubleshooting:
+
+
+===============
+Troubleshooting
+===============
+
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Troubleshooting:
+
+    - How to upgrade an existing Python 2 virtualenv
+    - Supervisord error using direct deployment after upgrade to version 4.1
+    - Error: ``UnicodeEncodeError: 'ascii' codec can't encode characters in position ...``

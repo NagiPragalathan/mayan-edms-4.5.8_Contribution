@@ -1,0 +1,135 @@
+======
+Search
+======
+
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Articles:
+
+    - Understanding the search lexicon
+    - Mayan EDMS search system
+    - The batch request API system
+
+    Tutorials:
+
+    - How to enable Mayan EDMS to use Elasticsearch
+    - Using extra worker containers
+    - How to enable RabbitMQ’s administrative portal
+
+    Troubleshooting:
+
+    - How to retrieve the list of available search models
+
+
+Backends
+========
+
+Django
+------
+
+Path: ``mayan.apps.dynamic_search.backends.django.DjangoSearchBackend``
+
+This was the first backend supported. It uses the same database as the
+rest of the system to emulate a search engine.
+
+As it uses the database, external services or reindexing to update its
+content is not required.
+
+The downside to this backend is that it is slow and can overload the database
+affecting the entire performance of the deployment.
+
+Since version 4.2 it is no longer the default search backend.
+
+
+Unsupported features
+^^^^^^^^^^^^^^^^^^^^
+
+- Accent folding.
+- Case folding.
+- Fuzzy searches are emulated and might not return the same results as
+  a search engine that has native support for fuzzy searches.
+
+
+Whoosh
+------
+
+.. versionadded:: 3.5
+
+Path: ``mayan.apps.dynamic_search.backends.whoosh.WhooshSearchBackend``
+
+This backend uses the Python Whoosh search library. Whoosh uses local files
+for indexing. Because of this, it runs in the same context as Mayan EDMS,
+no external services are required. Using and backing up Whoosh is very easy.
+
+The downside to this backend is that it can only be used when Mayan EDMS is
+configure to use block storage. Mayan EDMS implementation of Whoosh also
+uses a distributed lock to avoid concurrent writing and possible corruption.
+This slows down the update process of the search index.
+
+This backend provides search functionality that is simple to setup and
+will work well from small to intermediate installations.
+
+In version 4.2, the Whoosh backend was completed and became the default
+search backend.
+
+This engine support specialized date parsing. To use this feature, pass the
+date term as a raw term.
+
+Example: ``=`['last tuesday' to 'next friday']```
+
+More examples of date parsing can be found in
+https://whoosh.readthedocs.io/en/latest/dates.html#parsing-date-queries
+
+To pass reserved characters or symbols that have special meaning to the
+preprocessor or to the Whoosh parsers, pass them as a raw term and
+also enclose them in single quotes.
+
+Example: To search for the terms with the ``<`` symbol use ``=`'<'```
+
+More details can be found in
+https://whoosh.readthedocs.io/en/latest/querylang.html#making-a-term-from-literal-text
+
+
+ElasticSearch
+-------------
+
+.. versionadded:: 4.2
+
+Path: ``mayan.apps.dynamic_search.backends.elasticsearch.ElasticSearchBackend``
+
+This backend uses ElasticSearch via a local API client. ElasticSearch must
+be deployed as an external service, either manually or automatically using
+the official Docker Compose file.
+
+ElasticSearch can scale up very well and support millions of documents and
+many concurrent search requests. ElasticSearch can also be clustered to
+add more capabilities.
+
+The downside is that ElasicSearch has high resource requirements and has
+an extensive but complex search syntax.  Mayan EDMS only uses a subset of the
+search features provided by ElasticSearch.
+
+This backend is recommended for large installations having a high number of
+documents and concurrent users.
+
+
+Considerations
+==============
+
+When changing the search backend, it is also necessary to launch the
+"Reindex search backend" action from the Tools menu to initialize the
+search engine index.
+
+This action is only required once, afterwards the search engine will be
+updated as objects are added, removed, or edited.
+
+
+Settings
+========
+
+.. mayan_setting_namespace :: search

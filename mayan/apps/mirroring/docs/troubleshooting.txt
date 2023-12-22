@@ -1,0 +1,17 @@
+===============
+Troubleshooting
+===============
+
+.. include::  ../../partials/kb_migration.txt
+
+.. note::
+
+    Knowledge Base content
+
+    Articles:
+
+    - What is document index mirroring?
+
+    Troubleshooting:
+
+    - File system links not showing when serving content with Samba

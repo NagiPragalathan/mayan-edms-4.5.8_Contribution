@@ -1,0 +1,10 @@
+devpi-server==6.5.0
+django-debug-toolbar==3.2.4
+django-extensions==3.2.3
+django-rosetta==0.9.9
+django-silk==5.0.3
+flake8==6.1.0
+ipython==8.14.0
+pdbpp==0.10.3
+readme==0.7.1
+safety==2.3.5

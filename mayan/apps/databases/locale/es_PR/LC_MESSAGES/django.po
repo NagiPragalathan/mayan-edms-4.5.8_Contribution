@@ -1,0 +1,78 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Roberto Rosario, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Roberto Rosario, 2023\n"
+"Language-Team: Spanish (Puerto Rico) (https://app.transifex.com/rosarior/teams/13584/es_PR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es_PR\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: apps.py:16
+msgid "Databases"
+msgstr "Bases de datos"
+
+#: classes.py:80
+msgid "Model fields"
+msgstr "Campos del modelo"
+
+#: classes.py:128
+msgid "Model related fields"
+msgstr "Campos relacionados del modelo"
+
+#: classes.py:133
+msgid "Model properties"
+msgstr "Propiedades del modelo"
+
+#: classes.py:138
+msgid "Model reverse fields"
+msgstr "Campos inversos de modelo"
+
+#: literals.py:10
+msgid ""
+"Your database backend is set to use SQLite. SQLite should only be used for "
+"development and testing, not for production."
+msgstr ""
+"El backend de su base de datos está configurado para usar SQLite. SQLite "
+"solo debe usarse para desarrollo y pruebas, no para producción."
+
+#: model_mixins.py:26
+msgid ""
+"The condition that will determine if this object is executed or not. "
+"Conditions that do not return any value, that return the Python logical "
+"None, or an empty string ('') are considered to be logical false, any other "
+"value is considered to be the logical true."
+msgstr ""
+"La condición que determinará si este objeto se ejecuta o no. Las condiciones"
+" que no devuelven ningún valor, que devuelven el Ninguno lógico de Python o "
+"una cadena vacía ('') se consideran falsas lógicas, cualquier otro valor se "
+"considera verdadero lógico."
+
+#: model_mixins.py:31
+msgid "Condition"
+msgstr "Condición"
+
+#: model_mixins.py:52
+msgid "The object will be executed, depending on the condition return value."
+msgstr ""
+"El objeto se ejecutará, dependiendo del valor de retorno de la condición."
+
+#: model_mixins.py:55
+msgid "Has a condition?"
+msgstr "¿Tiene una condición?"
+
+#: templates/databases/app/viewport.html:11
+msgid "Warning"
+msgstr "Advertencia"

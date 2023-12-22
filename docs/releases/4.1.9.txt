@@ -1,0 +1,42 @@
+Version 4.1.9
+=============
+
+Released: April 24, 2022
+
+Status: End of life
+
+Changes
+-------
+
+
+Search
+^^^^^^
+
+Removed hardcoded search model variable name from ``search_box.html``
+template.
+
+
+Removals
+--------
+
+- None
+
+
+Upgrade process
+---------------
+
+.. include:: partials/upgrade-3.5-4.0.txt
+
+
+Backward incompatible changes
+-----------------------------
+
+- None
+
+
+Issues closed
+-------------
+
+- None
+
+.. _PyPI: https://pypi.python.org/pypi/mayan-edms/

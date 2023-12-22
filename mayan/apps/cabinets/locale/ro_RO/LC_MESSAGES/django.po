@@ -1,0 +1,369 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Stefaniu Criste <gupi@hangar.ro>, 2023
+# Badea Gabriel <gcbadea@gmail.com>, 2023
+# Harald Ersch, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Harald Ersch, 2023\n"
+"Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ro_RO\n"
+"Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
+
+#: apps.py:54 apps.py:164 apps.py:168 apps.py:172 apps.py:176 apps.py:180
+#: events.py:6 forms.py:14 links.py:30 menus.py:14 models.py:51 models.py:158
+#: permissions.py:6 search.py:48 views.py:169 workflow_actions.py:39
+#: workflow_actions.py:53
+msgid "Cabinets"
+msgstr "Fișete"
+
+#: events.py:11
+msgid "Cabinet created"
+msgstr "Fișetul a fost creat"
+
+#: events.py:14
+msgid "Cabinet deleted"
+msgstr "Fișetul a fost șters"
+
+#: events.py:17
+msgid "Cabinet edited"
+msgstr "Fișetul a fost editat"
+
+#: events.py:20
+msgid "Document added to cabinet"
+msgstr "Documentul a fost adăugat la fișet"
+
+#: events.py:23
+msgid "Document removed from cabinet"
+msgstr "Documentul a fost scos din fișet"
+
+#: links.py:36 links.py:48 workflow_actions.py:75
+msgid "Remove from cabinets"
+msgstr "Scoateți din fișete"
+
+#: links.py:41 links.py:44 workflow_actions.py:21
+msgid "Add to cabinets"
+msgstr "Adăugați la fișete"
+
+#: links.py:59
+msgid "Add new level"
+msgstr "Adăugați un nou raft"
+
+#: links.py:64 views.py:47
+msgid "Create cabinet"
+msgstr "Creați fișet"
+
+#: links.py:69
+msgid "Delete"
+msgstr "Șterge"
+
+#: links.py:73
+msgid "Edit"
+msgstr "Editați"
+
+#: links.py:81
+msgid "All"
+msgstr "Toate"
+
+#: links.py:85
+msgid "Details"
+msgstr "Detalii"
+
+#: methods.py:21
+msgid "Return a list of cabinets containing the document."
+msgstr "Returnează o listă de fişete ce conțin documentul."
+
+#: methods.py:23
+msgid "get_cabinets()"
+msgstr "get_cabinets ()"
+
+#: model_mixins.py:50
+msgid "The path to the cabinet including all ancestors."
+msgstr "Calea către fişet, inclusiv toți strămoșii."
+
+#: model_mixins.py:52 serializers.py:32
+msgid "Full path"
+msgstr "Calea completă"
+
+#: models.py:32 serializers.py:41
+msgid "Parent"
+msgstr "Părinte"
+
+#: models.py:35
+msgid "A short text used to identify the cabinet."
+msgstr "Un text scurt folosit pentru identificarea cabinetului."
+
+#: models.py:36
+msgid "Label"
+msgstr "Conținut etichetă"
+
+#: models.py:40
+msgid "Documents"
+msgstr "Documente"
+
+#: models.py:50 models.py:132 models.py:157
+msgid "Cabinet"
+msgstr "Fișet"
+
+#: models.py:133
+msgid "Parent and Label"
+msgstr "Părinte și etichetă"
+
+#: models.py:140
+#, python-format
+msgid "%(model_name)s with this %(field_labels)s already exists."
+msgstr " Există deja %(model_name)s cu acest %(field_labels)s."
+
+#: models.py:169
+msgid "Document cabinet"
+msgstr "Fișet de documente"
+
+#: models.py:170
+msgid "Document cabinets"
+msgstr "Fișete cu documentul"
+
+#: permissions.py:12
+msgid "Add documents to cabinets"
+msgstr "Adăugați documente la fișete"
+
+#: permissions.py:15
+msgid "Create cabinets"
+msgstr "Creați fișete"
+
+#: permissions.py:18
+msgid "Delete cabinets"
+msgstr "Ștergeți fișete"
+
+#: permissions.py:21
+msgid "Edit cabinets"
+msgstr "Editați fișete"
+
+#: permissions.py:24
+msgid "Remove documents from cabinets"
+msgstr "Scoateți documentele din fișete"
+
+#: permissions.py:27
+msgid "View cabinets"
+msgstr "Vezi fișete"
+
+#: search.py:24
+msgid "Document type"
+msgstr "Tipul documentului"
+
+#: search.py:27
+msgid "Document label"
+msgstr "Etichetele documentului"
+
+#: search.py:30
+msgid "Document description"
+msgstr "Descrierea documentului"
+
+#: search.py:33
+msgid "Document UUID"
+msgstr "UUID al documentului"
+
+#: search.py:39
+msgid "Document file checksum"
+msgstr "Suma de control a fișierului documentului"
+
+#: search.py:42
+msgid "Document file MIME type"
+msgstr "Tipul MIME al fișierului document"
+
+#: serializers.py:18
+msgid "List of children cabinets."
+msgstr "Listă fișetelor subordonate"
+
+#: serializers.py:18
+msgid "Children"
+msgstr "Copii"
+
+#: serializers.py:23
+msgid ""
+"URL of the API endpoint showing the list documents inside this cabinet."
+msgstr ""
+"Adresa URL a punctului de sfârșit API care afișează documentele din listă în"
+" interiorul acestui fișet."
+
+#: serializers.py:25
+msgid "Documents URL"
+msgstr "Adresa URL a documentelor"
+
+#: serializers.py:30
+msgid "The name of this cabinet level appended to the names of its ancestors."
+msgstr ""
+"Numele acestui nivel de fișet a fost anexat la numele precesorilor săi."
+
+#: serializers.py:35
+msgid "Parents URL"
+msgstr "Adresa URL a părinților"
+
+#: serializers.py:51
+msgid "URL"
+msgstr "URL"
+
+#: serializers.py:84
+msgid "Primary key of the document to add to the cabinet."
+msgstr "Cheia primară a documentului de adăugat în fișet."
+
+#: serializers.py:85 serializers.py:94
+msgid "Document ID"
+msgstr "ID document"
+
+#: serializers.py:93
+msgid "Primary key of the document to remove from the cabinet."
+msgstr "Cheia primară a documentului de scos din fișet."
+
+#: templates/cabinets/cabinet_details.html:17
+msgid "Navigation:"
+msgstr "Navigare:"
+
+#: views.py:64
+#, python-format
+msgid "Add new level to: %s"
+msgstr "Adăugați un nou nivel la: %s"
+
+#: views.py:89
+#, python-format
+msgid "Delete the cabinet: %s?"
+msgstr "Ștergeți fișetul: %s?"
+
+#: views.py:128
+msgid ""
+"Cabinet levels can contain documents or other cabinet sub levels. To add "
+"documents to a cabinet, select the cabinet view of a document view."
+msgstr ""
+"Nivelele fișetului pot conține documente sau alte subdiviziuni ale "
+"fișetului. Pentru a adăuga documente într-un fișet, selectați vizualizarea "
+"fișetului dintr-o vizualizare de documente."
+
+#: views.py:132
+msgid "This cabinet level is empty"
+msgstr "Acest nivel al fișetului este gol"
+
+#: views.py:135
+#, python-format
+msgid "Details of cabinet: %s"
+msgstr "Detalii despre fișetul: %s"
+
+#: views.py:154
+#, python-format
+msgid "Edit cabinet: %s"
+msgstr "Editați fișetul: %s"
+
+#: views.py:175
+msgid ""
+"Cabinets are a multi-level method to organize documents. Each cabinet can "
+"contain documents as well as other sub level cabinets."
+msgstr ""
+"Fișetele sunt o metodă pentru a organiza documente multi-nivel. Fiecare "
+"fișet poate conține documente, precum și alte fișete sub acel nivel."
+
+#: views.py:179
+msgid "No cabinets available"
+msgstr "Nu există fișete disponibile"
+
+#: views.py:192
+#, python-format
+msgid "Document \"%(object)s\" added to cabinets successfully."
+msgstr "Documentul „%(object)s” a fost adăugat cu succes în fișete."
+
+#: views.py:195
+#, python-format
+msgid "%(count)d document added to cabinets successfully."
+msgstr "%(count)d document a fost adăugat cu succes în fișete."
+
+#: views.py:198
+#, python-format
+msgid "%(count)d documents added to cabinets successfully."
+msgstr "%(count)d documente adăugate cu succes în fișete."
+
+#: views.py:200
+#, python-format
+msgid "Add %(count)d documents to cabinets."
+msgstr "Adăugați %(count)ddocumente  în fișete."
+
+#: views.py:201
+#, python-format
+msgid "Add document \"%(object)s\" to cabinets."
+msgstr "Adăugați documentul „%(object)s” în fișete."
+
+#: views.py:202
+#, python-format
+msgid "Add %(count)d document to cabinets."
+msgstr "Adăugați documentul %(count)d în fișete."
+
+#: views.py:220
+msgid "Cabinets to which the selected documents will be added."
+msgstr "Fișetele la care vor fi adăugate documentele selectate."
+
+#: views.py:266
+msgid "Documents can be added to many cabinets."
+msgstr "Documentele pot fi adăugate la multe fișete."
+
+#: views.py:269
+msgid "This document is not in any cabinet"
+msgstr "Acest document nu se află în nici un fișet"
+
+#: views.py:273
+#, python-format
+msgid "Cabinets containing document: %s"
+msgstr "Fișete care conțin documentul: %s"
+
+#: views.py:289
+#, python-format
+msgid "Document \"%(object)s\" removed from cabinets successfully."
+msgstr "Documentul „%(object)s” a fost eliminat cu succes din fișete."
+
+#: views.py:292
+#, python-format
+msgid "%(count)d document removed from cabinets successfully."
+msgstr "Documentul %(count)d a fost eliminat cu succes din fișete."
+
+#: views.py:295
+#, python-format
+msgid "%(count)d documents removed from cabinets successfully."
+msgstr "%(count)d documente eliminate din fișete cu succes."
+
+#: views.py:297
+#, python-format
+msgid "Remove %(count)d documents from cabinets."
+msgstr "Scoateți documentele %(count)d din fișete."
+
+#: views.py:298
+#, python-format
+msgid "Remove document \"%(object)s\" from cabinets."
+msgstr "Scoateți documentul „%(object)s” din fișete."
+
+#: views.py:299
+#, python-format
+msgid "Remove %(count)d document from cabinets."
+msgstr "Scoateți documentul %(count)d din fișete."
+
+#: views.py:317
+msgid "Cabinets from which the selected documents will be removed."
+msgstr "Fișetele din care vor fi eliminate documentele selectate."
+
+#: wizard_steps.py:18
+msgid "Select cabinets"
+msgstr "Selectați fișete"
+
+#: wizard_steps.py:77 workflow_actions.py:33
+msgid "Cabinets to which the document will be added."
+msgstr "Fișetele la care se va adăuga documentul."
+
+#: workflow_actions.py:83
+msgid "Cabinets from which the document will be removed"
+msgstr "Fișete din care va fi scos documentul"

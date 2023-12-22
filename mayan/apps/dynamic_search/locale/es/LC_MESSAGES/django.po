@@ -1,0 +1,359 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# 
+# Translators:
+# Translators:
+# Roberto Rosario, 2023
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Mayan EDMS\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-07 04:21+0000\n"
+"PO-Revision-Date: 2023-09-06 21:36+0000\n"
+"Last-Translator: Roberto Rosario, 2023\n"
+"Language-Team: Spanish (https://app.transifex.com/rosarior/teams/13584/es/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: es\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: apps.py:27
+msgid "Dynamic search"
+msgstr "Búsqueda dinámica "
+
+#: forms.py:19
+msgid "Match all"
+msgstr "Parear todos"
+
+#: forms.py:20
+msgid "Return only results that match all fields."
+msgstr "Devuelver solo los resultados que coincidan con todos los campos."
+
+#: forms.py:52
+msgid "Search logic"
+msgstr "Lógica de búsqueda"
+
+#: forms.py:72 templates/dynamic_search/search_box.html:43
+#: templates/dynamic_search/search_box_toolbar.html:25
+msgid "Search terms"
+msgstr "Términos de búsqueda"
+
+#: links.py:20
+msgid "Basic search"
+msgstr "Búsqueda básica"
+
+#: links.py:24 templates/dynamic_search/search_box.html:49
+#: templates/dynamic_search/search_box_toolbar.html:33
+msgid "Advanced search"
+msgstr "Búsqueda avanzada"
+
+#: links.py:28
+msgid "Search again"
+msgstr "Volver a buscar"
+
+#: links.py:33 views.py:62
+msgid "Reindex search backend"
+msgstr "Volver a indexar el backend de búsqueda"
+
+#: literals.py:21
+msgid "Yes"
+msgstr "Si"
+
+#: literals.py:22
+msgid "No"
+msgstr "No"
+
+#: permissions.py:6 queues.py:7 settings.py:14
+#: templates/dynamic_search/search_box.html:47
+#: templates/dynamic_search/search_box_toolbar.html:30 views.py:108
+msgid "Search"
+msgstr "Búsqueda"
+
+#: permissions.py:10
+msgid "Execute search tools"
+msgstr "Ejecutar herramientas de búsqueda"
+
+#: queues.py:10
+msgid "Search slow"
+msgstr "Búsqueda lenta"
+
+#: queues.py:15
+msgid "Remove a model instance from the search engine."
+msgstr "Elimina una instancia de modelo del motor de búsqueda."
+
+#: queues.py:20
+msgid "Index a model instance to the search engine."
+msgstr "Indexar una instancia de modelo en el motor de búsqueda."
+
+#: queues.py:25
+msgid "Index all instances of a search model to the search engine."
+msgstr ""
+"Indexa todas las instancias de un modelo de búsqueda en el motor de "
+"búsqueda."
+
+#: queues.py:31
+msgid ""
+"Index all related instances of a search model after a many to many event."
+msgstr ""
+"Indexa todas las instancias relacionadas de un modelo de búsqueda después de"
+" un evento de cambio de campo tipo muchos a muchos."
+
+#: queues.py:39
+msgid "Reset the search backend indices and index all instances again."
+msgstr ""
+"Restablece los índices de back-end de búsqueda e indexa todas las instancias"
+" nuevamente."
+
+#: scoped_queries.py:352
+msgid ""
+"Search results exceed limit setting. Results might not be reliable if "
+"multiple scopes are used. Narrow down the search criteria or increase the "
+"value of the results limit setting."
+msgstr ""
+"Los resultados de la búsqueda exceden la configuración del límite. Es "
+"posible que los resultados no sean fiables si se utilizan varios contextos. "
+"Reduzca los criterios de búsqueda o aumente el valor de la configuración del"
+" límite de resultados."
+
+#: scoped_queries.py:368
+#, python-format
+msgid ""
+"Search backend error. Verify that the search service is available and that "
+"the search syntax is valid for the active search backend; %s"
+msgstr ""
+"Error de back-end de búsqueda. Verifique que el servicio de búsqueda esté "
+"disponible y que la sintaxis de búsqueda sea válida para el motor de "
+"búsqueda activo; %s"
+
+#: search_fields.py:311
+msgid "Any"
+msgstr "Cualquiera"
+
+#: search_models.py:44
+#, python-format
+msgid "Unknown search model `%s`."
+msgstr "Modelo de búsqueda desconocido `%s`."
+
+#: search_models.py:114
+msgid "All content"
+msgstr "Todo el contenido"
+
+#: search_query_types.py:167
+msgid "Exact"
+msgstr "Exacto"
+
+#: search_query_types.py:173
+msgid "Fuzzy"
+msgstr "Difuso"
+
+#: search_query_types.py:179
+msgid "Greater than"
+msgstr "Mayor que"
+
+#: search_query_types.py:185
+msgid "Greater than or equal"
+msgstr "Mayor o igual"
+
+#: search_query_types.py:191
+msgid "Less than"
+msgstr "Menos que"
+
+#: search_query_types.py:197
+msgid "Less than or equal"
+msgstr "Menor o igual"
+
+#: search_query_types.py:203
+msgid "Partial"
+msgstr "Parcial"
+
+#: search_query_types.py:209
+msgid "Range"
+msgstr "Rango"
+
+#: search_query_types.py:244
+msgid "Range exclusive"
+msgstr "Rango exclusivo"
+
+#: search_query_types.py:250
+msgid "Regular expression"
+msgstr "Expresión regular"
+
+#: serializers.py:14
+msgid "Field name"
+msgstr "Nombre del campo"
+
+#: serializers.py:17
+msgid "Label"
+msgstr "Etiqueta"
+
+#: serializers.py:23
+msgid "App label"
+msgstr "Etiqueta de la aplicación"
+
+#: serializers.py:26
+msgid "Model name"
+msgstr "Nombre del modelo"
+
+#: serializers.py:29
+msgid "Primary key"
+msgstr "Llave primaria"
+
+#: serializers.py:32
+msgid "Search fields"
+msgstr "Campos de búsqueda"
+
+#: settings.py:20
+msgid "Full path to the backend to be used to handle the search."
+msgstr ""
+"Ruta completa al controlador que se utilizará para manejar la búsqueda."
+
+#: settings.py:27
+msgid ""
+"Arguments to pass to the search backend. For example values to change the "
+"behavior, host names, or authentication arguments."
+msgstr ""
+"Argumentos para pasar al motor de búsqueda. Por ejemplo, valores para "
+"cambiar el comportamiento, nombres de servidor o argumentos de "
+"autenticación."
+
+#: settings.py:36
+msgid "The search operator to use when none is specified."
+msgstr "El operador de búsqueda a usar cuando no se especifica ninguno."
+
+#: settings.py:43
+msgid ""
+"Disables the single term bar search leaving only the advanced search button."
+msgstr ""
+"Inhabilita la búsqueda de barra de término único dejando solo el botón de "
+"búsqueda avanzada."
+
+#: settings.py:51
+msgid "Amount of objects to process when performing bulk indexing."
+msgstr "Cantidad de objetos a procesar al realizar la indexación masiva."
+
+#: settings.py:57
+msgid "Sets the default state of the \"Match all\" checkbox."
+msgstr ""
+"Establece el estado predeterminado de la casilla de verificación \"Coincidir"
+" con todos\"."
+
+#: settings.py:63
+msgid ""
+"Maximum number of search results to fetch and display per search query unit."
+msgstr ""
+"Número máximo de resultados de búsqueda para obtener y mostrar por unidad de"
+" consulta de búsqueda."
+
+#: settings.py:69
+msgid "Maximum number of search results to fetch and display."
+msgstr "Número máximo de resultados de búsqueda para obtener y mostrar."
+
+#: templates/dynamic_search/app/list_toolbar.html:18
+msgid "Filter terms"
+msgstr "Términos de filtrado"
+
+#: templates/dynamic_search/search_box.html:49
+#: templates/dynamic_search/search_box_toolbar.html:33
+msgid "Advanced"
+msgstr "Avanzada"
+
+#: value_transformations.py:37
+msgid "Replace accents"
+msgstr "Reemplazar acentos"
+
+#: value_transformations.py:49
+msgid "@ sign replace"
+msgstr "reemplazar signo @ "
+
+#: value_transformations.py:59
+msgid "Case fold"
+msgstr "Plegado de mayúsculas"
+
+#: value_transformations.py:69 value_transformations.py:79
+msgid "Hyphen replace"
+msgstr "Reemplazo de guión"
+
+#: value_transformations.py:89
+msgid "To boolean"
+msgstr "A booleano"
+
+#: value_transformations.py:102
+msgid "To date time"
+msgstr "A fecha y hora"
+
+#: value_transformations.py:124
+msgid "Date time ISO format"
+msgstr "Fecha y hora formato ISO"
+
+#: value_transformations.py:134
+msgid "Date time simple format"
+msgstr "Fecha y hora formato simple"
+
+#: value_transformations.py:144
+msgid "Date time timestamp format"
+msgstr "Fecha y hora formato de marca de tiempo"
+
+#: value_transformations.py:158
+msgid "To integer"
+msgstr "A entero"
+
+#: value_transformations.py:168
+msgid "To string"
+msgstr "A texto"
+
+#: views.py:59
+msgid "This tool erases and populates the search backend's internal index."
+msgstr ""
+"Esta herramienta borra y llena el índice interno del backend de búsqueda."
+
+#: views.py:69
+msgid ""
+"This tool is required only for some search backends. Search results will be "
+"affected while the backend is being reindexed."
+msgstr ""
+"Esta herramienta es necesaria solo para algunos backends de búsqueda. Los "
+"resultados de la búsqueda se verán afectados mientras se reindexa el "
+"backend."
+
+#: views.py:75
+msgid ""
+"The currently selected search backend does not support or requires "
+"reindexing."
+msgstr ""
+"El backend de búsqueda seleccionado actualmente no admite o requiere "
+"reindexación."
+
+#: views.py:88
+msgid "Search backend reindexing queued."
+msgstr "Indexación de backend de búsqueda en cola."
+
+#: views.py:110
+#, python-format
+msgid "Search for: %s"
+msgstr "Búsqueda para: %s"
+
+#: views.py:139
+#, python-format
+msgid "Advanced search for: %s"
+msgstr "Búsqueda avanzada para: %s"
+
+#: views.py:174
+msgid "Try again using different terms. "
+msgstr "Inténtalo de nuevo usando diferentes términos."
+
+#: views.py:176
+msgid "No search results"
+msgstr "No hay resultados de búsqueda"
+
+#: views.py:179
+#, python-format
+msgid "Search query: %s"
+msgstr "Consulta de búsqueda: %s"
+
+#: views.py:181
+#, python-format
+msgid "Search results for: %s"
+msgstr "Resultados de la búsqueda para: %s"
