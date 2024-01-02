@@ -170,6 +170,7 @@ class summery(SingleObjectDetailView):
     view_icon = icon_check_out_info
 
     def get_extra_context(self):
+        print("summary are clicked..!")
         return {
             'object': self.object,
             'title': _('Summery Details of: %s') % self.object

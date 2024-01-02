@@ -27,7 +27,7 @@ class DocumentUploadView(ExternalObjectViewMixin, UploadBaseView):
     source_link_view_name = 'sources:document_upload'
     view_icon = icon_document_upload_wizard
     view_source_action = 'document_upload'
-
+    
     def forms_valid(self, forms):
         action = self.source.get_action(name='document_upload')
 
