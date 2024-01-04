@@ -36,6 +36,7 @@ from django.db import models
 
 class Summary(models.Model): # table name
     id = models.IntegerField(primary_key=True) # id of the table
+    doc_id = models.IntegerField()
     name = models.CharField(max_length=255)
     content = models.TextField()
     summary = models.TextField()
@@ -44,7 +45,7 @@ class Summary(models.Model): # table name
     def __str__(self):
         return self.summary
 
-
+count=0
 class Document(
     DocumentBusinessLogicMixin, ExtraDataModelMixin, HooksModelMixin,
     models.Model
@@ -133,21 +134,22 @@ class Document(
         verbose_name_plural = _('Documents')
         
     def read_and_print_document_content(self):
+        content = False
         if self.file_latest:
             document_file = self.file_latest
             print(document_file)
             try:
                 # Check if the file is an image (assuming JPEG for simplicity)
-                if str(document_file).lower().endswith(('.jpg', '.jpeg')):
+                if str(document_file).lower().endswith(('.jpg', '.jpeg','.png')):
                     # Open the image file
                     with Image.open(document_file.file) as img:
                         # Use Tesseract to extract text from the image
                         text = pytesseract.image_to_string(img)
                         # Print the extracted text
-                        print("Image Text:")
-                        print(text)
+                        content=text
                 elif str(document_file).lower().endswith('.pdf'):
                     # Open the PDF file using PyPDF2
+                    temp_content = ""
                     with document_file.file.open('rb') as file_handle:
                         pdf_reader = PyPDF2.PdfReader(file_handle)
 
@@ -156,22 +158,19 @@ class Document(
                             page = pdf_reader.pages[page_number]
                             # Extract text from the PDF page
                             text = page.extract_text()
-
-                            # Print the extracted text
-                            print(f"PDF Page {page_number + 1} Text:")
-                            print(text)
+                            temp_content = temp_content + text +"\n\n"
+                    content = temp_content
                 else:
                     # Open the file and read its content for non-image files
                     with document_file.file.open('r') as file_handle:
-                        content = file_handle.read()
-                        # Print the document content
-                        print("Document Content:")
-                        print(content)  
+                        text = file_handle.read()
+                    content = text  
 
             except Exception as e:
                 print(f"Error reading document content: {e}")
         else:
             print("No document file attached to this document.")
+        return content
             
     def __str__(self):
         return self.get_label()
@@ -184,6 +183,7 @@ class Document(
         if not self.in_trash and to_trash:
             self.in_trash = True
             self.trashed_date_time = now()
+            print(self.id,self.label)
             with transaction.atomic():
                 self._event_ignore = True
                 self.save(
@@ -194,7 +194,16 @@ class Document(
         else:
             with transaction.atomic():
                 for document_file in self.files.all():
+                    try:
+                        del_obj = Summary.objects.get(doc_id=document_file.id)
+                        del_obj.delete()
+                    except Summary.DoesNotExist:
+                        # Handle the case where the Summary object does not exist
+                        print(f"Summary for doc_id {document_file.id} does not exist.")
                     document_file.delete()
+                obj = Summary.objects.all()
+                for i in obj:
+                    print("in delete : ",i.id,(i.name),i.doc_id)
 
                 super().delete(*args, **kwargs)
 
@@ -228,7 +237,7 @@ class Document(
     def save(self, *args, **kwargs):
         user = self.__dict__.pop('_event_actor', None)
         new_document = not self.pk
-
+        self.id = self.id
         self.description = self.description or ''
         self.label = self.label or ''
         self.language = self.language or setting_language.value
@@ -237,7 +246,31 @@ class Document(
             instance=self, sender=Document, user=user
         )
         print("doc_saved..!")
-        self.read_and_print_document_content()
+        content = self.read_and_print_document_content()
+        print(content)
+        try:
+            global count
+            if count%2 ==0 and not self.in_trash:
+                print("self.id;",self.id)
+                new_summary = Summary(
+                    doc_id=self.id,
+                    name=self.label,
+                    content=content,
+                    summary="summary_text",
+                )
+                new_summary.save()
+            else:
+                pass
+            count = count + 1
+            print("count : ", count)
+        except:
+            print("doc can't find...!")
+
+        obj = Summary.objects.all()
+        # obj.delete()
+        for i in obj:
+            print(i.id,i.doc_id,(i.name))
+        print("data stored..!", self.uuid, self.id)
 
         super().save(*args, **kwargs)
 

@@ -2,6 +2,7 @@ from django.urls import reverse
 from django.utils.translation import ugettext_lazy as _
 
 from mayan.apps.acls.models import AccessControlList
+from mayan.apps.documents.models.document_models import Summary
 from mayan.apps.documents.models.document_models import Document
 from mayan.apps.documents.views.document_views import DocumentListView
 from mayan.apps.views.exceptions import ActionError
@@ -167,13 +168,20 @@ class summery(SingleObjectDetailView):
     object_permission = permission_document_check_out_detail_view
     pk_url_kwarg = 'document_id'
     source_queryset = Document.valid.all()
+    
     view_icon = icon_check_out_info
 
     def get_extra_context(self):
-        print("summary are clicked..!")
+        document_id = self.kwargs['document_id']
+        try:
+            summary_data = Summary.objects.get(doc_id=document_id)
+            content = summary_data.content
+        except Summary.DoesNotExist:
+            content = "Summary not found for this document."
         return {
             'object': self.object,
-            'title': _('Summery Details of: %s') % self.object
+            'title': _('Summery Details of: %s') % self.object,
+            'content': content, 
         }
 
 

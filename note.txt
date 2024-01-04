@@ -1,3 +1,5 @@
 /home/nagipragalathan/mayan-edms-4.5.8/mayan/apps/documents/models/document_models.py = documet DB
 
 /home/nagipragalathan/mayan-edms-4.5.8/mayan/apps/checkouts/views.py = summary views
+
+/home/nagipragalathan/mayan-edms-4.5.8/mayan/apps/documents/models/document_models.py
