@@ -4,7 +4,7 @@ from mayan.apps.navigation.classes import Link
 
 from .icons import (
     icon_check_in_document, icon_check_out_document, icon_check_out_info,
-    icon_check_out_list,icon_summary_notes
+    icon_check_out_list,icon_summary_notes, icon_ocr
 )
 from .permissions import (
     permission_document_check_out, permission_document_check_in,
@@ -67,4 +67,10 @@ summery_button = Link(
     args='resolved_object.pk',icon=icon_summary_notes,
     text=_('Summery'),
     view='checkouts:summery_doc'
+)
+
+ocr_button = Link(
+    args='resolved_object.pk',icon=icon_ocr,
+    text=_('Ocr'),
+    view='checkouts:ocr'
 )

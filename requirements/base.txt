@@ -53,3 +53,6 @@ swagger-spec-validator==3.0.3
 whitenoise==6.5.0
 pytesseract
 PyPDF2
+langchain
+openai
+langchain-community

@@ -20,7 +20,7 @@ from .hooks import hook_is_new_file_allowed
 from .links import (
     link_check_in_document, link_check_in_document_multiple,
     link_check_out_document, link_check_out_document_multiple,
-    link_check_out_info, link_check_out_list, summery_button
+    link_check_out_info, link_check_out_list, summery_button, ocr_button
 )
 from .methods import (
     method_check_in, method_get_check_out_info, method_get_check_out_state,
@@ -114,6 +114,9 @@ class CheckoutsApp(MayanAppConfig):
         )
         menu_list_facet.bind_links(
             links=(summery_button,), sources=(Document,)
+        )
+        menu_list_facet.bind_links(
+            links=(ocr_button,), sources=(Document,)
         )
         menu_main.bind_links(
             links=(link_check_out_list,), position=40

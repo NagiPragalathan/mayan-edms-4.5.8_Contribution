@@ -25,6 +25,22 @@ from .document_model_mixins import DocumentBusinessLogicMixin
 from .document_type_models import DocumentType
 from .model_mixins import HooksModelMixin
 
+from langchain.chains.llm import LLMChain
+from langchain.prompts import PromptTemplate
+from langchain.chat_models import ChatOpenAI
+from langchain.chains.combine_documents.stuff import StuffDocumentsChain
+
+from langchain.text_splitter import CharacterTextSplitter
+from langchain.schema.document import Document as doc
+import re
+from langchain.text_splitter import TextSplitter
+
+def get_text_chunks_langchain(text):
+    print("chunks text : ",text)
+    text_splitter = CharacterTextSplitter(chunk_size = 1024, chunk_overlap = 128)
+    docs = [doc(page_content=x) for x in text_splitter.split_text(text)]
+    return docs
+
 from PIL import Image
 import pytesseract
 import PyPDF2
@@ -133,10 +149,31 @@ class Document(
         verbose_name = _('Document')
         verbose_name_plural = _('Documents')
         
+    def summary(self, text):
+        if text:
+            prompt_template = """Write a concise summary of the following:
+            "{text}"
+            CONCISE SUMMARY:"""
+            prompt = PromptTemplate.from_template(prompt_template)
+            print("inner text:", text)
+            # Define LLM chain
+            llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo-1106", api_key='')
+            llm_chain = LLMChain(llm=llm, prompt=prompt)
+
+            # Define StuffDocumentsChain
+            stuff_chain = StuffDocumentsChain(llm_chain=llm_chain, document_variable_name="text")
+
+            # docs = loader.load()
+            return { 'summary': stuff_chain.run(get_text_chunks_langchain(text)) }
+        else:
+            return False
+
+        
     def read_and_print_document_content(self):
         content = False
         if self.file_latest:
             document_file = self.file_latest
+            print(self.language)
             print(document_file)
             try:
                 # Check if the file is an image (assuming JPEG for simplicity)
@@ -144,7 +181,7 @@ class Document(
                     # Open the image file
                     with Image.open(document_file.file) as img:
                         # Use Tesseract to extract text from the image
-                        text = pytesseract.image_to_string(img)
+                        text = pytesseract.image_to_string(img, lang=self.language, config='--psm 6')
                         # Print the extracted text
                         content=text
                 elif str(document_file).lower().endswith('.pdf'):
@@ -241,30 +278,34 @@ class Document(
         self.description = self.description or ''
         self.label = self.label or ''
         self.language = self.language or setting_language.value
+        print(self.id,self.description,self.label)
 
         signal_mayan_pre_save.send(
             instance=self, sender=Document, user=user
         )
         print("doc_saved..!")
         content = self.read_and_print_document_content()
-        print(content)
-        try:
-            global count
-            if count%2 ==0 and not self.in_trash:
-                print("self.id;",self.id)
-                new_summary = Summary(
-                    doc_id=self.id,
-                    name=self.label,
-                    content=content,
-                    summary="summary_text",
-                )
-                new_summary.save()
-            else:
-                pass
-            count = count + 1
-            print("count : ", count)
-        except:
-            print("doc can't find...!")
+        # print(content)
+        # try:
+        global count
+        summery_content = self.summary(content)
+        print(count%2 ==0 and not self.in_trash,count%2 , self.in_trash)
+        if count%2 ==0 and not self.in_trash and self.id is not None and content != False:
+            print("self.id;",self.id)
+            new_summary = Summary(
+                doc_id=self.id,
+                name=self.label,
+                content=content,
+                summary=summery_content['summary'],
+            )
+            new_summary.save()
+            print(summery_content['summary'])
+        else:
+            pass
+        count = count + 1
+        print("count : ", count)
+        # except:
+        #     print("doc can't find...!")
 
         obj = Summary.objects.all()
         # obj.delete()

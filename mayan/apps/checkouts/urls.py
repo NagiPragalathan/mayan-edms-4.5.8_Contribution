@@ -2,7 +2,7 @@ from django.conf.urls import url
 
 from .api_views import APICheckedoutDocumentListView, APICheckedoutDocumentView, APIDocumentCheckoutView
 from .views import (
-    DocumentCheckInView, DocumentCheckOutDetailView, DocumentCheckOutListView,summery,
+    DocumentCheckInView, DocumentCheckOutDetailView, DocumentCheckOutListView,summery,Ocr,
     DocumentCheckOutView
 )
 
@@ -35,6 +35,10 @@ urlpatterns = [
     url(
         regex=r'^documents/(?P<document_id>\d+)/summery/$',
         name='summery_doc', view=summery.as_view()
+    ),
+    url(
+        regex=r'^documents/(?P<document_id>\d+)/ocr/$',
+        name='ocr', view=Ocr.as_view()
     )
 ]
 

@@ -23,3 +23,7 @@ icon_summary_notes = Icon(
     driver_name='fontawesome-dual', primary_symbol='sticky-note',
     secondary_symbol='pencil-alt'
 )
+icon_ocr = Icon(
+    driver_name='fontawesome-dual', primary_symbol='sticky-note',
+    secondary_symbol='eye'
+)

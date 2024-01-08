@@ -175,13 +175,36 @@ class summery(SingleObjectDetailView):
         document_id = self.kwargs['document_id']
         try:
             summary_data = Summary.objects.get(doc_id=document_id)
-            content = summary_data.content
+            content = summary_data.summary
         except Summary.DoesNotExist:
             content = "Summary not found for this document."
         return {
             'object': self.object,
             'title': _('Summery Details of: %s') % self.object,
             'content': content, 
+        }
+
+class Ocr(SingleObjectDetailView):
+    template_name = 'summery_view.html'  # Set your custom template path
+    form_class = DocumentCheckOutDetailForm
+    object_permission = permission_document_check_out_detail_view
+    pk_url_kwarg = 'document_id'
+    source_queryset = Document.valid.all()
+    
+    view_icon = icon_check_out_info
+
+    def get_extra_context(self):
+        document_id = self.kwargs['document_id']
+        # try:
+        summary_data = Summary.objects.get(doc_id=document_id)
+        content = summary_data.content
+        # except Summary.DoesNotExist:
+        #     content = "Summary not found for this document."
+        return {
+            'object': self.object,
+            'title': _('Summery Details of: %s') % self.object,
+            'content': content, 
+            'type':'ocr'
         }
 
 
